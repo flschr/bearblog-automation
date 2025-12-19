@@ -1,38 +1,36 @@
 # feed2social
 
-This bot periodically checks RSS feeds and automatically posts new entries to social networks like BlueSky and Mastodon. Additionally, the URL of the new post is submitted to search engines via IndexNow.
+This bot periodically checks RSS feeds and automatically posts new entries to social networks like BlueSky and Mastodon. Additionally, it submits new post URLs to search engines via the IndexNow service.
 
 ## How it works
 
-The bot is controlled by a GitHub Action (see `.github/workflows/main.yml`), which runs by default every 6 minutes.
+The bot is powered by a GitHub Action (see `.github/workflows/main.yml`), which runs every 6 minutes by default.
 
-1.  The bot loads the RSS feeds defined in `config.json`.
-2.  It checks which posts are already listed in `posted.txt` to avoid duplicates.
-3.  For each new post, it checks if it matches the filter criteria (`include`/`exclude`).
-4.  Matching posts are formatted according to the `template`.
-5.  The formatted post is sent to the defined `targets` like BlueSky and Mastodon.
-6.  Optionally, the first image from the post is extracted and sent along.
-7.  The post's URL is submitted to the IndexNow service (Bing, Yandex, etc.).
-8.  The `posted.txt` file is updated with the new URL and pushed back to the repository to save the state.
+1.  **Load Feeds**: The bot loads the RSS feeds defined in `config.json`.
+2.  **Duplicate Check**: It compares entries against `posted.txt` to avoid double-posting.
+3.  **Filter**: It checks if a post matches your `include` or `exclude` criteria.
+4.  **Format**: Posts are formatted using your custom `template` defined in the configuration.
+5.  **Dispatch**: The formatted content is sent to your defined `targets` like BlueSky or Mastodon.
+6.  **Media**: If enabled, the bot extracts the first image and attaches it to the post.
+7.  **Indexing**: The post URL is submitted to the IndexNow service for Bing, Yandex, and others.
+8.  **Sync**: The `posted.txt` file is updated and pushed back to your repository to save the state.
 
 ## Setup
 
-To use the bot for your own purposes, follow these steps:
+Follow these steps to set up the bot for your own feeds:
 
 ### 1. Fork the repository
-
 Create a fork of this repository in your own GitHub account.
 
 ### 2. Customize `config.json`
-
-The `config.json` is the main configuration file. It contains an array of feed objects, each defining a source.
+This is your main configuration file. It contains an array of feed objects.
 
 **Example `config.json`:**
 ```json
 [
   {
     "name": "My Blog",
-    "url": "https://my-blog.com/rss.xml",
+    "url": "[https://fischr.org/feed/](https://fischr.org/feed/)",
     "include": ["Announcement", "Release"],
     "exclude": ["Private"],
     "include_images": true,
@@ -42,23 +40,21 @@ The `config.json` is the main configuration file. It contains an array of feed o
 ]
 ```
 
-*   `name`: Ein beliebiger Name für den Feed (wird in den Logs verwendet).
-*   `url`: Die URL des RSS-Feeds.
-*   `include` (optional): Eine Liste von Keywords. Ein Beitrag wird nur gepostet, wenn mindestens eines dieser Wörter im Titel oder in der Zusammenfassung vorkommt.
-*   `exclude` (optional): Eine Liste von Keywords. Ein Beitrag wird ignoriert, wenn eines dieser Wörter im Titel oder in der Zusammenfassung vorkommt.
-*   `include_images`: Wenn `true`, versucht der Bot, das erste Bild aus dem Beitrag zu extrahieren und mitzuposten.
-*   `targets`: Eine Liste der Plattformen, auf denen gepostet werden soll. Unterstützt werden `"bluesky"` und `"mastodon"`.
-*   `template`: Eine Vorlage für den Post-Text. Verfügbare Platzhalter sind `{title}`, `{link}` und `{content}` (der Textinhalt des Beitrags).
+*   `name`: A descriptive name for the feed used in logs.
+*   `url`: The URL of the RSS feed.
+*   `include` (optional): A list of keywords; a post is only shared if it contains at least one of these words.
+*   `exclude` (optional): A list of keywords; a post is ignored if it contains any of these words.
+*   `include_images`: If `true`, the bot tries to extract and post the first image from the article.
+*   `targets`: The platforms to post to, supporting `"bluesky"` and `"mastodon"`.
+*   `template`: The post text format using placeholders like `{title}`, `{link}` and `{content}`
 
-### 3. GitHub Secrets einrichten
+### 3. Configure GitHub Secrets
 
-Damit der Bot posten kann, müssen Sie die entsprechenden Zugangsdaten als "Repository Secrets" in Ihrem Fork hinterlegen. Gehen Sie dazu in Ihrem GitHub-Repository auf `Settings > Secrets and variables > Actions`.
+To allow the bot to post, you must add your credentials as Repository Secrets under `Settings > Secrets and variables > Actions`.
 
-Folgende Secrets werden benötigt:
+Required Secrets:
 
-*   `BSKY_HANDLE`: Ihr BlueSky-Benutzername (z.B. `example.bsky.social`).
-*   `BSKY_PW`: Ein App-Passwort für BlueSky (**nicht** Ihr reguläres Passwort). Sie können dies in den BlueSky-Einstellungen unter "App-Passwörter" erstellen.
-*   `MASTO_TOKEN`: Ihr Mastodon-Zugangstoken. Sie können diesen in den Mastodon-Einstellungen unter `Entwicklung > Neuer Anwendungsfall` erstellen.
-*   `INDEXNOW_KEY` (optional): Ihr Schlüssel für den IndexNow-Dienst. Wenn Sie diesen nicht benötigen, können Sie die Funktion `submit_to_indexnow` in `bot.py` auskommentieren.
-
-Nachdem Sie alles eingerichtet haben, wird die GitHub Action automatisch ausgeführt und beginnt mit dem Posten Ihrer Feed-Inhalte. Sie können die Ausführung auch manuell über den "Workflow Dispatch"-Button im Actions-Tab starten.
+* `BSKY_HANDLE`: Your BlueSky identifier without the @.
+* `BSKY_PW`: An App Password created in BlueSky Settings.
+* `MASTO_TOKEN`: Your Mastodon access token created under Development settings.
+* `INDEXNOW_KEY`: (optional) your IndexNow API key, which can be verified via a DNS TXT record named _indexnow.
