@@ -42,6 +42,6 @@
     "include": ["blog"],
     "exclude": ["ausgelesen","popcornfieber","rezeptvomchef","popcornfieber"],
     "template": "Ich habe da mal was aufgeschrieben. {link}",
-    "targets": ["bluesky", "mastodon"]
+    "targets": []
   }
 ]
