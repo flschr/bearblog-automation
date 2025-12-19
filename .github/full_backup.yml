@@ -1,0 +1,33 @@
+name: Initial Backup to B2
+
+on: 
+  workflow_dispatch: 
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests beautifulsoup4 lxml markdownify b2sdk
+
+      - name: Run Backup Script
+        env:
+          B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
+          B2_APPLICATION_KEY: ${{ secrets.B2_APPLICATION_KEY }}
+          B2_BUCKET_NAME: ${{ secrets.B2_BUCKET_NAME }}
+        run: python backup/full_backup.py
+
+      - name: Save progress
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update posted.txt after initial backup"
+          file_pattern: 'posted.txt'

@@ -3,3 +3,5 @@ atproto
 Mastodon.py
 requests
 beautifulsoup4
+markdownify
+b2sdk
