@@ -6,7 +6,7 @@ from mastodon import Mastodon
 def get_html_content(entry):
     html = entry.content[0].value if hasattr(entry, 'content') else entry.get('summary', '')
     soup = BeautifulSoup(html, "html.parser")
-    for img in soup.find_all('img'): img.decompose() # Bilder entfernen (da nativer Upload)
+    for img in soup.find_all('img'): img.decompose()
     return str(soup)
 
 def get_first_image(entry):
@@ -17,8 +17,9 @@ def get_first_image(entry):
 def post_to_bluesky(text, img_path):
     client = Client()
     client.login(os.getenv('BSKY_HANDLE'), os.getenv('BSKY_PW'))
-    # TextBuilder erkennt Links automatisch und macht sie zu klickbaren Facets
-    tb = client_utils.TextBuilder().text(text[:300]) 
+    # Kürzen auf 290 Zeichen für BlueSky Sicherheit
+    final_text = (text[:290] + '...') if len(text) > 300 else text
+    tb = client_utils.TextBuilder().text(final_text) 
     embed = None
     if img_path:
         with open(img_path, 'rb') as f:
@@ -29,8 +30,9 @@ def post_to_bluesky(text, img_path):
 def post_to_mastodon(html_text, img_path):
     m = Mastodon(access_token=os.getenv('MASTO_TOKEN'), api_base_url='https://mastodon.social')
     media_ids = [m.media_post(img_path)] if img_path else []
-    # Der Trick für klickbare HTML-Links
-    m.status_post(status=html_text, media_ids=media_ids, content_type='text/html')
+    # Kürzen auf 490 Zeichen für Mastodon Sicherheit
+    final_html = (html_text[:490] + '...') if len(html_text) > 500 else html_text
+    m.status_post(status=final_html, media_ids=media_ids, content_type='text/html')
 
 def check_filter(entry, include, exclude):
     text = (entry.title + " " + entry.get('summary', '')).lower()
@@ -44,25 +46,47 @@ def run():
     if not os.path.exists('posted.txt'): open('posted.txt', 'w').close()
     with open('posted.txt', 'r') as f: posted = f.read().splitlines()
 
-    for cfg in config:
-        feed = feedparser.parse(cfg['url'])
-        for entry in feed.entries:
-            if entry.link in posted: continue
+    # Wir laden den Feed nur einmal
+    feed = feedparser.parse(config[0]['url'])
+    
+    for entry in feed.entries:
+        if entry.link in posted: continue
+        
+        for cfg in config:
             if check_filter(entry, cfg.get('include', []), cfg.get('exclude', [])):
                 img_path = None
                 if cfg.get('include_images'):
                     img_url = get_first_image(entry)
                     if img_url:
-                        r = requests.get(img_url); img_path = "temp.jpg"
-                        with open(img_path, 'wb') as f: f.write(r.content)
+                        try:
+                            r = requests.get(img_url, timeout=10)
+                            img_path = "temp.jpg"
+                            with open(img_path, 'wb') as f: f.write(r.content)
+                        except: img_path = None
 
-                html_content = get_html_content(entry)
+                # HIER WAR DER FEHLER: Jetzt wird das Template aus der Config genutzt!
+                html_body = get_html_content(entry)
+                # Wir erstellen die Nachricht basierend auf deinem Template
+                msg = cfg['template'].format(
+                    title=entry.title, 
+                    link=entry.link, 
+                    content=html_body
+                )
                 
-                if "bluesky" in cfg['targets']: post_to_bluesky(entry.title + "\n\n" + entry.link, img_path)
-                if "mastodon" in cfg['targets']: post_to_mastodon(html_content, img_path)
+                try:
+                    if "bluesky" in cfg['targets']: 
+                        # Für Bluesky säubern wir das HTML kurz zu Text
+                        plain_msg = BeautifulSoup(msg, "html.parser").get_text(separator=' ')
+                        post_to_bluesky(plain_msg, img_path)
+                    
+                    if "mastodon" in cfg['targets']: 
+                        post_to_mastodon(msg, img_path)
+                    
+                    with open('posted.txt', 'a') as f: f.write(entry.link + "\n")
+                except Exception as e:
+                    print(f"Fehler bei {entry.link}: {e}")
                 
-                with open('posted.txt', 'a') as f: f.write(entry.link + "\n")
                 if img_path and os.path.exists(img_path): os.remove(img_path)
-                break # Nur ein Post pro Durchlauf/Feed, um Spam zu vermeiden
+                break 
 
 if __name__ == "__main__": run()
