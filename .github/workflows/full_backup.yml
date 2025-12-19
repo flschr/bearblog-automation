@@ -17,7 +17,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install requests beautifulsoup4 lxml markdownify b2sdk
+        pip install requests beautifulsoup4 lxml markdownify b2sdk feedparser
 
       - name: Run Backup Script
         env:
