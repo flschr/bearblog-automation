@@ -20,6 +20,7 @@ jobs:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_PW: ${{ secrets.BSKY_PW }}
           MASTO_TOKEN: ${{ secrets.MASTO_TOKEN }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }} # <-- Diese Zeile wurde hinzugefügt
         run: python bot.py
       - name: Save State
         run: |
