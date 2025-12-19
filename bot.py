@@ -32,30 +32,30 @@ def get_og_metadata(url):
     except: return None
 
 def post_to_bluesky(text, link, img_path):
-    """Postet auf BlueSky mit klickbaren Links und Vorschau-Karten."""
+    """Postet auf BlueSky mit Facets (Links) und Vorschau-Karten."""
     client = Client()
     client.login(os.getenv('BSKY_HANDLE'), os.getenv('BSKY_PW'))
     tb = client_utils.TextBuilder()
     
-    # Text-Limit 300 Zeichen
+    # Text-Limit 300 Zeichen. Link wird klickbar gemacht.
     if link and link in text:
         parts = text.split(link)
-        tb.text(parts[0][:150]) # Kürzen für Sicherheit
-        tb.link(link, link)    # Macht den Link klickbar!
+        tb.text(parts[0][:150])
+        tb.link(link, link)
         if len(parts) > 1: tb.text(parts[1])
     else:
         tb.text(text[:290])
 
     embed = None
     if img_path:
-        # Foto-Post (Bild hat Vorrang vor Karte)
+        # Foto-Post (Bild hat Vorrang)
         with open(img_path, 'rb') as f:
             upload = client.upload_blob(f.read())
             embed = models.AppBskyEmbedImages.Main(images=[
                 models.AppBskyEmbedImages.Image(alt="", image=upload.blob)
             ])
     elif link:
-        # Link-Post (OG-Vorschau-Karte erstellen)
+        # Link-Post (OG-Karte erstellen)
         meta = get_og_metadata(link)
         if meta:
             thumb_blob = None
@@ -71,10 +71,9 @@ def post_to_bluesky(text, link, img_path):
     client.send_post(text=tb, embed=embed)
 
 def post_to_mastodon(text, img_path):
-    """Postet auf Mastodon. Nutzt Plain Text für native Link-Vorschauen."""
+    """Postet auf Mastodon als Plain Text für native Karten."""
     m = Mastodon(access_token=os.getenv('MASTO_TOKEN'), api_base_url='https://mastodon.social')
     media_ids = [m.media_post(img_path)['id']] if img_path else []
-    # Limit 500 Zeichen
     m.status_post(status=text[:500], media_ids=media_ids)
 
 def check_filter(entry, include, exclude):
@@ -115,10 +114,16 @@ def run():
                     if "bluesky" in cfg['targets']: post_to_bluesky(msg, entry.link, img_path)
                     if "mastodon" in cfg['targets']: post_to_mastodon(msg, img_path)
                     
-                    with open('posted.txt', 'a') as f: f.write(entry.link + "\n")
+                    # SICHERES SCHREIBEN: Prüfen, ob eine neue Zeile nötig ist
+                    with open('posted.txt', 'r+') as f:
+                        content = f.read()
+                        if content and not content.endswith('\n'):
+                            f.write('\n')
+                        f.write(entry.link + '\n')
+                    
                     processed_in_run.add(entry.link)
                 except Exception as e:
-                    print(f"Fehler bei {entry.link}: {e}")
+                    print(f"Fehler: {e}")
                 
                 if img_path and os.path.exists(img_path): os.remove(img_path)
 
