@@ -1,30 +1,47 @@
 [
   {
-    "name": "Blog - Fotos",
-    "url": "https://fischr.org/feed/",
-    "include": ["fotos"],
-    "template": "📸 Neues Foto aus dem Blog: {title} \n\n{link}",
-    "targets": ["bluesky"]
-  },
-  {
-    "name": "Blog - Alles andere",
-    "url": "https://fischr.org/feed/",
-    "exclude": ["fotos", "til"],
-    "template": "📝 Neuer Blogpost: {title} \n\n{link}",
+    "name": "Fotovorschlag",
+    "url": "https://fischr.org/feed?q=fotos",
+    "include": ["fotovorschlag"],
+    "include_images": true,
+    "template": "{content} #fotovorschlag",
     "targets": ["bluesky", "mastodon"]
   },
   {
-    "name": "Mein Blog - TIL",
-    "url": "https://fischr.org/feed/",
-    "include": ["til"],
-    "template": "💡 Heute gelernt: {title} \n\n{link}",
-    "targets": ["bluesky"]
+    "name": "Alle anderen Fotos",
+    "url": "https://fischr.org/feed?q=fotos",
+    "include": ["fotos"],
+    "exclude": ["fotovorschlag"],
+    "include_images": true,
+    "template": "{content}",
+    "targets": ["bluesky", "mastodon"]
   },
   {
-    "name": "Tagesschau",
-    "url": "https://www.tagesschau.de/infosilla/archive/index.html",
-    "include": ["Eilmeldung"],
-    "template": "🚨 BREAKING: {title} \n\n{link}",
-    "targets": ["mastodon"]
+    "name": "Popcornfieber",
+    "url": "https://fischr.org/feed?q=popcornfieber",
+    "template": "Ich hab gerade {title} gesehen. {link}",
+    "targets": ["bluesky", "mastodon"]
+  },
+  {
+    "name": "Ausgelesen",
+    "url": "https://fischr.org/feed/",
+    "include": ["ausgelesen"],
+    "template": "Ich habe mal wieder ein Buch gelesen. {link}",
+    "targets": ["bluesky", "mastodon"]
+  },
+  {
+    "name": "Rezept vom Chef",
+    "url": "https://fischr.org/feed/",
+    "include": ["rezeptvomchef"],
+    "template": "Cheffe hat gekocht. {link}",
+    "targets": ["bluesky", "mastodon"]
+  },
+  {
+    "name": "Alle anderen Blogartikel",
+    "url": "https://fischr.org/feed/",
+    "include": ["blog"],
+    "exclude": ["ausgelesen","popcornfieber","rezeptvomchef","popcornfieber"],
+    "template": "Ich habe da mal was aufgeschrieben. {link}",
+    "targets": ["bluesky", "mastodon"]
   }
 ]
