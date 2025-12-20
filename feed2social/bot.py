@@ -24,7 +24,7 @@ CONFIG_FILE = os.path.join(os.path.dirname(__file__), 'config.json')
 
 @contextmanager
 def posted_file_lock():
-    """Simple file lock to prevent concurrent write access."""
+    """Simple file lock to prevent concurrent write access to the posted file."""
     retry = 0
     while os.path.exists(LOCK_FILE) and retry < 10:
         sleep(0.5)
@@ -36,44 +36,53 @@ def posted_file_lock():
         if os.path.exists(LOCK_FILE): os.remove(LOCK_FILE)
 
 def is_posted(link):
-    """Checks if a URL is already listed in posted.txt."""
+    """Check if the given URL is already recorded in the posted.txt file."""
     if not os.path.exists(POSTED_FILE): return False
     with posted_file_lock():
         with open(POSTED_FILE, 'r') as f:
             return link in f.read()
 
 def mark_as_posted(link):
-    """Adds a URL to the posted.txt file in the main directory."""
+    """Add a URL to the posted.txt file to avoid duplicate posts."""
     with posted_file_lock():
         with open(POSTED_FILE, 'a') as f:
             f.write(link + '\n')
     logger.info(f"Marked as posted: {link}")
 
 def get_html_content(entry):
-    """Extracts text content from RSS entry and removes images."""
+    """Extract text from HTML, remove images, and clean up redundant whitespace."""
     try:
         html = entry.content[0].value if hasattr(entry, 'content') else entry.get('summary', '')
         soup = BeautifulSoup(html, "html.parser")
-        for img in soup.find_all('img'): img.decompose()
-        return soup.get_text(separator=' ')
+        
+        # Remove all image tags
+        for img in soup.find_all('img'): 
+            img.decompose()
+            
+        # Extract plain text with a space separator
+        text = soup.get_text(separator=' ')
+        
+        # --- WHITESPACE CLEANING ---
+        # 1. Replace multiple spaces/tabs with a single space
+        text = re.sub(r'[ \t]+', ' ', text)
+        # 2. Reduce multiple newlines (more than two) down to two
+        text = re.sub(r'\n\s*\n', '\n\n', text)
+        return text.strip()
     except: return ""
 
 def get_first_image_data(entry):
-    """Extracts the first image URL and its alt text using BeautifulSoup."""
+    """Extract the first image URL and its alt text from the post."""
     try:
         html = entry.content[0].value if hasattr(entry, 'content') else entry.get('summary', '')
         soup = BeautifulSoup(html, "html.parser")
         img = soup.find('img')
         if img and img.get('src'):
-            return {
-                "url": img.get('src'),
-                "alt": img.get('alt', '')[:400]
-            }
+            return {"url": img.get('src'), "alt": img.get('alt', '')[:400]}
         return None
     except: return None
 
 def download_image(img_url, save_path="temp.jpg"):
-    """Downloads an image for posting, observing size limits."""
+    """Download an image to a temporary file while respecting size limits."""
     try:
         r = session.get(img_url, timeout=REQUEST_TIMEOUT, stream=True)
         r.raise_for_status()
@@ -84,7 +93,7 @@ def download_image(img_url, save_path="temp.jpg"):
     except: return None
 
 def get_og_metadata(url):
-    """Retrieves Open Graph metadata for link previews."""
+    """Fetch Open Graph metadata (title, description, image) for a given link."""
     try:
         r = session.get(url, timeout=REQUEST_TIMEOUT)
         soup = BeautifulSoup(r.text, 'html.parser')
@@ -99,7 +108,7 @@ def get_og_metadata(url):
     except: return None
 
 def submit_to_indexnow(url):
-    """Submits the URL to IndexNow for search engine indexing."""
+    """Submit the URL to IndexNow for faster search engine indexing."""
     key = os.getenv('INDEXNOW_KEY')
     if not key: return
     payload = {"host": "fischr.org", "key": key, "urlList": [url]}
@@ -108,17 +117,28 @@ def submit_to_indexnow(url):
         logger.info(f"IndexNow Success for {url}")
     except: pass
 
-def post_to_bluesky(text, link, img_path, alt_text):
-    """Authenticates and posts text/media to BlueSky with Alt-Text."""
+def post_to_bluesky(text, img_path, alt_text):
+    """Post rich text to Bluesky, converting hashtags and links into clickable facets."""
     client = Client()
     client.login(os.getenv('BSKY_HANDLE'), os.getenv('BSKY_PW'))
+    
+    # TextBuilder automatically handles rich text facets (hashtags, links)
     tb = client_utils.TextBuilder()
     
-    if link and link in text:
-        parts = text.split(link)
-        tb.text(parts[0][:150]).link(link, link)
-        if len(parts) > 1: tb.text(parts[1])
-    else: tb.text(text[:290])
+    # Split text to identify tags and links for rich text processing
+    words = text.split(' ')
+    for i, word in enumerate(words):
+        if word.startswith('#') and len(word) > 1:
+            tag_name = word[1:].rstrip('.,!?')
+            tb.tag(word, tag_name)
+        elif word.startswith('http'):
+            tb.link(word, word)
+        else:
+            tb.text(word)
+        
+        # Add space back if it's not the last word
+        if i < len(words) - 1:
+            tb.text(' ')
 
     embed = None
     if img_path and os.path.exists(img_path):
@@ -127,22 +147,12 @@ def post_to_bluesky(text, link, img_path, alt_text):
             embed = models.AppBskyEmbedImages.Main(
                 images=[models.AppBskyEmbedImages.Image(alt=alt_text or "", image=upload.blob)]
             )
-    elif link:
-        meta = get_og_metadata(link)
-        if meta:
-            thumb = None
-            if meta["image_url"]:
-                try: thumb = client.upload_blob(session.get(meta["image_url"]).content).blob
-                except: pass
-            embed = models.AppBskyEmbedExternal.Main(external=models.AppBskyEmbedExternal.External(
-                title=meta["title"], description=meta["description"], uri=link, thumb=thumb
-            ))
     
     client.send_post(text=tb, embed=embed)
-    logger.info("BlueSky Success")
+    logger.info("BlueSky Rich Text Success")
 
 def post_to_mastodon(text, img_path, alt_text):
-    """Authenticates and posts text/media to Mastodon with Alt-Text."""
+    """Post plain text status with optional media to Mastodon."""
     m = Mastodon(access_token=os.getenv('MASTO_TOKEN'), api_base_url='https://mastodon.social')
     ids = []
     if img_path:
@@ -153,7 +163,7 @@ def post_to_mastodon(text, img_path, alt_text):
     logger.info("Mastodon Success")
 
 def run():
-    """Main execution loop for all configured feeds with precise filtering."""
+    """Main execution logic to parse feeds and post new entries based on configuration."""
     logger.info("=== Bot Start ===")
     if not os.path.exists(CONFIG_FILE):
         logger.error(f"Config file not found: {CONFIG_FILE}")
@@ -165,25 +175,23 @@ def run():
         for entry in feed.entries:
             if is_posted(entry.link): continue
             
-            # --- PRECISE FILTERING (Title, Hashtags & Categories only) ---
+            # --- PRECISE FILTERING (Title, Text-Hashtags & RSS-Categories only) ---
             content_html = entry.content[0].value if hasattr(entry, 'content') else entry.get('summary', '')
             
-            # 1. Extrahiere Hashtags aus dem HTML-Inhalt (z.B. #vlog)
+            # Extract hashtags from text content
             found_hashtags = " ".join(re.findall(r'#\w+', content_html))
             
-            # 2. Extrahiere RSS-Kategorien (Tags vom Bear Blog)
+            # Extract categories (tags) provided by the Bear Blog RSS feed
             rss_categories = ""
             if hasattr(entry, 'tags'):
                 rss_categories = " ".join([tag.term for tag in entry.tags if hasattr(tag, 'term')])
             
-            # Prüf-String zusammenbauen (Ohne den restlichen Fulltext)
+            # Combine metadata for inclusion/exclusion checks (excludes main post text)
             check_string = (entry.title + " " + found_hashtags + " " + rss_categories).lower()
             
             if any(w.lower() in check_string for w in cfg.get('exclude', [])):
-                logger.info(f"Skipping (Exclude match): {entry.title}")
                 continue
             if cfg.get('include') and not any(w.lower() in check_string for w in cfg['include']):
-                logger.info(f"Skipping (No Include match): {entry.title}")
                 continue
 
             logger.info(f"Processing: {entry.title}")
@@ -191,14 +199,14 @@ def run():
             img_data = get_first_image_data(entry) if cfg.get('include_images') else None
             img_path = download_image(img_data['url']) if img_data else None
             alt_text = img_data['alt'] if img_data else ""
+            clean_content = get_html_content(entry)
             
-            msg = cfg['template'].format(title=entry.title, link=entry.link, content=get_html_content(entry))
+            # Format message using the template from config.json
+            msg = cfg['template'].format(title=entry.title, link=entry.link, content=clean_content)
             
             try:
-                if "bluesky" in cfg.get('targets', []): 
-                    post_to_bluesky(msg, entry.link, img_path, alt_text)
-                if "mastodon" in cfg.get('targets', []): 
-                    post_to_mastodon(msg, img_path, alt_text)
+                if "bluesky" in cfg.get('targets', []): post_to_bluesky(msg, img_path, alt_text)
+                if "mastodon" in cfg.get('targets', []): post_to_mastodon(msg, img_path, alt_text)
                 
                 submit_to_indexnow(entry.link)
                 mark_as_posted(entry.link)
