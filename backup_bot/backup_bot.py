@@ -166,7 +166,7 @@ def main():
     try:
         df = pd.read_csv(
             "temp_export.csv",
-            encoding='utf-8',
+            encoding='utf-8-sig',  # Remove BOM (Byte Order Mark) if present
             sep=None,  # Auto-detect delimiter
             on_bad_lines='warn',  # Warn about bad lines instead of failing
             engine='python',  # Use Python engine for more flexible parsing
