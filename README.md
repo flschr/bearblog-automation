@@ -1,4 +1,4 @@
-# 🚀 bearblog automation for fischr.org
+# 🚀 Bear Blog automation for fischr.org
 
 A complete automation suite for Bearblog (and other RSS-based blogs). This repository handles **Social Media Distribution**, **SEO Indexing**, and **Automated Backups** to Backblaze B2.
 
