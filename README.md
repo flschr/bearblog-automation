@@ -1,4 +1,4 @@
-# 🚀 Bear Blog automation for fischr.org
+# 🚀 bearblog automation for fischr.org
 
 A complete automation suite for Bearblog (and other RSS-based blogs). This repository handles **Social Media Distribution**, **SEO Indexing**, and **Automated Backups** to Backblaze B2.
 
@@ -7,39 +7,54 @@ A complete automation suite for Bearblog (and other RSS-based blogs). This repos
 * `feed2social/`: The heart of the bot. Handles RSS monitoring, BlueSky/Mastodon posting, and IndexNow pings.
 * `backup/`: Scripts for incremental and full backups of your blog content and images.
 * `posted.txt`: The "memory" of the bot, ensuring no article is processed twice. This file stays in the root directory.
+* `requirements.txt`: Global dependencies for all scripts.
 
 ---
 
 ## ✨ Features
 
-1.  **Smart Social Sharing**: Automatically posts new articles to **BlueSky** and **Mastodon** based on your rules. You can create as many rules for as many feeds as you need, with flexible include and exclude filters to automate posting of your content.
-2.  **Media Support for Mastodon & Bluesky**: Social sharing allows to upload the first image from your post directly to Mastodon & Bluesky to use it as a native attachment on the platforms, including the ALT-text for accessibility.
+1.  **Smart Social Sharing**: Automatically posts new articles to **BlueSky** and **Mastodon** based on your rules. You can create as many rules for as many feeds as you need, with flexible include and exclude filters.
+2.  **Media Support & Accessibility**: Automatically uploads the first image from your post as a native attachment, including **ALT-text** for accessibility.
 3.  **SEO Automation**: Pings **IndexNow** (Bing, Yandex, etc.) immediately after a new post is detected.
-4.  **Full & Incremental Backups**: Converts posts to clean Markdown and stores them along with all images in a **Backblaze B2** bucket.
+4.  **Automated Backups**: Converts posts to clean Markdown and stores them along with all images in a **Backblaze B2** bucket, maintaining a chronological folder structure.
 
 ---
 
 ## 🛠 Setup Guide for Forking
 
-If you want to use this suite for your own blog, follow these steps:
+Follow these steps to set up this suite for your own blog:
 
 ### 1. Fork this Repository
 Click the **Fork** button at the top right of this page to create your own copy.
 
 ### 2. Configure your Blog
-Edit `feed2social/config.json` to match your blog's details:
+Edit `feed2social/config.json` to define which feeds to monitor. You can add multiple feeds to the list.
 
 ```json
 [
   {
-    "name": "My Awesome Blog",
+    "name": "My Blog",
     "url": "[https://yourblog.com/feed/](https://yourblog.com/feed/)",
+    "include": ["Announcement"], 
+    "exclude": ["Draft"],
     "include_images": true,
     "targets": ["bluesky", "mastodon"],
-    "template": "Check out my new post: {title}\n\n{link}"
+    "template": "🚀 New Post: {title}\n\n{link}"
   }
 ]
 ```
+
+#### Configuration Options:
+
+| Option | Description |
+| :--- | :--- |
+| **`name`** | A descriptive name for the feed (used for logging). |
+| **`url`** | The direct link to your RSS feed. |
+| **`include`** | *(Optional)* Only posts containing these keywords in the title or content will be shared. |
+| **`exclude`** | *(Optional)* Posts containing these keywords will be ignored. |
+| **`include_images`** | If `true`, the bot attaches the first image of your post (including ALT-text). |
+| **`targets`** | List of platforms to post to (`"bluesky"`, `"mastodon"`). |
+| **`template`** | Your post format. Use placeholders: `{title}`, `{link}`, `{content}`. |
 
 ### 3. Set up Backblaze B2 (optional)
 If you want to use the backup feature:
@@ -47,11 +62,11 @@ If you want to use the backup feature:
 * Set Lifecycle Rules to "Keep only the last version" to save space.
 
 ### 4. Configure GitHub Secrets & Variables
-Go to `Settings > Secrets and variables > Actions` in your forked repo and add the following:
+Go to `Settings > Secrets and variables > Actions` and add the following:
 
 | Secret / Variable | Description |
 | :--- | :--- |
-| `RSS_FEED_URL` | **Required.** The URL of your RSS feed (e.g. `https://fischr.org/feed/`) |
+| `RSS_FEED_URL` | **Required.** The URL of your RSS feed (e.g. `https://yourblog.com/feed/`) |
 | `BSKY_HANDLE` | Your BlueSky handle (e.g., `user.bsky.social`) |
 | `BSKY_PW` | BlueSky **App Password** |
 | `MASTO_TOKEN` | Mastodon Access Token |
@@ -61,21 +76,21 @@ Go to `Settings > Secrets and variables > Actions` in your forked repo and add t
 | `B2_BUCKET_NAME` | The name of your B2 Bucket |
 
 ### 5. Enable Actions
-Go to the **Actions** tab in your repository and click **"I understand my workflows, go ahead and enable them"**.
+Go to the **Actions** tab and click **"I understand my workflows, go ahead and enable them"**.
 
 ---
 
 ## 🤖 How it works (Technical)
 
-The system uses **GitHub Actions** to run on a schedule (by default, every 6 minutes for the bot, every 6 hours for regular backups).
+The system uses **GitHub Actions** to run on a schedule (every 6 minutes for the bot, every 6 hours for backups).
 
-1.  **Scanning**: It parses your RSS feed via `feedparser`.
-2.  **Deduplication**: It checks `posted.txt`. If the link was already posted, it skips.
-3.  **Processing**: It downloads images, converts HTML to Markdown, and cleans it up.
-4.  **Execution**: It sends data to Social Media APIs, IndexNow, and Backblaze B2.
-5.  **State Save**: It commits the updated `posted.txt` back to the repository.
+1.  **Scanning**: Parses your RSS feed via `feedparser`.
+2.  **Deduplication**: Compares entries against `posted.txt`.
+3.  **Processing**: Downloads images, extracts ALT-text, converts HTML to Markdown, and removes unwanted tags (like Bearblog's "pot-of-honey").
+4.  **Execution**: Dispatches data to Social Media APIs, IndexNow, and Backblaze B2.
+5.  **State Save**: Commits the updated `posted.txt` back to the repository.
 
-*Note: The `backup/full_backup.py` script is intended for one-time manual runs to archive your entire blog history. It may require minor manual path adjustments depending on your specific environment.*
+*Note: The `backup/full_backup.py` script is intended for one-time manual runs to archive your entire blog history. It may require minor manual path adjustments.*
 
 ---
 
