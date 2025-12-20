@@ -17,10 +17,10 @@ session.headers.update({'User-Agent': 'feed2social/1.0'})
 MAX_IMAGE_SIZE = 5_000_000 
 REQUEST_TIMEOUT = 10
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-POSTED_FILE = os.path.join(BASE_DIR, 'posted.txt')
-LOCK_FILE = os.path.join(BASE_DIR, 'posted.txt.lock')
-CONFIG_FILE = os.path.join(os.path.dirname(__file__), 'config.json')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+POSTED_FILE = os.path.join(BASE_DIR, 'posted_articles.txt')
+LOCK_FILE = os.path.join(BASE_DIR, 'posted_articles.txt.lock')
+CONFIG_FILE = os.path.join(BASE_DIR, 'config.json')
 
 @contextmanager
 def posted_file_lock():
