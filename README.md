@@ -28,7 +28,7 @@ Follow these steps to set up this suite for your own blog:
 Click the **Fork** button at the top right of this page to create your own copy.
 
 ### 2. Configure your Blog
-Edit `feed2social/config.json` to define which feeds to monitor. You can add multiple feeds to the list.
+Edit `feed2social/config.json` to define which feeds to monitor. You can add multiple of these configuration blocks also with different, topic-related feeds to the configuration.
 
 ```json
 [
