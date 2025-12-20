@@ -272,6 +272,7 @@ def download_images_concurrent(content: str, post_dir: Path) -> None:
     """
     Download all images from content concurrently for better performance.
     Extracts URLs from both Markdown and HTML formats.
+    Only downloads from <img> tags, NOT from <iframe> or other elements.
     """
     # Find all image URLs (Markdown ![]() and HTML <img src="">)
     img_urls = set()
@@ -280,16 +281,9 @@ def download_images_concurrent(content: str, post_dir: Path) -> None:
     markdown_imgs = re.findall(r'!\[.*?\]\((https?://[^\)]+)\)', content)
     img_urls.update(markdown_imgs)
 
-    # HTML format: <img src="url">
+    # HTML format: <img src="url"> - specifically target img tags only
     html_imgs = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', content, re.IGNORECASE)
     img_urls.update(html_imgs)
-
-    # Alternative regex for edge cases
-    alternative_imgs = re.findall(r'src="([^"]+)"|!\[.*?\]\((.*?)\)', content)
-    for urls in alternative_imgs:
-        url = urls[0] or urls[1]
-        if url and url.startswith('http'):
-            img_urls.add(url)
 
     if not img_urls:
         return
