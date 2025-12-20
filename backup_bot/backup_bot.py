@@ -140,13 +140,23 @@ def main():
         df = pd.read_csv(
             "temp_export.csv",
             encoding='utf-8',
+            sep=None,  # Auto-detect delimiter
             on_bad_lines='warn',  # Warn about bad lines instead of failing
             engine='python',  # Use Python engine for more flexible parsing
             quoting=1,  # QUOTE_ALL - expect all fields to be quoted
             escapechar='\\',  # Handle escaped characters
             doublequote=True  # Handle double quotes
         )
-        print(f"📊 Found {len(df)} articles in CSV\n", flush=True)
+
+        # Debug output to show CSV structure
+        print(f"📊 Found {len(df)} articles in CSV", flush=True)
+        print(f"📋 Columns found: {list(df.columns)}", flush=True)
+        print(f"🔍 Sample row (first article):", flush=True)
+        if len(df) > 0:
+            print(f"   - Title: {df.iloc[0].get('title', 'N/A')}", flush=True)
+            print(f"   - Published: {df.iloc[0].get('publish', 'N/A')}", flush=True)
+            print(f"   - Slug: {df.iloc[0].get('slug', 'N/A')}", flush=True)
+        print()
     except Exception as e:
         print(f"\n❌ ERROR: Failed to parse CSV file", flush=True)
         print(f"Error details: {e}", flush=True)
