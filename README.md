@@ -1,6 +1,10 @@
-# feed2social
+# fischr.org Automation
 
-This bot periodically checks RSS feeds and automatically posts new entries to social networks like BlueSky and Mastodon. Additionally, it submits new post URLs to search engines via the IndexNow service.
+This repository contains a few scripts and Github actions to automate posting content on my social media accounts and to backup my website to Backblaze. 
+
+The bot periodically checks RSS feeds and automatically posts new entries to social networks like BlueSky and Mastodon. Additionally, it submits new post URLs to search engines via the IndexNow service.
+
+The backup is backing new articles up to Backblaze (B2) with every new feed entry. There is also a full backup script, just in case I want to do a full backup.
 
 ## How it works
 
