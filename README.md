@@ -14,7 +14,6 @@ A complete automation system for Bear Blog for my blog (fischr.org) that handles
 - **Rich Text**: Hashtags and links are converted to native rich text on supported platforms
 - **Photo Posts**: Automatically adds post content for photo posts (respecting character limits)
 - **SEO Integration**: Automatic IndexNow submission for faster search engine indexing
-- **Security Hardened**: URL whitelist, file size limits, secure downloads
 - **Runs every 5 minutes** via GitHub Actions
 
 ### 💾 Backup Bot (`backup_bot/`)
@@ -23,7 +22,6 @@ A complete automation system for Bear Blog for my blog (fischr.org) that handles
 - **Image Archival**: Concurrent download of all images from posts
 - **Incremental Backups**: Hash-based change detection (only updates when content changes)
 - **Organized Structure**: Posts stored as `YYYY-MM-DD-slug/index.md` with images
-- **Security Hardened**: URL validation, file size limits, safe filenames
 - **Smart Triggering**: Runs weekly OR when new posts are detected by Social Bot
 
 ---
