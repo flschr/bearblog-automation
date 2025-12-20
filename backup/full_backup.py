@@ -39,73 +39,70 @@ def extract_date_from_soup(soup):
     return "0000-00-00"
 
 def run_full_backup():
-    """Main function to crawl the sitemap and backup all articles."""
-    print("🚀 Starting Full Backup (English comments, iFrame & WebP Fix)...")
+    print("🚀 Starting Full Backup...", flush=True)
     bucket = get_b2_bucket()
     
-    # Load and parse sitemap
     r = requests.get(SITEMAP_URL, timeout=15)
     sitemap_soup = BeautifulSoup(r.content, 'xml')
     urls = [loc.text for loc in sitemap_soup.find_all('loc')]
 
+    processed_count = 0
     for url in urls:
         if url in EXCLUDE: continue
         
         try:
-            res = requests.get(url, timeout=10)
+            res = requests.get(url, timeout=15)
             post_soup = BeautifulSoup(res.content, 'html.parser')
             
-            # Identify publish date and slug
             publish_date = extract_date_from_soup(post_soup)
             raw_slug = url.strip('/').split('/')[-1]
             folder_name = f"{publish_date}-{raw_slug}"
 
-            print(f"📥 Processing: {folder_name}")
+            # THIS LINE IS KEY: It shows us the progress in real-time
+            print(f"📥 Processing: {folder_name}...", end=" ", flush=True)
 
             content_area = post_soup.find('main') or post_soup.find('article')
-            if not content_area: continue
+            if not content_area: 
+                print("⚠️ No content found.", flush=True)
+                continue
 
-            # --- CLEANUP: Remove Pot-of-Honey and unwanted headers ---
+            # Cleanup
             for honey in content_area.find_all(href=re.compile(r"pot-of-honey")):
                 honey.decompose()
 
-            # Extract hashtags before decomposing elements
             tags = re.findall(r'#\w+', content_area.get_text())
             tags_str = ", ".join(set(tags)) if tags else ""
 
-            # Remove navigation and h1 (Title is in Frontmatter)
             for unwanted in content_area.find_all(['header', 'h1']):
                 unwanted.decompose()
 
-            # --- IMAGES: Save directly in article folder ---
+            # Upload Images
             for i, img in enumerate(content_area.find_all('img')):
                 img_url = img.get('src')
                 if img_url:
                     if img_url.startswith('/'): img_url = "https://fischr.org" + img_url
                     try:
-                        img_data = requests.get(img_url, timeout=10).content
-                        # Proper WebP extension handling
+                        img_data = requests.get(img_url, timeout=15).content
                         ext = 'webp' if 'webp' in img_url.lower() else img_url.split('.')[-1].split('?')[0][:3].lower()
                         bucket.upload_bytes(img_data, f"{folder_name}/img_{i}.{ext}")
-                    except: pass
+                    except Exception as img_err:
+                        print(f"(Image Error: {img_err})", end=" ", flush=True)
 
-            # --- MARKDOWN: ATX Headings and iFrame support ---
-            markdown_main = md(
-                str(content_area), 
-                headings_style='ATX',
-                convert=['iframe']
-            ).strip()
-            
-            # Remove date string from content body
+            # Markdown conversion & Upload
+            markdown_main = md(str(content_area), headings_style='ATX', convert=['iframe']).strip()
             markdown_main = re.sub(r'\d{1,2} [A-Z][a-z]{2}, \d{4}', '', markdown_main).strip()
 
-            # Construct final Markdown with Frontmatter
             final_md = f"---\nTitle: {raw_slug.replace('-', ' ').title()}\nURL: {url}\nDate: {publish_date}\nTags: {tags_str}\n---\n\n{markdown_main}"
             
             bucket.upload_bytes(final_md.encode('utf-8'), f"{folder_name}/article.md")
+            
+            print("✅ Done.", flush=True)
+            processed_count += 1
 
         except Exception as e:
-            print(f"❌ Error at {url}: {e}")
+            print(f"❌ Error at {url}: {e}", flush=True)
+
+    print(f"\n✨ Backup finished. {processed_count} articles processed.", flush=True)
 
 if __name__ == "__main__":
     run_full_backup()
