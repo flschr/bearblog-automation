@@ -20,7 +20,7 @@ def get_b2_bucket():
     return b2_api.get_bucket_by_name(B2_BUCKET_NAME)
 
 def run_full_backup():
-    print("🚀 Starte Full Backup (Clean Markdown & WebP Fix)...")
+    print("🚀 Starte Full Backup (Strict ATX-Headings & WebP Fix)...")
     bucket = get_b2_bucket()
     
     r = requests.get(SITEMAP_URL, timeout=15)
@@ -42,21 +42,20 @@ def run_full_backup():
 
             res = requests.get(url, timeout=10)
             soup = BeautifulSoup(res.content, 'html.parser')
-            
             content_area = soup.find('main') or soup.find('article')
             if not content_area: continue
 
             # --- CLEANUP ---
-            # Entferne Name/Header und das ursprüngliche H1
+            # Entferne Header-Bereich und das H1 (wird im Frontmatter gespeichert)
             for unwanted in content_area.find_all(['header', 'h1']):
                 unwanted.decompose()
             
-            # Text für Hashtag-Extraktion vor der MD-Umwandlung sichern
+            # Hashtags finden
             full_text = content_area.get_text()
             tags = re.findall(r'#\w+', full_text)
             tags_str = ", ".join(tags) if tags else ""
 
-            # --- BILDER ---
+            # --- BILDER (FLAT IN ROOT) ---
             for i, img in enumerate(content_area.find_all('img')):
                 img_url = img.get('src')
                 if not img_url: continue
@@ -64,20 +63,20 @@ def run_full_backup():
                 
                 try:
                     img_data = requests.get(img_url, timeout=10).content
-                    # Sauberer Dateiendungs-Fix
-                    if 'webp' in img_url.lower():
-                        ext = 'webp'
-                    else:
-                        ext = img_url.split('.')[-1].split('?')[0][:3].lower()
-                    
+                    # WebP Check
+                    ext = 'webp' if 'webp' in img_url.lower() else img_url.split('.')[-1].split('?')[0][:3].lower()
                     bucket.upload_bytes(img_data, f"{folder_name}/img_{i}.{ext}")
                 except: pass
 
-            # --- MARKDOWN ---
-            # ATX Style erzwingt # Headings
-            markdown_main = md(str(content_area), headings_style='ATX').strip()
+            # --- MARKDOWN (STRICT ATX #) ---
+            # headings_style='ATX' erzwingt # statt Unterstreichungen
+            markdown_main = md(
+                str(content_area), 
+                headings_style='ATX',
+                newline_style='BACKSLASH'
+            ).strip()
             
-            # Entferne das Datum im Text (z.B. *19 Dec, 2025*)
+            # Entferne das Datum im Text (*19 Dec, 2025*)
             markdown_main = re.sub(r'\*\d{1,2} [A-Z][a-z]{2}, \d{4}\*', '', markdown_main).strip()
 
             final_md = f"""---
@@ -89,7 +88,7 @@ Tags: {tags_str}
 
 {markdown_main}
 """
-            # Direkt im Artikel-Ordner speichern
+            # Speichern
             bucket.upload_bytes(final_md.encode('utf-8'), f"{folder_name}/article.md")
             print(f"   ✅ {folder_name} gesichert.")
             
