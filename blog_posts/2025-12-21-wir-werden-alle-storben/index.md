@@ -43,3 +43,7 @@ Ich hab mal gehört, dass man seine Prognosen aufschreiben soll, um sie später 
 Vollkommen egal, ob meine Prognose eintritt oder nicht, der [Rebound-Effekt](https://de.wikipedia.org/wiki/Rebound-Effekt_(%C3%96konomie)) wird uns mit Sicherheit begleiten. Denn KI als Technologie wird nicht mehr verschwinden.
 
 Dank KI werden wir immer mehr, schneller und effizienter arbeiten. Nur leider wird die Arbeit dadurch nicht weniger werden. Das ist wie bei den immer effizienter werdenden Motoren. Die haben auch nicht dazu geführt, dass Autos weniger Sprit verbrauchen. Stattdessen sind die Blechbüchsen einfach immer größer, schneller und bequemer geworden.
+
+---
+
+<div class="infobox-frame info"><div class="infobox-icon"></div><div class="infobox-text">mthi hat in seinem [Artikel](test) </div></div>
