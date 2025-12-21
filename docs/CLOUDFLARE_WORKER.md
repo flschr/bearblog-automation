@@ -59,7 +59,7 @@ In **Settings** → **KV Namespace Bindings**:
 ### 7. Add Cron Trigger
 
 In **Triggers** → **Cron Triggers**:
-- Schedule: `*/10 * * * *` (every 10 minutes)
+- Schedule: `*/11 * * * *` (every 1 minutes)
 
 ---
 
