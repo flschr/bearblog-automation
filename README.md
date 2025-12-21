@@ -14,7 +14,8 @@ A complete automation system for Bear Blog for my blog (fischr.org) that handles
 - **Rich Text**: Hashtags and links are converted to native rich text on supported platforms
 - **Photo Posts**: Automatically adds post content for photo posts (respecting character limits)
 - **SEO Integration**: Automatic IndexNow submission for faster search engine indexing
-- **Runs every 5 minutes** via GitHub Actions
+- **Efficient Feed Checking**: ETag/Last-Modified caching to minimize unnecessary feed downloads
+- **Flexible Triggering**: Runs via GitHub Actions schedule OR external triggers (Cloudflare Worker)
 
 ### 💾 Backup Bot (`backup_bot/`)
 - **Full Blog Backup**: Downloads complete blog from Bear Blog CSV export
@@ -34,6 +35,7 @@ bearblog-automation/
 │   ├── social_bot.py         # Main social automation script
 │   ├── config.json            # Feed configurations
 │   ├── posted_articles.txt    # Tracking file (auto-generated)
+│   ├── feed_cache.json        # ETag/Last-Modified cache (auto-generated)
 │   └── requirements.txt
 │
 ├── backup_bot/
@@ -41,13 +43,17 @@ bearblog-automation/
 │   ├── processed_articles.txt # Tracking file (auto-generated)
 │   └── requirements.txt
 │
+├── cloudflare-worker/         # Optional: External RSS monitor
+│   ├── rss-monitor.js         # Cloudflare Worker code
+│   └── SETUP.md               # Detailed setup instructions
+│
 ├── blog_posts/                # Backup destination
 │   └── YYYY-MM-DD-slug/
 │       ├── index.md           # Post content with frontmatter
 │       └── *.webp             # Images
 │
 └── .github/workflows/
-    ├── social_bot.yml         # Runs every 5 minutes
+    ├── social_bot.yml         # Scheduled + external triggers
     └── backup_bot.yml         # Runs weekly + on-trigger
 ```
 
@@ -141,19 +147,56 @@ If you want to customize allowed image domains, edit the `ALLOWED_IMAGE_DOMAINS`
 
 ---
 
+## ⚡ Optional: Cloudflare Worker for Efficient Triggering
+
+Want even better efficiency? Use a Cloudflare Worker to trigger the bot **only when RSS feeds actually change**!
+
+**Benefits:**
+- ✅ **More reliable** than GitHub Actions cron (no delays or skipped runs)
+- ✅ **More efficient** (only runs bot when RSS actually changes)
+- ✅ **100% free** (Cloudflare free tier: 100k requests/day)
+- ✅ **No domain required** (uses Cloudflare Workers cron triggers)
+
+**Setup:** See detailed guide in [`cloudflare-worker/SETUP.md`](cloudflare-worker/SETUP.md)
+
+**Quick Overview:**
+1. Create free Cloudflare account
+2. Deploy the worker code (`cloudflare-worker/rss-monitor.js`)
+3. Configure environment variables (GitHub token, repo, RSS feeds)
+4. Add cron trigger (e.g., every 10 minutes)
+5. Optionally disable GitHub Actions cron schedule
+
+The worker monitors your RSS feeds and triggers GitHub Actions via `repository_dispatch` only when new content is detected.
+
+---
+
 ## 🔧 How It Works
 
 ### Social Bot Workflow
 
-1. **Every 5 minutes**, GitHub Actions triggers the Social Bot
-2. **Fetches** all configured RSS feeds
-3. **Filters** entries based on `include`/`exclude` rules
-4. **Checks** `posted_articles.txt` to avoid duplicates
-5. **Downloads** images (if enabled) with security checks
-6. **Posts** to configured platforms with rich text formatting
-7. **Submits** to IndexNow for SEO
-8. **Updates** `posted_articles.txt` and commits to repository
-9. **Triggers** Backup Bot if new posts were detected
+#### Option A: GitHub Actions Schedule (Default)
+
+1. **Every 50 minutes**, GitHub Actions triggers the Social Bot
+2. **Checks** RSS feed headers (ETag/Last-Modified) for changes
+3. **Skips** download if feed unchanged (saves time and bandwidth)
+
+#### Option B: Cloudflare Worker Trigger (Recommended)
+
+1. **Every 10 minutes**, Cloudflare Worker checks RSS feed headers
+2. **Only if changed**, triggers GitHub Actions via repository_dispatch
+
+#### Common Workflow (both options)
+
+Once triggered:
+
+1. **Fetches** RSS feeds (only if headers indicate changes)
+2. **Filters** entries based on `include`/`exclude` rules
+3. **Checks** `posted_articles.txt` to avoid duplicates
+4. **Downloads** images (if enabled) with security checks
+5. **Posts** to configured platforms with rich text formatting
+6. **Submits** to IndexNow for SEO
+7. **Updates** `posted_articles.txt` and commits to repository
+8. **Triggers** Backup Bot if new posts were detected
 
 ### Backup Bot Workflow
 

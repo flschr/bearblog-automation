@@ -2,8 +2,10 @@ name: Social Bot
 
 on:
   schedule:
-    - cron: '*/50 * * * *' # Runs every 50 minutes
+    - cron: '*/50 * * * *' # Runs every 50 minutes (can be disabled if using external trigger)
   workflow_dispatch: # Allows manual trigger
+  repository_dispatch: # Allows external trigger (e.g., from Cloudflare Worker)
+    types: [rss_feed_update]
 
 # Ensure only one instance runs at a time to prevent duplicate posts
 concurrency:
