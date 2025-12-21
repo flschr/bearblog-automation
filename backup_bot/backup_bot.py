@@ -289,13 +289,12 @@ def safe_yaml_string(value: str) -> str:
         return value
 
 
-def download_images_concurrent(content: str, post_dir: Path) -> None:
+def extract_image_urls(content: str) -> Set[str]:
     """
-    Download all images from content concurrently for better performance.
+    Extract all image URLs from content.
     Extracts URLs from both Markdown and HTML formats.
-    Only downloads from <img> tags, NOT from <iframe> or other elements.
+    Only extracts from <img> tags, NOT from <iframe> or other elements.
     """
-    # Find all image URLs (Markdown ![]() and HTML <img src="">)
     img_urls = set()
 
     # Markdown format: ![alt](url)
@@ -305,6 +304,42 @@ def download_images_concurrent(content: str, post_dir: Path) -> None:
     # HTML format: <img src="url"> - specifically target img tags only
     html_imgs = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', content, re.IGNORECASE)
     img_urls.update(html_imgs)
+
+    return img_urls
+
+
+def check_missing_images(content: str, post_dir: Path) -> Set[str]:
+    """
+    Check which images from the content are missing in the post directory.
+    Returns set of URLs that need to be downloaded.
+    """
+    img_urls = extract_image_urls(content)
+    missing_urls = set()
+
+    for url in img_urls:
+        if not is_safe_url(url):
+            continue
+
+        url_path = urlparse(url).path
+        file_name = url_path.split("/")[-1].split("?")[0]
+        if not file_name:
+            file_name = "image.webp"
+        file_name = sanitize_filename(file_name)
+        path = post_dir / file_name
+
+        if not path.exists():
+            missing_urls.add(url)
+
+    return missing_urls
+
+
+def download_images_concurrent(content: str, post_dir: Path) -> None:
+    """
+    Download all images from content concurrently for better performance.
+    Extracts URLs from both Markdown and HTML formats.
+    Only downloads from <img> tags, NOT from <iframe> or other elements.
+    """
+    img_urls = extract_image_urls(content)
 
     if not img_urls:
         return
@@ -503,10 +538,29 @@ def process_article(row: pd.Series, df: pd.DataFrame, processed_articles: Dict[s
         # Calculate content hash
         content_hash = get_content_hash(content)
 
+        # Format date for folder name (needed for image check)
+        try:
+            dt = datetime.fromisoformat(pub_date_str.replace('Z', '+00:00'))
+            date_prefix = dt.strftime("%Y-%m-%d")
+        except Exception as e:
+            logger.warning(f"Error parsing date '{pub_date_str}': {e}")
+            date_prefix = "0000-00-00"
+
+        # Create folder path: YYYY-MM-DD-title
+        folder_name = f"{date_prefix}-{clean_filename(slug)}"
+        post_dir = BASE_DIR / folder_name
+
         # Check if article was already processed
         if uid in processed_articles:
             if processed_articles[uid] == content_hash:
-                # Article unchanged - skip
+                # Article unchanged - but check for missing images
+                if post_dir.exists():
+                    missing_images = check_missing_images(content, post_dir)
+                    if missing_images:
+                        logger.info(f"IMAGES MISSING: {slug} - downloading {len(missing_images)} missing image(s)")
+                        download_images_concurrent(content, post_dir)
+                        return ('updated', 2)
+                # Article unchanged and all images present - skip
                 return ('skipped', 0)
             else:
                 # Article changed - reprocess
@@ -518,17 +572,7 @@ def process_article(row: pd.Series, df: pd.DataFrame, processed_articles: Dict[s
             status = 'new'
             change_type = 1
 
-        # Format date for folder name
-        try:
-            dt = datetime.fromisoformat(pub_date_str.replace('Z', '+00:00'))
-            date_prefix = dt.strftime("%Y-%m-%d")
-        except Exception as e:
-            logger.warning(f"Error parsing date '{pub_date_str}': {e}")
-            date_prefix = "0000-00-00"
-
-        # Create folder: YYYY-MM-DD-title
-        folder_name = f"{date_prefix}-{clean_filename(slug)}"
-        post_dir = BASE_DIR / folder_name
+        # Create folder if needed
         post_dir.mkdir(parents=True, exist_ok=True)
 
         # Download images concurrently
