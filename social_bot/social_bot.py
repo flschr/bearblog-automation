@@ -42,6 +42,7 @@ BASE_DIR = Path(__file__).parent.absolute()
 POSTED_FILE = BASE_DIR / 'posted_articles.txt'
 LOCK_FILE = BASE_DIR / 'posted_articles.txt.lock'
 CONFIG_FILE = BASE_DIR / 'config.json'
+FEED_CACHE_FILE = BASE_DIR / 'feed_cache.json'
 
 # URL Whitelist for security (allow known image hosting services)
 ALLOWED_IMAGE_DOMAINS = {
@@ -104,6 +105,80 @@ def posted_file_lock():
     finally:
         if LOCK_FILE.exists():
             LOCK_FILE.unlink()
+
+
+def load_feed_cache() -> Dict[str, Dict[str, str]]:
+    """
+    Load feed cache containing ETag and Last-Modified headers.
+    Returns a dict mapping feed URLs to their cache headers.
+    """
+    if not FEED_CACHE_FILE.exists():
+        return {}
+
+    try:
+        with open(FEED_CACHE_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception as e:
+        logger.warning(f"Error loading feed cache: {e}")
+        return {}
+
+
+def save_feed_cache(cache: Dict[str, Dict[str, str]]) -> None:
+    """Save feed cache to disk."""
+    try:
+        with open(FEED_CACHE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(cache, f, indent=2)
+    except Exception as e:
+        logger.error(f"Error saving feed cache: {e}")
+
+
+def check_feed_changed(feed_url: str, cache: Dict[str, Dict[str, str]]) -> tuple[bool, Dict[str, str]]:
+    """
+    Check if a feed has changed using HEAD request with ETag/Last-Modified.
+
+    Returns:
+        (has_changed, new_headers): Tuple of boolean and dict with new cache headers
+    """
+    try:
+        # Make HEAD request to check for changes
+        response = session.head(feed_url, timeout=REQUEST_TIMEOUT, allow_redirects=True)
+        response.raise_for_status()
+
+        new_headers = {
+            'etag': response.headers.get('ETag', ''),
+            'last-modified': response.headers.get('Last-Modified', '')
+        }
+
+        # If we have no cached headers, assume it changed
+        if feed_url not in cache:
+            logger.info(f"No cache for {feed_url}, will fetch")
+            return True, new_headers
+
+        cached_headers = cache[feed_url]
+
+        # Compare ETag first (more reliable)
+        if new_headers['etag'] and cached_headers.get('etag'):
+            if new_headers['etag'] == cached_headers['etag']:
+                logger.info(f"Feed unchanged (ETag match): {feed_url}")
+                return False, new_headers
+
+        # Compare Last-Modified
+        if new_headers['last-modified'] and cached_headers.get('last-modified'):
+            if new_headers['last-modified'] == cached_headers['last-modified']:
+                logger.info(f"Feed unchanged (Last-Modified match): {feed_url}")
+                return False, new_headers
+
+        # If neither header is present or they differ, assume changed
+        logger.info(f"Feed changed or no cache headers: {feed_url}")
+        return True, new_headers
+
+    except requests.exceptions.RequestException as e:
+        logger.warning(f"Error checking feed headers for {feed_url}: {e}")
+        # On error, assume changed to avoid missing updates
+        return True, {}
+    except Exception as e:
+        logger.error(f"Unexpected error checking feed: {e}")
+        return True, {}
 
 
 def load_posted_articles() -> Set[str]:
@@ -612,20 +687,38 @@ def run() -> None:
         posted_cache = load_posted_articles()
         logger.info(f"Loaded {len(posted_cache)} previously posted articles")
 
+        # Load feed cache for ETag/Last-Modified tracking
+        feed_cache = load_feed_cache()
+        cache_updated = False
+
         # Process feeds
         total_processed = 0
         total_entries = 0
+        feeds_checked = 0
+        feeds_skipped = 0
 
         for cfg in config:
             try:
-                logger.info(f"Fetching feed: {cfg['url']}")
-                response = session.get(cfg['url'], timeout=REQUEST_TIMEOUT)
+                feed_url = cfg['url']
+                feeds_checked += 1
+
+                # Check if feed has changed using HEAD request
+                has_changed, new_headers = check_feed_changed(feed_url, feed_cache)
+
+                if not has_changed:
+                    logger.info(f"Skipping unchanged feed: {feed_url}")
+                    feeds_skipped += 1
+                    continue
+
+                # Feed has changed, fetch full content
+                logger.info(f"Fetching feed: {feed_url}")
+                response = session.get(feed_url, timeout=REQUEST_TIMEOUT)
                 response.raise_for_status()
 
                 feed = feedparser.parse(response.content)
 
                 if feed.bozo:
-                    logger.warning(f"Feed parsing warning for {cfg['url']}: {feed.bozo_exception}")
+                    logger.warning(f"Feed parsing warning for {feed_url}: {feed.bozo_exception}")
 
                 logger.info(f"Found {len(feed.entries)} entries in feed")
                 total_entries += len(feed.entries)
@@ -634,6 +727,11 @@ def run() -> None:
                     if process_entry(entry, cfg, posted_cache):
                         total_processed += 1
 
+                # Update cache with new headers after successful fetch
+                if new_headers:
+                    feed_cache[feed_url] = new_headers
+                    cache_updated = True
+
             except requests.exceptions.RequestException as e:
                 logger.error(f"Error fetching feed {cfg['url']}: {e}")
                 continue
@@ -641,7 +739,12 @@ def run() -> None:
                 logger.error(f"Unexpected error processing feed {cfg['url']}: {e}")
                 continue
 
-        logger.info(f"=== Social Bot End === (Processed {total_processed}/{total_entries} entries)")
+        # Save updated cache
+        if cache_updated:
+            save_feed_cache(feed_cache)
+            logger.info("Feed cache updated")
+
+        logger.info(f"=== Social Bot End === (Checked {feeds_checked} feeds, skipped {feeds_skipped} unchanged, processed {total_processed}/{total_entries} entries)")
 
     except ConfigurationError as e:
         logger.error(f"Configuration error: {e}")

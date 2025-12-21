@@ -26,3 +26,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Bot cache files
+social_bot/feed_cache.json
+social_bot/*.lock
