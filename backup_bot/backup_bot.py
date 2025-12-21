@@ -11,7 +11,7 @@ import hashlib
 import logging
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, Set, Optional, Tuple
+from typing import Dict, Optional, Tuple
 from urllib.parse import urlparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import yaml
@@ -160,11 +160,6 @@ def download_file(url: str, folder: Path) -> bool:
 
         file_name = sanitize_filename(file_name)
         path = folder / file_name
-
-        # Check if already exists
-        if path.exists():
-            logger.debug(f"Image already exists: {file_name}")
-            return True
 
         logger.info(f"Downloading image: {file_name}")
 
