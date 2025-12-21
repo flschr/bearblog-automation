@@ -14,14 +14,14 @@ If you are running a Bear Blog (or any blog with an RSS feed) and want similar a
 
 The automation runs via GitHub Actions and is triggered in two ways:
 
-1. **Scheduled**: Checks for new posts every few hours
+1. **Scheduled**: Checks for new posts in configured intervalls
 2. **Webhook** *(optional)*: Instant trigger via Cloudflare Worker when a new post is published
 
-When a new article is detected in the RSS feed, the bots spring into action — posting to social media, creating backups, and pinging search engines.
+When a new article is detected in the RSS feed, the bots spring into action, posting to social media, creating backups, and pinging search engines.
 
 ## Fork & Set Up Your Own
 
-Want to use this for your blog? Here's how:
+Want to use this for your blog? Here is how:
 
 ### 1. Fork this repo & edit `config.yaml`
 
