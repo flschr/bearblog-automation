@@ -26,12 +26,13 @@ logger = logging.getLogger(__name__)
 # --- LOAD CONFIG ---
 def load_config() -> dict:
     """Load configuration from central config.yaml file."""
-    config_path = Path(__file__).parent.parent / "config.yaml"
+    config_path = Path(__file__).parent.parent.parent / "config.yaml"
     with open(config_path, 'r') as f:
         return yaml.safe_load(f)
 
 CONFIG = load_config()
 BEARBLOG_USERNAME = CONFIG['blog']['bearblog_username']
+BACKUP_FOLDER = CONFIG.get('backup', {}).get('folder', 'blog-backup')
 
 # --- CONSTANTS ---
 CSV_URL = f"https://bearblog.dev/{BEARBLOG_USERNAME}/dashboard/settings/?export=true"
@@ -41,10 +42,10 @@ MAX_CSV_SIZE = 50_000_000  # 50MB limit for CSV
 MAX_WORKERS = 5  # Concurrent image downloads
 
 # Paths
-BASE_DIR = Path("blog_posts")
-TRACKING_FILE = Path("backup_bot/processed_articles.txt")
+BASE_DIR = Path(BACKUP_FOLDER)
+TRACKING_FILE = Path("bots/backup_bot/processed_articles.txt")
 TEMP_CSV = Path("temp_export.csv")
-DEBUG_CSV = Path("backup_bot/last_export.csv")  # Keep a copy for debugging
+DEBUG_CSV = Path("bots/backup_bot/last_export.csv")  # Keep a copy for debugging
 
 # Environment variables
 def normalize_cookie(cookie: Optional[str]) -> Optional[str]:

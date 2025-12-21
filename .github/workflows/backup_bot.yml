@@ -26,13 +26,13 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: pip install -r backup_bot/requirements.txt
+        run: pip install -r bots/backup_bot/requirements.txt
 
       - name: Run Backup Bot
         id: backup
         env:
           BEAR_COOKIE: ${{ secrets.BEAR_COOKIE }}
-        run: python backup_bot/backup_bot.py
+        run: python bots/backup_bot/backup_bot.py
         continue-on-error: true  # Continue to commit debug CSV even on failure
 
       - name: Pull latest changes
@@ -49,7 +49,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: ${{ github.event_name == 'workflow_dispatch' && 'Manual blog backup' || github.event_name == 'schedule' && 'Scheduled blog backup' || 'Automatic blog backup' }}
-          file_pattern: 'blog_posts/** backup_bot/processed_articles.txt backup_bot/last_export.csv'
+          file_pattern: 'blog-backup/** bots/backup_bot/processed_articles.txt bots/backup_bot/last_export.csv'
 
       - name: Fail if backup failed
         if: steps.backup.outcome == 'failure'

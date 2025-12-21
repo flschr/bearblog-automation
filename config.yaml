@@ -2,12 +2,16 @@
 # Bear Blog Automation - Central Configuration
 # =============================================================================
 # Adjust these values when forking this repository.
-# For feed configuration, edit social_bot/config.json
+# For feed configuration, edit bots/social_bot/config.json
 # =============================================================================
 
 blog:
   # Your Bear Blog username (used for backup export URL)
   bearblog_username: "fischr"
+
+backup:
+  # Directory name for blog post backups (relative to repository root)
+  folder: "blog-backup"
 
 social:
   # Your Mastodon instance URL

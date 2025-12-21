@@ -4,7 +4,7 @@ This guide explains how to configure the Social Bot to post from your RSS feeds.
 
 ---
 
-## Feed Configuration (`social_bot/config.json`)
+## Feed Configuration (`bots/social_bot/config.json`)
 
 Each feed is configured as an object in the JSON array:
 
@@ -119,3 +119,11 @@ Configure these in **Settings → Secrets → Actions**:
 2. Open Developer Tools (F12) → Application → Cookies
 3. Copy the `sessionid` value
 4. Add to GitHub Secrets as: `sessionid=YOUR_VALUE`
+
+---
+
+## Related Documentation
+
+- [Social Bot](SOCIAL_BOT.md) - Automatic social media posting
+- [Backup Bot](BACKUP_BOT.md) - Automatic blog backups
+- [Cloudflare Worker](CLOUDFLARE_WORKER.md) - Instant trigger setup

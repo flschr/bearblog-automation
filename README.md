@@ -29,13 +29,16 @@ Want to use this for your blog? Here is how:
 blog:
   bearblog_username: "your-username"
 
+backup:
+  folder: "blog-backup"  # Customize your backup folder name
+
 social:
   mastodon_instance: "https://mastodon.social"
 ```
 
 ### 2. Configure your feeds
 
-Edit `social_bot/config.json` to point to your RSS feeds. See the [Configuration Guide](docs/CONFIGURATION.md) for details.
+Edit `bots/social_bot/config.json` to point to your RSS feeds. See the [Configuration Guide](docs/CONFIGURATION.md) for details.
 
 ### 3. Add GitHub Secrets
 
@@ -57,18 +60,21 @@ Go to the **Actions** tab and enable workflows. Done!
 
 ```
 ├── config.yaml           # Central configuration
-├── social_bot/           # Social media posting
-│   ├── config.json       # Feed & template config
-│   └── cloudflare-worker # Optional instant trigger
-├── backup_bot/           # Markdown backup bot
-├── blog_posts/           # Archived posts (auto-generated)
-└── docs/                 # Additional documentation
+├── bots/
+│   ├── social_bot/       # Social media posting
+│   │   ├── config.json   # Feed & template config
+│   │   └── cloudflare-worker/
+│   └── backup_bot/       # Markdown backup bot
+├── blog-backup/          # Archived posts (auto-generated, customizable)
+└── docs/                 # Documentation
 ```
 
 ## Documentation
 
-- [Feed Configuration & Templates](docs/CONFIGURATION.md)
-- [Cloudflare Worker Setup](docs/CLOUDFLARE_WORKER.md) *(optional, for instant triggering)*
+- [Social Bot](docs/SOCIAL_BOT.md) - Automatic social media posting
+- [Backup Bot](docs/BACKUP_BOT.md) - Automatic blog backups
+- [Feed Configuration](docs/CONFIGURATION.md) - Configure RSS feeds and templates
+- [Cloudflare Worker](docs/CLOUDFLARE_WORKER.md) - Instant trigger setup *(optional)*
 
 ## License
 
