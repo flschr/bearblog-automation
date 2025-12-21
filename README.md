@@ -1,6 +1,10 @@
-# Bear Blog Automation
+# (Bear) Blog Automation for fischr.org
 
-Automates social media posting and backups for [Bear Blog](https://bearblog.dev).
+Hey and welcome 👋🏼 to this Github repository that is essentially the powerhouse that puts my my [Bear Blog](https://bearblog.dev)-powered website [fischr.org](https://fischr.org) on steroids. This repository automatically publishes all new posts to my Mastodon and Bluesky accounts, submits the article to IndexNow for faster search engine indexing and creates an automatic backup for every new (and changed) article.
+
+Feel free to read on, if you want to understand how it is working and also how my setup could help you to automate your (Bear) blog as well.
+
+---
 
 **Features:**
 - **Social Bot**: Posts new articles to BlueSky & Mastodon with images, hashtags, and rich text
