@@ -102,7 +102,6 @@ Edit `social_bot/config.json` to match your feeds. You can configure multiple fe
 | `template` | Yes | Post format. Placeholders: `{title}`, `{link}`, `{content}` |
 
 **Note**:
-- For photo posts, `{content}` includes the full post text
 - Content is automatically truncated (300 chars for BlueSky, 500 for Mastodon)
 - Hashtags in templates are converted to native tags on BlueSky
 
