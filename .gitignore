@@ -28,5 +28,4 @@ Thumbs.db
 *.log
 
 # Bot cache files
-social_bot/feed_cache.json
 social_bot/*.lock
