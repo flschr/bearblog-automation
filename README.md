@@ -189,10 +189,10 @@ The worker monitors your RSS feeds and triggers GitHub Actions via `repository_d
 Once triggered:
 
 1. **Fetches** RSS feeds (only if headers indicate changes)
-2. **Filters** entries based on `include`/`exclude` rules
+2. **Filters** entries based on `configuration.json` with the defined `include`/`exclude` rules
 3. **Checks** `posted_articles.txt` to avoid duplicates
-4. **Downloads** images (if enabled) with security checks
-5. **Posts** to configured platforms with rich text formatting
+4. **Downloads** images (if enabled)
+5. **Posts** to configured platforms
 6. **Submits** to IndexNow for SEO
 7. **Updates** `posted_articles.txt` and commits to repository
 8. **Triggers** Backup Bot if new posts were detected
@@ -205,14 +205,13 @@ Runs when:
 - **Manual** workflow dispatch
 
 Process:
-1. **Downloads** CSV export from Bear Blog
+1. **Downloads** CSV export (includes all your posts) from Bear Blog
 2. **Parses** all published articles
-3. **Checks** `processed_articles.txt` for changes (SHA-256 hash)
+3. **Checks** `processed_articles.txt` for *any* changes (also updates already saved articles with changes)
 4. **Creates** folder structure: `YYYY-MM-DD-slug/`
-5. **Downloads** all images concurrently (max 5 at a time)
-6. **Converts** HTML content to Markdown
-7. **Adds** YAML frontmatter with all metadata
-8. **Updates** tracking file and commits to repository
+5. **Downloads** all images
+6. **Adds** YAML frontmatter with all metadata
+7. **Updates** tracking file and commits to repository
 
 ---
 
