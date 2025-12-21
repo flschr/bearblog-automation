@@ -1,0 +1,88 @@
+# Backup Bot
+
+The Backup Bot automatically exports all your Bear Blog posts as Markdown files with images to this repository.
+
+---
+
+## How It Works
+
+1. Downloads your blog's CSV export from Bear Blog
+2. Parses each published article
+3. Creates a folder per post: `YYYY-MM-DD-slug/`
+4. Saves content as `index.md` with YAML frontmatter
+5. Downloads all images referenced in the post
+6. Tracks processed articles to avoid duplicates
+
+---
+
+## Configuration
+
+### Central Config (`config.yaml`)
+
+```yaml
+blog:
+  bearblog_username: "your-username"
+
+backup:
+  folder: "blog-backup"  # Customize your backup folder name
+```
+
+The `backup.folder` setting lets you choose where your blog posts are stored. Default is `blog-backup`.
+
+### GitHub Secret
+
+| Secret | Description |
+|--------|-------------|
+| `BEAR_COOKIE` | Your Bear Blog session cookie |
+
+---
+
+## Getting the Bear Blog Cookie
+
+1. Log in to `https://bearblog.dev/dashboard/`
+2. Open Developer Tools (F12)
+3. Go to **Application** (Chrome) or **Storage** (Firefox)
+4. Click **Cookies** → `bearblog.dev`
+5. Copy the `sessionid` value
+6. Add to GitHub Secrets as `BEAR_COOKIE`
+
+You can use either format:
+- `sessionid=YOUR_VALUE`
+- `YOUR_VALUE` (the prefix is added automatically)
+
+---
+
+## Backup Folder Structure
+
+```
+blog-backup/
+├── 2025-01-15-my-first-post/
+│   ├── index.md
+│   └── image.webp
+├── 2025-01-20-another-post/
+│   ├── index.md
+│   ├── photo1.jpg
+│   └── photo2.jpg
+└── ...
+```
+
+Each `index.md` contains:
+- YAML frontmatter with all metadata (title, date, tags, etc.)
+- Full post content in Markdown
+
+---
+
+## Scheduling
+
+The backup runs:
+- **Weekly**: Every Monday at midnight UTC
+- **After new posts**: Triggered automatically by the Social Bot
+- **Manually**: Via GitHub Actions → Run workflow
+
+---
+
+## Related Documentation
+
+- [Social Bot](SOCIAL_BOT.md) - Automatic social media posting
+- [Feed Configuration](CONFIGURATION.md) - Configure RSS feeds
+- [Cloudflare Worker](CLOUDFLARE_WORKER.md) - Instant trigger setup

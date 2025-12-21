@@ -30,7 +30,7 @@ Use a Cloudflare Worker to trigger the Social Bot **only when RSS feeds actually
 
 1. Click **Edit code**
 2. Delete all existing code
-3. Paste contents from `social_bot/cloudflare-worker/rss-monitor.js`
+3. Paste contents from `bots/social_bot/cloudflare-worker/rss-monitor.js`
 4. Click **Save and Deploy**
 
 ### 4. Create KV Namespace
@@ -108,3 +108,11 @@ Cloudflare Worker (every 10 min)
 
 **View logs:**
 - Worker → Logs → Begin log stream
+
+---
+
+## Related Documentation
+
+- [Social Bot](SOCIAL_BOT.md) - Automatic social media posting
+- [Backup Bot](BACKUP_BOT.md) - Automatic blog backups
+- [Feed Configuration](CONFIGURATION.md) - Configure RSS feeds and templates

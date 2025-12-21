@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 # --- LOAD CONFIG ---
 def load_config() -> dict:
     """Load configuration from central config.yaml file."""
-    config_path = Path(__file__).parent.parent / "config.yaml"
+    config_path = Path(__file__).parent.parent.parent / "config.yaml"
     with open(config_path, 'r') as f:
         return yaml.safe_load(f)
 
