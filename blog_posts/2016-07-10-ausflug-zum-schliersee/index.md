@@ -1,8 +1,8 @@
 ---
-uid: "aYNtVtHwiGXXTCHzynUL"
-title: "Ausflug zum Schliersee"
-slug: "ausflug-zum-schliersee"
-alias: "2016/07/10/ausflug-zum-schliersee"
+uid: aYNtVtHwiGXXTCHzynUL
+title: Ausflug zum Schliersee
+slug: ausflug-zum-schliersee
+alias: 2016/07/10/ausflug-zum-schliersee
 published_date: "2016-07-10T11:18:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9af69d58d8.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2016-07-10T11:18:00+00:00"
 ---

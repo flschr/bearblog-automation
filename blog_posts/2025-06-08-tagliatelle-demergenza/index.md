@@ -1,8 +1,8 @@
 ---
-uid: "RnHfdSusWLYtzzfsKyGi"
-title: "👨🏻‍🍳 Tagliatelle d’emergenza"
-slug: "tagliatelle-demergenza"
-alias: "2025/06/09/tagliatelle-demergenza"
+uid: RnHfdSusWLYtzzfsKyGi
+title: 👨🏻‍🍳 Tagliatelle d’emergenza
+slug: tagliatelle-demergenza
+alias: 2025/06/09/tagliatelle-demergenza
 published_date: "2025-06-08T22:00:00+00:00"
 all_tags: "[\"blog\", \"rezeptvomchef\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/tagliatelle-demergenza.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-08T22:00:00+00:00"
 ---

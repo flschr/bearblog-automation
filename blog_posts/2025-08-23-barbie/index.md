@@ -1,8 +1,8 @@
 ---
-uid: "BjgRkaksqtKSkjzkIifc"
-title: "🍿 Barbie (★★★☆☆)"
-slug: "barbie"
-alias: "2025/08/25/barbie-habe-ich-vor-einem"
+uid: BjgRkaksqtKSkjzkIifc
+title: 🍿 Barbie (★★★☆☆)
+slug: barbie
+alias: 2025/08/25/barbie-habe-ich-vor-einem
 published_date: "2025-08-23T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/0046558105.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-08-23T22:00:00+00:00"
 ---

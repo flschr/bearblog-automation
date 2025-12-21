@@ -1,8 +1,8 @@
 ---
-uid: "mWkQTTafrLosSCbXaJNG"
-title: "🍿 Absolute Giganten (★★★★★)"
-slug: "absolute-giganten"
-alias: "2025/11/02/absolute-giganten"
+uid: mWkQTTafrLosSCbXaJNG
+title: 🍿 Absolute Giganten (★★★★★)
+slug: absolute-giganten
+alias: 2025/11/02/absolute-giganten
 published_date: "2025-11-01T23:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/absolute-giganten.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-11-01T23:00:00+00:00"
 ---

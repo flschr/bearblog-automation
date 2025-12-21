@@ -1,8 +1,8 @@
 ---
-uid: "rRtvgAiiLgeTVJRxUPRX"
-title: "Magische Höhle"
-slug: "magische-hohle"
-alias: "2024/06/22/magische-hhle"
+uid: rRtvgAiiLgeTVJRxUPRX
+title: Magische Höhle
+slug: magische-hohle
+alias: 2024/06/22/magische-hhle
 published_date: "2024-06-21T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/98d754b490b68ecd.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-06-21T22:00:00+00:00"
 ---

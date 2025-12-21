@@ -1,8 +1,8 @@
 ---
-uid: "HBbYgUpsRAEDLRNAfxNr"
-title: "📚 Ausgelesen 2022"
-slug: "ausgelesen-2022"
-alias: "2022/12/09/ausgelesen"
+uid: HBbYgUpsRAEDLRNAfxNr
+title: 📚 Ausgelesen 2022
+slug: ausgelesen-2022
+alias: 2022/12/09/ausgelesen
 published_date: "2022-12-08T23:00:00+00:00"
 all_tags: "[\"ausgelesen\", \"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/1467cda0a3.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2022-12-08T23:00:00+00:00"
 ---

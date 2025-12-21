@@ -1,8 +1,8 @@
 ---
-uid: "hvFohwcaYTGbsrUiPdXu"
-title: "🥾 Kleine Kletterrunde von der Rampoldplatte zur Hochsalwand"
-slug: "kleine-kletterrunde-von-der-rampoldplatte-zur-hochsalwand"
-alias: "2024/05/26/kleine-kletterrunde-von-der-rampoldplatte"
+uid: hvFohwcaYTGbsrUiPdXu
+title: 🥾 Kleine Kletterrunde von der Rampoldplatte zur Hochsalwand
+slug: kleine-kletterrunde-von-der-rampoldplatte-zur-hochsalwand
+alias: 2024/05/26/kleine-kletterrunde-von-der-rampoldplatte
 published_date: "2024-05-25T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/18fb5349232.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-05-25T22:00:00+00:00"
 ---

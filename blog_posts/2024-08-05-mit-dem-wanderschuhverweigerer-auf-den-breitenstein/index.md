@@ -1,8 +1,8 @@
 ---
-uid: "VRYMyNyWdzgLIDASMhML"
-title: "🥾 Mit dem Wanderschuhverweigerer auf den Breitenstein"
-slug: "mit-dem-wanderschuhverweigerer-auf-den-breitenstein"
-alias: "2024/08/06/mit-dem-wanderschuhverweigerer-auf-den"
+uid: VRYMyNyWdzgLIDASMhML
+title: 🥾 Mit dem Wanderschuhverweigerer auf den Breitenstein
+slug: mit-dem-wanderschuhverweigerer-auf-den-breitenstein
+alias: 2024/08/06/mit-dem-wanderschuhverweigerer-auf-den
 published_date: "2024-08-05T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/1c47d16bd937dd6e.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-08-05T22:00:00+00:00"
 ---

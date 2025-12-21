@@ -1,7 +1,7 @@
 ---
-uid: "DRDvRthIaWufRiNgLvzd"
-title: "Ringelsockenanstrich"
-slug: "ringelsockenanstrich"
+uid: DRDvRthIaWufRiNgLvzd
+title: Ringelsockenanstrich
+slug: ringelsockenanstrich
 alias: ""
 published_date: "2025-12-17T07:47:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/39-2.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-12-17T07:47:00+00:00"
 ---
 

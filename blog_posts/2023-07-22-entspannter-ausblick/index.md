@@ -1,8 +1,8 @@
 ---
-uid: "qRFPMefqLMIPDUUqemDP"
-title: "Entspannter Ausblick"
-slug: "entspannter-ausblick"
-alias: "2023/07/23/entspannter-ausblick"
+uid: qRFPMefqLMIPDUUqemDP
+title: Entspannter Ausblick
+slug: entspannter-ausblick
+alias: 2023/07/23/entspannter-ausblick
 published_date: "2023-07-22T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"fotografie\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/da7b6e1b40.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2023-07-22T22:00:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "DMvjNKjxxJWzSuyJtfho"
-title: "Camping für Fortgeschrittene"
-slug: "camping-fur-fortgeschrittene"
-alias: "2021/09/05/camping-fr-fortgeschrittene"
+uid: DMvjNKjxxJWzSuyJtfho
+title: Camping für Fortgeschrittene
+slug: camping-fur-fortgeschrittene
+alias: 2021/09/05/camping-fr-fortgeschrittene
 published_date: "2021-09-05T16:32:00+00:00"
 all_tags: "[\"blog\", \"ganzvielurlaub\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/8232072d43.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-09-05T16:32:00+00:00"
 ---

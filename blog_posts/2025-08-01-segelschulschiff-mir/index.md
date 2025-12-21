@@ -1,8 +1,8 @@
 ---
-uid: "GaQzkrtRchABdgWwqvQY"
-title: "Segelschulschiff MIR"
-slug: "segelschulschiff-mir"
-alias: "2025/08/02/beim-fotovorschlag-zum-thema-schifffahrt"
+uid: GaQzkrtRchABdgWwqvQY
+title: Segelschulschiff MIR
+slug: segelschulschiff-mir
+alias: 2025/08/02/beim-fotovorschlag-zum-thema-schifffahrt
 published_date: "2025-08-01T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/10-2.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-08-01T22:00:00+00:00"
 ---
 

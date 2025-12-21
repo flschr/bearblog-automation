@@ -1,7 +1,7 @@
 ---
-uid: "UHUXDgxvorqMqGQAGCnS"
-title: "2,5x mal über dem deutschen Durchschnitt"
-slug: "25x-mal-uber-dem-deutschen-durchschnitt"
+uid: UHUXDgxvorqMqGQAGCnS
+title: 2,5x mal über dem deutschen Durchschnitt
+slug: 25x-mal-uber-dem-deutschen-durchschnitt
 alias: ""
 published_date: "2025-12-18T14:10:00+00:00"
 all_tags: "[\"betterworld\", \"blog\", \"nachhaltig\"]"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/picsew_20251218131934.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-12-18T14:10:00+00:00"
 ---

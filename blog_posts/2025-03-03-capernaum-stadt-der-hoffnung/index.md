@@ -1,8 +1,8 @@
 ---
-uid: "VcVKxBUcerWPZkaikNMo"
-title: "🍿 Capernaum - Stadt der Hoffnung (★​★★​★★)"
-slug: "capernaum-stadt-der-hoffnung"
-alias: "2025/03/04/capernaum-stadt-der-hoffnung"
+uid: VcVKxBUcerWPZkaikNMo
+title: 🍿 Capernaum - Stadt der Hoffnung (★​★★​★★)
+slug: capernaum-stadt-der-hoffnung
+alias: 2025/03/04/capernaum-stadt-der-hoffnung
 published_date: "2025-03-03T23:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2310076.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-03-03T23:00:00+00:00"
 ---

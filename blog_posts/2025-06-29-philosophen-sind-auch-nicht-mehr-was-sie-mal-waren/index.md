@@ -1,8 +1,8 @@
 ---
-uid: "rjyEJUZtrLMuQXWSxVIx"
-title: "Philosophen sind auch nicht mehr was sie mal waren"
-slug: "philosophen-sind-auch-nicht-mehr-was-sie-mal-waren"
-alias: "2025/06/30/frher-haben-philosophen-noch-die"
+uid: rjyEJUZtrLMuQXWSxVIx
+title: Philosophen sind auch nicht mehr was sie mal waren
+slug: philosophen-sind-auch-nicht-mehr-was-sie-mal-waren
+alias: 2025/06/30/frher-haben-philosophen-noch-die
 published_date: "2025-06-29T22:00:00+00:00"
 all_tags: "[\"blog\", \"bisschensauer\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/photo-1592634549335-f6be8df97b47.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-29T22:00:00+00:00"
 ---

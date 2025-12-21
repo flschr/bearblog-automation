@@ -1,8 +1,8 @@
 ---
-uid: "ZteCLJQecXVBkAgLYCEW"
-title: "Oben links am Lago di Bènaco"
-slug: "oben-links-am-lago-di-benaco"
-alias: "2017/09/03/oben-links-am-lago-di"
+uid: ZteCLJQecXVBkAgLYCEW
+title: Oben links am Lago di Bènaco
+slug: oben-links-am-lago-di-benaco
+alias: 2017/09/03/oben-links-am-lago-di
 published_date: "2017-09-03T12:14:00+00:00"
 all_tags: "[\"blog\", \"ganzvielurlaub\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/photo-1592634549335-f6be8df97b47.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2017-09-03T12:14:00+00:00"
 ---
@@ -26,11 +26,11 @@ Nachdem wir die letzten beiden Urlaube in eher [nördlichen](/vakantie-in-hollan
 
 ![Versteckte Badestelle am Gardasee nähe Limone sul Garda](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/7387b6f335.webp)  
 
-Eingekeilt zwischen steil aufragenden Berghängen, weht in der nördlichen Ecke des Gardasees ein konstanter Wind. Aber auch wenn man nicht auf dem Surfbrett unterwegs ist, kann man hier im Wasser viel Spaß haben. Die steinigen Strände (Badeschuhe aus Neopren sind sehr zu empfehlen) sind extrem sauber und abseits der ausgewiesenen Badestrände auch angenehm leer. Ein besonders schwer zugänglicher und somit ruhiger Strandabschnitt findet sich hier. Schon das Parken direkt am Tunnel ist ein Abenteuer und das Ausparken ein echtes Kunststück.
+Eingekeilt zwischen steil aufragenden Berghängen, weht in der nördlichen Ecke des Gardasees ein konstanter Wind. Aber auch wenn man nicht auf dem Surfbrett unterwegs ist, kann man hier im Wasser viel Spaß haben. Die steinigen Strände (Badeschuhe aus Neopren sind sehr zu empfehlen) sind extrem sauber und abseits der ausgewiesenen Badestrände auch angenehm leer. Ein besonders schwer zugänglicher und somit ruhiger Strandabschnitt [findet sich hier](https://maps.app.goo.gl/Sd2PfTK17kNy1Ksn9). Schon das Parken direkt am Tunnel ist ein Abenteuer und das Ausparken ein echtes Kunststück.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2784.8232516365792!2d10.72883071169959!3d45.73463931523345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47821f006ea6778b%3A0xeefcc81e74d1f90a!2sSpiaggia!5e0!3m2!1sde!2sde!4v1763415105171!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-Nachdem das Trinkwasser hier leicht gechlort aus der Wasserleitung kommt, haben wir unser Trinkwasser alle paar Tage frisch aus der Quelle Acqua Benedetta geholt, an der sich auch viele Einheimische mit Trinkwasser versorgen. Der Weg dorthin ist abenteuerlich. Wenden kann man hier nur an sehr wenigen Stellen. Der Weg in dieses abgelegene Tal lohnt sich auch als Ausgangspunkt für Wanderungen in einer atemberaubenden Landschaft.
+Nachdem das Trinkwasser hier leicht gechlort aus der Wasserleitung kommt, haben wir unser Trinkwasser alle paar Tage frisch aus der Quelle [Acqua Benedetta](https://maps.app.goo.gl/8fBujTuYDjQ3JsNw9) geholt, an der sich auch viele Einheimische mit Trinkwasser versorgen. Der Weg dorthin ist abenteuerlich. Wenden kann man hier nur an sehr wenigen Stellen. Der Weg in dieses abgelegene Tal lohnt sich auch als Ausgangspunkt für Wanderungen in einer atemberaubenden Landschaft.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1853.9488797268555!2d10.733130866419296!3d45.82522155794868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDQ5JzMyLjMiTiAxMMKwNDQnMDMuNiJF!5e0!3m2!1sde!2sde!4v1763414989958!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 

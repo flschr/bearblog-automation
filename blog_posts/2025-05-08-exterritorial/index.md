@@ -1,8 +1,8 @@
 ---
-uid: "MhgLgPywiHaGScVxzMct"
-title: "🍿 Exterritorial (★​★★​☆☆)"
-slug: "exterritorial"
-alias: "2025/05/09/exterritorial"
+uid: MhgLgPywiHaGScVxzMct
+title: 🍿 Exterritorial (★​★★​☆☆)
+slug: exterritorial
+alias: 2025/05/09/exterritorial
 published_date: "2025-05-08T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/exterritorial.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-08T22:00:00+00:00"
 ---

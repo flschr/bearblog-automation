@@ -1,8 +1,8 @@
 ---
-uid: "NyWqCRSEJYZtAVZDDaMw"
-title: "Am Thuner See"
-slug: "am-thuner-see"
-alias: "2017/10/26/am-thuner-see"
+uid: NyWqCRSEJYZtAVZDDaMw
+title: Am Thuner See
+slug: am-thuner-see
+alias: 2017/10/26/am-thuner-see
 published_date: "2017-10-26T19:11:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/b80bf6a020.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2017-10-26T19:11:00+00:00"
 ---

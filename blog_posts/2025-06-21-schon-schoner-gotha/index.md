@@ -1,8 +1,8 @@
 ---
-uid: "tKnrWDTUtQnZyMbwoBje"
-title: "Schön, schöner, Gotha"
-slug: "schon-schoner-gotha"
-alias: "2025/06/22/schn-schner-gotha"
+uid: tKnrWDTUtQnZyMbwoBje
+title: Schön, schöner, Gotha
+slug: schon-schoner-gotha
+alias: 2025/06/22/schn-schner-gotha
 published_date: "2025-06-21T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/myfk0szt9hd5dtmwq4e06y27bacn63gs.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-21T22:00:00+00:00"
 ---

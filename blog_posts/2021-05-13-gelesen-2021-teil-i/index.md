@@ -1,8 +1,8 @@
 ---
-uid: "cXFgTDegHbMhhIFZkLpa"
-title: "📚 Gelesen 2021, Teil I"
-slug: "gelesen-2021-teil-i"
-alias: "2021/05/13/gelesen-teil-i"
+uid: cXFgTDegHbMhhIFZkLpa
+title: 📚 Gelesen 2021, Teil I
+slug: gelesen-2021-teil-i
+alias: 2021/05/13/gelesen-teil-i
 published_date: "2021-05-13T18:08:00+00:00"
 all_tags: "[\"ausgelesen\", \"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/caac932c27.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-05-13T18:08:00+00:00"
 ---

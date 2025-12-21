@@ -1,8 +1,8 @@
 ---
-uid: "BCtCBZFIiFvjTZoYJxhH"
-title: "Finalsonntag"
-slug: "finalsonntag"
-alias: "2022/12/18/finalsonntag"
+uid: BCtCBZFIiFvjTZoYJxhH
+title: Finalsonntag
+slug: finalsonntag
+alias: 2022/12/18/finalsonntag
 published_date: "2022-12-17T23:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/45a1d0db5d.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2022-12-17T23:00:00+00:00"
 ---
 

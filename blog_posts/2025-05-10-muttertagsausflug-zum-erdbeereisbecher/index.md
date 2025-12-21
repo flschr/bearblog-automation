@@ -1,8 +1,8 @@
 ---
-uid: "cJIbVZfvjxeigYhbBVBU"
-title: "Muttertagsausflug zum Erdbeereisbecher"
-slug: "muttertagsausflug-zum-erdbeereisbecher"
-alias: "2025/05/11/muttertagsausflug-zum-erdbeereisbecher"
+uid: cJIbVZfvjxeigYhbBVBU
+title: Muttertagsausflug zum Erdbeereisbecher
+slug: muttertagsausflug-zum-erdbeereisbecher
+alias: 2025/05/11/muttertagsausflug-zum-erdbeereisbecher
 published_date: "2025-05-10T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/e626ab6096.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-10T22:00:00+00:00"
 ---
 

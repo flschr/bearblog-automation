@@ -1,8 +1,8 @@
 ---
-uid: "pzvDcKPcvANaQabKfafH"
-title: "Aufräumsklave"
-slug: "aufraumsklave"
-alias: "2025/10/18/aufrumsklave"
+uid: pzvDcKPcvANaQabKfafH
+title: Aufräumsklave
+slug: aufraumsklave
+alias: 2025/10/18/aufrumsklave
 published_date: "2025-10-17T22:00:00+00:00"
 all_tags: "[\"blog\", \"stuffthatworks\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/f661b67a75.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-10-17T22:00:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "RWaRgwTSaUGdQEHVmdLi"
-title: "🍿 Adolescence (★​★★​★★)"
-slug: "adolescence"
-alias: "2025/04/16/adolescence"
+uid: RWaRgwTSaUGdQEHVmdLi
+title: 🍿 Adolescence (★​★★​★★)
+slug: adolescence
+alias: 2025/04/16/adolescence
 published_date: "2025-04-15T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/7f379d9db4.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-04-15T22:00:00+00:00"
 ---

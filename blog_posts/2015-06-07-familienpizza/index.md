@@ -1,8 +1,8 @@
 ---
-uid: "CRcdqfTjUjnxAFqIyKZf"
-title: "👨🏻‍🍳 Familienpizza"
-slug: "familienpizza"
-alias: "2015/06/07/familienpizza"
+uid: CRcdqfTjUjnxAFqIyKZf
+title: 👨🏻‍🍳 Familienpizza
+slug: familienpizza
+alias: 2015/06/07/familienpizza
 published_date: "2015-06-07T14:37:00+00:00"
 all_tags: "[\"blog\", \"rezeptvomchef\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/94d6b2a99c.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2015-06-07T14:37:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "KaguGXySPGxGTUJGpNLP"
-title: "Gerostet"
-slug: "gerostet"
-alias: "2025/08/08/das-bild-zeigt-gerostete-nicht"
+uid: KaguGXySPGxGTUJGpNLP
+title: Gerostet
+slug: gerostet
+alias: 2025/08/08/das-bild-zeigt-gerostete-nicht
 published_date: "2025-08-07T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/131a77f49c.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-08-07T22:00:00+00:00"
 ---
 

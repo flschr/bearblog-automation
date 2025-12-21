@@ -1,8 +1,8 @@
 ---
-uid: "iyYwfMyufqCpFiUnLNKk"
-title: "Vakantie in Holland"
-slug: "vakantie-in-holland"
-alias: "2015/09/15/vakantie-in-holland"
+uid: iyYwfMyufqCpFiUnLNKk
+title: Vakantie in Holland
+slug: vakantie-in-holland
+alias: 2015/09/15/vakantie-in-holland
 published_date: "2015-09-15T18:33:00+00:00"
 all_tags: "[\"blog\", \"ganzvielurlaub\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9e9c680805.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2015-09-15T18:33:00+00:00"
 ---

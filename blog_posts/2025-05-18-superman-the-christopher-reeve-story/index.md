@@ -1,8 +1,8 @@
 ---
-uid: "vtHkBFhjvvTPoikoJejw"
+uid: vtHkBFhjvvTPoikoJejw
 title: "🍿 Super/Man: The Christopher Reeve Story (★​★★​★​★​)"
-slug: "superman-the-christopher-reeve-story"
-alias: "2025/05/19/superman-the-christopher-reeve-story"
+slug: superman-the-christopher-reeve-story
+alias: 2025/05/19/superman-the-christopher-reeve-story
 published_date: "2025-05-18T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/581712df97.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-18T22:00:00+00:00"
 ---

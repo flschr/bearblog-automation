@@ -1,8 +1,8 @@
 ---
-uid: "zNhAocCBNQgRtjQRKzvX"
-title: "🥾 Raus aus dem Münchner Nebel, rauf auf den Jägerkamp"
-slug: "raus-aus-dem-munchner-nebel-rauf-auf-den-jagerkamp"
-alias: "2025/11/07/raus-aus-dem-mnchner-nebel"
+uid: zNhAocCBNQgRtjQRKzvX
+title: 🥾 Raus aus dem Münchner Nebel, rauf auf den Jägerkamp
+slug: raus-aus-dem-munchner-nebel-rauf-auf-den-jagerkamp
+alias: 2025/11/07/raus-aus-dem-mnchner-nebel
 published_date: "2025-11-06T23:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-8248.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-11-06T23:00:00+00:00"
 ---

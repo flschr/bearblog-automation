@@ -1,8 +1,8 @@
 ---
-uid: "kkCxeKzDJyqPpYCuqYgp"
-title: "🍿 Der Killer (★★☆☆☆)"
-slug: "der-killer"
-alias: "2025/09/11/auch-im-flieger-gesehen-der"
+uid: kkCxeKzDJyqPpYCuqYgp
+title: 🍿 Der Killer (★★☆☆☆)
+slug: der-killer
+alias: 2025/09/11/auch-im-flieger-gesehen-der
 published_date: "2025-09-10T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/v1-2.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-09-10T22:00:00+00:00"
 ---

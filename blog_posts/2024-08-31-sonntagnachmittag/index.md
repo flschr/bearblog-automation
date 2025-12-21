@@ -1,8 +1,8 @@
 ---
-uid: "CIpqXNYhHQRjKsqUQAeN"
-title: "Sonntagnachmittag"
-slug: "sonntagnachmittag"
-alias: "2024/09/01/sonntagnachmittag"
+uid: CIpqXNYhHQRjKsqUQAeN
+title: Sonntagnachmittag
+slug: sonntagnachmittag
+alias: 2024/09/01/sonntagnachmittag
 published_date: "2024-08-31T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2b447beb4252ee82.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2024-08-31T22:00:00+00:00"
 ---
 

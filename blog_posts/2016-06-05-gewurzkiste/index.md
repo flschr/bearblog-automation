@@ -1,8 +1,8 @@
 ---
-uid: "ccXruaRfBeBMPokTRodX"
-title: "Gewürzkiste"
-slug: "gewurzkiste"
-alias: "2016/06/05/gewrzkiste"
+uid: ccXruaRfBeBMPokTRodX
+title: Gewürzkiste
+slug: gewurzkiste
+alias: 2016/06/05/gewrzkiste
 published_date: "2016-06-05T18:21:00+00:00"
 all_tags: "[\"blog\", \"geschraubt\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/606f19df41.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2016-06-05T18:21:00+00:00"
 ---

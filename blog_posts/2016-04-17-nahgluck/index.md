@@ -1,8 +1,8 @@
 ---
-uid: "mSYEMjnMCDaaQuuQzdDe"
-title: "Nähglück"
-slug: "nahgluck"
-alias: "2016/04/17/nhglck"
+uid: mSYEMjnMCDaaQuuQzdDe
+title: Nähglück
+slug: nahgluck
+alias: 2016/04/17/nhglck
 published_date: "2016-04-17T18:56:00+00:00"
 all_tags: "[\"blog\", \"freieswissen\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/24684550940-42db65f655-c.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2016-04-17T18:56:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "epfpsqFnKsUXZknpzDIM"
-title: "🥾 Am Wolkenfels"
-slug: "am-wolkenfels"
-alias: "2025/09/01/der-wolkenfels"
+uid: epfpsqFnKsUXZknpzDIM
+title: 🥾 Am Wolkenfels
+slug: am-wolkenfels
+alias: 2025/09/01/der-wolkenfels
 published_date: "2025-08-31T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/7e562c54dd.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-08-31T22:00:00+00:00"
 ---

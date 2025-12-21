@@ -1,8 +1,8 @@
 ---
-uid: "vxiBAcANyhntnhyDXJnk"
-title: "Nächtliches Downtown Kuala Lumpur"
-slug: "nachtliches-downtown-kuala-lumpur"
-alias: "2024/06/20/nchtliches-downtown-kuala-lumpur"
+uid: vxiBAcANyhntnhyDXJnk
+title: Nächtliches Downtown Kuala Lumpur
+slug: nachtliches-downtown-kuala-lumpur
+alias: 2024/06/20/nchtliches-downtown-kuala-lumpur
 published_date: "2024-06-19T22:00:00+00:00"
 all_tags: "[\"blog\", \"fotografie\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/df837c63bfff0f19.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-06-19T22:00:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "TGDwinYhfvyeHcNUnitf"
-title: "📚 Gelesen 2020"
-slug: "gelesen-2020"
-alias: "2021/01/03/gelesen"
+uid: TGDwinYhfvyeHcNUnitf
+title: 📚 Gelesen 2020
+slug: gelesen-2020
+alias: 2021/01/03/gelesen
 published_date: "2021-01-03T20:54:00+00:00"
 all_tags: "[\"ausgelesen\", \"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/45a3bcb5ef.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-01-03T20:54:00+00:00"
 ---

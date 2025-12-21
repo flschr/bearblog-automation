@@ -1,8 +1,8 @@
 ---
-uid: "InCzeJdmxasxpcPtRSoq"
-title: "Mein Lieblings-Urlaubsfoto"
-slug: "mein-lieblings-urlaubsfoto"
-alias: "2025/05/30/mein-lieblingsurlaubsfoto-ich-habe-viele"
+uid: InCzeJdmxasxpcPtRSoq
+title: Mein Lieblings-Urlaubsfoto
+slug: mein-lieblings-urlaubsfoto
+alias: 2025/05/30/mein-lieblingsurlaubsfoto-ich-habe-viele
 published_date: "2025-05-29T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/6ec74b4a15.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-29T22:00:00+00:00"
 ---
 

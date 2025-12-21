@@ -1,8 +1,8 @@
 ---
-uid: "LsMvPfJFcncxNEVFLSpj"
-title: "🥾 1237, Farrenpoint"
-slug: "1237-farrenpoint"
-alias: "2024/05/27/farrenpoint"
+uid: LsMvPfJFcncxNEVFLSpj
+title: 🥾 1237, Farrenpoint
+slug: 1237-farrenpoint
+alias: 2024/05/27/farrenpoint
 published_date: "2024-05-26T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/b04460218432fb08.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-05-26T22:00:00+00:00"
 ---

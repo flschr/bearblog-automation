@@ -1,8 +1,8 @@
 ---
-uid: "QUGJKfcssoMTnNKfrvaT"
-title: "Ein Stückchen ostafrikanischer Grabensee in unserem Wohnzimmer"
-slug: "ein-stuckchen-ostafrikanischer-grabensee-in-unserem-wohnzimmer"
-alias: "2025/01/03/mein-l-tanganjika-wohnzimmertraum-steht"
+uid: QUGJKfcssoMTnNKfrvaT
+title: Ein Stückchen ostafrikanischer Grabensee in unserem Wohnzimmer
+slug: ein-stuckchen-ostafrikanischer-grabensee-in-unserem-wohnzimmer
+alias: 2025/01/03/mein-l-tanganjika-wohnzimmertraum-steht
 published_date: "2025-01-02T23:00:00+00:00"
 all_tags: "[\"blog\", \"fischverrueckt\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/ab9e2756c0247933.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-01-02T23:00:00+00:00"
 ---

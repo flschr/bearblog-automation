@@ -1,8 +1,8 @@
 ---
-uid: "IaActpXAzoRaapdCsBHp"
-title: "🍿 Wolfs (★★★☆☆)"
-slug: "wolfs"
-alias: "2025/09/28/mr-wulf-in-pulp-fiction"
+uid: IaActpXAzoRaapdCsBHp
+title: 🍿 Wolfs (★★★☆☆)
+slug: wolfs
+alias: 2025/09/28/mr-wulf-in-pulp-fiction
 published_date: "2025-09-26T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/3ec4eed795.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-09-26T22:00:00+00:00"
 ---

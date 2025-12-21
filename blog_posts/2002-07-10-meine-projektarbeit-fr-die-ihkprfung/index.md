@@ -1,8 +1,8 @@
 ---
-uid: "qYDBfDmwbnDJAXmjASjg"
-title: "Meine Projektarbeit für die IHK-Prüfung zum IT-Systemkaufmann"
-slug: "meine-projektarbeit-fr-die-ihkprfung"
-alias: "2002/07/10/meine-projektarbeit-fr-die-ihkprfung"
+uid: qYDBfDmwbnDJAXmjASjg
+title: Meine Projektarbeit für die IHK-Prüfung zum IT-Systemkaufmann
+slug: meine-projektarbeit-fr-die-ihkprfung
+alias: 2002/07/10/meine-projektarbeit-fr-die-ihkprfung
 published_date: "2002-07-10T15:30:00+00:00"
 all_tags: "[\"blog\", \"geteilteswissen\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img_8526.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2002-07-10T15:30:00+00:00"
 ---

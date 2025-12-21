@@ -1,8 +1,8 @@
 ---
-uid: "YyGNaiYkQQXDvjynchhV"
-title: "Sinnlose Papierverschwendung für gedruckte Zahlen"
-slug: "sinnlose-papierverschwendung-fur-gedruckte-zahlen"
-alias: "2010/03/20/sinnlose-papierverschwendung-fr-gedruckte-zahlen"
+uid: YyGNaiYkQQXDvjynchhV
+title: Sinnlose Papierverschwendung für gedruckte Zahlen
+slug: sinnlose-papierverschwendung-fur-gedruckte-zahlen
+alias: 2010/03/20/sinnlose-papierverschwendung-fr-gedruckte-zahlen
 published_date: "2010-03-20T21:09:00+00:00"
 all_tags: "[\"blog\", \"faktensammlung\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/10057456854-029bed7e5f-o.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2010-03-20T21:09:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "bFuTxuQDFTczSkXIMAZE"
-title: "Mit Marvin beim TÜV"
-slug: "mit-marvin-beim-tuv"
-alias: "2025/11/05/marvin-war-beim-tv"
+uid: bFuTxuQDFTczSkXIMAZE
+title: Mit Marvin beim TÜV
+slug: mit-marvin-beim-tuv
+alias: 2025/11/05/marvin-war-beim-tv
 published_date: "2025-11-04T23:00:00+00:00"
 all_tags: "[\"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/d986663b-594e-4307-b1ea-14e1d11d7679-1-105-c.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-11-04T23:00:00+00:00"
 ---

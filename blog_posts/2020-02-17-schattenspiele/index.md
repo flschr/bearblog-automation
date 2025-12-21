@@ -1,8 +1,8 @@
 ---
-uid: "mZTXkEMnrxnZXsjtShyr"
-title: "Schattenspiele"
-slug: "schattenspiele"
-alias: "2020/02/17/schattenspiele"
+uid: mZTXkEMnrxnZXsjtShyr
+title: Schattenspiele
+slug: schattenspiele
+alias: 2020/02/17/schattenspiele
 published_date: "2020-02-17T20:02:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/d963b47df4.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2020-02-17T20:02:00+00:00"
 ---
 

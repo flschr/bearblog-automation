@@ -1,7 +1,7 @@
 ---
-uid: "INHgiPrgjbFhHrjnepkh"
-title: "Der Ottifant am Erdbeerstand"
-slug: "ottifant-am-erdbeerstand"
+uid: INHgiPrgjbFhHrjnepkh
+title: Der Ottifant am Erdbeerstand
+slug: ottifant-am-erdbeerstand
 alias: ""
 published_date: "2025-12-20T09:56:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2019-06-19-10-37-13.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-12-20T09:56:00+00:00"
 ---
 

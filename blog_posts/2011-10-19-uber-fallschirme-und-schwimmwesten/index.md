@@ -1,8 +1,8 @@
 ---
-uid: "QPDmBLSHvJHfbgexKQGg"
-title: "Über Fallschirme und Schwimmwesten"
-slug: "uber-fallschirme-und-schwimmwesten"
-alias: "2011/10/19/ber-fallschirme-und-schwimmwesten"
+uid: QPDmBLSHvJHfbgexKQGg
+title: Über Fallschirme und Schwimmwesten
+slug: uber-fallschirme-und-schwimmwesten
+alias: 2011/10/19/ber-fallschirme-und-schwimmwesten
 published_date: "2011-10-19T18:07:00+00:00"
 all_tags: "[\"blog\", \"faktensammlung\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/b58268a619.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2011-10-19T18:07:00+00:00"
 ---

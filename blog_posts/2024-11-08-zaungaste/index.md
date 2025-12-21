@@ -1,8 +1,8 @@
 ---
-uid: "ZpZjYUgjcoHMqBBQInwi"
-title: "Zaungäste"
-slug: "zaungaste"
-alias: "2024/11/09/zaungste"
+uid: ZpZjYUgjcoHMqBBQInwi
+title: Zaungäste
+slug: zaungaste
+alias: 2024/11/09/zaungste
 published_date: "2024-11-08T23:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/d82a6725c3e48adc.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2024-11-08T23:00:00+00:00"
 ---
 

@@ -1,8 +1,8 @@
 ---
-uid: "KUKzHNNUQydwBeQvTAmj"
-title: "🎶 Balsam für die Seele"
-slug: "balsam-fur-die-seele"
-alias: "2024/12/04/balsam-fr-die-seele"
+uid: KUKzHNNUQydwBeQvTAmj
+title: 🎶 Balsam für die Seele
+slug: balsam-fur-die-seele
+alias: 2024/12/04/balsam-fr-die-seele
 published_date: "2024-12-03T23:00:00+00:00"
 all_tags: "[\"blog\", \"liebefuerdieohren\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/fe863b6454878867.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-12-03T23:00:00+00:00"
 ---

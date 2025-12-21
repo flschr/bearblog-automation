@@ -1,8 +1,8 @@
 ---
-uid: "xnJRwQmisFeTFLBQEosz"
-title: "Ein kleines bisschen Liebe für Köln"
-slug: "ein-kleines-bisschen-liebe-fur-koln"
-alias: "2023/09/02/ein-kleines-bisschen-liebe-fr"
+uid: xnJRwQmisFeTFLBQEosz
+title: Ein kleines bisschen Liebe für Köln
+slug: ein-kleines-bisschen-liebe-fur-koln
+alias: 2023/09/02/ein-kleines-bisschen-liebe-fr
 published_date: "2023-09-01T22:00:00+00:00"
 all_tags: "[\"blog\", \"fotografie\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2e8f04f1e3.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2023-09-01T22:00:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "wKXjUEKtikCkAEaBzAgc"
-title: "Berliner Perspektiven"
-slug: "berliner-perspektiven"
-alias: "2017/05/20/berliner-perspektiven"
+uid: wKXjUEKtikCkAEaBzAgc
+title: Berliner Perspektiven
+slug: berliner-perspektiven
+alias: 2017/05/20/berliner-perspektiven
 published_date: "2017-05-20T15:29:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/80e8740b33.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2017-05-20T15:29:00+00:00"
 ---

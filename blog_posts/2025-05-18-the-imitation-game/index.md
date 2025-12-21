@@ -1,8 +1,8 @@
 ---
-uid: "KzfLjRzgrDFoHduUwoVK"
-title: "🍿 The Imitation Game (★​★★​★​☆)"
-slug: "the-imitation-game"
-alias: "2025/05/19/the-imitation-game"
+uid: KzfLjRzgrDFoHduUwoVK
+title: 🍿 The Imitation Game (★​★★​★​☆)
+slug: the-imitation-game
+alias: 2025/05/19/the-imitation-game
 published_date: "2025-05-18T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/cf21c53c69.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-18T22:00:00+00:00"
 ---

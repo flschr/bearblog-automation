@@ -1,17 +1,17 @@
 ---
-uid: "EwAszVSaidMyFqXwZCLd"
-title: "Schlemmen in Sofia"
-slug: "schlemmen-in-sofia"
-alias: "2024/03/12/schlemmen-in-sofia"
+uid: EwAszVSaidMyFqXwZCLd
+title: Schlemmen in Sofia
+slug: schlemmen-in-sofia
+alias: 2024/03/12/schlemmen-in-sofia
 published_date: "2024-03-11T23:00:00+00:00"
-all_tags: "[\"blog\", \"leckerwars\", \"ernu00e4hrung\"]"
+all_tags: "[\"blog\", \"leckerwars\", \"ern\\u00e4hrung\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/18f2726882b66aba.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-03-11T23:00:00+00:00"
 ---

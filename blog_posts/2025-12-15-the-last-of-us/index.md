@@ -1,7 +1,7 @@
 ---
-uid: "eyvQbuMuShFNRQvesWFo"
-title: "🍿 The Last of Us (★★★☆☆)"
-slug: "the-last-of-us"
+uid: eyvQbuMuShFNRQvesWFo
+title: 🍿 The Last of Us (★★★☆☆)
+slug: the-last-of-us
 alias: ""
 published_date: "2025-12-15T21:24:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/lastofus.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-12-15T21:24:00+00:00"
 ---

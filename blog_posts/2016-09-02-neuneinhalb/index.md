@@ -1,8 +1,8 @@
 ---
-uid: "qIIrNKbPTrcSRjUxoYrI"
-title: "📚 Neuneinhalb"
-slug: "neuneinhalb"
-alias: "2016/09/02/neuneinhalb"
+uid: qIIrNKbPTrcSRjUxoYrI
+title: 📚 Neuneinhalb
+slug: neuneinhalb
+alias: 2016/09/02/neuneinhalb
 published_date: "2016-09-02T18:07:00+00:00"
 all_tags: "[\"ausgelesen\", \"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/66cfd543d6.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2016-09-02T18:07:00+00:00"
 ---

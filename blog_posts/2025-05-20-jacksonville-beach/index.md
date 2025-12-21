@@ -1,8 +1,8 @@
 ---
-uid: "yMiCiRmkMUsWobYjbQTg"
-title: "Jacksonville Beach"
-slug: "jacksonville-beach"
-alias: "2025/05/20/jacksonville-beach"
+uid: yMiCiRmkMUsWobYjbQTg
+title: Jacksonville Beach
+slug: jacksonville-beach
+alias: 2025/05/20/jacksonville-beach
 published_date: "2025-05-20T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/4bc84c089e.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-20T22:00:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "dQUnSULGVMBYzAnkaZKJ"
-title: "🍿 In with the Devil (★★★★☆)"
-slug: "in-with-the-devil"
-alias: "2025/06/22/in-with-the-devil-ist"
+uid: dQUnSULGVMBYzAnkaZKJ
+title: 🍿 In with the Devil (★★★★☆)
+slug: in-with-the-devil
+alias: 2025/06/22/in-with-the-devil-ist
 published_date: "2025-06-21T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/in-with-the-devil-scaled.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-21T22:00:00+00:00"
 ---

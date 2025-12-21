@@ -1,8 +1,8 @@
 ---
-uid: "MTYtZitTwJoBvurLcvQX"
+uid: MTYtZitTwJoBvurLcvQX
 title: "California Dreamin'"
-slug: "california-dreamin"
-alias: "2019/11/10/california-dreamin"
+slug: california-dreamin
+alias: 2019/11/10/california-dreamin
 published_date: "2019-11-10T21:58:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/143b0f045a.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2019-11-10T21:58:00+00:00"
 ---

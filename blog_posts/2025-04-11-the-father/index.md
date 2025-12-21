@@ -1,8 +1,8 @@
 ---
-uid: "PUwmXrrnaiMmEXucVoJZ"
-title: "🍿 The Father (★​★★​★☆)"
-slug: "the-father"
-alias: "2025/04/12/the-father"
+uid: PUwmXrrnaiMmEXucVoJZ
+title: 🍿 The Father (★​★★​★☆)
+slug: the-father
+alias: 2025/04/12/the-father
 published_date: "2025-04-11T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/4c80a4a91a.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-04-11T22:00:00+00:00"
 ---

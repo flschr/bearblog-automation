@@ -1,8 +1,8 @@
 ---
-uid: "kvKFktzzBZjQUdsFJEyx"
-title: "IKEA Oddvald als Piano-Ständer"
-slug: "ikea-oddvald-als-piano-stander"
-alias: "2016/11/05/ikea-oddvald-als-pianostnder"
+uid: kvKFktzzBZjQUdsFJEyx
+title: IKEA Oddvald als Piano-Ständer
+slug: ikea-oddvald-als-piano-stander
+alias: 2016/11/05/ikea-oddvald-als-pianostnder
 published_date: "2016-11-05T19:56:00+00:00"
 all_tags: "[\"blog\", \"geschraubt\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/3883b7ab6f.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2016-11-05T19:56:00+00:00"
 ---

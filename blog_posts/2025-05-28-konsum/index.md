@@ -1,8 +1,8 @@
 ---
-uid: "mgWKsGFGCEKTZejaxBdJ"
-title: "Konsum"
-slug: "konsum"
-alias: "2025/05/29/judengasse"
+uid: mgWKsGFGCEKTZejaxBdJ
+title: Konsum
+slug: konsum
+alias: 2025/05/29/judengasse
 published_date: "2025-05-28T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/kjhukshdujr84zhd872-2.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-28T22:00:00+00:00"
 ---
 

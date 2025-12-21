@@ -1,8 +1,8 @@
 ---
-uid: "EHJBaRLibyiHknMcsBsN"
-title: "🍿 Konklave (★​★★​☆☆)"
-slug: "konklave"
-alias: "2025/05/19/konklave"
+uid: EHJBaRLibyiHknMcsBsN
+title: 🍿 Konklave (★​★★​☆☆)
+slug: konklave
+alias: 2025/05/19/konklave
 published_date: "2025-05-18T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/b1d6789c02.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-18T22:00:00+00:00"
 ---

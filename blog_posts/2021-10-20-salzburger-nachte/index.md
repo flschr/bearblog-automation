@@ -1,8 +1,8 @@
 ---
-uid: "RryvXFDoVVSLPfkKkXPL"
-title: "Salzburger Nächte"
-slug: "salzburger-nachte"
-alias: "2021/10/20/salzburger-nchte"
+uid: RryvXFDoVVSLPfkKkXPL
+title: Salzburger Nächte
+slug: salzburger-nachte
+alias: 2021/10/20/salzburger-nchte
 published_date: "2021-10-20T19:16:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/f5d56862b3.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-10-20T19:16:00+00:00"
 ---

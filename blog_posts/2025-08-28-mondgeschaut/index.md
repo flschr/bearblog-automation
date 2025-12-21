@@ -1,8 +1,8 @@
 ---
-uid: "fGVXjXVMdeUUcTGvIGka"
-title: "Mondgeschaut"
-slug: "mondgeschaut"
-alias: "2025/08/29/am-playa-de-meloneras-sehr"
+uid: fGVXjXVMdeUUcTGvIGka
+title: Mondgeschaut
+slug: mondgeschaut
+alias: 2025/08/29/am-playa-de-meloneras-sehr
 published_date: "2025-08-28T22:00:00+00:00"
 all_tags: "[\"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/c04edeac49.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-08-28T22:00:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "grThfMUxTZRCTDbrBkRd"
-title: "Mit dem MTB an der Leitzach entlang um den Schliersee"
-slug: "mit-dem-mtb-an-der-leitzach-entlang-um-den-schliersee"
-alias: "2024/08/08/mit-dem-mtb-an-der"
+uid: grThfMUxTZRCTDbrBkRd
+title: Mit dem MTB an der Leitzach entlang um den Schliersee
+slug: mit-dem-mtb-an-der-leitzach-entlang-um-den-schliersee
+alias: 2024/08/08/mit-dem-mtb-an-der
 published_date: "2024-08-07T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"zweirradspass\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-2443.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-08-07T22:00:00+00:00"
 ---

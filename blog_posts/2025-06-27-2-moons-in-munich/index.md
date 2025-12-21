@@ -1,8 +1,8 @@
 ---
-uid: "udYEYMXBqnEJUVaIAkJI"
-title: "2 moons in Munich"
-slug: "2-moons-in-munich"
-alias: "2025/06/28/you-currently-have-the-chance"
+uid: udYEYMXBqnEJUVaIAkJI
+title: 2 moons in Munich
+slug: 2-moons-in-munich
+alias: 2025/06/28/you-currently-have-the-chance
 published_date: "2025-06-27T22:00:00+00:00"
 all_tags: "[\"blog\", \"fotografie\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/5861785ada.webp"
-lang: "en"
+lang: en
 class_name: ""
 first_published_at: "2025-06-27T22:00:00+00:00"
 ---

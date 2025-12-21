@@ -1,8 +1,8 @@
 ---
-uid: "YEuRLeYwTECrqkiDXbWW"
-title: "Dinge die mit K beginnen"
-slug: "dinge-die-mit-k-beginnen"
-alias: "2025/08/26/fotovorschlag-dinge-die-mit-k"
+uid: YEuRLeYwTECrqkiDXbWW
+title: Dinge die mit K beginnen
+slug: dinge-die-mit-k-beginnen
+alias: 2025/08/26/fotovorschlag-dinge-die-mit-k
 published_date: "2025-08-25T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-3181.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-08-25T22:00:00+00:00"
 ---
 

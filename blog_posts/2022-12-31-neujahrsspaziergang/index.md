@@ -1,8 +1,8 @@
 ---
-uid: "uWnDSuPxXEQiUPPBKGcD"
-title: "Neujahrsspaziergang"
-slug: "neujahrsspaziergang"
-alias: "2023/01/01/neujahrsspaziergang"
+uid: uWnDSuPxXEQiUPPBKGcD
+title: Neujahrsspaziergang
+slug: neujahrsspaziergang
+alias: 2023/01/01/neujahrsspaziergang
 published_date: "2022-12-31T23:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/5a357692a6.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2022-12-31T23:00:00+00:00"
 ---

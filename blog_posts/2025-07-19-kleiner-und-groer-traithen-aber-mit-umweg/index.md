@@ -1,8 +1,8 @@
 ---
-uid: "LXQzsUTuSGwyoMaRGKHP"
-title: "🥾 Kleiner und Großer Traithen, aber mit Umweg"
-slug: "kleiner-und-groer-traithen-aber-mit-umweg"
-alias: "2025/07/20/kleiner-und-groer-traithen-aber"
+uid: LXQzsUTuSGwyoMaRGKHP
+title: 🥾 Kleiner und Großer Traithen, aber mit Umweg
+slug: kleiner-und-groer-traithen-aber-mit-umweg
+alias: 2025/07/20/kleiner-und-groer-traithen-aber
 published_date: "2025-07-19T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-5347-traithen.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-07-19T22:00:00+00:00"
 ---

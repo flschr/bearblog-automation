@@ -1,8 +1,8 @@
 ---
-uid: "odtXomagqAmrokXioQzL"
-title: "🥾 Ein bisschen durch den Thüringer Wald"
-slug: "ein-bisschen-durch-den-thuringer-wald"
-alias: "2025/06/21/ein-bisschen-durch-den-thringer"
+uid: odtXomagqAmrokXioQzL
+title: 🥾 Ein bisschen durch den Thüringer Wald
+slug: ein-bisschen-durch-den-thuringer-wald
+alias: 2025/06/21/ein-bisschen-durch-den-thringer
 published_date: "2025-06-20T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/jtbcv3xb06gt9ekpn64vmc9nxjh4g5j8.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-20T22:00:00+00:00"
 ---

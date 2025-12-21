@@ -1,8 +1,8 @@
 ---
-uid: "EPYNbCnMAmJuvqDLkctY"
-title: "Unspektakulär schön"
-slug: "unspektakular-schon"
-alias: "2025/07/17/ich-habe-viele-atemberaubende-fotos"
+uid: EPYNbCnMAmJuvqDLkctY
+title: Unspektakulär schön
+slug: unspektakular-schon
+alias: 2025/07/17/ich-habe-viele-atemberaubende-fotos
 published_date: "2025-07-16T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/e3e41ef8ef.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-07-16T22:00:00+00:00"
 ---
 

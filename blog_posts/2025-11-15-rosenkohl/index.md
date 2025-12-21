@@ -1,17 +1,17 @@
 ---
-uid: "dvoSekeeWwkzqLKoWBSb"
-title: "Rosenkohl"
-slug: "rosenkohl"
-alias: "2025/11/16/rosenkohl"
+uid: dvoSekeeWwkzqLKoWBSb
+title: Rosenkohl
+slug: rosenkohl
+alias: 2025/11/16/rosenkohl
 published_date: "2025-11-15T23:00:00+00:00"
-all_tags: "[\"blog\", \"ernu00e4hrung\", \"sehrprivat\"]"
+all_tags: "[\"blog\", \"ern\\u00e4hrung\", \"sehrprivat\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-8348.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-11-15T23:00:00+00:00"
 ---

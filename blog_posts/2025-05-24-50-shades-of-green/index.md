@@ -1,8 +1,8 @@
 ---
-uid: "LiZnRnIIFbjBbSyAHjbh"
-title: "50 Shades of Green"
-slug: "50-shades-of-green"
-alias: "2025/05/25/fotovorschlag-shades-of-green-das"
+uid: LiZnRnIIFbjBbSyAHjbh
+title: 50 Shades of Green
+slug: 50-shades-of-green
+alias: 2025/05/25/fotovorschlag-shades-of-green-das
 published_date: "2025-05-24T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/bc020942-5fce-453a-8e5c-87e39e182389-1-201-a.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-24T22:00:00+00:00"
 ---
 

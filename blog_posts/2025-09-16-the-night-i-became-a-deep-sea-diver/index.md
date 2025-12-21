@@ -1,8 +1,8 @@
 ---
-uid: "ekRvIUrmpFLDzmtSNFrL"
-title: "The night I became a deep-sea diver"
-slug: "the-night-i-became-a-deep-sea-diver"
-alias: "2025/09/17/the-night-i-became-a"
+uid: ekRvIUrmpFLDzmtSNFrL
+title: The night I became a deep-sea diver
+slug: the-night-i-became-a-deep-sea-diver
+alias: 2025/09/17/the-night-i-became-a
 published_date: "2025-09-16T22:00:00+00:00"
 all_tags: "[\"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "picsew-20250917201942](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/picsew-20250917201942.webp"
-lang: "en"
+lang: en
 class_name: ""
 first_published_at: "2025-09-16T22:00:00+00:00"
 ---

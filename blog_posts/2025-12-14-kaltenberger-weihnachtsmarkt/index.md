@@ -1,7 +1,7 @@
 ---
-uid: "SFsHUfSjAtauEaZIBnkL"
-title: "Kaltenberger Weihnachtsmarkt"
-slug: "kaltenberger-weihnachtsmarkt"
+uid: SFsHUfSjAtauEaZIBnkL
+title: Kaltenberger Weihnachtsmarkt
+slug: kaltenberger-weihnachtsmarkt
 alias: ""
 published_date: "2025-12-14T19:19:00+00:00"
 all_tags: "[\"fotos\"]"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/cc43d07d-64d0-448c-be54-23caca87126d_1_201_a.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-12-14T19:19:00+00:00"
 ---
 

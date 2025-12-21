@@ -1,8 +1,8 @@
 ---
-uid: "ImHfsWwsYoHRIXBCNryr"
-title: "Kurzurlaub am Starnberger See"
-slug: "kurzurlaub-am-starnberger-see"
-alias: "2023/08/15/kurzurlaub-am-starnberger-see"
+uid: ImHfsWwsYoHRIXBCNryr
+title: Kurzurlaub am Starnberger See
+slug: kurzurlaub-am-starnberger-see
+alias: 2023/08/15/kurzurlaub-am-starnberger-see
 published_date: "2023-08-14T22:00:00+00:00"
 all_tags: "[\"blog\", \"ganzvielurlaub\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/b9be275fd6.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2023-08-14T22:00:00+00:00"
 ---

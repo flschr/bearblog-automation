@@ -1,8 +1,8 @@
 ---
-uid: "rsIPrrMPHaGFFFBJYhVZ"
-title: "Geduld du brauchst!"
-slug: "geduld-du-brauchst"
-alias: "2021/05/16/geduld-du-brauchst"
+uid: rsIPrrMPHaGFFFBJYhVZ
+title: Geduld du brauchst!
+slug: geduld-du-brauchst
+alias: 2021/05/16/geduld-du-brauchst
 published_date: "2021-05-15T22:43:00+00:00"
 all_tags: "[\"blog\", \"geschraubt\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/e9ce60d78b.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-05-15T22:43:00+00:00"
 ---

@@ -1,7 +1,7 @@
 ---
-uid: "FeekwDgyvkwUiknChIpx"
-title: "Blog"
-slug: "blog"
+uid: FeekwDgyvkwUiknChIpx
+title: Blog
+slug: blog
 alias: ""
 published_date: "2025-12-03T00:43:00+00:00"
 all_tags: "[]"

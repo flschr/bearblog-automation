@@ -1,8 +1,8 @@
 ---
-uid: "keojsLtfwtTiMUFkSTmy"
-title: "Krippenbastelei"
-slug: "krippenbastelei"
-alias: "2013/11/20/krippenbastelei"
+uid: keojsLtfwtTiMUFkSTmy
+title: Krippenbastelei
+slug: krippenbastelei
+alias: 2013/11/20/krippenbastelei
 published_date: "2013-11-20T20:01:00+00:00"
 all_tags: "[\"blog\", \"geschraubt\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/dd711639bf.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2013-11-20T20:01:00+00:00"
 ---

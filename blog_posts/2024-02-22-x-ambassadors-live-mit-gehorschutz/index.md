@@ -1,8 +1,8 @@
 ---
-uid: "voUrrcLpiinknrhgpgnK"
-title: "🎶 X Ambassadors live, mit Gehörschutz"
-slug: "x-ambassadors-live-mit-gehorschutz"
-alias: "2024/02/23/x-ambassadors-live-mit-airpods"
+uid: voUrrcLpiinknrhgpgnK
+title: 🎶 X Ambassadors live, mit Gehörschutz
+slug: x-ambassadors-live-mit-gehorschutz
+alias: 2024/02/23/x-ambassadors-live-mit-airpods
 published_date: "2024-02-22T23:00:00+00:00"
 all_tags: "[\"blog\", \"gesundheit\", \"liebefuerdieohren\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/60c9378866a693c8.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-02-22T23:00:00+00:00"
 ---

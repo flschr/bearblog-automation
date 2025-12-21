@@ -1,8 +1,8 @@
 ---
-uid: "ooNNuMCXpWeqVpBHywRy"
-title: "Langsam den Berg wieder rauf"
-slug: "langsam-den-berg-wieder-rauf"
-alias: "2025/04/06/langsam-den-berg-wieder-rauf"
+uid: ooNNuMCXpWeqVpBHywRy
+title: Langsam den Berg wieder rauf
+slug: langsam-den-berg-wieder-rauf
+alias: 2025/04/06/langsam-den-berg-wieder-rauf
 published_date: "2025-04-05T22:00:00+00:00"
 all_tags: "[\"blog\", \"gesundheit\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/174395733698502783.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-04-05T22:00:00+00:00"
 ---

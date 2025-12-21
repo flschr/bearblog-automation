@@ -1,17 +1,17 @@
 ---
-uid: "qhLWFRuqegfvQeufEEeY"
-title: "Wunderwuzzi Kefir"
-slug: "wunderwuzzi-kefir"
-alias: "2018/01/07/wunderwuzzi-kefir"
+uid: qhLWFRuqegfvQeufEEeY
+title: Wunderwuzzi Kefir
+slug: wunderwuzzi-kefir
+alias: 2018/01/07/wunderwuzzi-kefir
 published_date: "2018-01-07T20:02:00+00:00"
-all_tags: "[\"blog\", \"ernu00e4hrung\", \"faktensammlung\"]"
+all_tags: "[\"blog\", \"ern\\u00e4hrung\", \"faktensammlung\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/79bc090d77.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2018-01-07T20:02:00+00:00"
 ---

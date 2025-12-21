@@ -1,8 +1,8 @@
 ---
-uid: "BoBVezWqoZkGqctkwUTX"
-title: "Es muss nicht immer Fussball sein"
-slug: "es-muss-nicht-immer-fussball-sein"
-alias: "2024/05/05/es-muss-nicht-immer-fussball"
+uid: BoBVezWqoZkGqctkwUTX
+title: Es muss nicht immer Fussball sein
+slug: es-muss-nicht-immer-fussball-sein
+alias: 2024/05/05/es-muss-nicht-immer-fussball
 published_date: "2024-05-04T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/44187517bc6d2dd5.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2024-05-04T22:00:00+00:00"
 ---
 

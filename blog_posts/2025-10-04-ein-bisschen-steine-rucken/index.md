@@ -1,8 +1,8 @@
 ---
-uid: "DpwzaAMUwkHCwhDXniAm"
-title: "Ein bisschen Steine rücken"
-slug: "ein-bisschen-steine-rucken"
-alias: "2025/10/05/ein-bisschen-steine-rcken"
+uid: DpwzaAMUwkHCwhDXniAm
+title: Ein bisschen Steine rücken
+slug: ein-bisschen-steine-rucken
+alias: 2025/10/05/ein-bisschen-steine-rcken
 published_date: "2025-10-04T22:00:00+00:00"
 all_tags: "[\"blog\", \"fischverrueckt\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-7926.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-10-04T22:00:00+00:00"
 ---

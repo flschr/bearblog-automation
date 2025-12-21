@@ -1,8 +1,8 @@
 ---
-uid: "vSrwhrbdfYxrQrKEtnnM"
-title: "You had one job!"
-slug: "you-had-one-job"
-alias: "2019/02/07/you-had-one-job"
+uid: vSrwhrbdfYxrQrKEtnnM
+title: You had one job!
+slug: you-had-one-job
+alias: 2019/02/07/you-had-one-job
 published_date: "2019-02-07T21:14:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/d3a5eb8ad7.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2019-02-07T21:14:00+00:00"
 ---
 

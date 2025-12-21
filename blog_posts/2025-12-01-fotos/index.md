@@ -1,7 +1,7 @@
 ---
-uid: "KpcGoCZNcfaVierAuLSW"
-title: "Fotos"
-slug: "fotos"
+uid: KpcGoCZNcfaVierAuLSW
+title: Fotos
+slug: fotos
 alias: ""
 published_date: "2025-12-01T19:32:00+00:00"
 all_tags: "[]"

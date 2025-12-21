@@ -1,8 +1,8 @@
 ---
-uid: "XvDYQwhVqNwBnuTJPBdh"
-title: "Brot aus der Heißluftschublade"
-slug: "brot-aus-der-heiluftschublade"
-alias: "2025/06/15/brot-aus-der-heiluftschublade"
+uid: XvDYQwhVqNwBnuTJPBdh
+title: Brot aus der Heißluftschublade
+slug: brot-aus-der-heiluftschublade
+alias: 2025/06/15/brot-aus-der-heiluftschublade
 published_date: "2025-06-14T22:00:00+00:00"
 all_tags: "[\"blog\", \"rezeptvomchef\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/brot-aus-dem-airfryer.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-14T22:00:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "wcXhUbvDHRHcsqFRfALI"
-title: "📚 Das Objekt (★★☆☆☆)"
-slug: "das-objekt"
-alias: "2025/09/02/ausgelesen-das-objekt-von-joshua"
+uid: wcXhUbvDHRHcsqFRfALI
+title: 📚 Das Objekt (★★☆☆☆)
+slug: das-objekt
+alias: 2025/09/02/ausgelesen-das-objekt-von-joshua
 published_date: "2025-09-01T22:00:00+00:00"
 all_tags: "[\"ausgelesen\", \"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/dc01056f1d.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-09-01T22:00:00+00:00"
 ---

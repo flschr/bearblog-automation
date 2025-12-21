@@ -1,8 +1,8 @@
 ---
-uid: "iIdoPyFqpFYzTurTTJoF"
-title: "Schuhe für Cybertruck-Fahrer"
-slug: "schuhe-fur-cybertruck-fahrer"
-alias: "2024/06/21/in-kuala-lumpur-gibt-es"
+uid: iIdoPyFqpFYzTurTTJoF
+title: Schuhe für Cybertruck-Fahrer
+slug: schuhe-fur-cybertruck-fahrer
+alias: 2024/06/21/in-kuala-lumpur-gibt-es
 published_date: "2024-06-20T22:00:00+00:00"
 all_tags: "[\"blog\", \"strangeworld\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/b8e3821cb507b74b.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-06-20T22:00:00+00:00"
 ---

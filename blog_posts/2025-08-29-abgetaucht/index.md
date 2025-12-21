@@ -1,8 +1,8 @@
 ---
-uid: "sLvTxUTIosnchahWIcxH"
-title: "Abgetaucht"
-slug: "abgetaucht"
-alias: "2025/08/30/kurz-abtaucher-zum-poema-del"
+uid: sLvTxUTIosnchahWIcxH
+title: Abgetaucht
+slug: abgetaucht
+alias: 2025/08/30/kurz-abtaucher-zum-poema-del
 published_date: "2025-08-29T22:00:00+00:00"
 all_tags: "[\"blog\", \"fischverrueckt\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/bb632298d7.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-08-29T22:00:00+00:00"
 ---

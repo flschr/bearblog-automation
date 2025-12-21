@@ -1,8 +1,8 @@
 ---
-uid: "gpnyDxBmDUgVguAJvALS"
-title: "Sandkunst"
-slug: "sandkunst"
-alias: "2025/09/09/san-fernando-beach-maspalomas-sieht"
+uid: gpnyDxBmDUgVguAJvALS
+title: Sandkunst
+slug: sandkunst
+alias: 2025/09/09/san-fernando-beach-maspalomas-sieht
 published_date: "2025-09-08T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/6e7dd8bc2c.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-09-08T22:00:00+00:00"
 ---
 

@@ -1,8 +1,8 @@
 ---
-uid: "RsPgcfiVCdYwWKsvhuTa"
-title: "Osloabervielzukurz"
-slug: "osloabervielzukurz"
-alias: "2020/01/20/osloabervielzukurz"
+uid: RsPgcfiVCdYwWKsvhuTa
+title: Osloabervielzukurz
+slug: osloabervielzukurz
+alias: 2020/01/20/osloabervielzukurz
 published_date: "2020-01-20T20:53:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/cb62546142.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2020-01-20T20:53:00+00:00"
 ---

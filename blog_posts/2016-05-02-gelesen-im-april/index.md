@@ -1,8 +1,8 @@
 ---
-uid: "imYRKmuPqBksFaFRHdpi"
-title: "📚 Gelesen im April"
-slug: "gelesen-im-april"
-alias: "2016/05/02/gelesen-im-april"
+uid: imYRKmuPqBksFaFRHdpi
+title: 📚 Gelesen im April
+slug: gelesen-im-april
+alias: 2016/05/02/gelesen-im-april
 published_date: "2016-05-02T17:24:00+00:00"
 all_tags: "[\"ausgelesen\", \"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9144cfdf31.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2016-05-02T17:24:00+00:00"
 ---

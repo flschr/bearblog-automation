@@ -1,8 +1,8 @@
 ---
-uid: "JWtSrGrInIJZmHayfVty"
-title: "🥾 Mit dem Zug in die Berge"
-slug: "mit-dem-zug-in-die-berge"
-alias: "2025/08/09/mit-dem-zug-in-die"
+uid: JWtSrGrInIJZmHayfVty
+title: 🥾 Mit dem Zug in die Berge
+slug: mit-dem-zug-in-die-berge
+alias: 2025/08/09/mit-dem-zug-in-die
 published_date: "2025-08-08T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/photo-1592634549335-f6be8df97b47.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-08-08T22:00:00+00:00"
 ---

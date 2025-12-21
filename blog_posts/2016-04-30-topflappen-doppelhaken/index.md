@@ -1,8 +1,8 @@
 ---
-uid: "hCJBhyjISdksNRNKQjGC"
-title: "Topflappen-Doppelhaken"
-slug: "topflappen-doppelhaken"
-alias: "2016/04/30/topflappendoppelhaken"
+uid: hCJBhyjISdksNRNKQjGC
+title: Topflappen-Doppelhaken
+slug: topflappen-doppelhaken
+alias: 2016/04/30/topflappendoppelhaken
 published_date: "2016-04-30T14:25:00+00:00"
 all_tags: "[\"fotos\", \"flohmarkt\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/6a5c94b49a.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2016-04-30T14:25:00+00:00"
 ---
 

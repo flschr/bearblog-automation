@@ -1,17 +1,17 @@
 ---
-uid: "kpiRwsubypBqAIwIsyax"
-title: "👨🏻‍🍳 Brotbackkunst"
-slug: "brotbackkunst"
-alias: "2020/11/10/brotbackkunst"
+uid: kpiRwsubypBqAIwIsyax
+title: 👨🏻‍🍳 Brotbackkunst
+slug: brotbackkunst
+alias: 2020/11/10/brotbackkunst
 published_date: "2020-11-10T13:08:00+00:00"
-all_tags: "[\"blog\", \"ernu00e4hrung\", \"rezeptvomchef\"]"
+all_tags: "[\"blog\", \"ern\\u00e4hrung\", \"rezeptvomchef\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/c004fed790.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2020-11-10T13:08:00+00:00"
 ---

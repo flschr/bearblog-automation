@@ -1,8 +1,8 @@
 ---
-uid: "cksowNuhkJQaqtAzLnKy"
-title: "Darwinistische Gleichgültigkeit"
-slug: "darwinistische-gleichgultigkeit"
-alias: "2021/01/09/darwinistische-gleichgltigkeit"
+uid: cksowNuhkJQaqtAzLnKy
+title: Darwinistische Gleichgültigkeit
+slug: darwinistische-gleichgultigkeit
+alias: 2021/01/09/darwinistische-gleichgltigkeit
 published_date: "2021-01-09T20:41:00+00:00"
 all_tags: "[\"blog\", \"bisschensauer\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/ca48adbbe8.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-01-09T20:41:00+00:00"
 ---

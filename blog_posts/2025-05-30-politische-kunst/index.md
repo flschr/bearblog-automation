@@ -1,8 +1,8 @@
 ---
-uid: "yoViCDvMwyIeCmrSzzun"
-title: "Politische Kunst?"
-slug: "politische-kunst"
-alias: "2025/05/31/der-fotovorschlag-fr-politische-kunst"
+uid: yoViCDvMwyIeCmrSzzun
+title: Politische Kunst?
+slug: politische-kunst
+alias: 2025/05/31/der-fotovorschlag-fr-politische-kunst
 published_date: "2025-05-30T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/z827468236489235fsf.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-30T22:00:00+00:00"
 ---
 

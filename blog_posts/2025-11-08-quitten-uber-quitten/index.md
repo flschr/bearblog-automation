@@ -1,8 +1,8 @@
 ---
-uid: "jYkQgYREpNvDYQhHqEWj"
-title: "Quitten über Quitten"
-slug: "quitten-uber-quitten"
-alias: "2025/11/09/offenbar-ist-heuer-ein-gutes"
+uid: jYkQgYREpNvDYQhHqEWj
+title: Quitten über Quitten
+slug: quitten-uber-quitten
+alias: 2025/11/09/offenbar-ist-heuer-ein-gutes
 published_date: "2025-11-08T23:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-8329.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-11-08T23:00:00+00:00"
 ---
 

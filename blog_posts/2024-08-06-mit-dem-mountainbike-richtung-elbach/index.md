@@ -1,8 +1,8 @@
 ---
-uid: "eHTYZKXybXRpFbykPRWJ"
-title: "Mit dem Mountainbike Richtung Elbach"
-slug: "mit-dem-mountainbike-richtung-elbach"
-alias: "2024/08/07/mit-dem-mountainbike-richtung-elbach"
+uid: eHTYZKXybXRpFbykPRWJ
+title: Mit dem Mountainbike Richtung Elbach
+slug: mit-dem-mountainbike-richtung-elbach
+alias: 2024/08/07/mit-dem-mountainbike-richtung-elbach
 published_date: "2024-08-06T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"zweirradspass\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2f877f67f8e4fe99.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2024-08-06T22:00:00+00:00"
 ---

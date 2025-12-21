@@ -1,17 +1,17 @@
 ---
-uid: "unRFoULJTPQTQSYAWGYB"
-title: "Einen Versuch war es wert"
-slug: "einen-versuch-war-es-wert"
-alias: "2021/04/04/einen-versuch-war-es-wert"
+uid: unRFoULJTPQTQSYAWGYB
+title: Einen Versuch war es wert
+slug: einen-versuch-war-es-wert
+alias: 2021/04/04/einen-versuch-war-es-wert
 published_date: "2021-04-04T12:36:00+00:00"
-all_tags: "[\"blog\", \"ernu00e4hrung\"]"
+all_tags: "[\"blog\", \"ern\\u00e4hrung\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/809bf86130.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-04-04T12:36:00+00:00"
 ---

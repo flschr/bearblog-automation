@@ -1,8 +1,8 @@
 ---
-uid: "BVgUizMuvmqWhgSwHoKk"
-title: "👨🏻‍🍳 Rosinenschnecken"
-slug: "rosinenschnecken"
-alias: "2016/09/18/rosinenschnecken"
+uid: BVgUizMuvmqWhgSwHoKk
+title: 👨🏻‍🍳 Rosinenschnecken
+slug: rosinenschnecken
+alias: 2016/09/18/rosinenschnecken
 published_date: "2016-09-18T14:00:00+00:00"
 all_tags: "[\"blog\", \"rezeptvomchef\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/73b3a846dd.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2016-09-18T14:00:00+00:00"
 ---

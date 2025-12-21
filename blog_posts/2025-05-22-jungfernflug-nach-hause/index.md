@@ -1,8 +1,8 @@
 ---
-uid: "RIQICDvTQxnbAktmkWUv"
-title: "Jungfernflug nach Hause"
-slug: "jungfernflug-nach-hause"
-alias: "2025/05/23/und-zurck"
+uid: RIQICDvTQxnbAktmkWUv
+title: Jungfernflug nach Hause
+slug: jungfernflug-nach-hause
+alias: 2025/05/23/und-zurck
 published_date: "2025-05-22T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/canada-airlines-cookie.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-22T22:00:00+00:00"
 ---

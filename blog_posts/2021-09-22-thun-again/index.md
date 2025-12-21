@@ -1,8 +1,8 @@
 ---
-uid: "KUotfDETcoeBjVzuRZfx"
-title: "Thun again!"
-slug: "thun-again"
-alias: "2021/09/22/thun-again"
+uid: KUotfDETcoeBjVzuRZfx
+title: Thun again!
+slug: thun-again
+alias: 2021/09/22/thun-again
 published_date: "2021-09-22T07:21:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/1804ec3bdd.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2021-09-22T07:21:00+00:00"
 ---

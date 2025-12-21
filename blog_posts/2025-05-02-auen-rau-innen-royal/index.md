@@ -1,17 +1,17 @@
 ---
-uid: "fksyeTrQyipXuVMeeGys"
-title: "Außen rau, innen royal"
-slug: "auen-rau-innen-royal"
-alias: "2025/05/03/auen-rau-innen-royal"
+uid: fksyeTrQyipXuVMeeGys
+title: Außen rau, innen royal
+slug: auen-rau-innen-royal
+alias: 2025/05/03/auen-rau-innen-royal
 published_date: "2025-05-02T22:00:00+00:00"
-all_tags: "[\"blog\", \"ernu00e4hrung\", \"faktenwissen\"]"
+all_tags: "[\"blog\", \"ern\\u00e4hrung\", \"faktenwissen\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/181b14d976.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-02T22:00:00+00:00"
 ---

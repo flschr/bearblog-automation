@@ -1,7 +1,7 @@
 ---
-uid: "chMPbgCyCRufCPKYwbko"
-title: "🐻 A Markdown Toolbar for lazy Bear Blog users"
-slug: "a-markdown-toolbar-for-lazy-bear-blog-users"
+uid: chMPbgCyCRufCPKYwbko
+title: 🐻 A Markdown Toolbar for lazy Bear Blog users
+slug: a-markdown-toolbar-for-lazy-bear-blog-users
 alias: ""
 published_date: "2025-12-19T22:01:00+00:00"
 all_tags: "[\"bearblog\", \"blog\", \"coding\", \"plugins\"]"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/1766177197947.webp"
-lang: "en"
+lang: en
 class_name: ""
 first_published_at: "2025-12-19T22:01:00+00:00"
 ---

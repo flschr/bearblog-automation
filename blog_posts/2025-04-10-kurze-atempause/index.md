@@ -1,8 +1,8 @@
 ---
-uid: "kvNVsNeNTndVnRELJMgN"
-title: "Kurze Atempause"
-slug: "kurze-atempause"
-alias: "2025/04/11/kurze-atempause"
+uid: kvNVsNeNTndVnRELJMgN
+title: Kurze Atempause
+slug: kurze-atempause
+alias: 2025/04/11/kurze-atempause
 published_date: "2025-04-10T22:00:00+00:00"
 all_tags: "[\"berufliches\", \"blog\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/dsc00445.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-04-10T22:00:00+00:00"
 ---

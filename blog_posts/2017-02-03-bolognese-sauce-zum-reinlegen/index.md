@@ -1,8 +1,8 @@
 ---
-uid: "tKmanJEDXexRzmqKNFdM"
-title: "👨🏻‍🍳 Bolognese-Sauce zum Reinlegen"
-slug: "bolognese-sauce-zum-reinlegen"
-alias: "2017/02/03/bolognesesauce-zum-reinlegen"
+uid: tKmanJEDXexRzmqKNFdM
+title: 👨🏻‍🍳 Bolognese-Sauce zum Reinlegen
+slug: bolognese-sauce-zum-reinlegen
+alias: 2017/02/03/bolognesesauce-zum-reinlegen
 published_date: "2017-02-03T16:43:00+00:00"
 all_tags: "[\"blog\", \"rezeptvomchef\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/eba6480e70.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2017-02-03T16:43:00+00:00"
 ---

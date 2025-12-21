@@ -1,8 +1,8 @@
 ---
-uid: "RZAnHbkGhZzySeZkeMfT"
-title: "Olympiaturm in bunt"
-slug: "olympiaturm-in-bunt"
-alias: "2025/06/28/olympiaturm-heute-in-bunt"
+uid: RZAnHbkGhZzySeZkeMfT
+title: Olympiaturm in bunt
+slug: olympiaturm-in-bunt
+alias: 2025/06/28/olympiaturm-heute-in-bunt
 published_date: "2025-06-27T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/media.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-06-27T22:00:00+00:00"
 ---
 

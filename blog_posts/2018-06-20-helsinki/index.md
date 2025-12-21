@@ -1,8 +1,8 @@
 ---
-uid: "KCbzgtAiYXAHjgtGGxnA"
-title: "Helsinki"
-slug: "helsinki"
-alias: "2018/06/20/helsinki"
+uid: KCbzgtAiYXAHjgtGGxnA
+title: Helsinki
+slug: helsinki
+alias: 2018/06/20/helsinki
 published_date: "2018-06-20T18:33:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/b9179f2f26.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2018-06-20T18:33:00+00:00"
 ---

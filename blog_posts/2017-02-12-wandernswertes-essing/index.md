@@ -1,8 +1,8 @@
 ---
-uid: "MyazrdCkusbfyThIIIuL"
-title: "Wandernswertes Essing"
-slug: "wandernswertes-essing"
-alias: "2017/02/12/wandernswertes-essing"
+uid: MyazrdCkusbfyThIIIuL
+title: Wandernswertes Essing
+slug: wandernswertes-essing
+alias: 2017/02/12/wandernswertes-essing
 published_date: "2017-02-12T15:43:00+00:00"
 all_tags: "[\"blog\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/bb1ebde8fa.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2017-02-12T15:43:00+00:00"
 ---

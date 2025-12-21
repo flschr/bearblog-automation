@@ -1,8 +1,8 @@
 ---
-uid: "rYwGfpzdCfTkzSzYLRZH"
-title: "18 Kilogramm Lego"
-slug: "18-kilogramm-lego"
-alias: "2025/07/11/wir-haben-soeben-kilogramm-zu"
+uid: rYwGfpzdCfTkzSzYLRZH
+title: 18 Kilogramm Lego
+slug: 18-kilogramm-lego
+alias: 2025/07/11/wir-haben-soeben-kilogramm-zu
 published_date: "2025-07-10T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/18kg-lego.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-07-10T22:00:00+00:00"
 ---
 

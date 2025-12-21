@@ -1,8 +1,8 @@
 ---
-uid: "iuPaIVxrXPGSdFNJsQIq"
-title: "Das Ende des Universums hat keinen Google-Treffer"
-slug: "das-ende-des-universums-hat-keinen-google-treffer"
-alias: "2025/06/27/das-ende-des-universums-hat"
+uid: iuPaIVxrXPGSdFNJsQIq
+title: Das Ende des Universums hat keinen Google-Treffer
+slug: das-ende-des-universums-hat-keinen-google-treffer
+alias: 2025/06/27/das-ende-des-universums-hat
 published_date: "2025-06-26T22:00:00+00:00"
 all_tags: "[\"blog\", \"philosophie\", \"wissenschaft\", \"schwadroniert\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/scr-20250628-ccua.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-26T22:00:00+00:00"
 ---

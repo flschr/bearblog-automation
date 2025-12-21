@@ -1,8 +1,8 @@
 ---
-uid: "vucEEyiFAnnbxWMQRMma"
-title: "Mit dem Moutainbike nach Kloster Schäftlarn und zurück"
-slug: "mit-dem-moutainbike-nach-kloster-schaftlarn-und-zuruck"
-alias: "2022/04/22/mit-dem-moutainbike-nach-kloster"
+uid: vucEEyiFAnnbxWMQRMma
+title: Mit dem Moutainbike nach Kloster Schäftlarn und zurück
+slug: mit-dem-moutainbike-nach-kloster-schaftlarn-und-zuruck
+alias: 2022/04/22/mit-dem-moutainbike-nach-kloster
 published_date: "2022-04-21T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"zweirradspass\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/46f35bceaa.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2022-04-21T22:00:00+00:00"
 ---

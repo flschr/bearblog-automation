@@ -1,8 +1,8 @@
 ---
-uid: "PdPTYkFypDjwowLmiFpW"
-title: "Öbszön schönes Rathaus"
-slug: "obszon-schones-rathaus"
-alias: "2025/09/03/das-rathaus-der-obszn-schnen"
+uid: PdPTYkFypDjwowLmiFpW
+title: Öbszön schönes Rathaus
+slug: obszon-schones-rathaus
+alias: 2025/09/03/das-rathaus-der-obszn-schnen
 published_date: "2025-09-02T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/5fcwy4ay9bnr0s5zn18dkcqf1642yxb9-1.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-09-02T22:00:00+00:00"
 ---
 

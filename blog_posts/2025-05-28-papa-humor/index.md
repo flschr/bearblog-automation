@@ -1,8 +1,8 @@
 ---
-uid: "BpRohAfZCPyqfvgKCNJA"
-title: "Papa-Humor"
-slug: "papa-humor"
-alias: "2025/05/29/ich-glaube-da-steckt-eine"
+uid: BpRohAfZCPyqfvgKCNJA
+title: Papa-Humor
+slug: papa-humor
+alias: 2025/05/29/ich-glaube-da-steckt-eine
 published_date: "2025-05-28T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/image-20250529-143801-86a0c4fd.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-28T22:00:00+00:00"
 ---
 

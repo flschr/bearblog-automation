@@ -1,8 +1,8 @@
 ---
-uid: "DwNYpZTjXtWcaBNBZvdC"
-title: "Kebabgate"
-slug: "kebabgate"
-alias: "2025/06/06/kebabgate"
+uid: DwNYpZTjXtWcaBNBZvdC
+title: Kebabgate
+slug: kebabgate
+alias: 2025/06/06/kebabgate
 published_date: "2025-06-05T22:00:00+00:00"
 all_tags: "[\"blog\", \"faktenwissen\", \"podcasts\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/dner-papers-logo.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-05T22:00:00+00:00"
 ---

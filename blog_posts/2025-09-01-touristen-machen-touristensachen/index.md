@@ -1,8 +1,8 @@
 ---
-uid: "XbLrUGKeARkNTEHvmFhC"
-title: "Touristen machen Touristensachen"
-slug: "touristen-machen-touristensachen"
-alias: "2025/09/02/touristen-machen-touristensachen-und-kamele"
+uid: XbLrUGKeARkNTEHvmFhC
+title: Touristen machen Touristensachen
+slug: touristen-machen-touristensachen
+alias: 2025/09/02/touristen-machen-touristensachen-und-kamele
 published_date: "2025-09-01T22:00:00+00:00"
 all_tags: "[\"blog\", \"wasmittieren\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/06fd046e6a.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-09-01T22:00:00+00:00"
 ---

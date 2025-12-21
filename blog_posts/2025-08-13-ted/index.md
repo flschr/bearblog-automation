@@ -1,8 +1,8 @@
 ---
-uid: "EpdAvzvkaKsTDAEvmHsV"
-title: "🍿 Ted (★★☆☆☆)"
-slug: "ted"
-alias: "2025/08/14/ich-habe-ted-gesehen-freiwillig"
+uid: EpdAvzvkaKsTDAEvmHsV
+title: 🍿 Ted (★★☆☆☆)
+slug: ted
+alias: 2025/08/14/ich-habe-ted-gesehen-freiwillig
 published_date: "2025-08-13T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/qe1t0z0mx3.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-08-13T22:00:00+00:00"
 ---

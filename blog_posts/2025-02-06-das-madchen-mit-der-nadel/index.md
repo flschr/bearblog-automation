@@ -1,8 +1,8 @@
 ---
-uid: "tQJMHUeAZJFHqUgLajUT"
-title: "🍿 Das Mädchen mit der Nadel (★​★★​★★)"
-slug: "das-madchen-mit-der-nadel"
-alias: "2025/02/07/das-mdchen-mit-der-nadel"
+uid: tQJMHUeAZJFHqUgLajUT
+title: 🍿 Das Mädchen mit der Nadel (★​★★​★★)
+slug: das-madchen-mit-der-nadel
+alias: 2025/02/07/das-mdchen-mit-der-nadel
 published_date: "2025-02-06T23:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/c06d7390aa3dea3a5ba55c6079709491.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-02-06T23:00:00+00:00"
 ---

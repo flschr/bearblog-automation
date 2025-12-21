@@ -1,8 +1,8 @@
 ---
-uid: "VdQaedevyeHBCzZiMJoY"
-title: "👨🏻‍🍳 Kaiserschmarrn"
-slug: "kaiserschmarrn"
-alias: "2015/01/01/kaiserschmarrn"
+uid: VdQaedevyeHBCzZiMJoY
+title: 👨🏻‍🍳 Kaiserschmarrn
+slug: kaiserschmarrn
+alias: 2015/01/01/kaiserschmarrn
 published_date: "2015-01-01T12:43:00+00:00"
 all_tags: "[\"blog\", \"rezeptvomchef\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/a56e024452.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2015-01-01T12:43:00+00:00"
 ---

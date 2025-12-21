@@ -1,7 +1,7 @@
 ---
-uid: "zuZqhUuJwKTEyKJDdmYc"
-title: "Über"
-slug: "about"
+uid: zuZqhUuJwKTEyKJDdmYc
+title: Über
+slug: about
 alias: ""
 published_date: "2025-09-07T22:54:00+00:00"
 all_tags: "[]"

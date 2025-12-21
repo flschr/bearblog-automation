@@ -1,8 +1,8 @@
 ---
-uid: "XtNXtghbdjNpQeXCEzVG"
-title: "24-Stunden Notdienst"
-slug: "24-stunden-notdienst"
-alias: "2017/07/11/stunden-notdienst"
+uid: XtNXtghbdjNpQeXCEzVG
+title: 24-Stunden Notdienst
+slug: 24-stunden-notdienst
+alias: 2017/07/11/stunden-notdienst
 published_date: "2017-07-11T18:36:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/89025cf600.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2017-07-11T18:36:00+00:00"
 ---
 

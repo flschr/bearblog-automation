@@ -1,17 +1,17 @@
 ---
-uid: "zcrwtTgneVvoXQyrutpU"
-title: "Leckere Paella, einfach und schnell"
-slug: "leckere-paella-einfach-und-schnell"
-alias: "2022/05/14/leckere-paella-einfach-und-schnell"
+uid: zcrwtTgneVvoXQyrutpU
+title: Leckere Paella, einfach und schnell
+slug: leckere-paella-einfach-und-schnell
+alias: 2022/05/14/leckere-paella-einfach-und-schnell
 published_date: "2022-05-13T22:00:00+00:00"
-all_tags: "[\"blog\", \"ernu00e4hrung\"]"
+all_tags: "[\"blog\", \"ern\\u00e4hrung\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/fa96842417.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2022-05-13T22:00:00+00:00"
 ---

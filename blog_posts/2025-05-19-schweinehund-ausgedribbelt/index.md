@@ -1,8 +1,8 @@
 ---
-uid: "cMfNqeLLWbDnMtqhpXHK"
-title: "Schweinehund ausgedribbelt"
-slug: "schweinehund-ausgedribbelt"
-alias: "2025/05/20/schweinehund-ausgedribbelt"
+uid: cMfNqeLLWbDnMtqhpXHK
+title: Schweinehund ausgedribbelt
+slug: schweinehund-ausgedribbelt
+alias: 2025/05/20/schweinehund-ausgedribbelt
 published_date: "2025-05-19T22:00:00+00:00"
 all_tags: "[\"blog\", \"fitness\", \"stuffthatworks\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/dienstag-20-mai-2025-140957.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-05-19T22:00:00+00:00"
 ---

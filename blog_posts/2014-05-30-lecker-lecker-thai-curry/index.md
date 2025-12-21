@@ -1,8 +1,8 @@
 ---
-uid: "IcrztYtEPcNbZbNsoVmF"
-title: "👨🏻‍🍳 Lecker lecker Thai-Curry"
-slug: "lecker-lecker-thai-curry"
-alias: "2014/05/30/lecker-lecker-thaicurry"
+uid: IcrztYtEPcNbZbNsoVmF
+title: 👨🏻‍🍳 Lecker lecker Thai-Curry
+slug: lecker-lecker-thai-curry
+alias: 2014/05/30/lecker-lecker-thaicurry
 published_date: "2014-05-30T12:57:00+00:00"
 all_tags: "[\"blog\", \"rezeptvomchef\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/34f6927e13.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2014-05-30T12:57:00+00:00"
 ---

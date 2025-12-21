@@ -1,8 +1,8 @@
 ---
-uid: "HrMieFLSEfMhhUxIDeXv"
-title: "Fenster im Bremer Schnoorviertel"
-slug: "fenster-im-bremer-schnoorviertel"
-alias: "2025/05/30/zum-fensterfreitag-ein-foto-des"
+uid: HrMieFLSEfMhhUxIDeXv
+title: Fenster im Bremer Schnoorviertel
+slug: fenster-im-bremer-schnoorviertel
+alias: 2025/05/30/zum-fensterfreitag-ein-foto-des
 published_date: "2025-05-29T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fensterfreitag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2hsdgseg728jsjdh.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-29T22:00:00+00:00"
 ---
 

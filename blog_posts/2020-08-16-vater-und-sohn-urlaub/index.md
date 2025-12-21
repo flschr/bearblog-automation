@@ -1,8 +1,8 @@
 ---
-uid: "EXDYGaHowLkrYXMhQdJF"
-title: "Vater und Sohn-Urlaub"
-slug: "vater-und-sohn-urlaub"
-alias: "2020/08/16/vater-und-sohnurlaub"
+uid: EXDYGaHowLkrYXMhQdJF
+title: Vater und Sohn-Urlaub
+slug: vater-und-sohn-urlaub
+alias: 2020/08/16/vater-und-sohnurlaub
 published_date: "2020-08-16T16:12:00+00:00"
 all_tags: "[\"blog\", \"ganzvielurlaub\", \"wandern\", \"unterwegs\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/7b44f3df3b.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2020-08-16T16:12:00+00:00"
 ---

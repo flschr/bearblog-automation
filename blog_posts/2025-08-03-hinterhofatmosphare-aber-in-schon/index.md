@@ -1,8 +1,8 @@
 ---
-uid: "rZGahAUTIPDjBkWLgZDE"
-title: "Hinterhofatmosphäre, aber in schön"
-slug: "hinterhofatmosphare-aber-in-schon"
-alias: "2025/08/04/canale-di-tenno-ist-ein"
+uid: rZGahAUTIPDjBkWLgZDE
+title: Hinterhofatmosphäre, aber in schön
+slug: hinterhofatmosphare-aber-in-schon
+alias: 2025/08/04/canale-di-tenno-ist-ein
 published_date: "2025-08-03T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/da1978b806.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-08-03T22:00:00+00:00"
 ---
 

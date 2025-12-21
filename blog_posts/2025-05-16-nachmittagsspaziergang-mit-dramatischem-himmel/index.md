@@ -1,8 +1,8 @@
 ---
-uid: "fBBtuQvsDbYtMuDjkpGa"
-title: "Nachmittagsspaziergang mit dramatischem Himmel"
-slug: "nachmittagsspaziergang-mit-dramatischem-himmel"
-alias: "2025/05/17/nachmittagsspaziergang-mit-dramatischem-himmel"
+uid: fBBtuQvsDbYtMuDjkpGa
+title: Nachmittagsspaziergang mit dramatischem Himmel
+slug: nachmittagsspaziergang-mit-dramatischem-himmel
+alias: 2025/05/17/nachmittagsspaziergang-mit-dramatischem-himmel
 published_date: "2025-05-16T22:00:00+00:00"
 all_tags: "[\"fotos\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/88d7d9a377.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-05-16T22:00:00+00:00"
 ---
 

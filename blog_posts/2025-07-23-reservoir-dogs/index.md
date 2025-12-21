@@ -1,8 +1,8 @@
 ---
-uid: "nFYkKECPAvPdkZeACKCt"
-title: "🍿 Reservoir Dogs (★★★★☆)"
-slug: "reservoir-dogs"
-alias: "2025/07/24/reservoir-dogs-war-einer-von"
+uid: nFYkKECPAvPdkZeACKCt
+title: 🍿 Reservoir Dogs (★★★★☆)
+slug: reservoir-dogs
+alias: 2025/07/24/reservoir-dogs-war-einer-von
 published_date: "2025-07-23T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/reservoir-dogs.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-07-23T22:00:00+00:00"
 ---

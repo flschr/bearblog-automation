@@ -1,8 +1,8 @@
 ---
-uid: "uAnokDQHBujnWjIxZaQz"
-title: "🍿 Planet Terror (★★★☆☆)"
-slug: "planet-terror"
-alias: "2025/07/27/planet-terror-von-robert-rodriguez"
+uid: uAnokDQHBujnWjIxZaQz
+title: 🍿 Planet Terror (★★★☆☆)
+slug: planet-terror
+alias: 2025/07/27/planet-terror-von-robert-rodriguez
 published_date: "2025-07-26T22:00:00+00:00"
 all_tags: "[\"blog\", \"popcornfieber\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/we-1.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-07-26T22:00:00+00:00"
 ---

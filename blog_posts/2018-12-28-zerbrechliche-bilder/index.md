@@ -1,8 +1,8 @@
 ---
-uid: "cfRYpXFYvbQqbcJRzFBP"
-title: "Zerbrechliche Bilder"
-slug: "zerbrechliche-bilder"
-alias: "2018/12/28/zerbrechliche-bilder"
+uid: cfRYpXFYvbQqbcJRzFBP
+title: Zerbrechliche Bilder
+slug: zerbrechliche-bilder
+alias: 2018/12/28/zerbrechliche-bilder
 published_date: "2018-12-28T17:17:00+00:00"
 all_tags: "[\"blog\", \"kunst\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/jpg.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2018-12-28T17:17:00+00:00"
 ---

@@ -1,8 +1,8 @@
 ---
-uid: "yptvGKZkmkSnfwmkeVYu"
-title: "📚 Vakuum (★★☆☆☆)"
-slug: "vakuum"
-alias: "2025/06/20/ausgelesen-vakuum-von-phillip-p"
+uid: yptvGKZkmkSnfwmkeVYu
+title: 📚 Vakuum (★★☆☆☆)
+slug: vakuum
+alias: 2025/06/20/ausgelesen-vakuum-von-phillip-p
 published_date: "2025-06-19T22:00:00+00:00"
 all_tags: "[\"blog\", \"ausgelesen\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/c44a1cd66e.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-06-19T22:00:00+00:00"
 ---

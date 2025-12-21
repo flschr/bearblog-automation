@@ -1,7 +1,7 @@
 ---
-uid: "TSZhLTNmCbtxgBuSwpiw"
-title: "Zwei mal im Jahr"
-slug: "zwei-mal-im-jahr"
+uid: TSZhLTNmCbtxgBuSwpiw
+title: Zwei mal im Jahr
+slug: zwei-mal-im-jahr
 alias: ""
 published_date: "2025-11-30T08:30:00+00:00"
 all_tags: "[\"blog\"]"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: ""
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2025-11-30T08:30:00+00:00"
 ---

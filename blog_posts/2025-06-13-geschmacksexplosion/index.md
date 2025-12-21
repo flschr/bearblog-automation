@@ -1,8 +1,8 @@
 ---
-uid: "QjBiTNBPMTWxcUhwZxtR"
-title: "Geschmacksexplosion"
-slug: "geschmacksexplosion"
-alias: "2025/06/14/geschmacksexplosion-hier-in-form-einer"
+uid: QjBiTNBPMTWxcUhwZxtR
+title: Geschmacksexplosion
+slug: geschmacksexplosion
+alias: 2025/06/14/geschmacksexplosion-hier-in-form-einer
 published_date: "2025-06-13T22:00:00+00:00"
 all_tags: "[\"fotos\", \"fotovorschlag\"]"
 publish: "True"
@@ -11,8 +11,8 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/kuala-lumpur-streetmarket-durian.webp"
-lang: "de"
-class_name: "fotos"
+lang: de
+class_name: fotos
 first_published_at: "2025-06-13T22:00:00+00:00"
 ---
 

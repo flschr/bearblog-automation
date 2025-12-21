@@ -1,8 +1,8 @@
 ---
-uid: "rWtcpYWMHQmIEyRsQGZR"
-title: "Wanderbares Kärnten"
-slug: "wanderbares-karnten"
-alias: "2019/09/08/wanderbares-krnten"
+uid: rWtcpYWMHQmIEyRsQGZR
+title: Wanderbares Kärnten
+slug: wanderbares-karnten
+alias: 2019/09/08/wanderbares-krnten
 published_date: "2019-09-08T14:08:00+00:00"
 all_tags: "[\"blog\", \"ganzvielurlaub\", \"wandern\"]"
 publish: "True"
@@ -11,7 +11,7 @@ is_page: "False"
 canonical_url: ""
 meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/52d6ed554c.webp"
-lang: "de"
+lang: de
 class_name: ""
 first_published_at: "2019-09-08T14:08:00+00:00"
 ---
