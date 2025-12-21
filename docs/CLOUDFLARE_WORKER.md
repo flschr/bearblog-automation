@@ -119,11 +119,11 @@ Cloudflare Worker (every 1 min)
 
 
 ---
-### `rss-monitor.js`: Paste everything below as Worker code:
+## Paste everything below as Cloudflare Worker code
 
 ```
 /**
- * Cloudflare Worker: RSS Feed Monitor
+ * Cloudflare Worker: RSS Feed Monitor (`rss-monitor.js`)
  *
  * This worker monitors RSS feeds for changes and triggers GitHub Actions
  * when new content is detected. It uses ETag/Last-Modified headers for
