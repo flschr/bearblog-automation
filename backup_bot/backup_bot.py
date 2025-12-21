@@ -46,7 +46,26 @@ TRACKING_FILE = Path("backup_bot/processed_articles.txt")
 TEMP_CSV = Path("temp_export.csv")
 
 # Environment variables
-COOKIE = os.getenv("BEAR_COOKIE")
+def normalize_cookie(cookie: Optional[str]) -> Optional[str]:
+    """
+    Normalize cookie format to ensure it has the sessionid= prefix.
+    Accepts both formats:
+    - sessionid=VALUE (already formatted)
+    - VALUE (just the session ID value)
+    """
+    if not cookie:
+        return None
+
+    cookie = cookie.strip()
+
+    # If it already starts with sessionid=, return as is
+    if cookie.startswith('sessionid='):
+        return cookie
+
+    # Otherwise, add the sessionid= prefix
+    return f'sessionid={cookie}'
+
+COOKIE = normalize_cookie(os.getenv("BEAR_COOKIE"))
 
 
 class AuthenticationError(Exception):
@@ -317,6 +336,7 @@ def download_csv() -> Path:
         )
 
     logger.info(f"Fetching CSV from: {CSV_URL}")
+    logger.debug(f"Cookie format: {'sessionid=***' if COOKIE.startswith('sessionid=') else 'Missing sessionid= prefix'}")
 
     headers = {"Cookie": COOKIE}
 
@@ -601,7 +621,8 @@ def main() -> None:
         logger.error("  4. Update the GitHub Secret 'BEAR_COOKIE':")
         logger.error("     - Go to: Settings -> Secrets and variables -> Actions")
         logger.error("     - Edit 'BEAR_COOKIE'")
-        logger.error("     - Value: sessionid=YOUR_NEW_VALUE")
+        logger.error("     - Value: Just paste the sessionid value")
+        logger.error("     - (You can use either 'sessionid=VALUE' or just 'VALUE')")
         logger.error("=" * 70)
         cleanup_temp_files()
         raise
