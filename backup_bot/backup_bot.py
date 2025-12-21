@@ -23,8 +23,19 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# --- LOAD CONFIG ---
+def load_config() -> dict:
+    """Load configuration from central config.yaml file."""
+    config_path = Path(__file__).parent.parent / "config.yaml"
+    with open(config_path, 'r') as f:
+        return yaml.safe_load(f)
+
+CONFIG = load_config()
+BLOG_DOMAIN = CONFIG['blog']['domain']
+BEARBLOG_USERNAME = CONFIG['blog']['bearblog_username']
+
 # --- CONSTANTS ---
-CSV_URL = "https://bearblog.dev/fischr/dashboard/settings/?export=true"
+CSV_URL = f"https://bearblog.dev/{BEARBLOG_USERNAME}/dashboard/settings/?export=true"
 REQUEST_TIMEOUT = 15
 MAX_IMAGE_SIZE = 10_000_000  # 10MB limit
 MAX_CSV_SIZE = 50_000_000  # 50MB limit for CSV
@@ -38,7 +49,7 @@ ALLOWED_IMAGE_DOMAINS = {
     'i.imgur.com',
     'cloudinary.com',
     'githubusercontent.com',
-    'fischr.org'
+    BLOG_DOMAIN
 }
 
 # Paths

@@ -11,6 +11,7 @@ import requests
 import logging
 import tempfile
 import hashlib
+import yaml
 from typing import Optional, Dict, List, Set, Any
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -27,6 +28,17 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# --- LOAD CONFIG ---
+def load_config() -> dict:
+    """Load configuration from central config.yaml file."""
+    config_path = Path(__file__).parent.parent / "config.yaml"
+    with open(config_path, 'r') as f:
+        return yaml.safe_load(f)
+
+CONFIG = load_config()
+BLOG_DOMAIN = CONFIG['blog']['domain']
+MASTODON_INSTANCE = CONFIG['social']['mastodon_instance']
 
 # --- CONSTANTS ---
 MAX_IMAGE_SIZE = 5_000_000
@@ -51,7 +63,7 @@ ALLOWED_IMAGE_DOMAINS = {
     'i.imgur.com',
     'cloudinary.com',
     'githubusercontent.com',
-    'fischr.org'
+    BLOG_DOMAIN
 }
 
 # Session configuration
@@ -504,7 +516,7 @@ def post_to_mastodon(text: str, img_path: Optional[str], alt_text: str) -> None:
     try:
         mastodon = Mastodon(
             access_token=token,
-            api_base_url='https://mastodon.social'
+            api_base_url=MASTODON_INSTANCE
         )
 
         media_ids = []
