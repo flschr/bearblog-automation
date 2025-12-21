@@ -3,7 +3,7 @@ uid: pJFZTckMfQDUePVLAdWQ
 title: Wir werden alle störben!!!einself
 slug: wir-werden-alle-storben
 alias: ""
-published_date: "2025-12-21T00:04:00+00:00"
+published_date: "2025-12-21T00:05:00+00:00"
 all_tags: "[\"AI\", \"blog\", \"digitallife\", \"schwadroniert\"]"
 publish: "True"
 make_discoverable: "True"
