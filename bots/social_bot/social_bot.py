@@ -456,18 +456,8 @@ def validate_credentials(config: List[Dict[str, Any]]) -> None:
             )
 
 
-def process_entry(
-    entry: Any,
-    cfg: Dict[str, Any],
-    posted_cache: Set[str]
-) -> bool:
-    """
-    Process a single feed entry.
-    Returns True if successfully posted, False otherwise.
-    """
-    if is_posted(entry.link, posted_cache):
-        return False
-
+def get_entry_tags(entry: Any) -> str:
+    """Extract tags/categories and hashtags from an entry for matching."""
     content_html = (
         entry.content[0].value if hasattr(entry, 'content')
         else entry.get('summary', '')
@@ -481,21 +471,32 @@ def process_entry(
             tag.term for tag in entry.tags if hasattr(tag, 'term')
         ])
 
-    check_string = (
-        entry.title + " " + found_hashtags + " " + rss_categories
-    ).lower()
+    return (entry.title + " " + found_hashtags + " " + rss_categories).lower()
 
+
+def entry_matches_config(entry: Any, cfg: Dict[str, Any], check_string: str) -> bool:
+    """
+    Check if an entry matches a config's include/exclude rules.
+    Returns True if the entry should be processed by this config.
+    """
+    # Check exclusions first
     if any(w.lower() in check_string for w in cfg.get('exclude', [])):
-        logger.debug(f"Skipping (excluded): {entry.title}")
         return False
 
-    if cfg.get('include') and not any(
-        w.lower() in check_string for w in cfg['include']
-    ):
-        logger.debug(f"Skipping (not included): {entry.title}")
-        return False
+    # Check inclusions (if specified)
+    if cfg.get('include'):
+        if not any(w.lower() in check_string for w in cfg['include']):
+            return False
 
-    logger.info(f"Processing: {entry.title}")
+    return True
+
+
+def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
+    """
+    Post a single feed entry using the given config.
+    Returns True if successfully posted, False otherwise.
+    """
+    logger.info(f"Processing: {entry.title} (matched config: {cfg.get('name', 'unnamed')})")
 
     img_data = None
     img_path = None
@@ -561,16 +562,14 @@ def run() -> None:
         feed_cache = load_feed_cache()
         cache_updated = False
 
-        total_processed = 0
-        total_entries = 0
-        feeds_checked = 0
+        # Step 1: Collect all unique feed URLs and fetch each once
+        unique_feed_urls = set(cfg['url'] for cfg in config)
+        feed_data: Dict[str, Any] = {}  # URL -> parsed feed
+        feeds_fetched = 0
         feeds_skipped = 0
 
-        for cfg in config:
+        for feed_url in unique_feed_urls:
             try:
-                feed_url = cfg['url']
-                feeds_checked += 1
-
                 has_changed, new_headers = check_feed_changed(feed_url, feed_cache)
 
                 if not has_changed:
@@ -587,26 +586,78 @@ def run() -> None:
                 if feed.bozo:
                     logger.warning(f"Feed parsing warning for {feed_url}: {feed.bozo_exception}")
 
+                feed_data[feed_url] = feed
+                feeds_fetched += 1
                 logger.info(f"Found {len(feed.entries)} entries in feed")
-                total_entries += len(feed.entries)
-
-                for entry in feed.entries:
-                    if process_entry(entry, cfg, posted_cache):
-                        total_processed += 1
 
                 if new_headers:
                     feed_cache[feed_url] = new_headers
                     cache_updated = True
 
             except Exception as e:
-                logger.error(f"Error processing feed {cfg['url']}: {e}")
+                logger.error(f"Error fetching feed {feed_url}: {e}")
                 continue
+
+        # Step 2: Collect all unique entries from fetched feeds
+        all_entries: Dict[str, Any] = {}  # URL -> entry (deduplicated)
+        for feed_url, feed in feed_data.items():
+            for entry in feed.entries:
+                if hasattr(entry, 'link') and entry.link:
+                    if entry.link not in all_entries:
+                        all_entries[entry.link] = entry
+
+        logger.info(f"Collected {len(all_entries)} unique entries from {feeds_fetched} feeds")
+
+        # Step 3: Process each entry against all configs
+        total_processed = 0
+        unmatched_entries = []
+
+        for entry_url, entry in all_entries.items():
+            # Skip already posted
+            if is_posted(entry_url, posted_cache):
+                continue
+
+            # Get tags once for this entry
+            check_string = get_entry_tags(entry)
+
+            # Try to find a matching config
+            matched_config = None
+            for cfg in config:
+                # Only consider configs that use a feed containing this entry
+                if cfg['url'] in feed_data:
+                    feed = feed_data[cfg['url']]
+                    entry_in_feed = any(
+                        hasattr(e, 'link') and e.link == entry_url
+                        for e in feed.entries
+                    )
+                    if entry_in_feed and entry_matches_config(entry, cfg, check_string):
+                        matched_config = cfg
+                        break
+
+            if matched_config:
+                if post_entry(entry, matched_config, posted_cache):
+                    total_processed += 1
+            else:
+                # No matching config found for this new entry
+                unmatched_entries.append(entry)
+
+        # Step 4: Warn about unmatched entries (GitHub Actions annotation format)
+        for entry in unmatched_entries:
+            tags = get_entry_tags(entry)
+            # Use GitHub Actions warning annotation format
+            print(f"::warning::No matching config for article: {entry.title} ({entry.link}) - Tags: {tags}")
+            logger.warning(f"No matching config for article: {entry.title} ({entry.link})")
 
         if cache_updated:
             save_feed_cache(feed_cache)
             logger.info("Feed cache updated")
 
-        logger.info(f"=== Social Bot End === (Checked {feeds_checked} feeds, skipped {feeds_skipped} unchanged, processed {total_processed}/{total_entries} entries)")
+        logger.info(
+            f"=== Social Bot End === "
+            f"(Fetched {feeds_fetched} feeds, skipped {feeds_skipped} unchanged, "
+            f"processed {total_processed}/{len(all_entries)} entries, "
+            f"{len(unmatched_entries)} unmatched)"
+        )
 
     except ConfigurationError as e:
         logger.error(f"Configuration error: {e}")
