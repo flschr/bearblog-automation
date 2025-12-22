@@ -42,10 +42,8 @@ Die Herstellung von Kefir ist trivial. Neben einer Kefir-Kultur benötigt man le
 * Das Glas nun für 12-48 Stunden an einem dunklen Ort bei 10-25°C Grad stehen lassen. Für eine cremigere Konsistenz sollte der Kefir regelmäßig vorsichtig geschwenkt werden. Je länger Kefir gärt, desto dickflüssiger, saurer, kohlensäure- und alkoholhaltiger wird er.
 * Ist der Kefir fertig, wird er durch ein feines Sieb in ein Trinkgefäß abgegossen und kann sofort genossen werden. Die Kefirknollen kommen so wie sind ([nicht spülen](https://www.kefir.at/waschen.php)) in ein frisches Glas mit Milch. Und schon beginnt das Schauspiel von vorne.
 
-<div class="infobox-frame">
-<div class="infobox-icon"></div>
-<div class="infobox-text">Die Kefir-Kultur sollte nicht mit metallischen Gegenständen in Berührung kommen. Denn, chemisch gesehen ist Kefir sauer und saure Medien reagieren mit Metall. Und bei dieser Reaktion fliest Strom der die Kefir-Kultur schädigen oder gar vollständig töten kann.</div>
-</div>
+> ###### WARNUNG
+> Die Kefir-Kultur sollte nicht mit metallischen Gegenständen in Berührung kommen. Denn, chemisch gesehen ist Kefir sauer und saure Medien reagieren mit Metall. Und bei dieser Reaktion fliest Strom der die Kefir-Kultur schädigen oder gar vollständig töten kann.
 
 ## Dem Kefir eine Pause gönnen
 

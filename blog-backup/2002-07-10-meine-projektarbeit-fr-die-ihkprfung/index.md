@@ -26,7 +26,5 @@ Die Projektdokumentation trägt den Titel **„Planung und Kalkulation eines Wir
 
 **[Download meiner IHK-Prüfung (PDF)](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/projektarbeit-it-systemkaufmann-2002.pdf)**
 
-<div class="infobox-frame warning">
-<div class="infobox-icon"></div>
-<div class="infobox-text">Die Dokumentation entspricht dem Stand der Technik sowie den Prüfungsvorgaben des Jahres 2002. Die Welt der Technik hat sich seitdem mehrfach weitergedreht, und auch die Prüfungsvorgaben können mittlerweile anders aussehen. Verwendet das Dokument also ausschließlich als Beispiel für Aufbau und Umfang einer solchen Dokumentation.</div>
-</div>
+> ##### ACHTUNG
+> Die Dokumentation entspricht dem Stand der Technik sowie den Prüfungsvorgaben des Jahres 2002. Die Welt der Technik hat sich seitdem mehrfach weitergedreht, und auch die Prüfungsvorgaben können mittlerweile anders aussehen. Verwendet das Dokument also ausschließlich als Beispiel für Aufbau und Umfang einer solchen Dokumentation.

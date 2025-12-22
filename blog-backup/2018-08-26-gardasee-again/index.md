@@ -44,11 +44,8 @@ Und ein [wunderbar markantes Glockenläuten](https://www.youtube.com/watch?v=upw
 
 Ebenfalls wahnsinnig schön ist der [Lago di Tenno](https://de.wikipedia.org/wiki/Tennosee). An diesem türkisfarbenen Bergsee tummeln sich vor allem viele Italiener. Wir hätten dort gern gebadet, aber es war dort tatsächlich noch steiniger als am Gardasee und leider waren die Schattenplätze alle belegt.
 
-<div class="infobox-frame info">
-<div class="infobox-icon"></div>
-<div class="infobox-text">Er liegt auf einer Höhe von 570 Metern über dem Meeresspiegel, eingebettet in eine nahezu unberührte Naturlandschaft am Fuße des Monte Misone. Bemerkenswert ist seine besondere, ins Türkis bis Himmelblau gehende Farbe, weswegen er auch Lago Azzurro genannt wird.
-</div>
-</div>
+> #### TIL
+> Er liegt auf einer Höhe von 570 Metern über dem Meeresspiegel, eingebettet in eine nahezu unberührte Naturlandschaft am Fuße des Monte Misone. Bemerkenswert ist seine besondere, ins Türkis bis Himmelblau gehende Farbe, weswegen er auch Lago Azzurro genannt wird.
 
 ![Der Lago di Tenno, ein wunderschöner Bergsee mit hellem, türkisfarbenem Wasser und einem Sandstrand. Im Hintergrund erheben sich grüne, bewaldete Berge. Viele Menschen genießen das sonnige Wetter am Strand und im Wasser.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/0ea1d0cce5.webp)
 

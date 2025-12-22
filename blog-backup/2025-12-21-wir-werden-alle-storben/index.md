@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2025-12-21T00:04:00+00:00"
 ---
 
-Okay, ganz so dramatisch wird es vielleicht nicht. Zumindest für die meisten von uns nicht gleich morgen. Aber ein böses Erwachen wird es geben, da sind sich viele Experten sicher.
+Okay, ganz so dramatisch wird es vielleicht nicht. Zumindest für die meisten von uns nicht gleich morgen. Aber ein böses Erwachen wird es geben, da sind sich viele vermeintliche Experten sicher.
 
 Egal ob man an den Wert von KI glaubt oder nicht, folgt man der aktuellen Stimmung, entscheidet sich in den nächsten 3 Jahren unser Schicksal. Entweder, weil eines der Tech-Unternehmen plötzlich die Superintelligenz in den Händen hält und weite Teile der Weltbevölkerung ihren Job verlieren. Oder alternativ, weil AGI doch nicht erreicht wird, die utopischen Investitionen sich nicht rentieren und ein massiver Börsencrash folgt.
 
@@ -51,4 +51,6 @@ Dank KI werden wir immer mehr, schneller und effizienter arbeiten. Nur leider wi
 
 Man kann das natürlich technisch präziser formulieren, aber für die sozioökonomische Wirkung ist die technische Ausprägung zweitrangig. Ob ein Algorithmus nun Muster erkennt (ML), Sprache verarbeitet (LLM) oder Inhalte erstellt (Gen-AI), das Ergebnis sind am Ende immer Effizienzgewinne. Dabei spielt es keine Rolle, ob das technisch gesehen "Intelligenz", "Statistik" oder eine Sammlung von "If-Else-Blöcken" ist.
 
-Und ja, *a fool with a tool is still a fool*. KI sorgt heute eben dafür, dass auch der Fool deutlich effizienter wird. *:)*
+Interessanterweise beschreibt Andrej Karpathy genau das mit seinem Konzept des "Vibe Codings". Weil Code plötzlich billig und flüchtig wird, schreiben wir nicht weniger Software, sondern massenhaft neue Programme für den [Einmalgebrauch](https://karpathy.bearblog.dev/vibe-coding-menugen/). Das ist der Rebound-Effekt in seiner reinsten Form, wir sparen keine Zeit, wir erhöhen nur die Schlagzahl.
+
+In einem wichtigen Punkt hat mthie noch recht: *A fool with a tool is still a fool*. KI sorgt heute eben nur dafür, dass auch der Fool deutlich effizienter wird. *:)*
