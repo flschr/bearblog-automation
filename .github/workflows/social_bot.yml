@@ -16,6 +16,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build:
@@ -55,6 +56,48 @@ jobs:
           MASTO_TOKEN: ${{ secrets.MASTO_TOKEN }}
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: python bots/social_bot/social_bot.py
+
+      - name: Create Issue for Unmatched Articles
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          REPORT_FILE="bots/social_bot/unmatched_articles.json"
+          if [ -f "$REPORT_FILE" ]; then
+            echo "Found unmatched articles report, creating issue..."
+
+            # Build issue body with the report
+            ISSUE_BODY="## Unmatched Articles Report
+
+          The following articles were found in the RSS feed but did not match any posting configuration.
+          Please review and update the config if needed.
+
+          ### Workflow Run
+          - **Run ID:** ${{ github.run_id }}
+          - **Triggered by:** ${{ github.event_name }}
+          - **Timestamp:** $(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+          ### Detailed Report
+          \`\`\`json
+          $(cat "$REPORT_FILE")
+          \`\`\`
+
+          ### Possible Actions
+          1. Add a matching rule to \`bots/social_bot/config.json\`
+          2. Add the article URL to \`posted_articles.txt\` to skip it
+          3. Check if the article has the expected tags in the RSS feed
+          "
+
+            # Create the issue (without labels to avoid errors if they don't exist)
+            echo "$ISSUE_BODY" | gh issue create \
+              --title "Social Bot: Unmatched articles found" \
+              --body-file -
+
+            # Clean up the report file (don't commit it)
+            rm "$REPORT_FILE"
+          else
+            echo "No unmatched articles report found"
+          fi
 
       - name: Save State
         id: save_state

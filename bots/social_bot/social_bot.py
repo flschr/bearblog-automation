@@ -474,21 +474,104 @@ def get_entry_tags(entry: Any) -> str:
     return (entry.title + " " + found_hashtags + " " + rss_categories).lower()
 
 
-def entry_matches_config(entry: Any, cfg: Dict[str, Any], check_string: str) -> bool:
+def entry_matches_config(entry: Any, cfg: Dict[str, Any], check_string: str) -> tuple[bool, str]:
     """
     Check if an entry matches a config's include/exclude rules.
-    Returns True if the entry should be processed by this config.
+    Returns (matches, reason) tuple.
     """
     # Check exclusions first
-    if any(w.lower() in check_string for w in cfg.get('exclude', [])):
-        return False
+    for word in cfg.get('exclude', []):
+        if word.lower() in check_string:
+            return False, f"excluded by '{word}'"
 
     # Check inclusions (if specified)
     if cfg.get('include'):
-        if not any(w.lower() in check_string for w in cfg['include']):
-            return False
+        matching_include = None
+        for word in cfg['include']:
+            if word.lower() in check_string:
+                matching_include = word
+                break
+        if not matching_include:
+            return False, f"missing required tag from {cfg.get('include')}"
 
-    return True
+    return True, "matched"
+
+
+def get_matching_report(
+    entry: Any,
+    check_string: str,
+    config: List[Dict[str, Any]],
+    feed_data: Dict[str, Any]
+) -> Dict[str, Any]:
+    """
+    Generate a detailed report explaining why an entry didn't match any config.
+    """
+    # Extract RSS categories as a list
+    rss_tags = []
+    if hasattr(entry, 'tags'):
+        rss_tags = [tag.term for tag in entry.tags if hasattr(tag, 'term')]
+
+    report = {
+        "article": {
+            "title": entry.title,
+            "link": entry.link,
+            "published": getattr(entry, 'published', 'unknown'),
+        },
+        "detected_tags": rss_tags,
+        "check_string": check_string,
+        "config_results": []
+    }
+
+    for cfg in config:
+        config_name = cfg.get('name', cfg['url'])
+        feed_url = cfg['url']
+
+        # Check if entry is in this config's feed
+        if feed_url not in feed_data:
+            report["config_results"].append({
+                "config": config_name,
+                "result": "skipped",
+                "reason": "feed was not fetched (unchanged)"
+            })
+            continue
+
+        feed = feed_data[feed_url]
+        entry_in_feed = any(
+            hasattr(e, 'link') and e.link == entry.link
+            for e in feed.entries
+        )
+
+        if not entry_in_feed:
+            report["config_results"].append({
+                "config": config_name,
+                "result": "skipped",
+                "reason": "article not in this feed"
+            })
+            continue
+
+        matches, reason = entry_matches_config(entry, cfg, check_string)
+        report["config_results"].append({
+            "config": config_name,
+            "include_filter": cfg.get('include', []),
+            "exclude_filter": cfg.get('exclude', []),
+            "result": "matched" if matches else "no match",
+            "reason": reason
+        })
+
+    return report
+
+
+UNMATCHED_REPORT_FILE = BASE_DIR / 'unmatched_articles.json'
+
+
+def save_unmatched_report(reports: List[Dict[str, Any]]) -> None:
+    """Save unmatched articles report to JSON file for GitHub Issue creation."""
+    try:
+        with open(UNMATCHED_REPORT_FILE, 'w', encoding='utf-8') as f:
+            json.dump(reports, f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved unmatched report to {UNMATCHED_REPORT_FILE}")
+    except Exception as e:
+        logger.error(f"Error saving unmatched report: {e}")
 
 
 def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
@@ -630,23 +713,31 @@ def run() -> None:
                         hasattr(e, 'link') and e.link == entry_url
                         for e in feed.entries
                     )
-                    if entry_in_feed and entry_matches_config(entry, cfg, check_string):
-                        matched_config = cfg
-                        break
+                    if entry_in_feed:
+                        matches, _ = entry_matches_config(entry, cfg, check_string)
+                        if matches:
+                            matched_config = cfg
+                            break
 
             if matched_config:
                 if post_entry(entry, matched_config, posted_cache):
                     total_processed += 1
             else:
-                # No matching config found for this new entry
-                unmatched_entries.append(entry)
+                # No matching config found - generate detailed report
+                report = get_matching_report(entry, check_string, config, feed_data)
+                unmatched_entries.append(report)
 
-        # Step 4: Warn about unmatched entries (GitHub Actions annotation format)
-        for entry in unmatched_entries:
-            tags = get_entry_tags(entry)
-            # Use GitHub Actions warning annotation format
-            print(f"::warning::No matching config for article: {entry.title} ({entry.link}) - Tags: {tags}")
-            logger.warning(f"No matching config for article: {entry.title} ({entry.link})")
+        # Step 4: Handle unmatched entries
+        if unmatched_entries:
+            # Save detailed report for GitHub Issue
+            save_unmatched_report(unmatched_entries)
+
+            # Log warnings with GitHub Actions annotation format
+            for report in unmatched_entries:
+                article = report["article"]
+                tags = report["detected_tags"]
+                print(f"::warning::No matching config for: {article['title']} ({article['link']}) - Tags: {tags}")
+                logger.warning(f"No matching config for: {article['title']} ({article['link']})")
 
         if cache_updated:
             save_feed_cache(feed_cache)
