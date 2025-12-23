@@ -38,4 +38,6 @@ Am einfachsten erreicht man mich über [hallo@fischr.org](mailto:hallo@fischr.or
 
 Diese Webseite ist ein [Bear Blog](https://bearblog.dev/). Das Theme habe ich vollständig an meine Bedürfnisse angepasst und mit einigen zusätzlichen Funktionen versehen. Es ist bewusst alles sehr minimal gehalten, was aber nicht heißt, dass hier nicht einige Stunden an Arbeit drinstecken.
 
-Nachdem das hier mein persönliches Blog ist, bin ich natürlich auch für den Inhalt nach § 18 Abs. 2 MStV verantwortlich. Natürlich gibt es auch eine [Datenschutzerklärung](/datenschutz). Bei weiteren Fragen schreib mir gerne unter [hallo@fischr.org](mailto:hallo@fischr.org). 
+Nachdem das hier mein persönliches Blog ist, bin ich natürlich auch für den Inhalt nach § 18 Abs. 2 MStV verantwortlich. Natürlich gibt es auch eine [Datenschutzerklärung](/datenschutz).
+
+Bei weiteren Fragen schreib mir gerne unter [hallo@fischr.org](mailto:hallo@fischr.org). 
