@@ -32,15 +32,19 @@ Die Entwicklung wird immer rasanter. Was gestern noch visionär klang, ist heute
 
 Tech-Größen wie Sam Altman und Jensen Huang sprechen ganz offen davon, dass wir dank KI auf eine neue industrielle Revolution zusteuern. Altman nennt es eine „[sanfte Singularität](https://blog.samaltman.com/the-gentle-singularity)“, also kein Knall, sondern ein schleichender Kontrollverlust. Subtil, aber unumkehrbar.
 
-> In the most important ways, the 2030s may not be wildly different. People will still love their families, express their creativity, play games, and swim in lakes. But in still-very-important-ways, the 2030s are likely going to be wildly different from any time that has come before. We do not know how far beyond human-level intelligence we can go, but we are about to find out.<cite>Sam Altmann (OpenAI)</cite>
+> In the most important ways, the 2030s may not be wildly different. People will still love their families, express their creativity, play games, and swim in lakes. But in still-very-important-ways, the 2030s are likely going to be wildly different from any time that has come before. We do not know how far beyond human-level intelligence we can go, but we are about to find out.
+>
+> Sam Altmann (OpenAI)
 
-Und Jensen meint, das wir durch die KI in unserer Hosentasche quasi alle Superkräfte haben werden.
+Und Jensen meint, dass wir durch die KI in unserer Hosentasche quasi alle Superkräfte haben werden.
 
-> We’re going to become superhumans, not because we have superpowers. We’re going to become superhumans because we have super AI’s.<cite>Jensen Huang (NVIDIA)</cite>
+> We’re going to become superhumans, not because we have superpowers. We’re going to become superhumans because we have super AI’s.
+>
+> Jensen Huang (NVIDIA)
 
 Ob es nun schon 2027 oder eher 2030 so weit ist, wie eine Studie der Stanford University schon 2016 [prognostizierte](https://www.heise.de/hintergrund/Kuenstliche-Intelligenz-Freund-oder-Feind-3313710.html), spielt am Ende keine Rolle mehr. AI wird die Welt und die Menschheit verändern.
 
-## Es kommt darauf an was wir daraus machen
+## Es kommt darauf an, was wir daraus machen
 
 So ziemlich jede als „zivil“ gestartete Technologie hat irgendwann auch einen militärischen Einsatz gefunden. Und wenn wir ehrlich sind, waren es oft gerade militärische Budgets, die technologische Sprünge überhaupt erst ermöglicht haben. In München werkelt [das Startup Helsing](https://de.wikipedia.org/wiki/Helsing_(Unternehmen)) mit beeindruckendem Erfolg an KI-gesteuerten Drohnensystemen. Mit einer Bewertung von 12 Milliarden Euro, [mittlerweile das wertvollste deutsche Startup](https://www.handelsblatt.com/unternehmen/start-ups/helsing-ruestungsfirma-steigt-zum-wertvollsten-deutschen-start-up-auf/100135583.html). Und das ist kein Einzelfall. Weltweit wird gerade investiert, entwickelt und aufgerüstet.
 

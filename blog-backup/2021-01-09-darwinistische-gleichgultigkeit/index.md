@@ -4,7 +4,7 @@ title: Darwinistische Gleichgültigkeit
 slug: darwinistische-gleichgultigkeit
 alias: 2021/01/09/darwinistische-gleichgltigkeit
 published_date: "2021-01-09T20:41:00+00:00"
-all_tags: "[\"blog\", \"bisschensauer\"]"
+all_tags: "[\"bisschensauer\", \"blog\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -26,6 +26,8 @@ Die, deren Waffe an Weihnachten noch Beleidigungen waren, brüllen nun voll verm
 
 Meine Frau tobt und steigt aus den Diskussionen aus. Ich habe mich bereits vor geraumer Zeit zurückgezogen und sehe es mittlerweile darwinistisch. Menschen, die während einer Pandemie eine Schutzimpfung aus Angst vor vermeintlichen Nebenwirkungen ablehnen, sind entweder besonders schlau oder einfach nur dumm. Die nächsten Jahre werden zeigen, was davon stimmt. Man kann nur hoffen, dass irgendwann mehrheitlich Impfverweigerer von COVID-19 dahingerafft werden. Dann wären zumindest ein paar Idioten weniger im menschlichen Genpool.
 
-> Zwei Dinge sind unendlich, das Universum und die menschliche Dummheit, aber bei dem Universum bin ich mir noch nicht ganz sicher.<cite>Albert Einstein</cite>
+> Zwei Dinge sind unendlich, das Universum und die menschliche Dummheit, aber bei dem Universum bin ich mir noch nicht ganz sicher.
+>
+> Albert Einstein
 
 Um es klar und deutlich zu sagen: Ich bin weder Virologe noch Arzt. Aber ich kann lesen und ich weiß, wie ich Informationen verifizieren kann. Und ich lasse mich mit vollster Überzeugung impfen, sobald ich die Chance dazu habe. An COVID-19 zu erkranken, kann ziemlich blöd ausgehen. Im Vergleich dazu ist eine Impfung vermutlich ziemlich lächerlich. Am Ende muss das aber jeder für sich selbst bewerten. Aber, wer wissenschaftliche Erkenntnisse als von geheimen Mächten gekauft ansieht und seine Impfskepsis auf obskure Heiler bezieht, die mit Bullshit auf Facebook, Instagram und YouTube Geld verdienen, braucht ohnehin zuerst einmal eine Impfung gegen Dummheit.
