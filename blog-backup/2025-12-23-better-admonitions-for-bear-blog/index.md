@@ -35,14 +35,12 @@ To use this, just add the H4, H5, or H6 headline inside your blockquote, and you
 
 
 ```
-> ##### Don't ignore this warning!
-> Critical information demanding user attention due to potential risks.
+> ##### Heads up: Spoilers ahead!
+> The following section discusses the ending of the book in great detail. Read at your own risk.
 ```
 
-
-> ##### Don't ignore this warning!
-> Critical information demanding user attention due to potential risks.
-
+> ##### Heads up: Spoilers ahead!
+> The following section discusses the ending of the book in great detail. Read at your own risk.
 
 ```
 > ###### Wait, before you copy-paste...
