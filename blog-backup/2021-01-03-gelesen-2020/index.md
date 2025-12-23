@@ -22,7 +22,9 @@ Tja, das letzte Jahr war auf vielen Ebenen speziell. Gelesen hab ich jedenfalls 
 
 In Papierform habe ich [Kurt](https://www.fischerverlage.de/buch/sarah-kuttner-kurt-9783596704156) (★★★★★) von Sarah Kuttner gelesen. Ich kann mich nicht erinnern, jemals ein Buch gelesen zu haben, das mich emotional so sehr berührt hat. Kurt, das ist die Geschichte von Lena, die mit 2 Männern namens Kurt zusammenlebt. Der eine ist ein 5-jähriger Junge und der andere sein Vater. Und plötzlich stirbt der kleine Kurt. Niemand hat Schuld, niemand kann zur Verantwortung gezogen werden. Und dann kämpft Lena gegen ein großes tiefes Loch, in dem sich der große Kurt zurückzieht.
 
-> Der kleine und der große Kurt brechen einem das Herz und Sarah Kuttner setzt es ganz langsam und behutsam wieder zusammen. Trotz der tragischen Thematik ist dieses einfühlsame, ehrliche Buch in der Lage den Leser schmunzeln, ja sogar lachen und vor allem hoffen zu lassen.<cite>Philine Witt</cite>
+> Der kleine und der große Kurt brechen einem das Herz und Sarah Kuttner setzt es ganz langsam und behutsam wieder zusammen. Trotz der tragischen Thematik ist dieses einfühlsame, ehrliche Buch in der Lage den Leser schmunzeln, ja sogar lachen und vor allem hoffen zu lassen.
+>
+>Philine Witt
 
 Aus Neugier habe ich mir dann irgendwann den eBook-Reader der 13-Jährigen gekrallt, die mit ihm nie wirklich warm geworden ist. 3 weitere Bücher habe ich dann auf dem elektronischen Lesesklaven gelesen und möchte mittlerweile tatsächlich kein Buch mehr in die Hand nehmen müssen.
 

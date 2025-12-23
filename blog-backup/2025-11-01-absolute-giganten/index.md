@@ -22,7 +22,9 @@ Das, meine Damen und Herren, ist [Absolute Giganten](https://de.wikipedia.org/wi
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LbT4jGHUlPA?si=fr6mWtoXOcpQwlqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-> Weisst du was ich manchmal denke? Es müsste immer Musik da sein. Bei allem was du machst. Und wenns so richtig scheisse ist, dann ist wenigstens noch die Musik da. Und an der Stelle wo, wo es am allerschönsten ist, da müsste die Platte springen und du hörst immer nur diesen einen Moment.<cite>Floyd zu Telsa, Absolute Giganten</cite>
+> Weisst du was ich manchmal denke? Es müsste immer Musik da sein. Bei allem was du machst. Und wenns so richtig scheisse ist, dann ist wenigstens noch die Musik da. Und an der Stelle wo, wo es am allerschönsten ist, da müsste die Platte springen und du hörst immer nur diesen einen Moment.
+>
+> Floyd zu Telsa, Absolute Giganten
 
 Hamburg in den 90ern, rau, schmutzig und auch irgendwie aufregend. Floyd, Ricco, Walter und eine [letzte gemeinsame Nacht](https://www.youtube.com/watch?v=jQiqpX7EbqU), bevor das Leben sie auseinander reißt. Freundschaft, Aufbruch, Abschied, große Träume, die kaum in diese Welt passen. Die Bilder des Films brennen sich ein für alle Ewigkeit. Der Soundtrack trifft direkt ins Herz, erzeugt Gänsehaut und untermalt die Sätze, die sich tief wie Krater ins Gedächtnis ritzen.
 
