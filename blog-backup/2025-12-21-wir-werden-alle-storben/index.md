@@ -53,4 +53,4 @@ Man kann das natürlich technisch präziser formulieren, aber für die sozioöko
 
 Interessanterweise beschreibt Andrej Karpathy genau das mit seinem Konzept des [Vibe Codings](https://de.wikipedia.org/wiki/Vibe_Coding). Weil Code plötzlich billig und flüchtig wird, schreiben wir nicht weniger Software, sondern massenhaft neue Programme für den [Einmalgebrauch](https://karpathy.bearblog.dev/vibe-coding-menugen/). Das ist der Rebound-Effekt in seiner reinsten Form, wir sparen keine Zeit, wir erhöhen nur die Schlagzahl.
 
-In einem wichtigen Punkt hat mthie noch recht: *A fool with a tool is still a fool*. KI sorgt heute eben nur dafür, dass auch der Fool deutlich effizienter wird. *:)*
+In einem wichtigen Punkt hat mthie noch recht: ==A fool with a tool is still a fool==. KI sorgt heute eben nur dafür, dass auch der Fool deutlich effizienter wird. *:)*
