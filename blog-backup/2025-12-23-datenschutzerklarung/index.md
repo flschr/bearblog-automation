@@ -39,5 +39,5 @@ An einigen Stellen können Inhalte externer Dienste (u.a. YouTube, Google Maps, 
 
 Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten. Da ich keine personenbezogenen Nutzerprofile erstelle, liegen mir im Regelfall keine Daten vor, die ich Ihrer Person zuordnen könnte.
 
-**Verantwortlich:** René Fischer  
-**Kontakt:** [datenschutz@fischr.org](mailto:datenschutz@fischr.org)
+- **Verantwortlich:** René Fischer  
+- **Kontakt:** [datenschutz@fischr.org](mailto:datenschutz@fischr.org)
