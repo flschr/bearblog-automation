@@ -28,7 +28,9 @@ Despite the UX flaws and some stability issues, I really enjoyed using Micro.blo
 
 I am now simply trading the Airbus for a bicycle. Simple, reliable, and powered only by my own input. That is why I landed on Bear Blog. The platform feels limited at first glance, but if you think about it, that is exactly what differentiates great from outstanding products.
 
-> Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.<cite>– Antoine de Saint-Exupéry</cite>
+>Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+>
+>Antoine de Saint-Exupéry
 
 And the [long-term commitment of Herman](https://herman.bearblog.dev/manifesto/), ensuring this platform lives for a very long time, is truly the icing on the cake.
 
