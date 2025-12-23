@@ -125,6 +125,6 @@ Yeap, I'm aware that headings have semantic meaning. However, there are several 
 
 - By using H4-H6, you stay entirely within the Markdown syntax. This allows you to use links, bold text, or even lists inside your boxes, without having to add messy HTML and ending up in even more complex tag-soup.
 
-- This solution keeps your Markdown source code clean and readable. You don't have to worry about broken HTML tags or complex snippets in your editor. It’s about keeping the writing process as simple and clean as possible.
+- This solution keeps your Markdown source code clean and readable. You don't have to worry about broken HTML tags or complex snippets in your editor. Following the Bear Blog principle, this helps keeping the writing process as simple and clean as possible.
 
 - This approach is a win for both accessibility and portability. Screen readers and RSS readers often ignore custom CSS and rely purely on HTML structure. By using headings, your admonitions become meaningful "landmarks". A user can jump directly to a warning in their screen reader, and an RSS subscriber will see a bold, clear headline instead of a flat block of text that lost its styling.
