@@ -18,4 +18,4 @@ first_published_at: "2025-12-24T22:24:00+00:00"
 
 ![Ein Filmplakat zur Netflix-Serie „Man vs Baby“: Rowan Atkinson blickt schockiert, während ein lächelndes Baby ihm einen Finger in die Nase steckt. Hintergrund ist ein verschneites London mit dem Big Ben.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img_8632.webp)
 
-[Noch](/der-killer/) [so](/straw/) [ein](/the-guilty/) Netflix-Schrott, den wir uns ausgerechnet an Heiligabend angeschaut haben. Absolut unterirdisch. Nicht, dass ich etwas anderes erwartet hätte. Jedes weitere Wort ist eines zu viel.
+[Noch so](/der-killer/) ein [absolut grauenvoller](/straw/) Netflix-[Schrott](/the-guilty/), den wir uns ausgerechnet an Heiligabend angeschaut haben. Absolut unterirdisch. Nicht, dass ich etwas anderes erwartet hätte. Jedes weitere Wort ist eines zu viel.
