@@ -29,7 +29,7 @@ The [first one](https://github.com/HermanMartinus/bear-plugins?tab=readme-ov-fil
 
 So I decided to build my own Markdown toolbar, and while doing so, the project grew with my wishes and now has become a truly powerful Markdown editor for Bear Blog. As sharing is caring, I’m making it available to the community.
 
-I wasn't trying to reinvent the wheel, just make it spin a lot smoother for people like us. Here is a breakdown of how this new version makes your blogging life easier.
+I wasn't trying to reinvent the wheel, just make it spin a lot smoother for people like us. If you want to see the new editor in action, I’ve created a quick walkthrough video showing you how it works and how to set it up. Or, if you prefer reading, you can find the breakdown of features right below.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/noF461kvZcc?si=8f-QjsC3gFs9KttV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
