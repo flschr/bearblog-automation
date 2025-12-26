@@ -70,6 +70,15 @@ And the really cool thing is, this works in any web browser, whether you’re on
 
 ---
 
-The source code of the Markdown toolbar is available in this [GitHub repository](https://github.com/flschr/bearblog-plugins). Please make sure you [read the documentation](https://github.com/flschr/bearblog-plugins?tab=readme-ov-file#ai-alt-text-feature-optional) for the OpenAI integration.
+## Important information
+
+The AI integration uses the OpenAI Vision API (specifically the gpt-4o-mini model) to analyze your images. It’s designed to be fast, privacy-conscious, and extremely cheap.
+
+- When you click the AI button, only the URL of your image is sent to OpenAI. The AI then "looks" at the image and returns a descriptive alt-text.
+- Using the gpt-4o-mini model is incredibly cost-efficient. Generating an alt-text for one image costs approximately $0.0012 (or even less). This means you can describe nearly 1,000 images for about $1.00.
+- You will need your own OpenAI API Key. You only pay for what you actually use, with no monthly subscription required.
+- For privacy reasons, the plugin only sends the image URL to OpenAI when you actively click the button. No data is sent automatically in the background.
+
+The source code of the Markdown toolbar is available in this [GitHub repository](https://github.com/flschr/bearblog-plugins).
 
 If you want to report a bug, have ideas for great features, or just want to say thank you, I'd love to hear from you! Feel free to catch me on [Mastodon](https://mastodon.social/@fischr).
