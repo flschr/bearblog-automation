@@ -22,7 +22,7 @@ Konkret heißt das: Es kommt das auf den Tisch, was sich das ganze Jahr über be
 
 Die einzige Ausnahme war bisher die Entenbrust am 1. Feiertag, die sich meine Frau gewünscht hat. Die gab es nur an Weihnachten zusammen mit alljährlichen Diskussionen, dass die Entenbrust zu rosa und damit nicht durch sei. Deshalb habe ich Entenbrust dieses Jahr konsequent von der Karte gestrichen. Auch die traditionellen Bratwürstchen an Heiligabend mussten weichen. Ich wollte mich stattdessen an dem Gericht versuchen, das meine Mutter früher an Heiligabend serviert hat.
 
-Hier ist das Protokoll inklusive Links und Tipps für nächstes Jahr.
+Das war alles eher low-key und ziemlich lecker. Darf es nächstes Jahr gern genauso wieder geben. Hier meine Notizen, damit es nächstes Jahr noch etwas besser wird.
 
 ## Heiligabend
 
@@ -41,5 +41,3 @@ Wie es sich für einen Entenbrust-Ersatz geziemt, gab es dazu Kartoffelknödel, 
 ## 2. Weihnachtsfeiertag
 
 Am 2. Weihnachtsfeiertag gibt es bei uns traditionell Gulasch. Dazu gab es diesmal Semmelknödel und [gebratenen Rosenkohl](https://fischr.org/rosenkohl/). Als Nachtisch ein sehr leckeres [Bratapfeldessert](https://www.malteskitchen.de/bratapfel-dessert/).
-
-Das war alles eher low-key und ziemlich lecker. Darf es gern nächstes Jahr genauso wieder geben.
