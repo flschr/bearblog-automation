@@ -77,4 +77,4 @@ And the really cool thing is, this works in any web browser, whether you’re on
 
 The source code of the Markdown toolbar is available in this [GitHub repository](https://github.com/flschr/bearblog-plugins).
 
-If you want to report a bug, have ideas for great features, or just want to say thank you, I'd love to hear from you! Feel free to catch me on [Mastodon](https://mastodon.social/@fischr).
+If you want to report a bug, have ideas too, or just want to say thank you, I'd love to hear from you! Feel free to catch me on [Mastodon](https://mastodon.social/@fischr).
