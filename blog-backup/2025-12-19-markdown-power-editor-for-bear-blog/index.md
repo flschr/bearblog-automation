@@ -2,7 +2,7 @@
 uid: chMPbgCyCRufCPKYwbko
 title: 🐻 Markdown Power-Editor for Bear Blog
 slug: markdown-power-editor-for-bear-blog
-alias: the-markdown-toolbar-plugin-for-lazy-bear-blog-users
+alias: a-markdown-toolbar-for-lazy-bear-blog-users
 published_date: "2025-12-19T22:01:00+00:00"
 all_tags: "[\"bearblog\", \"blog\", \"coding\", \"plugins\"]"
 publish: "True"
@@ -66,8 +66,7 @@ The best thing is, you decide which buttons you see. The new settings panel allo
 To use this toolbar, simply add the code below to *Dashboard > Settings > Footer content* in your Bear Blog.
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/flschr/bearblog-plugins@stable/bear/markdown-toolbar.js"></script>
-
+<script src="https://flschr.github.io/bearblog-plugins/markdown-toolbar.js"></script>
 ```
 And the really cool thing is, this works in any web browser, whether you’re on a notebook, tablet, or smartphone.
 
