@@ -18,7 +18,7 @@ first_published_at: "2025-12-23T07:11:00+00:00"
 
 I wanted to add nice admonition boxes to my Bear Blog, but pasting [HTML div structures](https://thecommabandit.bearblog.dev/cohost-infoboxes/) felt clunky. Even worse, I couldn't use Markdown to add formatting or links to these boxes without resorting to raw HTML, which even more felt like having tag-soup.
 
-While adding buttons to [my Markdown toolbar](/a-markdown-toolbar-for-lazy-bear-blog-users/) helped automate the process, it still didn't feel like a clean solution. Then I discovered how [GitHub handles Admonitions](https://github.com/orgs/community/discussions/16925) using simple Markdown. Since that unfortunately doesn't work in Bear Blog, I hacked together a way to get that same Markdown-first experience.
+While adding buttons to [my Markdown toolbar](/markdown-power-editor-for-bear-blog/) helped automate the process, it still didn't feel like a clean solution. Then I discovered how [GitHub handles Admonitions](https://github.com/orgs/community/discussions/16925) using simple Markdown. Since that unfortunately doesn't work in Bear Blog, I hacked together a way to get that same Markdown-first experience.
 
 I decided to repurpose the lower-level headings inside a blockquote. This keeps the content in pure Markdown while giving the browser enough "hooks" to style them as Info, Warning, or Caution boxes.
 
