@@ -3,7 +3,7 @@ uid: aYVfXibfXXXoLGXYcnFV
 title: Retro Sonntag
 slug: retro-sonntag
 alias: ""
-published_date: "2025-12-28T16:52:44.093259+00:00"
+published_date: "2025-12-28T17:30:03.322362+00:00"
 all_tags: "[\"blog\", \"digitallife\", \"sehrprivat\"]"
 publish: "True"
 make_discoverable: "True"
@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2025-12-28T16:52:44.093259+00:00"
 ---
 
-Heute Nachmittag saßen wir auf der Couch, und in einem Anflug von Nostalgie habe ich von dem allerersten Computer und den Spielen erzählt, die ich damals als 7-Jähriger gespielt habe. Das war auf einem [AC1](https://de.wikipedia.org/wiki/AC1) und ist definitiv einen eigenen Artikel wert.
+Heute Nachmittag saßen wir auf der Couch, und in einem Anflug von Nostalgie habe ich von dem allerersten Computer und den Spielen erzählt, die ich damals als 7-Jähriger gespielt habe. Das war auf einem [AC1](https://de.wikipedia.org/wiki/AC1) und ist definitiv eine Geschichte über die ich noch etwas schreiben werde.
 
 Nach dem AC1 kam Anfang der 90'er Jahre der erste echte PC in unseren Haushalt und mit ihm [Alley Cat](https://de.wikipedia.org/wiki/Alley_Cat). Ich kann mich gut erinnern, dass ich das stundenlang gespielt habe, sofern mein Vater mich gelassen hat.
 
