@@ -22,7 +22,13 @@ The Social Bot automatically posts new blog entries from your RSS feeds to Blues
 ```yaml
 social:
   mastodon_instance: "https://mastodon.social"
+  max_article_age_days: 7  # Optional: Skip articles older than X days
 ```
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `mastodon_instance` | — | Your Mastodon instance URL |
+| `max_article_age_days` | `0` (disabled) | Skip articles older than X days (see [Article Age Limit](#article-age-limit)) |
 
 ### Feed Config (`bots/social_bot/config.json`)
 
@@ -146,6 +152,26 @@ Configure these in **Settings → Secrets → Actions**:
 
 ### Efficiency
 - Tracks posted articles to prevent duplicates
+
+### Article Age Limit
+
+When you edit an old article (e.g., change its URL or title), it might appear as "new" to the bot since the URL isn't in the posted articles list. To prevent accidentally re-posting old content, you can set a maximum article age:
+
+```yaml
+social:
+  max_article_age_days: 7
+```
+
+**How it works:**
+- The bot checks the article's `published` date from the RSS feed
+- Articles older than the configured limit are skipped, even if they haven't been posted before
+- This is particularly useful when migrating content or editing old articles
+- Set to `0` or remove the setting to disable this check
+
+**Example log output:**
+```
+Skipping old article (14 days old, max 7): My Old Blog Post
+```
 
 ### Automatic Issue for Unmatched Articles
 When a new article doesn't match any posting configuration, the bot:

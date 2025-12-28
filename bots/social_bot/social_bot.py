@@ -8,6 +8,8 @@ import os
 import re
 import logging
 import tempfile
+import time
+from datetime import datetime, timezone
 from typing import Optional, Dict, List, Set, Any
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -137,6 +139,49 @@ def load_posted_articles() -> Set[str]:
 def is_posted(link: str, posted_cache: Set[str]) -> bool:
     """Check if the given URL is already recorded in the posted cache."""
     return link in posted_cache
+
+
+def get_article_age_days(entry: Any) -> Optional[int]:
+    """
+    Calculate the age of an article in days based on its published date.
+    Returns None if the published date cannot be determined.
+    """
+    if not hasattr(entry, 'published_parsed') or entry.published_parsed is None:
+        return None
+
+    try:
+        published_dt = datetime.fromtimestamp(
+            time.mktime(entry.published_parsed),
+            tz=timezone.utc
+        )
+        now = datetime.now(timezone.utc)
+        age = now - published_dt
+        return age.days
+    except Exception as e:
+        logger.warning(f"Error calculating article age: {e}")
+        return None
+
+
+def is_article_too_old(entry: Any, max_age_days: int) -> tuple[bool, Optional[int]]:
+    """
+    Check if an article exceeds the maximum age limit.
+
+    Args:
+        entry: The feed entry to check
+        max_age_days: Maximum allowed age in days (0 = no limit)
+
+    Returns:
+        (is_too_old, age_days): Tuple of boolean and the article's age in days
+    """
+    if max_age_days <= 0:
+        return False, None
+
+    age_days = get_article_age_days(entry)
+    if age_days is None:
+        # If we can't determine the age, allow the article
+        return False, None
+
+    return age_days > max_age_days, age_days
 
 
 def mark_as_posted(link: str) -> None:
@@ -642,6 +687,11 @@ def run() -> None:
         posted_cache = load_posted_articles()
         logger.info(f"Loaded {len(posted_cache)} previously posted articles")
 
+        # Load max article age setting (0 = no limit)
+        max_article_age_days = CONFIG.get('social', {}).get('max_article_age_days', 0)
+        if max_article_age_days > 0:
+            logger.info(f"Article age limit: {max_article_age_days} days")
+
         feed_cache = load_feed_cache()
         cache_updated = False
 
@@ -699,6 +749,16 @@ def run() -> None:
             # Skip already posted
             if is_posted(entry_url, posted_cache):
                 continue
+
+            # Skip articles that are too old (prevents re-posting when URLs change)
+            if max_article_age_days > 0:
+                is_too_old, age_days = is_article_too_old(entry, max_article_age_days)
+                if is_too_old:
+                    logger.info(
+                        f"Skipping old article ({age_days} days old, max {max_article_age_days}): "
+                        f"{entry.title}"
+                    )
+                    continue
 
             # Get tags once for this entry
             check_string = get_entry_tags(entry)
