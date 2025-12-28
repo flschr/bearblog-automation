@@ -34,8 +34,6 @@ Meine kulinarischen Entdeckungen habe ich angefangen in Listen für [gutes Essen
 
 Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener auf [Bluesky](https://bsky.app/profile/fischr.org). Ansonsten bin ich auch noch auf [GitHub](https://github.com/flschr), [OpenStreetMap](https://www.openstreetmap.org/user/fischr) und [Komoot](https://www.komoot.com/de-de/user/848543125284) unterwegs.
 
-Am einfachsten erreicht man mich über [hallo@fischr.org](mailto:hallo@fischr.org).
-
 ---
 
 Diese Webseite ist ein [Bear Blog](https://bearblog.dev/). Das Theme habe ich vollständig an meine Bedürfnisse angepasst und mit einigen zusätzlichen Funktionen versehen. Es ist bewusst alles sehr minimal gehalten, was aber nicht heißt, dass hier nicht einige Stunden an Arbeit drinstecken.
