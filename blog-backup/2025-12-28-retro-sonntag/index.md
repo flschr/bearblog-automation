@@ -3,7 +3,7 @@ uid: aYVfXibfXXXoLGXYcnFV
 title: Retro Sonntag
 slug: retro-sonntag
 alias: ""
-published_date: "2025-12-28T17:30:03.322362+00:00"
+published_date: "2025-12-28T19:45:56.893828+00:00"
 all_tags: "[\"blog\", \"digitallife\", \"sehrprivat\"]"
 publish: "True"
 make_discoverable: "True"
@@ -30,7 +30,9 @@ Wenn ich an Computerspiele von damals denke, dann fällt mir da auch immer sofor
 
 Dann gab es da noch [Epic Pinball](https://en.wikipedia.org/wiki/Epic_Pinball), [Civilization](https://de.wikipedia.org/wiki/Civilization_(Computerspiel)) und das berüchtigte [Wolfenstein 3D](https://de.wikipedia.org/wiki/Wolfenstein_(Computerspielreihe)) ('tschuldigung).
 
-Um diese Erlebnisse zu verbildlichen, habe ich zuerst Videos dieser Spiele auf YouTube gesucht und dann recht schnell herausgefunden, dass man die meisten dieser Spiele kostenlos im Browser spielen kann:
+Das Erste von mir nach Hause geschleppte Civilization war übrigens der Startpunkt einer Leidenschaft, die meinen Vater über viele Jahre und Versionen begleiten sollte. Es war gewissermaßen Tradition, dass ich ihn abends vor dem Monitor zurückließ und ihn am nächsten Morgen dort wieder vorfand. Während ich schlief, baute er ganze Nationen auf.
+
+Na ja, um diese Erlebnisse zu verbildlichen, habe ich zuerst Videos dieser Spiele auf YouTube gesucht und dann recht schnell herausgefunden, dass man die meisten dieser Spiele kostenlos im Browser spielen kann:
 
 - [Alley Cat](https://www.playdosgames.com/online/alley-cat/)
 - [Stunts](https://www.playdosgames.com/online/stunts/)
