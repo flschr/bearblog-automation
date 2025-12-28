@@ -108,6 +108,8 @@ jobs:
           # "|| exit 0" prevents error if there are no changes to commit
           if git commit -m "Update posted articles and feed cache"; then
             echo "changes=true" >> $GITHUB_OUTPUT
+            # Pull latest changes before pushing to avoid conflicts with parallel workflows
+            git pull --rebase origin main
             git push
           else
             echo "changes=false" >> $GITHUB_OUTPUT
