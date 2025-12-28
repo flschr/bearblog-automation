@@ -3,7 +3,7 @@ uid: aYVfXibfXXXoLGXYcnFV
 title: Retro Sonntag
 slug: retro-sonntag
 alias: ""
-published_date: "2025-12-28T19:45:56.893828+00:00"
+published_date: "2025-12-28T19:48:48.955009+00:00"
 all_tags: "[\"blog\", \"digitallife\", \"sehrprivat\"]"
 publish: "True"
 make_discoverable: "True"
@@ -24,7 +24,7 @@ Nach dem AC1 kam Anfang der 90'er Jahre der erste echte PC in unseren Haushalt u
 
 Auf dem Schulhof hatte sich ein kleiner Tauschring etabliert, über den ich mir frischen Stoff und auch so einige Viren für den heimischen PC besorgt habe.
 
-Wenn ich an Computerspiele von damals denke, dann fällt mir da auch immer sofort [Stunts 4D Sports Driving](https://de.wikipedia.org/wiki/Stunts) ein. Mit dem Erstellen und Befahren von wirklich abenteuerlichen Strecken habe ich Stunden und Stunden verbracht. Ich bin mir einigermaßen sicher, dass ich das damals von einem Schulrechner kopiert habe, an dem wir es heimlich im Unterricht gezockt haben.
+Wenn ich an Computerspiele von damals denke, dann fällt mir als erstes [Stunts 4D Sports Driving](https://de.wikipedia.org/wiki/Stunts) ein. Mit dem Erstellen und Befahren von wirklich abenteuerlichen Strecken habe ich Stunden und Stunden verbracht. Ich bin mir einigermaßen sicher, dass ich das damals von einem Schulrechner kopiert habe, an dem wir es heimlich im Unterricht gezockt haben.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7tC_omd4NVY?si=ehHwGr4c5kmDxNR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
