@@ -38,3 +38,9 @@ backup:
 social:
   # Your Mastodon instance URL
   mastodon_instance: "https://mastodon.social"
+
+  # Maximum age of articles (in days) that will be automatically posted.
+  # Articles older than this will be skipped, even if their URL is new.
+  # This prevents accidental re-posts when editing old articles (e.g., changing URLs).
+  # Set to 0 or remove to disable this check (post all articles regardless of age).
+  max_article_age_days: 7
