@@ -3,7 +3,7 @@ uid: aYVfXibfXXXoLGXYcnFV
 title: Retro Sonntag
 slug: retro-sonntag
 alias: ""
-published_date: "2025-12-28T19:48:48.955009+00:00"
+published_date: "2025-12-28T19:48:00+00:00"
 all_tags: "[\"blog\", \"digitallife\", \"sehrprivat\"]"
 publish: "True"
 make_discoverable: "True"
@@ -24,7 +24,7 @@ Nach dem AC1 kam Anfang der 90'er Jahre der erste echte PC in unseren Haushalt u
 
 Auf dem Schulhof hatte sich ein kleiner Tauschring etabliert, über den ich mir frischen Stoff und auch so einige Viren für den heimischen PC besorgt habe.
 
-Wenn ich an Computerspiele von damals denke, dann fällt mir als erstes [Stunts 4D Sports Driving](https://de.wikipedia.org/wiki/Stunts) ein. Mit dem Erstellen und Befahren von wirklich abenteuerlichen Strecken habe ich Stunden und Stunden verbracht. Ich bin mir einigermaßen sicher, dass ich das damals von einem Schulrechner kopiert habe, an dem wir es heimlich im Unterricht gezockt haben.
+Wenn ich an Computerspiele von damals denke, dann fällt mir als erstes [Stunts 4D Sports Driving](https://de.wikipedia.org/wiki/Stunts) ein. Mit dem Erstellen und Befahren von wirklich abenteuerlichen Strecken habe ich endlose Stunden verbracht. Ich bin mir einigermaßen sicher, dass ich das damals von einem Schulrechner kopiert habe, an dem wir es heimlich im Unterricht gezockt haben.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7tC_omd4NVY?si=ehHwGr4c5kmDxNR1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -32,7 +32,7 @@ Dann gab es da noch [Epic Pinball](https://en.wikipedia.org/wiki/Epic_Pinball), 
 
 Das Erste von mir nach Hause geschleppte Civilization war übrigens der Startpunkt einer Leidenschaft, die meinen Vater über viele Jahre und Versionen begleiten sollte. Es war gewissermaßen Tradition, dass ich ihn abends vor dem Monitor zurückließ und ihn am nächsten Morgen dort wieder vorfand. Während ich schlief, baute er ganze Nationen auf.
 
-Na ja, um diese Erlebnisse zu verbildlichen, habe ich zuerst Videos dieser Spiele auf YouTube gesucht und dann recht schnell herausgefunden, dass man die meisten dieser Spiele kostenlos im Browser spielen kann:
+Na ja, um diese Spiele begreifbarer zu machen, habe ich zuerst Videos auf YouTube gesucht und dann recht schnell herausgefunden, dass man die meisten dieser Spiele kostenlos im Browser spielen kann:
 
 - [Alley Cat](https://www.playdosgames.com/online/alley-cat/)
 - [Stunts](https://www.playdosgames.com/online/stunts/)
