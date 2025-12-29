@@ -16,9 +16,9 @@ class_name: ""
 first_published_at: "2025-12-28T16:52:44.093259+00:00"
 ---
 
-Heute Nachmittag saßen wir auf der Couch, und in einem Anflug von Nostalgie habe ich von dem allerersten Computer und den Spielen erzählt, die ich damals als 7-Jähriger gespielt habe. Das war auf einem [AC1](https://de.wikipedia.org/wiki/AC1) und ist definitiv eine Geschichte über die ich noch etwas schreiben werde.
+Heute Nachmittag saßen wir auf der Couch, und in einem Anflug von Nostalgie habe ich von dem allerersten Computer und den Spielen erzählt, die ich damals als 7-Jähriger gespielt habe. Das war auf einem [Robotron Z 1013](https://de.wikipedia.org/wiki/Robotron_Z_1013) und ist definitiv eine Geschichte, über die ich noch etwas schreiben werde.
 
-Nach dem AC1 kam Anfang der 90'er Jahre der erste echte PC in unseren Haushalt und mit ihm [Alley Cat](https://de.wikipedia.org/wiki/Alley_Cat). Ich kann mich gut erinnern, dass ich das stundenlang gespielt habe, sofern mein Vater mich gelassen hat.
+Nach dem Z 1013 kam Anfang der 90'er Jahre der erste echte PC in unseren Haushalt und mit ihm [Alley Cat](https://de.wikipedia.org/wiki/Alley_Cat). Ich kann mich gut erinnern, dass ich das stundenlang gespielt habe, sofern mein Vater mich gelassen hat.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0lnFlsfqSOo?si=iWinjZ8HG3DFAUc7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
