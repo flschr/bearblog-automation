@@ -16,7 +16,8 @@ class_name: ""
 first_published_at: "2002-07-10T15:30:00+00:00"
 ---
 
-![Prüfung, bitte leise! Foto: Dennis Wegner (CC BY-NC-SA 2.0)](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img_8526.webp)
+![Ein gelbes Schild mit schwarzer Schrift, das die Worte "PRÜFUNG", "BITTE NICHT STÖREN" und "RUHE BEWAHREN" enthält.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img_8526.webp)
+*Foto: Dennis Wegner, flickr.com*
 
 Die IHK-Prüfung zum IT-Systemkaufmann sieht vor, dass neben den schriftlichen Prüfungen auch eine sogenannte Projektarbeit durchgeführt wird. In Vorbereitung auf diese Projektarbeit habe ich im Internet nach Beispielen gesucht, die mir eine ungefähre Vorstellung darüber geben, welcher Aufbau und Umfang von der Prüfungskommission gefordert wird.
 
