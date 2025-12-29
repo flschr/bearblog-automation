@@ -35,7 +35,7 @@ Dieses Teil war jedenfalls das Highlight bei mir und meinen Freunden. Ich erinne
 ![Der DDR Radio-Recorder Holzstern R160 aus Holz mit einer perforierten Front, einer Kassettenschublade auf der linken Seite und einem analogen Tuner-Bereich mit verschiedenen Reglern und Knöpfen an der Oberseite. Es gibt auch eine Antenne auf der rechten Seite.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/stern-recorder_r_160__holzstern__-_veb_rft_sternradio_berlin.webp)
 *Foto: Wossi1991, [Wikipedia](https://commons.wikimedia.org/wiki/File:Stern-Recorder_R_160_(%22Holzstern%22)_-_VEB_RFT_Sternradio_Berlin.jpg)*
 
-Das Laden eines Spiels war dabei ein heiliges Ritual. Niemand durfte sprechen und da jede Erschütterung den Ladevorgang stören konnte, herrschte außer Atmen striktes Bewegungsverbot. Wenn alles geklappt hat, gab es Spiele wie diese zu bestaunen.
+Das Laden eines Spiels war dabei ein heiliges Ritual. Da jede Erschütterung den Ladevorgang stören konnte, herrschte striktes Rede- und Bewegungsverbot. Wenn alles geklappt hat, gab es Spiele wie diese zu bestaunen.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vDoHvsKS0ss?si=5RrMzRVqyi28IjLL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
