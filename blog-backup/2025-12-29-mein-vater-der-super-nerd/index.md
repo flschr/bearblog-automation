@@ -57,7 +57,7 @@ Ich erinnere mich zum Beispiel, dass er mal einen Sarg als Spardose gebastelt ha
 
 Ein weiteres Unikat aus seiner Werkstatt war die Melodieklingel. Eine schuhkartongroße Holzkiste, die an den Klingeldraht angeschlossen wurde und bei jedem Druck auf den Klingelknopf eine andere Melodie abspielte. Von "Das Wandern ist des Müllers Lust" bis zu "Alle Vögel sind schon da", wir hatten das volle Programm.
 
-Eine solche Klingel hatte sonst niemand, und auch wenn die Klingel manchmal genervt hat, weil einige Melodien wirklich übertrieben lang geklingelt haben, und die Technik gelegentlich auch abstürzte, ich habe das auch als Kind absolut gefeiert. Jeder neue Besucher musste sich von mir erst einmal unsere Klingel vorführen lassen. Ich glaube zwar nicht, dass mein Marketingtalent damals viele Aufträge generiert hat, aber mein Vater hat diese Melodieklingeln tatsächlich auch als Auftragsarbeit angefertigt und damit unsere Familienkasse aufgefüllt.
+Eine solche Klingel hatte sonst niemand, und auch wenn die Klingel manchmal genervt hat, weil einige Melodien wirklich übertrieben lang geklingelt haben, und die Technik gelegentlich auch abstürzte, ich habe das als Kind absolut gefeiert. Jeder neue Besucher musste sich von mir erst einmal unsere Klingel vorführen lassen. Ich glaube zwar nicht, dass mein Marketingtalent damals viele Aufträge generiert hat, aber mein Vater hat diese Melodieklingeln tatsächlich auch als Auftragsarbeit angefertigt und damit unsere Familienkasse aufgefüllt.
 
 Das Killerfeature der Klingel war übrigens der Ein- und Ausschalter. Damit ~~konnte~~ musste man die Klingel nicht nur ab und an neu starten, sondern konnte sie auch während eines Klingelstreiches lautlos stellen.
 
