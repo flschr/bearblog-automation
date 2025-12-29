@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2025-12-29T02:32:00+00:00"
 ---
 
-Ich hatte ja bereits [angedeutet](/retro-sonntag/), dass der Beginn meiner Digital-Karriere nicht erst mit dem PC in den 90'ern, sondern mit einem legendären DDR-Eigenbau begann. Der Auslöser für diesen Flashback [dieses Video](https://www.youtube.com/watch?v=78vWO2SCfEk), über das ich neulich gestolpert bin. Es zeigt die [BSS 01](https://de.wikipedia.org/wiki/Bildschirmspiel_01), die einzige Spielekonsole der DDR.
+Ich hatte ja bereits [angedeutet](/retro-sonntag/), dass der Beginn meiner Digital-Karriere nicht erst mit dem PC in den 90'ern, sondern mit einem legendären DDR-Eigenbau begann. Der Auslöser für diesen Flashback zu meinen ersten digitalen Gehversuchen war [dieses Video](https://www.youtube.com/watch?v=78vWO2SCfEk), über das ich neulich gestolpert bin. Es zeigt die [BSS 01](https://de.wikipedia.org/wiki/Bildschirmspiel_01), die einzige Spielekonsole der DDR.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/78vWO2SCfEk?si=l7lrn6mpGHWfZPOP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
