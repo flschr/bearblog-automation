@@ -41,6 +41,10 @@ Das Laden eines Spiels war dabei ein heiliges Ritual. Niemand durfte sprechen un
 
 Ich weiß jedenfalls noch ganz genau, wie ich gespannt vor dem Bildschirm saß und beim Anblick der Pixelhaufen zu mir selbst sagte, dass das alles so grandios war und es vermutlich niemals etwas geben würde, das realistischer ist. Ich war halt noch sehr jung.
 
+
+> #### Online-Emulator
+> Hier gibt es übrigens einen Emulator, mit dem man über 180 Computerpiele die in der DDR zu dieser Zeit entwickelt wurden, [online spielen](https://lanale.de/kc85_emu/KC85_Emu.html) kann. Der Emulator ist zwar für den [KC85](https://de.wikipedia.org/wiki/Kleincomputer_KC_85/2-4), aber die Spiele sind vergleichbar.
+
 ---
 
 Doch der Computer war nur die Spitze des Eisbergs. Als Elektroingenieur hatte mein Vater schon zu DDR-Zeiten eine Leidenschaft für alle möglichen und unmöglichen Projekte. In der Mangelwirtschaft war Kreativität die härteste Währung, und mein Vater war darin ein Großmeister.
