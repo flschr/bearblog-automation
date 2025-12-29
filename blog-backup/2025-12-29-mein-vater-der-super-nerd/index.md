@@ -55,6 +55,6 @@ Das Killerfeature der Klingel war übrigens der Ein- und Ausschalter. Damit ~~ko
 
 ---
 
-Auch wenn mein Vater das heute bescheiden als bloße Bastelei abtut, für mich ist er der erste echte Nerd, lange bevor das Wort überhaupt cool war. Ohne seine Leidenschaft, Dinge spielerisch zu verstehen und etwas aus dem Nichts zu erschaffen, und ohne diesen Geruch von Lötzinn in der Luft, wäre mein Weg in die digitale Welt sicher anders verlaufen. Er hat den Grundstein dafür gelegt, wer ich heute bin.
+Auch wenn mein Vater das heute bescheiden als bloße Bastelei abtut, für mich ist er der erste echte Nerd, lange bevor das Wort überhaupt cool war. Ohne seine Leidenschaft Dinge spielerisch zu verstehen und etwas aus dem Nichts zu erschaffen, und ohne diesen Geruch von Lötzinn in der Luft, wäre mein Weg in die digitale Welt sicher anders verlaufen. Er hat den Grundstein dafür gelegt, wer ich heute bin.
 
-Deshalb an dieser Stelle **Danke, Papa!**
+Deshalb an dieser Stelle einfach mal **Danke, Papa!**
