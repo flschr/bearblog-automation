@@ -16,7 +16,8 @@ class_name: ""
 first_published_at: "2014-07-19T18:47:00+00:00"
 ---
 
-![Ein LEGO-Modell eines DeLoreans aus Zurück in die Zukunft schwebt vor einem funkelnden Hintergrund. Foto: JD Hancock (CC BY 2.0)](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9544541664-b43ec6c183-c-2.webp)
+![Ein detailgetreues Modell eines LEGO-Autos, das einer bekannten Zeitmaschine aus einem Film ähnelt. Zwei Figuren sitzen im Inneren des Fahrzeugs vor einem glitzernden, blauen Hintergrund.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9544541664-b43ec6c183-c-2.webp)
+*Foto: JD Hancock, flickr.com*
 
 In spätestens 20 Jahren gibt es fliegende Autos. Soweit jedenfalls meine ganz persönliche Vision für das Jahr 2017. Denn Luc Besson hat 1997 in seinem Sci-Fi-Spektakel [Das fünfte Element](https://de.wikipedia.org/wiki/Das_f%C3%BCnfte_Element) auf beeindruckende Weise gezeigt, wie eine solche Welt aussehen kann.
 

@@ -16,7 +16,8 @@ class_name: ""
 first_published_at: "2016-04-17T18:56:00+00:00"
 ---
 
-![Ein kariertes Stoffmuster mit einer Nadel mit weißem Stecknadelkopf in der Mitte. Foto: Anka Albrecht, (CC BY 2.0)](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/24684550940-42db65f655-c.webp)
+![Ein Karomuster mit blauen, braunen und weißen Linien auf einem Stoff. Eine perlweiße Knopf sowie eine Nadel, die durch den Stoff gestochen ist, sind sichtbar.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/24684550940-42db65f655-c.webp)
+*Foto: Anka Albrecht, flickr.com*
 
 Mit dem Einzug in das neue Haus bestand erhöhter Bedarf nach Vorhängen und damit einhergehend die Notwendigkeit des Kürzens der selbigen. Wie praktisch, dass uns beim Umzug die längst vergessen geglaubte Nähmaschine (eine »alte« AEG 795) wieder in die Hände gefallen ist. Zeitgleich begann sich meine Frau daran zu erinnern, dass sie ja eigentlich Nähen kann. Nur dumm, dass ihr ohne Bedienungsanleitung nicht mehr einfiel, wie dieses Mysterium Nähmaschine eigentlich zu bedienen ist.
 
