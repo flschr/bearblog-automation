@@ -17,7 +17,7 @@ first_published_at: "2010-03-20T21:09:00+00:00"
 ---
 
 ![Stapel von Zeitungen oder Prospekten, die ordentlich nebeneinander auf einem Pflastersteinboden liegen, umgeben von einer Mauer und einem Holzzaun. Die Szene ist in Schwarz-Weiß gehalten.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/10057456854-029bed7e5f-o.webp)
-*Foto: Anja Lorenz*
+*Foto: Anja Lorenz, flickr.com*
 
 Jetzt geht sie wieder los, die größte Papierverschwendung in Deutschland. Die Gelben Seiten und die Telefonbücher für 2010 werden mal wieder in den deutschen Gemeinden verteilt. Aber wer braucht diese Druckerzeugnisse eigentlich, die de facto am Tag ihres Drucks schon wieder veraltet sind?
 
