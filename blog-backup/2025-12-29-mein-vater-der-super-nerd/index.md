@@ -45,6 +45,10 @@ Ich weiß jedenfalls noch ganz genau, wie ich gespannt vor dem Bildschirm saß u
 > #### Online-Emulator
 > Hier gibt es übrigens einen Emulator, mit dem man über 180 Computerpiele die in der DDR zu dieser Zeit entwickelt wurden, [online spielen](https://lanale.de/kc85_emu/KC85_Emu.html) kann. Der Emulator ist zwar für den [KC85](https://de.wikipedia.org/wiki/Kleincomputer_KC_85/2-4), aber die Spiele sind vergleichbar.
 
+Noch mehr Wissen rund um die Computer-Technik der DDR gibt es in diesem 3-stündigen Podcast:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0w46pl4iZaM?si=dFJ27Tk2sgBApyAC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 Doch der Computer war nur die Spitze des Eisbergs. Als Elektroingenieur hatte mein Vater schon zu DDR-Zeiten eine Leidenschaft für alle möglichen und unmöglichen Projekte. In der Mangelwirtschaft war Kreativität die härteste Währung, und mein Vater war darin ein Großmeister.
