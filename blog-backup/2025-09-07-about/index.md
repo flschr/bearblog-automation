@@ -38,6 +38,8 @@ Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener
 
 Diese Webseite ist ein [Bear Blog](https://bearblog.dev/). Das Theme habe ich vollständig an meine Bedürfnisse angepasst und mit einigen zusätzlichen Funktionen versehen. Es ist bewusst alles sehr minimal gehalten, was aber nicht heißt, dass hier nicht einige Stunden an Arbeit drinstecken.
 
+Alle Inhalte werden unter der [CC BY Lizenz](https://creativecommons.org/licenses/by/4.0/) zur Verfügung gestellt. Etwaige Rechte von Dritten sind als solche gekennzeichnet.
+
 Nachdem das hier mein persönliches Blog ist, bin ich natürlich auch für den Inhalt nach § 18 Abs. 2 MStV verantwortlich. Natürlich gibt es auch eine [Datenschutzerklärung](/datenschutz).
 
 Bei weiteren Fragen schreib mir gerne unter [hallo@fischr.org](mailto:hallo@fischr.org). 
