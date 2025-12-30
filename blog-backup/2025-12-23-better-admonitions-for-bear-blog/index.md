@@ -130,5 +130,5 @@ Yeap, I'm aware that headings have semantic meaning. However, there are several 
 - This approach is a win for both accessibility and portability. Screen readers and RSS readers often ignore custom CSS and rely purely on HTML structure. By using headings, your admonitions become meaningful "landmarks". A user can jump directly to a warning in their screen reader, and an RSS subscriber will see a bold, clear headline instead of a flat block of text that lost its styling.
 
 
-> #### PRO-TIP
+> #### TIP
 > If you want to speed things up, my [Markdown Power Editor for Bear Blog](/markdown-power-editor-for-bear-blog/) already has dedicated buttons for these admonitions. It lets you insert the Info, Warning, or Caution syntax with a single click.
