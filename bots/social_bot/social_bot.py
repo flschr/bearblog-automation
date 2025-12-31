@@ -808,9 +808,22 @@ def run() -> None:
                 feeds_fetched += 1
                 logger.info(f"Found {len(feed.entries)} entries in feed")
 
+                # Only update cache if feed contains new (unposted) entries
+                # This prevents caching a stale feed response due to CDN lag
                 if new_headers:
-                    feed_cache[feed_url] = new_headers
-                    cache_updated = True
+                    new_entries = [
+                        e for e in feed.entries
+                        if hasattr(e, 'link') and e.link not in posted_cache
+                    ]
+                    if new_entries:
+                        feed_cache[feed_url] = new_headers
+                        cache_updated = True
+                        logger.info(f"Cache updated: {len(new_entries)} new entries found")
+                    else:
+                        logger.info(
+                            f"Cache NOT updated: no new entries in feed "
+                            f"(possible CDN lag, will retry next run)"
+                        )
 
             except Exception as e:
                 logger.error(f"Error fetching feed {feed_url}: {e}")
