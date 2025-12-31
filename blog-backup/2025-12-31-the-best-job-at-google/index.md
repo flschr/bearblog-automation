@@ -3,7 +3,7 @@ uid: SpAzuhbusxQesYkhBjMs
 title: The best job at Google
 slug: the-best-job-at-google
 alias: ""
-published_date: "2025-12-31T11:37:33.608340+00:00"
+published_date: "2025-12-31T11:39:06.716460+00:00"
 all_tags: "[\"TIL\", \"blog\", \"business\", \"delightful\", \"economics\", \"meme\", \"web\"]"
 publish: "True"
 make_discoverable: "True"
@@ -42,6 +42,6 @@ This is why I find the approach of Google so fascinating. For many years, they h
 
 ![google-pacman-doodle-](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/google-pacman-doodle.webp)
 
-What surprised me most is that Google, in the meantime, has [a dedicated Delight Team](https://www.codecademy.com/resources/blog/cool-coding-job-google-easter-eggs-and-delight-features), which works solely on these small experiences that make everyone smile.. What used to be a [20% project](https://ideawake.com/googles-20-time-program-a-massive-success-and-a-cautionary-tale/) (something engineers did in their spare time, like I did with my error message) is now a [professional strategy](https://acrobatant.com/unleashing-the-power-of-easter-egg-marketing-engaging-your-audience-with-hidden-surprises/). The team even has a set of rules to ensure their jokes are fun and not annoying or destructive.
+What surprised me most is that Google, in the meantime, has [a dedicated Delight Team](https://www.codecademy.com/resources/blog/cool-coding-job-google-easter-eggs-and-delight-features), which works solely on these small experiences that make everyone smile. What used to be a [20% project](https://ideawake.com/googles-20-time-program-a-massive-success-and-a-cautionary-tale/) (something engineers did in their spare time, like I did with my error message) is now a [professional strategy](https://acrobatant.com/unleashing-the-power-of-easter-egg-marketing-engaging-your-audience-with-hidden-surprises/). The team even has a set of rules to ensure their jokes are fun and not annoying or destructive.
 
 It’s a long way from my "Goodbye!" message to a professional team in Mountain View. But the core idea is the same: Software shouldn't just be a tool for us humans. Sometimes, it should be a reason to smile.
