@@ -103,7 +103,7 @@ def save_social_mapping(article_url: str, mastodon_url: Optional[str] = None,
                         bluesky_url: Optional[str] = None) -> None:
     """
     Save the mapping from an article URL to its social media post URLs.
-    Merges with existing mappings.
+    Merges with existing mappings. New entries are prepended to keep newest on top.
     """
     if not mastodon_url and not bluesky_url:
         return
@@ -119,18 +119,23 @@ def save_social_mapping(article_url: str, mastodon_url: Optional[str] = None,
                 except Exception:
                     mappings = {}
 
-            # Initialize or update entry for this article
-            if article_url not in mappings:
-                mappings[article_url] = {}
-
+            # Build the entry for this article
+            entry = mappings.get(article_url, {})
             if mastodon_url:
-                mappings[article_url]["mastodon"] = mastodon_url
+                entry["mastodon"] = mastodon_url
             if bluesky_url:
-                mappings[article_url]["bluesky"] = bluesky_url
+                entry["bluesky"] = bluesky_url
+
+            # Prepend new entry to keep newest URLs on top
+            # Remove existing entry first (if any), then add at the beginning
+            if article_url in mappings:
+                del mappings[article_url]
+            new_mappings = {article_url: entry}
+            new_mappings.update(mappings)
 
             # Save updated mappings
             with open(MAPPINGS_FILE, 'w', encoding='utf-8') as f:
-                json.dump(mappings, f, indent=2, ensure_ascii=False)
+                json.dump(new_mappings, f, indent=2, ensure_ascii=False)
 
         logger.info(f"Saved social mapping for: {article_url}")
     except Exception as e:

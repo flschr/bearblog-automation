@@ -10,6 +10,7 @@ Hey and welcome 👋🏼 This is the powerhouse behind my [Bear Blog](https://be
 
 ```
 ├── config.yaml              # Central configuration
+├── mappings.json            # Article → Social post URL mappings (auto-generated)
 ├── bots/
 │   ├── social_bot/          # Social media posting bot
 │   │   └── config.json      # Feed & template config
