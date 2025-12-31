@@ -441,8 +441,16 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
                         og_img_path = download_image(og_data['image_url'])
                         if og_img_path and os.path.exists(og_img_path):
                             try:
-                                with open(og_img_path, 'rb') as f:
-                                    thumb_blob = client.upload_blob(f.read()).blob
+                                # Bluesky limit for link card images is ~1MB
+                                file_size = os.path.getsize(og_img_path)
+                                if file_size > 950_000:  # ~950KB to stay safely under limit
+                                    logger.warning(
+                                        f"OG image too large for Bluesky ({file_size/1_000_000:.2f}MB), "
+                                        f"creating link card without thumbnail"
+                                    )
+                                else:
+                                    with open(og_img_path, 'rb') as f:
+                                        thumb_blob = client.upload_blob(f.read()).blob
                             except Exception as e:
                                 logger.warning(f"Error uploading OG image: {e}")
                             finally:
@@ -723,36 +731,40 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
         content=clean_content
     )
 
-    try:
-        bluesky_url = None
-        mastodon_url = None
+    bluesky_url = None
+    mastodon_url = None
+    any_success = False
 
-        if PLATFORM_BLUESKY in cfg.get('targets', []):
+    if PLATFORM_BLUESKY in cfg.get('targets', []):
+        try:
             bluesky_url = post_to_bluesky(msg, img_path, alt_text, link=entry.link)
+            any_success = True
+        except Exception as e:
+            logger.error(f"Error posting to Bluesky for '{entry.title}': {e}")
 
-        if PLATFORM_MASTODON in cfg.get('targets', []):
+    if PLATFORM_MASTODON in cfg.get('targets', []):
+        try:
             mastodon_url = post_to_mastodon(msg, img_path, alt_text)
+            any_success = True
+        except Exception as e:
+            logger.error(f"Error posting to Mastodon for '{entry.title}': {e}")
 
+    # Clean up temporary image file
+    if img_path and os.path.exists(img_path):
+        try:
+            os.unlink(img_path)
+        except Exception as e:
+            logger.warning(f"Error removing temporary file {img_path}: {e}")
+
+    if any_success:
         # Save the mapping from article URL to social media post URLs
         save_social_mapping(entry.link, mastodon_url=mastodon_url, bluesky_url=bluesky_url)
-
         submit_to_indexnow(entry.link)
-
         mark_as_posted(entry.link)
         posted_cache.add(entry.link)
-
         return True
 
-    except Exception as e:
-        logger.error(f"Error processing entry '{entry.title}': {e}")
-        return False
-
-    finally:
-        if img_path and os.path.exists(img_path):
-            try:
-                os.unlink(img_path)
-            except Exception as e:
-                logger.warning(f"Error removing temporary file {img_path}: {e}")
+    return False
 
 
 def run() -> None:
