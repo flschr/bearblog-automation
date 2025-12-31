@@ -104,7 +104,7 @@ jobs:
         run: |
           git config user.name "Bot"
           git config user.email "bot@github.com"
-          git add bots/social_bot/posted_articles.txt bots/social_bot/feed_cache.json
+          git add bots/social_bot/posted_articles.txt bots/social_bot/feed_cache.json mappings.json
           # "|| exit 0" prevents error if there are no changes to commit
           if git commit -m "Update posted articles and feed cache"; then
             echo "changes=true" >> $GITHUB_OUTPUT

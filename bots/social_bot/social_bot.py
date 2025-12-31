@@ -45,10 +45,13 @@ PLATFORM_BLUESKY = "bluesky"
 PLATFORM_MASTODON = "mastodon"
 
 BASE_DIR = Path(__file__).parent.absolute()
+REPO_ROOT = Path(__file__).parent.parent.parent.absolute()
 POSTED_FILE = BASE_DIR / 'posted_articles.txt'
 LOCK_FILE = BASE_DIR / 'posted_articles.txt.lock'
 CONFIG_FILE = BASE_DIR / 'config.json'
 FEED_CACHE_FILE = BASE_DIR / 'feed_cache.json'
+MAPPINGS_FILE = REPO_ROOT / 'mappings.json'
+MAPPINGS_LOCK = REPO_ROOT / 'mappings.json.lock'
 
 # Create session with connection pooling
 session = create_session('feed2social/2.0')
@@ -77,6 +80,61 @@ def save_feed_cache(cache: Dict[str, Dict[str, str]]) -> None:
             json.dump(cache, f, indent=2)
     except Exception as e:
         logger.error(f"Error saving feed cache: {e}")
+
+
+def load_social_mappings() -> Dict[str, Dict[str, str]]:
+    """
+    Load article URL to social media post URL mappings.
+    Returns a dict: {article_url: {"mastodon": toot_url, "bluesky": post_url}}
+    """
+    if not MAPPINGS_FILE.exists():
+        return {}
+
+    try:
+        with FileLock(MAPPINGS_LOCK):
+            with open(MAPPINGS_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+    except Exception as e:
+        logger.warning(f"Error loading social mappings: {e}")
+        return {}
+
+
+def save_social_mapping(article_url: str, mastodon_url: Optional[str] = None,
+                        bluesky_url: Optional[str] = None) -> None:
+    """
+    Save the mapping from an article URL to its social media post URLs.
+    Merges with existing mappings.
+    """
+    if not mastodon_url and not bluesky_url:
+        return
+
+    try:
+        with FileLock(MAPPINGS_LOCK):
+            # Load existing mappings
+            mappings = {}
+            if MAPPINGS_FILE.exists():
+                try:
+                    with open(MAPPINGS_FILE, 'r', encoding='utf-8') as f:
+                        mappings = json.load(f)
+                except Exception:
+                    mappings = {}
+
+            # Initialize or update entry for this article
+            if article_url not in mappings:
+                mappings[article_url] = {}
+
+            if mastodon_url:
+                mappings[article_url]["mastodon"] = mastodon_url
+            if bluesky_url:
+                mappings[article_url]["bluesky"] = bluesky_url
+
+            # Save updated mappings
+            with open(MAPPINGS_FILE, 'w', encoding='utf-8') as f:
+                json.dump(mappings, f, indent=2, ensure_ascii=False)
+
+        logger.info(f"Saved social mapping for: {article_url}")
+    except Exception as e:
+        logger.error(f"Error saving social mapping: {e}")
 
 
 def check_feed_changed(feed_url: str, cache: Dict[str, Dict[str, str]]) -> tuple[bool, Dict[str, str]]:
@@ -342,8 +400,11 @@ def submit_to_indexnow(url: str) -> None:
         logger.warning(f"IndexNow request failed: {e}")
 
 
-def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Optional[str] = None) -> None:
-    """Post rich text to Bluesky with link card preview."""
+def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Optional[str] = None) -> Optional[str]:
+    """
+    Post rich text to Bluesky with link card preview.
+    Returns the URL of the created post, or None on failure.
+    """
     handle = os.getenv('BSKY_HANDLE')
     password = os.getenv('BSKY_PW')
 
@@ -352,7 +413,7 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
 
     try:
         client = Client()
-        client.login(handle, password)
+        profile = client.login(handle, password)
 
         tb = client_utils.TextBuilder()
 
@@ -416,16 +477,31 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
             except Exception as e:
                 logger.error(f"Error uploading image to Bluesky: {e}")
 
-        client.send_post(text=tb, embed=embed)
-        logger.info("Bluesky post success")
+        response = client.send_post(text=tb, embed=embed)
+
+        # Construct the Bluesky post URL from the response
+        # Format: https://bsky.app/profile/{handle}/post/{rkey}
+        post_url = None
+        if response and hasattr(response, 'uri'):
+            # URI format: at://did:plc:xxx/app.bsky.feed.post/rkey
+            uri_parts = response.uri.split('/')
+            if len(uri_parts) >= 5:
+                rkey = uri_parts[-1]
+                post_url = f"https://bsky.app/profile/{handle}/post/{rkey}"
+
+        logger.info(f"Bluesky post success: {post_url}")
+        return post_url
 
     except Exception as e:
         logger.error(f"Error posting to Bluesky: {e}")
         raise
 
 
-def post_to_mastodon(text: str, img_path: Optional[str], alt_text: str) -> None:
-    """Post plain text status with optional media to Mastodon."""
+def post_to_mastodon(text: str, img_path: Optional[str], alt_text: str) -> Optional[str]:
+    """
+    Post plain text status with optional media to Mastodon.
+    Returns the URL of the created toot, or None on failure.
+    """
     token = os.getenv('MASTO_TOKEN')
 
     if not token:
@@ -445,11 +521,14 @@ def post_to_mastodon(text: str, img_path: Optional[str], alt_text: str) -> None:
             except Exception as e:
                 logger.error(f"Error uploading image to Mastodon: {e}")
 
-        mastodon.status_post(
+        status = mastodon.status_post(
             status=text[:500],
             media_ids=media_ids if media_ids else None
         )
-        logger.info("Mastodon post success")
+
+        toot_url = status.get('url') if status else None
+        logger.info(f"Mastodon post success: {toot_url}")
+        return toot_url
 
     except Exception as e:
         logger.error(f"Error posting to Mastodon: {e}")
@@ -645,11 +724,17 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
     )
 
     try:
+        bluesky_url = None
+        mastodon_url = None
+
         if PLATFORM_BLUESKY in cfg.get('targets', []):
-            post_to_bluesky(msg, img_path, alt_text, link=entry.link)
+            bluesky_url = post_to_bluesky(msg, img_path, alt_text, link=entry.link)
 
         if PLATFORM_MASTODON in cfg.get('targets', []):
-            post_to_mastodon(msg, img_path, alt_text)
+            mastodon_url = post_to_mastodon(msg, img_path, alt_text)
+
+        # Save the mapping from article URL to social media post URLs
+        save_social_mapping(entry.link, mastodon_url=mastodon_url, bluesky_url=bluesky_url)
 
         submit_to_indexnow(entry.link)
 

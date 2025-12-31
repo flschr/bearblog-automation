@@ -29,3 +29,4 @@ Thumbs.db
 
 # Bot cache files
 social_bot/*.lock
+*.lock
