@@ -441,8 +441,16 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
                         og_img_path = download_image(og_data['image_url'])
                         if og_img_path and os.path.exists(og_img_path):
                             try:
-                                with open(og_img_path, 'rb') as f:
-                                    thumb_blob = client.upload_blob(f.read()).blob
+                                # Bluesky limit for link card images is ~1MB
+                                file_size = os.path.getsize(og_img_path)
+                                if file_size > 950_000:  # ~950KB to stay safely under limit
+                                    logger.warning(
+                                        f"OG image too large for Bluesky ({file_size/1_000_000:.2f}MB), "
+                                        f"creating link card without thumbnail"
+                                    )
+                                else:
+                                    with open(og_img_path, 'rb') as f:
+                                        thumb_blob = client.upload_blob(f.read()).blob
                             except Exception as e:
                                 logger.warning(f"Error uploading OG image: {e}")
                             finally:
