@@ -723,36 +723,40 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
         content=clean_content
     )
 
-    try:
-        bluesky_url = None
-        mastodon_url = None
+    bluesky_url = None
+    mastodon_url = None
+    any_success = False
 
-        if PLATFORM_BLUESKY in cfg.get('targets', []):
+    if PLATFORM_BLUESKY in cfg.get('targets', []):
+        try:
             bluesky_url = post_to_bluesky(msg, img_path, alt_text, link=entry.link)
+            any_success = True
+        except Exception as e:
+            logger.error(f"Error posting to Bluesky for '{entry.title}': {e}")
 
-        if PLATFORM_MASTODON in cfg.get('targets', []):
+    if PLATFORM_MASTODON in cfg.get('targets', []):
+        try:
             mastodon_url = post_to_mastodon(msg, img_path, alt_text)
+            any_success = True
+        except Exception as e:
+            logger.error(f"Error posting to Mastodon for '{entry.title}': {e}")
 
+    # Clean up temporary image file
+    if img_path and os.path.exists(img_path):
+        try:
+            os.unlink(img_path)
+        except Exception as e:
+            logger.warning(f"Error removing temporary file {img_path}: {e}")
+
+    if any_success:
         # Save the mapping from article URL to social media post URLs
         save_social_mapping(entry.link, mastodon_url=mastodon_url, bluesky_url=bluesky_url)
-
         submit_to_indexnow(entry.link)
-
         mark_as_posted(entry.link)
         posted_cache.add(entry.link)
-
         return True
 
-    except Exception as e:
-        logger.error(f"Error processing entry '{entry.title}': {e}")
-        return False
-
-    finally:
-        if img_path and os.path.exists(img_path):
-            try:
-                os.unlink(img_path)
-            except Exception as e:
-                logger.warning(f"Error removing temporary file {img_path}: {e}")
+    return False
 
 
 def run() -> None:
