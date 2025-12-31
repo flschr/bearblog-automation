@@ -1,2 +1,14 @@
 {
+  "https://fischr.org/gefrorene-welten/": {
+    "mastodon": "https://mastodon.social/@fischr/115803786428751720",
+    "bluesky": "https://bsky.app/profile/fischr.org/post/3mb5at44y7x22"
+  },
+  "https://fischr.org/mein-vater-der-super-nerd/": {
+    "mastodon": "https://mastodon.social/@fischr/115800522321788365",
+    "bluesky": "https://bsky.app/profile/fischr.org/post/3mb3sgr2vrz2w"
+  },
+  "https://fischr.org/retro-sonntag/": {
+    "mastodon": "https://mastodon.social/@fischr/115798233761928673",
+    "bluesky": "https://bsky.app/profile/fischr.org/post/3mb2rw24m5v2a"
+  }
 }
