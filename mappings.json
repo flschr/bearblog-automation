@@ -1,4 +1,8 @@
 {
+  "https://fischr.org/the-best-job-at-google/": {
+    "mastodon": "https://mastodon.social/@fischr/115814100493693415",
+    "bluesky": "https://bsky.app/profile/fischr.org/post/3mbbtffna2g2m"
+  },
   "https://fischr.org/gefrorene-welten/": {
     "mastodon": "https://mastodon.social/@fischr/115803786428751720",
     "bluesky": "https://bsky.app/profile/fischr.org/post/3mb5at44y7x22"
@@ -10,9 +14,5 @@
   "https://fischr.org/retro-sonntag/": {
     "mastodon": "https://mastodon.social/@fischr/115798233761928673",
     "bluesky": "https://bsky.app/profile/fischr.org/post/3mb2rw24m5v2a"
-  },
-  "https://fischr.org/the-best-job-at-google/": {
-    "mastodon": "https://mastodon.social/@fischr/115814100493693415",
-    "bluesky": "https://bsky.app/profile/fischr.org/post/3mbbtffna2g2m"
   }
 }
