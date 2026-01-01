@@ -1,4 +1,8 @@
 {
+  "https://fischr.org/der-wilde-roboter/": {
+    "mastodon": "https://mastodon.social/@fischr/115819860504195327",
+    "bluesky": "https://bsky.app/profile/fischr.org/post/3mbefaqx2jf2p"
+  },
   "https://fischr.org/the-best-job-at-google/": {
     "mastodon": "https://mastodon.social/@fischr/115814100493693415",
     "bluesky": "https://bsky.app/profile/fischr.org/post/3mbbtffna2g2m"
@@ -51,11 +55,11 @@
     "mastodon": "https://mastodon.social/@fischr/115726109916596736",
     "bluesky": "https://bsky.app/profile/fischr.org/post/3ma2qxmbvr322"
   },
- "https://fischr.org/hello-bear-blog/": {
+  "https://fischr.org/hello-bear-blog/": {
     "mastodon": "https://mastodon.social/@fischr/115720467683331002",
     "bluesky": "https://bsky.app/profile/fischr.org/post/3m7yarnbjis2g"
   },
- "https://fischr.org/amy/": {
+  "https://fischr.org/amy/": {
     "mastodon": "https://mastodon.social/@fischr/115671620555808090"
   }
 }
