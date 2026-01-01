@@ -437,7 +437,23 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
 
         embed = None
 
-        if link:
+        # Prioritize direct image upload over link cards when img_path is provided
+        if img_path and os.path.exists(img_path):
+            try:
+                with open(img_path, 'rb') as f:
+                    upload = client.upload_blob(f.read())
+                    embed = models.AppBskyEmbedImages.Main(
+                        images=[models.AppBskyEmbedImages.Image(
+                            alt=alt_text or "",
+                            image=upload.blob
+                        )]
+                    )
+                logger.info("Uploaded direct image to Bluesky")
+            except Exception as e:
+                logger.error(f"Error uploading image to Bluesky: {e}")
+
+        # Only create link card if no direct image was uploaded
+        if embed is None and link:
             try:
                 og_data = get_og_metadata(link)
                 if og_data:
@@ -476,19 +492,6 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
                     logger.info("Created external link card embed for Bluesky")
             except Exception as e:
                 logger.warning(f"Error creating external embed: {e}")
-
-        if embed is None and img_path and os.path.exists(img_path):
-            try:
-                with open(img_path, 'rb') as f:
-                    upload = client.upload_blob(f.read())
-                    embed = models.AppBskyEmbedImages.Main(
-                        images=[models.AppBskyEmbedImages.Image(
-                            alt=alt_text or "",
-                            image=upload.blob
-                        )]
-                    )
-            except Exception as e:
-                logger.error(f"Error uploading image to Bluesky: {e}")
 
         response = client.send_post(text=tb, embed=embed)
 
