@@ -828,21 +828,25 @@ def run() -> None:
                 feeds_fetched += 1
                 logger.info(f"Found {len(feed.entries)} entries in feed")
 
-                # Only update cache if feed contains new (unposted) entries
-                # This prevents caching a stale feed response due to CDN lag
+                # Store new headers for potential cache update after processing
+                # We'll only update the cache after successfully posting all new entries
+                # This prevents the bug where cache is updated but posting fails,
+                # causing the feed to be skipped on subsequent runs
                 if new_headers:
                     new_entries = [
                         e for e in feed.entries
                         if hasattr(e, 'link') and e.link not in posted_cache
                     ]
                     if new_entries:
+                        # Store pending headers - will be applied after successful processing
+                        feed_data[feed_url + '_pending_headers'] = new_headers
+                        logger.info(f"Found {len(new_entries)} new entries (cache update pending)")
+                    else:
+                        # No new entries - safe to update cache immediately
                         feed_cache[feed_url] = new_headers
                         cache_updated = True
-                        logger.info(f"Cache updated: {len(new_entries)} new entries found")
-                    else:
                         logger.info(
-                            f"Cache NOT updated: no new entries in feed "
-                            f"(possible CDN lag, will retry next run)"
+                            f"Cache updated: no new entries in feed"
                         )
 
             except Exception as e:
@@ -917,9 +921,42 @@ def run() -> None:
                 print(f"::warning::No matching config for: {article['title']} ({article['link']}) - Tags: {tags}")
                 logger.warning(f"No matching config for: {article['title']} ({article['link']})")
 
+        # Step 5: Update cache for feeds where all new entries were successfully processed
+        # Only update cache if no unposted entries remain (prevents skipping failed posts)
+        for feed_url in list(feed_data.keys()):
+            pending_key = feed_url + '_pending_headers'
+            if pending_key in feed_data:
+                pending_headers = feed_data[pending_key]
+                feed = feed_data.get(feed_url)
+                if feed:
+                    # Check if any entries from this feed are still unposted
+                    unposted_entries = [
+                        e for e in feed.entries
+                        if hasattr(e, 'link') and e.link not in posted_cache
+                    ]
+                    # Filter out entries that are too old (they won't be posted anyway)
+                    if max_article_age_days > 0:
+                        unposted_entries = [
+                            e for e in unposted_entries
+                            if not is_article_too_old(e, max_article_age_days)[0]
+                        ]
+
+                    if not unposted_entries:
+                        # All entries processed - safe to update cache
+                        feed_cache[feed_url] = pending_headers
+                        cache_updated = True
+                        logger.info(f"Cache updated for {feed_url}: all entries processed")
+                    else:
+                        # Some entries still unposted - don't update cache
+                        # This ensures the feed will be re-fetched on the next run
+                        logger.warning(
+                            f"Cache NOT updated for {feed_url}: "
+                            f"{len(unposted_entries)} entries still unposted"
+                        )
+
         if cache_updated:
             save_feed_cache(feed_cache)
-            logger.info("Feed cache updated")
+            logger.info("Feed cache saved")
 
         logger.info(
             f"=== Social Bot End === "
