@@ -856,9 +856,6 @@ def run() -> None:
         # Step 2: Collect all unique entries from fetched feeds
         all_entries: Dict[str, Any] = {}  # URL -> entry (deduplicated)
         for feed_url, feed in feed_data.items():
-            # Skip pending headers entries (they are dicts, not feed objects)
-            if feed_url.endswith('_pending_headers'):
-                continue
             for entry in feed.entries:
                 if hasattr(entry, 'link') and entry.link:
                     if entry.link not in all_entries:
