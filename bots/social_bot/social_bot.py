@@ -405,6 +405,28 @@ def submit_to_indexnow(url: str) -> None:
         logger.warning(f"IndexNow request failed: {e}")
 
 
+BLUESKY_MAX_LENGTH = 300  # Bluesky's limit in graphemes
+
+
+def truncate_text_for_bluesky(text: str, max_length: int = BLUESKY_MAX_LENGTH) -> str:
+    """
+    Truncate text to fit Bluesky's character limit.
+    Tries to break at word boundaries and adds ellipsis if truncated.
+    """
+    if len(text) <= max_length:
+        return text
+
+    # Reserve space for ellipsis
+    truncated = text[:max_length - 1]
+
+    # Try to break at last space to avoid cutting words
+    last_space = truncated.rfind(' ')
+    if last_space > max_length // 2:  # Only break at space if it's not too early
+        truncated = truncated[:last_space]
+
+    return truncated.rstrip() + '…'
+
+
 def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Optional[str] = None) -> Optional[str]:
     """
     Post rich text to Bluesky with link card preview.
@@ -419,6 +441,9 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
     try:
         client = Client()
         profile = client.login(handle, password)
+
+        # Truncate text to fit Bluesky's 300 character limit
+        text = truncate_text_for_bluesky(text)
 
         tb = client_utils.TextBuilder()
 
@@ -742,6 +767,7 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
     bluesky_url = None
     mastodon_url = None
     any_success = False
+    failed_platforms = []
 
     if PLATFORM_BLUESKY in cfg.get('targets', []):
         try:
@@ -749,6 +775,7 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
             any_success = True
         except Exception as e:
             logger.error(f"Error posting to Bluesky for '{entry.title}': {e}")
+            failed_platforms.append({"platform": "bluesky", "error": str(e)})
 
     if PLATFORM_MASTODON in cfg.get('targets', []):
         try:
@@ -756,6 +783,7 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
             any_success = True
         except Exception as e:
             logger.error(f"Error posting to Mastodon for '{entry.title}': {e}")
+            failed_platforms.append({"platform": "mastodon", "error": str(e)})
 
     # Clean up temporary image file
     if img_path and os.path.exists(img_path):
@@ -770,9 +798,19 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
         submit_to_indexnow(entry.link)
         mark_as_posted(entry.link)
         posted_cache.add(entry.link)
-        return True
 
-    return False
+    # Return tuple: (any_success, failed_platforms_info)
+    if failed_platforms:
+        return any_success, {
+            "article": {"title": entry.title, "link": entry.link},
+            "failed_platforms": failed_platforms,
+            "successful_platforms": [p for p in [
+                "bluesky" if bluesky_url else None,
+                "mastodon" if mastodon_url else None
+            ] if p]
+        }
+
+    return any_success, None
 
 
 def run() -> None:
@@ -869,6 +907,7 @@ def run() -> None:
         # Step 3: Process each entry against all configs
         total_processed = 0
         unmatched_entries = []
+        partial_failures = []  # Track articles that failed on some platforms
 
         for entry_url, entry in all_entries.items():
             # Skip already posted
@@ -905,8 +944,11 @@ def run() -> None:
                             break
 
             if matched_config:
-                if post_entry(entry, matched_config, posted_cache):
+                success, failure_info = post_entry(entry, matched_config, posted_cache)
+                if success:
                     total_processed += 1
+                if failure_info:
+                    partial_failures.append(failure_info)
             else:
                 # No matching config found - generate detailed report
                 report = get_matching_report(entry, check_string, config, feed_data)
@@ -923,6 +965,25 @@ def run() -> None:
                 tags = report["detected_tags"]
                 print(f"::warning::No matching config for: {article['title']} ({article['link']}) - Tags: {tags}")
                 logger.warning(f"No matching config for: {article['title']} ({article['link']})")
+
+        # Step 4b: Handle partial failures (posted to some platforms but not all)
+        if partial_failures:
+            # Save report for GitHub Issue
+            partial_failures_file = BASE_DIR / 'partial_failures.json'
+            try:
+                with open(partial_failures_file, 'w', encoding='utf-8') as f:
+                    json.dump(partial_failures, f, indent=2, ensure_ascii=False)
+                logger.info(f"Saved partial failures report to {partial_failures_file}")
+            except Exception as e:
+                logger.error(f"Error saving partial failures report: {e}")
+
+            # Log warnings with GitHub Actions annotation format
+            for failure in partial_failures:
+                article = failure["article"]
+                failed = [p["platform"] for p in failure["failed_platforms"]]
+                succeeded = failure["successful_platforms"]
+                print(f"::warning::Partial failure for: {article['title']} - Failed: {failed}, Succeeded: {succeeded}")
+                logger.warning(f"Partial failure for: {article['title']} ({article['link']}) - Failed: {failed}")
 
         # Step 5: Update cache for feeds where all new entries were successfully processed
         # Only update cache if no unposted entries remain (prevents skipping failed posts)

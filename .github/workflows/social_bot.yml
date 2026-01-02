@@ -99,6 +99,48 @@ jobs:
             echo "No unmatched articles report found"
           fi
 
+      - name: Create Issue for Partial Failures
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          REPORT_FILE="bots/social_bot/partial_failures.json"
+          if [ -f "$REPORT_FILE" ]; then
+            echo "Found partial failures report, creating issue..."
+
+            # Build issue body with the report
+            ISSUE_BODY="## Partial Posting Failures
+
+          Some articles were posted to some platforms but failed on others.
+          Manual intervention may be required.
+
+          ### Workflow Run
+          - **Run ID:** ${{ github.run_id }}
+          - **Triggered by:** ${{ github.event_name }}
+          - **Timestamp:** $(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+          ### Detailed Report
+          \`\`\`json
+          $(cat "$REPORT_FILE")
+          \`\`\`
+
+          ### Possible Actions
+          1. Manually post to the failed platform(s)
+          2. Check the error message for the root cause
+          3. Fix the issue and re-run the bot (note: this may create duplicates on successful platforms)
+          "
+
+            # Create the issue
+            echo "$ISSUE_BODY" | gh issue create \
+              --title "Social Bot: Partial posting failures" \
+              --body-file -
+
+            # Clean up the report file (don't commit it)
+            rm "$REPORT_FILE"
+          else
+            echo "No partial failures report found"
+          fi
+
       - name: Save State
         id: save_state
         run: |
