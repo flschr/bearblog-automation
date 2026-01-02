@@ -405,6 +405,28 @@ def submit_to_indexnow(url: str) -> None:
         logger.warning(f"IndexNow request failed: {e}")
 
 
+BLUESKY_MAX_LENGTH = 300  # Bluesky's limit in graphemes
+
+
+def truncate_text_for_bluesky(text: str, max_length: int = BLUESKY_MAX_LENGTH) -> str:
+    """
+    Truncate text to fit Bluesky's character limit.
+    Tries to break at word boundaries and adds ellipsis if truncated.
+    """
+    if len(text) <= max_length:
+        return text
+
+    # Reserve space for ellipsis
+    truncated = text[:max_length - 1]
+
+    # Try to break at last space to avoid cutting words
+    last_space = truncated.rfind(' ')
+    if last_space > max_length // 2:  # Only break at space if it's not too early
+        truncated = truncated[:last_space]
+
+    return truncated.rstrip() + '…'
+
+
 def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Optional[str] = None) -> Optional[str]:
     """
     Post rich text to Bluesky with link card preview.
@@ -419,6 +441,9 @@ def post_to_bluesky(text: str, img_path: Optional[str], alt_text: str, link: Opt
     try:
         client = Client()
         profile = client.login(handle, password)
+
+        # Truncate text to fit Bluesky's 300 character limit
+        text = truncate_text_for_bluesky(text)
 
         tb = client_utils.TextBuilder()
 
