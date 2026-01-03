@@ -36,7 +36,7 @@ Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener
 
 ---
 
-### Technische Details
+### Recycled Words
 
 Recycled Words ist ein [Bear Blog](https://bearblog.dev/). Das Theme habe ich vollständig an meine Bedürfnisse angepasst und mit einigen zusätzlichen Funktionen versehen. Es ist bewusst alles sehr minimal gehalten, was aber nicht heißt, dass hier nicht einige Stunden an Arbeit drinstecken.
 
