@@ -20,7 +20,7 @@ Ich mag es, im Schnee zu gehen. Dieses Knirschen unter den Sohlen hat für mich 
 
 Leider hat es die Tage bei uns nicht stark genug geschneit. Vermutlich kommt der Schnee dann im Überfluss, wenn alle wieder in den Arbeitsalltag starten. Naja, die Schneedecke war also sehr dünn heute, aber ich habe trotzdem versucht, die Geräusche aufzunehmen.
 
-Warum ich das aber eigentlich schreibe, ist, weil ich testen möchte, ob [Bear Blog](https://bearblog.dev/) ein hochgeladenes [WEBM-Video](https://de.wikipedia.org/wiki/WebM) abspielen kann und ob das auch im RSS-Feed noch funktioniert. Dazu musste ich das Video erst einmal in WEBM konvertieren und unter das Upload-Limit von 10 MB bekommen. Erstaunlich, dass 11 Sekunden Spaziergang im Schnee standardmäßig mit über 30 MB aus meinem iPhone 14 Pro purzeln.
+Warum ich das aber eigentlich schreibe, ist, weil ich testen möchte, ob [Bear Blog](https://bearblog.dev/) ein hochgeladenes [WEBM-Video](https://de.wikipedia.org/wiki/WebM) abspielen kann und ob das auch im [RSS-Feed](/my-feeds/) noch funktioniert. Dazu musste ich das Video erst einmal in WEBM konvertieren und unter das Upload-Limit von 10 MB bekommen. Erstaunlich, dass 11 Sekunden Spaziergang im Schnee standardmäßig mit über 30 MB aus meinem iPhone 14 Pro purzeln.
 
 Also hier ist das direkt bei Bear Blog hochgeladene Video:
 
