@@ -21,12 +21,12 @@ first_published_at: "2025-12-23T08:13:00+00:00"
 Kurz und knapp: Deine Daten gehören dir. Ich speichere nichts, was ich nicht unbedingt für den Betrieb dieser Seite brauche. 
 
 ### Hosting & Server-Logs
-Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden technisch notwendige Daten (z. B. IP-Adresse, Zeitstempel) verarbeitet. Eine Identifizierung deiner Person findet nicht statt.
+Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden nur die technisch notwendigen Daten (z. B. IP-Adresse, Zeitstempel) verarbeitet. Eine Identifizierung deiner Person findet nicht statt.
 
 - **Anbieter:** Herman Martinus, 269 Odendaal St, Pretoria, Südafrika.
 - **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO.
 
-## 2. Keine Cookies & kein Tracking
+### Keine Cookies und kein Tracking
 Ich setze **keine Cookies** und nutze keine Tracking-Tools.
 
 ## 3. Eingebettete Inhalte
