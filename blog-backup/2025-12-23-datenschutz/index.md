@@ -20,7 +20,7 @@ first_published_at: "2025-12-23T08:13:00+00:00"
 
 Deine Daten gehören dir. Ich speichere nichts, was ich nicht unbedingt für den Betrieb dieser Seite benötige. Auf dieser Webseite werden ==keine Cookies== gesetzt, es gibt ==keine Tracking-Tools== und es werden auch ==keine personenbezogenen== Daten gespeichert.
 
-Ich zwar keine Daten, die ich dir zuordnen könnte, aber du hast natürlich trotzdem das Recht auf Auskunft, Berichtigung und Löschung. Schreib mir einfach unter [datenschutz@fischr.org](mailto:datenschutz@fischr.org).
+Ich habe zwar keine Daten, die ich dir zuordnen könnte, aber du hast natürlich trotzdem das Recht auf Auskunft, Berichtigung und Löschung. Schreib mir einfach an [hallo@fischr.org](mailto:hallo@fischr.org).
 
 ## Hosting & Server-Logs
 
