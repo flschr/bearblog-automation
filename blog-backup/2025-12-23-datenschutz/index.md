@@ -20,6 +20,8 @@ first_published_at: "2025-12-23T08:13:00+00:00"
 
 Deine Daten gehören dir. Ich speichere nichts, was ich nicht unbedingt für den Betrieb dieser Seite benötige. Auf dieser Webseite werden ==keine Cookies== gesetzt, es gibt ==keine Tracking-Tools== und es werden auch ==keine personenbezogenen== Daten gespeichert.
 
+Ich zwar keine Daten, die ich dir zuordnen könnte, aber du hast natürlich trotzdem das Recht auf Auskunft, Berichtigung und Löschung. Schreib mir einfach unter [datenschutz@fischr.org](mailto:datenschutz@fischr.org).
+
 ## Hosting & Server-Logs
 
 Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden nur die technisch notwendigen Daten verarbeitet. Eine Identifizierung deiner Person findet nicht statt.
@@ -33,10 +35,7 @@ Inhalte Dritter sind standardmäßig deaktiviert. Erst durch deinen Klick wird e
 - **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
 
 ## Deine Rechte & Kontakt
-Du hast das Recht auf Auskunft, Berichtigung und Löschung. Da ich keine Profile erstelle, habe ich meist keine Daten, die ich dir zuordnen könnte.
 
-**Verantwortlich:** René Fischer  
-[datenschutz@fischr.org](mailto:datenschutz@fischr.org)
 
 # Datenschutzerklärung
 
