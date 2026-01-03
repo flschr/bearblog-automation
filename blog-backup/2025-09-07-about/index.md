@@ -18,7 +18,7 @@ first_published_at: "2025-09-07T22:54:00+00:00"
 
 <span hidden>René Fischer aus München. Analytischer Geek, Food Aficionado und gerne draußen.</span>
 <span class="page-marker" data-page="about" hidden></span>
-Hallo, ich bin wie gesagt René Fischer und lebe im Münchner Umland. Aufgewachsen bin ich in der [obszön schönen](/schon-schoner-gotha/) Stadt [Gotha](https://de.wikipedia.org/wiki/Gotha), und habe dort die letzten 10 Jahre der DDR miterlebt.
+Hallo, ich bin René Fischer und lebe im Münchner Umland. Aufgewachsen bin ich in der [obszön schönen](/schon-schoner-gotha/) Stadt [Gotha](https://de.wikipedia.org/wiki/Gotha), und habe dort die letzten 10 Jahre der DDR miterlebt.
 
 Ich bin analytischer Kreativarbeiter, Geek und [Food Aficionado](https://fischr.org/blog/?q=rezeptvomchef). Darüber hinaus bin ich verheiratet und Vater von zwei sehr unterschiedlichen Teenagern. Beruflich mache ich schon immer irgendwas mit Software.
 
@@ -35,6 +35,8 @@ Meine kulinarischen Entdeckungen habe ich angefangen in Listen für [gutes Essen
 Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener auf [Bluesky](https://bsky.app/profile/fischr.org). Ansonsten bin ich auch noch auf [GitHub](https://github.com/flschr), [OpenStreetMap](https://www.openstreetmap.org/user/fischr) und [Komoot](https://www.komoot.com/de-de/user/848543125284) unterwegs.
 
 ---
+
+### Technische Details
 
 Recycled Words ist ein [Bear Blog](https://bearblog.dev/). Das Theme habe ich vollständig an meine Bedürfnisse angepasst und mit einigen zusätzlichen Funktionen versehen. Es ist bewusst alles sehr minimal gehalten, was aber nicht heißt, dass hier nicht einige Stunden an Arbeit drinstecken.
 
