@@ -24,7 +24,7 @@ Ich habe zwar keine Daten, die ich dir zuordnen könnte, aber du hast natürlich
 
 ## Technische Details
 
-Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden nur die technisch notwendigen Daten verarbeitet. Eine Identifizierung deiner Person findet nicht statt. Inhalte Dritter sind standardmäßig deaktiviert. Erst durch deinen Klick wird eine Verbindung zum Anbieter hergestellt.
+Dieses Blog wird über [Bear Blog](https://bearblog.dev) bereitgestellt. Dabei werden nur technisch notwendige Daten verarbeitet (keine Identifizierung). Inhalte Dritter sind standardmäßig deaktiviert und laden erst nach deinem Klick.
 
 - **Anbieter:** Herman Martinus, 269 Odendaal St, Pretoria, Südafrika
 - **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO
