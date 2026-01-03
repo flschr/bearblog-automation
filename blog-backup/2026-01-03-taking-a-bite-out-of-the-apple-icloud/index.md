@@ -44,7 +44,7 @@ Two years ago, I moved all our mail accounts to iCloud. It doesn't cost any mone
 
 Since I use my own domain, I figured I could just switch to a new mail provider by changing my DNS settings if anything goes south. But then I found the catch:
 
-I realized that my Cloudflare account (where I manage my domain settings) was using "Sign in with Apple". If Apple locked me out, I would also be locked out of Cloudflare and wouldn't be able to change my DNS settings to move my email to a new provider. Wonderful superclusterfuck.
+I realized that my Cloudflare account (where I manage my domain settings) was using "Sign in with Apple". If Apple locked me out, I would also be locked out of Cloudflare and wouldn't be able to change my DNS settings to move my email to a new provider. *Wonderful superclusterfuck!*
 
 I immediately decoupled my Cloudflare login from Apple and switched it to a standard mail login. For now, I’m staying with my mails living in iCloud, but if ever needed, the escape path is now fully accessible.
 
