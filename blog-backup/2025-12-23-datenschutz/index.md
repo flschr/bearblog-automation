@@ -24,39 +24,7 @@ Ich habe zwar keine Daten, die ich dir zuordnen könnte, aber du hast natürlich
 
 ## Technische Details
 
-Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden nur die technisch notwendigen Daten verarbeitet. Eine Identifizierung deiner Person findet nicht statt.
+Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden nur die technisch notwendigen Daten verarbeitet. Eine Identifizierung deiner Person findet nicht statt. Inhalte Dritter sind standardmäßig deaktiviert. Erst durch deinen Klick wird eine Verbindung zum Anbieter hergestellt.
 
-- **Anbieter:** Herman Martinus, 269 Odendaal St, Pretoria, Südafrika.
-- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO.
-
-Inhalte Dritter sind standardmäßig deaktiviert. Erst durch deinen Klick wird eine Verbindung zum Anbieter hergestellt.
-
-- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
-
-
-
-# Datenschutzerklärung
-
-Der Schutz Ihrer Daten ist mir wichtig. Sie können dieses Blog besuchen, ohne persönliche Angaben machen zu müssen.Auf dieser Webseite werden ==keine Cookies== gesetzt und ==keine personenbezogenen== Daten gespeichert.
-
-## Bereitstellung der Website
-
-Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden technisch notwendige Daten (Server-Logs wie IP-Adresse, Datum/Uhrzeit) sowie anonyme Besuchsstatistiken erfasst. Es findet keine Identifizierung einzelner Besucher oder eine geräteübergreifende Nachverfolgung statt.
-
-- **Diensteanbieter:** Herman Martinus, 269 Odendaal St, Meyerspark, Pretoria, 0184, Südafrika  
-- **Datenschutzerklärung:** [Bear Blog Privacy Policy](https://docs.bearblog.dev/privacy-policy/)  
-- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)
-
-## Eingebettete Inhalte
-
-An einigen Stellen können Inhalte externer Dienste (u.a. YouTube, Google Maps, Komoot, ARTE, u.a.) eingebunden sein, etwa Videos, Karten oder andere interaktive Medien. Diese Inhalte werden nicht automatisch geladen. Stattdessen erscheint ein Hinweis, der Sie über den jeweiligen Anbieter informiert. Erst nach Ihrer aktiven Zustimmung wird die Verbindung hergestellt und Daten können übertragen werden.
-
-- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)  
-- **Datenübermittlung bei US-Diensten:** EU-US Data Privacy Framework
-
-## Ihre Rechte
-
-Sie haben das Recht auf Auskunft, Berichtigung oder Löschung Ihrer Daten. Da ich keine personenbezogenen Nutzerprofile erstelle, liegen mir im Regelfall keine Daten vor, die ich Ihrer Person zuordnen könnte.
-
-- **Verantwortlich:** René Fischer  
-- **Kontakt:** [datenschutz@fischr.org](mailto:datenschutz@fischr.org)
+- **Anbieter:** Herman Martinus, 269 Odendaal St, Pretoria, Südafrika
+- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO
