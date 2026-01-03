@@ -25,7 +25,7 @@ Stay updated on the topics you love. Use the links below to follow specific cate
 | Movie reviews | Reviews of movies and shows I watched        | [Feed](https://fischr.org/feed?q=popcornfieber)     |
 | Book reviews  | Reviews of Books I read                      | [Feed](https://fischr.org/feed?q=ausgelesen)     |
 | Listening     | Music and Podcasts I recommend.              | [Feed](https://fischr.org/feed?q=liebefuerdieohren)     |
-| Unterwegs     | My travel, hiking, and biking adventures     | [Feed](https://fischr.org/feed?q=unterwegs)     |
+| Outdoors     | Travel, hiking, and biking adventures     | [Feed](https://fischr.org/feed?q=unterwegs)     |
 | Vacation     | Just our vacations     | [Feed](https://fischr.org/feed?q=ganzvielurlaub)     |
 | Recipes       | Recipes for delicious meals I can recommend  | [Feed](https://fischr.org/feed?q=rezeptvomchef)     |
 | Bear Blog     | Tips, plugins, and more related to Bear Blog | [Feed](https://fischr.org/feed?q=bearblog)     |
