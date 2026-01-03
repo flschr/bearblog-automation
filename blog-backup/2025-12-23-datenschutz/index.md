@@ -18,6 +18,28 @@ first_published_at: "2025-12-23T08:13:00+00:00"
 
 # Datenschutzerklärung
 
+Kurz und knapp: Deine Daten gehören dir. Ich speichere nichts, was ich nicht unbedingt für den Betrieb dieser Seite brauche.
+
+## 1. Hosting & Server-Logs
+Dieses Blog wird über **Bear Blog** betrieben. Dabei werden technisch notwendige Daten (z. B. IP-Adresse, Zeitstempel) verarbeitet. Eine Identifizierung deiner Person findet nicht statt.
+* **Anbieter:** Herman Martinus, 269 Odendaal St, Pretoria, Südafrika.
+* **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO.
+
+## 2. Keine Cookies & kein Tracking
+Ich setze **keine Cookies** und nutze keine Tracking-Tools.
+
+## 3. Eingebettete Inhalte
+Inhalte Dritter (YouTube, Maps etc.) sind standardmäßig deaktiviert. Erst durch deinen Klick wird eine Verbindung zum Anbieter hergestellt.
+* **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+
+## 4. Deine Rechte & Kontakt
+Du hast das Recht auf Auskunft, Berichtigung und Löschung. Da ich keine Profile erstelle, habe ich meist keine Daten, die ich dir zuordnen könnte.
+
+**Verantwortlich:** René Fischer  
+[datenschutz@fischr.org](mailto:datenschutz@fischr.org)
+
+# Datenschutzerklärung
+
 Der Schutz Ihrer Daten ist mir wichtig. Sie können dieses Blog besuchen, ohne persönliche Angaben machen zu müssen.Auf dieser Webseite werden ==keine Cookies== gesetzt und ==keine personenbezogenen== Daten gespeichert.
 
 ## Bereitstellung der Website
