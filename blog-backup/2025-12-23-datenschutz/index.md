@@ -18,7 +18,7 @@ first_published_at: "2025-12-23T08:13:00+00:00"
 
 # Datenschutzerklärung
 
-Deine Daten gehören dir. Ich speichere nichts, was ich nicht unbedingt für den Betrieb dieser Seite brauche. Auf dieser Webseite werden ==keine Cookies== gesetzt, es gibt ==keine Tracking-Tools== und es werden auch ==keine personenbezogenen== Daten gespeichert.
+Deine Daten gehören dir. Ich speichere nichts, was ich nicht unbedingt für den Betrieb dieser Seite benötige. Auf dieser Webseite werden ==keine Cookies== gesetzt, es gibt ==keine Tracking-Tools== und es werden auch ==keine personenbezogenen== Daten gespeichert.
 
 ## Hosting & Server-Logs
 
@@ -27,13 +27,12 @@ Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden
 - **Anbieter:** Herman Martinus, 269 Odendaal St, Pretoria, Südafrika.
 - **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO.
 
-### Keine Cookies und kein Tracking
+## Eingebettete Inhalte
+Inhalte Dritter sind standardmäßig deaktiviert. Erst durch deinen Klick wird eine Verbindung zum Anbieter hergestellt.
 
-## 3. Eingebettete Inhalte
-Inhalte Dritter (YouTube, Maps etc.) sind standardmäßig deaktiviert. Erst durch deinen Klick wird eine Verbindung zum Anbieter hergestellt.
-* **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+- **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
 
-## 4. Deine Rechte & Kontakt
+## Deine Rechte & Kontakt
 Du hast das Recht auf Auskunft, Berichtigung und Löschung. Da ich keine Profile erstelle, habe ich meist keine Daten, die ich dir zuordnen könnte.
 
 **Verantwortlich:** René Fischer  
