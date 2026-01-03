@@ -16,13 +16,13 @@ class_name: ""
 first_published_at: "2025-12-23T08:13:00+00:00"
 ---
 
-## Datenschutzerklärung
+# Datenschutzerklärung
 
 Deine Daten gehören dir. Ich speichere nichts, was ich nicht unbedingt für den Betrieb dieser Seite brauche. Auf dieser Webseite werden ==keine Cookies== gesetzt, es gibt ==keine Tracking-Tools== und es werden auch ==keine personenbezogenen== Daten gespeichert.
 
 ## Hosting & Server-Logs
 
-Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden nur die technisch notwendigen Daten (z. B. IP-Adresse, Zeitstempel) verarbeitet. Eine Identifizierung deiner Person findet nicht statt.
+Dieses Blog wird über [Bear Blog](https://bearblog.dev) betrieben. Dabei werden nur die technisch notwendigen Daten verarbeitet. Eine Identifizierung deiner Person findet nicht statt.
 
 - **Anbieter:** Herman Martinus, 269 Odendaal St, Pretoria, Südafrika.
 - **Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO.
