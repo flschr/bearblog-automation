@@ -26,7 +26,7 @@ Also hier ist das direkt bei Bear Blog hochgeladene Video:
 
 <video controls width="100%"><source src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/spuren-im-schnee.webm" type="video/webm"></video>
 
-Und falls das nicht funktioniert, hier als Fallback [das Video von Youtube](https://www.youtube.com/shorts/nXEDA2u5cqU):
+~~Und falls das nicht funktioniert,~~ Der Test war erfolgreich. Zumindest in meinen Feedreadern ist das Video überall korrekt aufgetaucht. Ich lass das [Fallback-Video von Youtube](https://www.youtube.com/shorts/nXEDA2u5cqU) trotzdem hier:
 
 <iframe width="315" height="560"
 src="https://www.youtube.com/embed/nXEDA2u5cqU"
