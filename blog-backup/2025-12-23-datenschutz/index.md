@@ -18,7 +18,7 @@ first_published_at: "2025-12-23T08:13:00+00:00"
 
 # Datenschutzerklärung
 
-Der Schutz Ihrer Daten ist mir wichtig. Sie können dieses Blog besuchen, ohne persönliche Angaben machen zu müssen.Auf dieser Webseite werden ==keine Cookies== gesetzt und keine ==personenbezogenen Daten== gespeichert.
+Der Schutz Ihrer Daten ist mir wichtig. Sie können dieses Blog besuchen, ohne persönliche Angaben machen zu müssen.Auf dieser Webseite werden ==keine Cookies== gesetzt und ==keine personenbezogenen== Daten gespeichert.
 
 ## Bereitstellung der Website
 
