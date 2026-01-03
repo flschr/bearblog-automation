@@ -26,6 +26,8 @@ Even though I do have local and additional cloud backups of my documents, mails,
 
 ![Four-panel comic featuring a person discussing the phrase "Don't put all your chickens in one basket." The first panel shows chickens in a basket, the second expresses concern about losing the basket, the third questions where to get eggs, and the fourth depicts the person looking thoughtful, emphasizing they still have one fewer basket and several chickens.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/igsnkneqp4yy.webp)
 
+---
+
 ## What I have changed this week
 
 ### Moving away from Apple Passwords
