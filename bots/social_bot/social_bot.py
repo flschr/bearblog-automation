@@ -405,6 +405,31 @@ def submit_to_indexnow(url: str) -> None:
         logger.warning(f"IndexNow request failed: {e}")
 
 
+def submit_to_web_archive(url: str) -> None:
+    """
+    Submit the URL to the Internet Archive (web.archive.org) for archival.
+    Creates a permanent snapshot of the content using the Save Page Now API.
+    """
+    # Check if web archive integration is enabled
+    if not CONFIG.get('web_archive', {}).get('enabled', False):
+        return
+
+    try:
+        # Internet Archive Save Page Now API endpoint
+        # Using the simple GET method which doesn't require authentication
+        archive_url = f"https://web.archive.org/save/{url}"
+
+        response = session.get(
+            archive_url,
+            timeout=REQUEST_TIMEOUT,
+            allow_redirects=True
+        )
+        response.raise_for_status()
+        logger.info(f"Web Archive submission success for {url}")
+    except Exception as e:
+        logger.warning(f"Web Archive submission failed for {url}: {e}")
+
+
 BLUESKY_MAX_LENGTH = 300  # Bluesky's limit in graphemes
 
 
@@ -796,6 +821,7 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
         # Save the mapping from article URL to social media post URLs
         save_social_mapping(entry.link, mastodon_url=mastodon_url, bluesky_url=bluesky_url)
         submit_to_indexnow(entry.link)
+        submit_to_web_archive(entry.link)
         mark_as_posted(entry.link)
         posted_cache.add(entry.link)
 

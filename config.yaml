@@ -44,3 +44,8 @@ social:
   # This prevents accidental re-posts when editing old articles (e.g., changing URLs).
   # Set to 0 or remove to disable this check (post all articles regardless of age).
   max_article_age_days: 3
+
+web_archive:
+  # Automatically submit new article URLs to the Internet Archive (web.archive.org)
+  # This creates a permanent snapshot of your content for long-term preservation
+  enabled: true
