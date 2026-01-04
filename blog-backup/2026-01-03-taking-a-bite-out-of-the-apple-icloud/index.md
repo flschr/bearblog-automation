@@ -22,7 +22,7 @@ But recently, that facade developed a crack. After reading how [Paris was locked
 
 Over the years, I had integrated almost every part of my life into their ecosystem. We use the Apple iCloud for our photos & videos, documents, contacts, calendars, passwords, and, yes, even our mailboxes. I guess this is what you call ==having all eggs in one basket==.
 
-Even though I do have local and additional cloud backups of my documents, mails, and the entire photo library, there are obviously some critical blind spots I need to fix ... *now*!
+Even though I do have local and additional cloud backups of my documents, mails, and the entire photo library, there are obviously some critical blind spots I uncovered while conducting a risk assessment for the Apple services I use.
 
 ![Four-panel comic featuring a person discussing the phrase "Don't put all your chickens in one basket." The first panel shows chickens in a basket, the second expresses concern about losing the basket, the third questions where to get eggs, and the fourth depicts the person looking thoughtful, emphasizing they still have one fewer basket and several chickens.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/igsnkneqp4yy.webp)
 
