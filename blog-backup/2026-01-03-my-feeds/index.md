@@ -29,4 +29,5 @@ Stay updated on the topics you love. Use the links below to follow specific cate
 | Vacation     | Just our vacations     | [Feed](https://fischr.org/feed?q=ganzvielurlaub)     |
 | Recipes       | Recipes for delicious meals I can recommend  | [Feed](https://fischr.org/feed?q=rezeptvomchef)     |
 | Bear Blog     | Tips, plugins, and more related to Bear Blog | [Feed](https://fischr.org/feed?q=bearblog)     |
+| Stuff that works | Recommendations for great apps and services  | [Feed](https://fischr.org/feed?q=stuffthatworks)     |
 
