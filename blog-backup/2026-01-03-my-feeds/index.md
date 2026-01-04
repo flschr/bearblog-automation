@@ -16,7 +16,11 @@ class_name: ""
 first_published_at: "2026-01-03T19:35:00+00:00"
 ---
 
-Stay updated on the topics you love. Use the links below to follow specific categories or subscribe to everything at once. Simply click the feed link or copy the URL into your favorite reader and never miss a new post.
+Whether you’re here for my latest photography, looking for travel inspiration, or curious about what’s cooking in my kitchen, I’ve made it easy to follow along.
+
+I believe in the open web and the power of RSS. No algorithms, no tracking, just the content you care about, delivered straight to your favorite newsreader.
+
+How it works: Simply click a feed link below to open it, or right-click to copy the URL and paste it into your RSS app.
 
 | Topic         | Content                                      | Feed |
 |---------------|----------------------------------------------|------|
