@@ -32,7 +32,7 @@ Meine kulinarischen Entdeckungen habe ich angefangen in Listen für [gutes Essen
 >
 >Antoine de Saint-Exupéry
 
-Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener auf [Bluesky](https://bsky.app/profile/fischr.org). Ansonsten bin ich auch noch auf [GitHub](https://github.com/flschr), [OpenStreetMap](https://www.openstreetmap.org/user/fischr) und [Komoot](https://www.komoot.com/de-de/user/848543125284) unterwegs.
+Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener auf [Bluesky](https://bsky.app/profile/fischr.org). Ansonsten bin ich auch noch auf [GitHub](https://github.com/flschr), [OpenStreetMap](https://www.openstreetmap.org/user/fischr) und [Komoot](https://www.komoot.com/de-de/user/848543125284) unterwegs. Am unkompliziertesten kann man mich per Mail unter [hallo@fischr.org](mailto:hallo@fischr.org) erreichen.
 
 ---
 
@@ -40,6 +40,4 @@ Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener
 
 Dieses Blog läuft auf [Bear Blog](https://bearblog.dev/). Alle Inhalte werden unter der [CC BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/) zur Verfügung gestellt. Etwaige Rechte von Dritten sind als solche gekennzeichnet.
 
-Nachdem das hier mein persönliches Blog ist, bin ich natürlich auch für den Inhalt nach §18 Abs. 2 MStV verantwortlich. Die [Datenschutzerklärung](/datenschutz) gibt es hier.
-
-Schreib mir gern an [hallo@fischr.org](mailto:hallo@fischr.org). 
+Nachdem das hier mein persönliches Blog ist, bin ich natürlich auch für den Inhalt nach §18 Abs. 2 MStV verantwortlich. Natürlich gibt es auch eine [Datenschutzerklärung](/datenschutz).
