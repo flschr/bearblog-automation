@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2026-01-03T19:35:00+00:00"
 ---
 
-Stay updated on the topics you love. Use the links below to follow specific categories or subscribe to everything at once. Simply copy the feed URL into your favorite reader and never miss a new post.
+Stay updated on the topics you love. Use the links below to follow specific categories or subscribe to everything at once. Simply click the feed link or copy the URL into your favorite reader and never miss a new post.
 
 | Topic         | Content                                      | Feed |
 |---------------|----------------------------------------------|------|
