@@ -4,7 +4,8 @@ Hey and welcome 👋🏼 This is the powerhouse behind my [Bear Blog](https://be
 
 - **posts the article to Mastodon and Bluesky**, with an individual template based on the content
 - **backs up everything** as Markdown files with images right here in this repo
-- and **pings search engines** for faster indexing.
+- **pings search engines** for faster indexing
+- and **archives URLs to the Internet Archive** for long-term preservation.
 
 ## Project Structure
 
