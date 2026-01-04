@@ -12,6 +12,7 @@ The Social Bot automatically posts new blog entries from your RSS feeds to Blues
 4. Formats posts using customizable templates
 5. Posts to Bluesky and/or Mastodon with rich text and link cards
 6. Submits URLs to search engines via IndexNow
+7. Archives URLs to the Internet Archive for long-term preservation (optional)
 
 ---
 
@@ -23,12 +24,16 @@ The Social Bot automatically posts new blog entries from your RSS feeds to Blues
 social:
   mastodon_instance: "https://mastodon.social"
   max_article_age_days: 7  # Optional: Skip articles older than X days
+
+web_archive:
+  enabled: true  # Optional: Archive URLs to web.archive.org
 ```
 
 | Option | Default | Description |
 |--------|---------|-------------|
 | `mastodon_instance` | — | Your Mastodon instance URL |
 | `max_article_age_days` | `0` (disabled) | Skip articles older than X days (see [Article Age Limit](#article-age-limit)) |
+| `web_archive.enabled` | `false` | Automatically submit URLs to Internet Archive (see [Web Archive Integration](#web-archive-integration)) |
 
 ### Feed Config (`bots/social_bot/config.json`)
 
@@ -172,6 +177,27 @@ social:
 ```
 Skipping old article (14 days old, max 7): My Old Blog Post
 ```
+
+### Web Archive Integration
+
+When enabled in `config.yaml`, the bot automatically submits new article URLs to the [Internet Archive](https://web.archive.org) for permanent preservation:
+
+```yaml
+web_archive:
+  enabled: true  # Set to false to disable
+```
+
+**How it works:**
+- After successfully posting to social media, the URL is submitted to web.archive.org
+- Creates a permanent snapshot of your content
+- No authentication required
+- Runs asynchronously (doesn't block posting if Archive is slow)
+
+**Benefits:**
+- 📚 Permanent preservation even if your site goes down
+- 📖 Historical record of your content
+- 🔗 Citable archived versions for researchers
+- 💾 Additional backup layer
 
 ### Automatic Issue for Unmatched Articles
 When a new article doesn't match any posting configuration, the bot:
