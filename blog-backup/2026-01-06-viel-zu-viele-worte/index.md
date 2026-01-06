@@ -3,7 +3,7 @@ uid: LkiLGnNGRznSfyHSgALh
 title: Viel zu viele Worte
 slug: viel-zu-viele-worte
 alias: ""
-published_date: "2026-01-06T01:17:14.868946+00:00"
+published_date: "2026-01-06T01:17:00+00:00"
 all_tags: "[\"betterworld\", \"blog\", \"digitallife\", \"gesundheit\", \"nachhaltig\", \"philosophie\", \"rettungsaktion\"]"
 publish: "True"
 make_discoverable: "True"
@@ -40,6 +40,6 @@ Nur leider sind das genau die Momente, an denen man nicht mehr so aufmerksam die
 
 Podcasts sind so ein Effizienzding, das sich in mein Leben gesneakt und dann ziemlich breitgemacht hat. Sie haben meine unproduktive Zeit, die ich sonst mit mir und meinen Gedanken verbringen musste, endlich effizient gemacht. Anstatt die Momente zu genießen, meinem Gedankenkarussell beim Kreiseln zuzuschauen, habe ich noch mehr Input draufgeworfen, und damit am Ende meinen Denkapparat zum Schweigen gebracht.
 
-Was also tun? Ich habe mich für einen radikalen Schnitt entschieden. Von über 20 Podcasts, habe ich genau drei behalten. Und weil ich schon dabei war, habe ich mich auch in meinem Feedreader und bei YouTube aufgeräumt.
+Was also tun? Ich habe mich für einen radikalen Schnitt entschieden. Von über 20 Podcasts, habe ich genau drei behalten. Und weil ich schon dabei war, habe ich mich auch in meinem Feedreader und bei YouTube aufgeräumt, also wirklich erschreckend viel aufgeräumt.
 
 Effizienz im Denken bedeutet eben nicht, so viel wie möglich in den Kopf hineinzustopfen. Es bedeutet, genug Raum zu lassen, damit das, was drin ist, sich auch entfalten kann.
