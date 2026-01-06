@@ -28,7 +28,7 @@ Was ich in den letzten Wochen festgestellt habe ist, das mir Schreiben hilft The
 >
 > Felix Schwenzel
 
-Beim Schreiben ist mir aufgefallen, das ich keinen verstopften Kopf hatte. Ich glaube, das ist ein gutes Zeichen. Ich war und bin entspannt und kreative Energie hat meinen Körper geflutet. Mein Kopf war leer, weitestgehend frei von externem Input und bereit sich mit den eigenen Gedanken und Abbauprozessen zu beschäftigen.
+Beim Schreiben in den letzten Tagen ist mir aufgefallen, das ich keinen verstopften Kopf hatte. Ich glaube, das ist ein gutes Zeichen. Ich war und bin entspannt und kreative Energie hat meinen Körper geflutet. Mein Kopf war leer, weitestgehend frei von externem Input und bereit sich mit den eigenen Gedanken und Abbauprozessen zu beschäftigen.
 
 Als ich so darüber nachgedacht habe, was, abgesehen von der nicht stattgefundenen Erwerbsarbeit, anders ist und warum dieser kreative Flow davor quasi nicht, oder nur sehr selten, vorhanden war, hat es Klick gemacht: Mein Kopf hat zu viel Input und quasi keine Zeit zum Verarbeiten. Meine Frau ermahnt mich schon lange, doch mal Pause zu machen und nicht ständig irgendwas zu schauen, zu lesen oder zu hören. Das fällt mir ehrlicherweise sehr schwer, weil ich das Gefühl habe, das es so viel gibt, das ich wissen und lernen muss.
 
