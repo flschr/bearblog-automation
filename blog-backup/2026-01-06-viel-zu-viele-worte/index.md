@@ -20,7 +20,7 @@ Ich starte mit einem Einschub, weil mir Felix mit dem, was ich seit 2 Tagen mit 
 
 ---
 
-Euphorisiert vom [Umzug meines Blogs](/hello-bear-blog/), habe ich meinen Urlaub damit verbracht, wirklich viel zu schreiben. Okay, ich habe auch viel am Blog und an allen möglichen Tools geschraubt, aber die meiste Zeit habe ich tatsächlich mit dem Schreiben von Blogartikeln verbracht. Einige von ihnen haben bereits das Licht der Welt erblickt, andere fristen ein trauriges Dasein als Entwurf, und schauen dabei etwas traurig auf die neuen, ganz und gar dringenden Gedanken, die oft die höhere Priorität bekommen.
+Euphorisiert vom [Umzug meines Blogs](/hello-bear-blog/), habe ich meinen Urlaub damit verbracht, wirklich viel zu schreiben. Okay, ich habe auch viel am Blog und an allen möglichen Tools geschraubt, aber die meiste Zeit habe ich tatsächlich mit dem Schreiben von Blogartikeln verbracht. Einige von ihnen haben bereits das Licht der Welt erblickt, andere fristen ihr Dasein als Entwurf, und schauen dabei etwas traurig auf die neuen, ganz und gar dringenden Gedanken, die oft die höhere Priorität bekommen.
 
 Was ich in den letzten Wochen festgestellt habe ist, das mir Schreiben hilft Themen in meinem Kopf Raum zu geben sie zu Ende (zumindest meiner Denkleistung) zu denken. Ich schreibe, ich verwerfe, ich setze neu an ... ich recherchiere das Thema, komme vom Stöckchen aufs Hölzchen, ich schreibe und schreibe und lese das am Ende, und gar nicht so selten lösche ich es dann. Oder, in etwas weniger mutigen Momenten, speichere ich das Geschriebene als Entwurf und denke mir, dass ich das irgendwann später mal wirklich zu Ende denke und dann auch der Welt mitteile.
 
