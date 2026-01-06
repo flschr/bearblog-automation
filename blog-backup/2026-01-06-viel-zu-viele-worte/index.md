@@ -1,6 +1,6 @@
 ---
 uid: LkiLGnNGRznSfyHSgALh
-title: Viel zu viele Worte
+title: Ständig viel zu viele Worte
 slug: viel-zu-viele-worte
 alias: ""
 published_date: "2026-01-06T01:17:00+00:00"
