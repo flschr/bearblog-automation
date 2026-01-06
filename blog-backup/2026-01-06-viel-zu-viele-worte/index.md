@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2026-01-06T01:11:21.451966+00:00"
 ---
 
-Ich starte mit einem Einschub, weil mir Felix mit dem, was ich seit 2 Tagen mit mir als etwas, das ich unbedingt aufschreiben muss, [zuvor gekommen ist](https://wirres.net/articles/kleist-verschwenzelt). Es geht darum wie sehr das Schreiben hilft, Dinge in einer Art innerem Monolog mit sich selbst zu besprechen, zu schleifen und dabei zu verdauen. Das ist nämlich genau das, was ich auch sagen wollte. Und eigentlich könnte ich jetzt aufhören, weil ja alles gesagt ist. Aber nachdem ich den bestehenden Entwurf schon hier herumliegen habe, kommt der eben jetzt auch noch hinterher. Ansonsten gilt natürlich was Felix sagt.
+Ich starte mit einem Einschub, weil mir Felix mit dem, was ich seit 2 Tagen mit mir als etwas, das ich unbedingt aufschreiben muss, [zuvor gekommen ist](https://wirres.net/articles/kleist-verschwenzelt). Es geht darum wie sehr das Schreiben hilft, Dinge in einer Art innerem Monolog mit sich selbst zu besprechen, zu schleifen und dabei zu verdauen, und wie sehr das Aufschreiben, von selbst unfertigen Monologen bei der eigenen Verarbeitung hilft. Das ist nämlich genau das, was ich auch sagen wollte. Und eigentlich könnte ich jetzt aufhören, weil ja alles gesagt ist. Aber nachdem ich den bestehenden Entwurf schon hier herumliegen habe, kommt der eben jetzt auch noch hinterher. Ansonsten gilt natürlich was Felix sagt.
 
 ---
 
