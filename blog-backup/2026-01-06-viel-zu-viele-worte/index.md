@@ -3,8 +3,8 @@ uid: LkiLGnNGRznSfyHSgALh
 title: Viel zu viele Worte
 slug: viel-zu-viele-worte
 alias: ""
-published_date: "2026-01-06T01:12:04.719357+00:00"
-all_tags: "[\"blog\", \"liebefuerdieohren\"]"
+published_date: "2026-01-06T01:17:14.868946+00:00"
+all_tags: "[\"betterworld\", \"blog\", \"digitallife\", \"gesundheit\", \"nachhaltig\", \"philosophie\", \"rettungsaktion\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
