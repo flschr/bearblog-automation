@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2026-01-07T19:23:00+00:00"
 ---
 
-Ich fahre ja einen Tesla, auch wenn ich eigentlich nie einen wollte, aber das ist eine andere Geschichte. Teslas gelten jedenfalls jetzt nicht unbedingt als Winterautos. Zumindest gibt es sehr viele Menschen, die behaupten, Tesla im Besonderen und Elektroautos im Allgemeinen seien im Winter nicht zu gebrauchen. Oftmals wird hier auf den im Winter erhöhten Energiebedarf verwiesen, was in der Realität bedeutet, dass die Batterie bei Minusgraden schneller leer ist als, wenn es warm ist.
+Ich fahre ja einen Tesla, auch wenn ich eigentlich nie einen wollte, aber das ist [eine andere Geschichte](https://fischr.org/mit-marvin-beim-tuv/). Teslas gelten jedenfalls jetzt nicht unbedingt als Winterautos. Zumindest gibt es sehr viele Menschen, die behaupten, Tesla im Besonderen und Elektroautos im Allgemeinen seien im Winter nicht zu gebrauchen. Oftmals wird hier auf den im Winter erhöhten Energiebedarf verwiesen, was in der Realität bedeutet, dass die Batterie bei Minusgraden schneller leer ist als, wenn es warm ist.
 
 Die Erklärung hierfür ist relativ simpel: Elektroautos haben keinen Verbrennermotor (Surprise!), der in einem sehr ungünstigen Verhältnis aus Kraftstoff ein bisschen kinetische und ganz viel thermische Energie erzeugt. Wie ungünstig das Verhältnis genau ist, lässt sich am besten über den [Wirkungsgrad vergleichen](https://www.bundesumweltministerium.de/themen/verkehr/elektromobilitaet/effizienz-und-kosten).
 
