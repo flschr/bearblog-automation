@@ -25,6 +25,11 @@ social:
   mastodon_instance: "https://mastodon.social"
   max_article_age_days: 7  # Optional: Skip articles older than X days
 
+  # Retry queue for partial posting failures
+  retry_queue:
+    retry_delays_hours: [1, 4, 12]  # Retry after 1h, 4h, 12h
+    max_retries: 3                   # Max attempts before giving up
+
 web_archive:
   enabled: true  # Optional: Archive URLs to web.archive.org
 ```
@@ -33,6 +38,8 @@ web_archive:
 |--------|---------|-------------|
 | `mastodon_instance` | — | Your Mastodon instance URL |
 | `max_article_age_days` | `0` (disabled) | Skip articles older than X days (see [Article Age Limit](#article-age-limit)) |
+| `retry_queue.retry_delays_hours` | `[1, 4, 12]` | Retry schedule in hours (see [Automatic Retry Queue](#automatic-retry-queue)) |
+| `retry_queue.max_retries` | `3` | Max retry attempts before creating GitHub issue (see [Automatic Retry Queue](#automatic-retry-queue)) |
 | `web_archive.enabled` | `false` | Automatically submit URLs to Internet Archive (see [Web Archive Integration](#web-archive-integration)) |
 
 ### Feed Config (`bots/social_bot/config.json`)
@@ -198,6 +205,98 @@ web_archive:
 - 📖 Historical record of your content
 - 🔗 Citable archived versions for researchers
 - 💾 Additional backup layer
+
+### Automatic Retry Queue
+
+**What is it?**
+
+If posting fails on one platform (e.g., Mastodon returns a 500 error) but succeeds on another (e.g., Bluesky), the article is automatically added to a retry queue. The bot will automatically retry the failed platform on subsequent runs.
+
+**Configuration:**
+
+```yaml
+social:
+  retry_queue:
+    # Retry delays in hours (supports decimals for minutes)
+    retry_delays_hours: [1, 4, 12]  # Default: retry after 1h, 4h, 12h
+
+    # Maximum number of retry attempts
+    max_retries: 3  # Default: 3 attempts before giving up
+```
+
+**Examples:**
+
+**Fast retries** (for time-sensitive posts):
+```yaml
+retry_delays_hours: [0.25, 1, 4]  # 15 minutes, 1 hour, 4 hours
+max_retries: 3
+```
+
+**Patient retries** (for less critical posts):
+```yaml
+retry_delays_hours: [2, 8, 24]  # 2 hours, 8 hours, 24 hours
+max_retries: 3
+```
+
+**Disable retries** (create GitHub issue immediately):
+```yaml
+retry_delays_hours: []
+max_retries: 0
+```
+
+**How it works:**
+
+1. **Initial Failure**: Article posted to Bluesky ✅, Mastodon fails with `500 Internal Server Error` ❌
+2. **Queue Addition**: Article marked as posted (Bluesky was successful), Mastodon added to retry queue
+3. **Automatic Retry #1** (after 1h): Bot runs → retries Mastodon
+   - If success ✅: Removed from queue, done!
+   - If failure ❌: Stays in queue, next retry in 4h
+4. **Automatic Retry #2** (after 4h): Bot runs → retries Mastodon again
+   - If success ✅: Removed from queue, done!
+   - If failure ❌: Stays in queue, next retry in 12h
+5. **Automatic Retry #3** (after 12h): Bot runs → final retry attempt
+   - If success ✅: Removed from queue, done!
+   - If failure ❌: Marked as "exhausted" → GitHub issue created
+
+**Smart Error Detection:**
+
+The bot only retries temporary errors:
+
+✅ **Retriable** (automatic retry):
+- `500 Internal Server Error`
+- `502 Bad Gateway`
+- `503 Service Unavailable`
+- `504 Gateway Timeout`
+- `429 Too Many Requests`
+- Connection timeouts/errors
+
+❌ **Non-Retriable** (immediate GitHub issue):
+- `400 Bad Request` (invalid request)
+- `401 Unauthorized` (wrong credentials)
+- `403 Forbidden` (no permission)
+- `404 Not Found` (API endpoint missing)
+- `422 Unprocessable Entity` (invalid data)
+
+**GitHub Issues:**
+
+The bot creates issues for two scenarios:
+
+1. **Immediate partial failure** (any error): Creates issue with detailed error info
+2. **Exhausted retries** (after all attempts fail): Creates issue listing all failed articles
+
+**Monitoring:**
+
+Check the retry queue status:
+```bash
+# View current queue
+cat bots/social_bot/retry_queue.json | jq .
+
+# View exhausted retries only
+cat bots/social_bot/retry_queue.json | jq '.[] | select(.next_retry_after == "exhausted")'
+
+# Count entries
+cat bots/social_bot/retry_queue.json | jq 'length'
+```
 
 ### Automatic Issue for Unmatched Articles
 When a new article doesn't match any posting configuration, the bot:

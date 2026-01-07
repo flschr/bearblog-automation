@@ -37,6 +37,22 @@ Automatically posts new blog articles to **Mastodon** and **Bluesky** with custo
 - Configure Mastodon instance in `config.yaml`
 - Add credentials as GitHub Secrets (`BSKY_HANDLE`, `BSKY_PW`, `MASTO_TOKEN`)
 
+**Automatic Error Recovery:**
+
+If posting fails on one platform (e.g., Mastodon is down) but succeeds on another (e.g., Bluesky), the bot automatically retries the failed platform:
+- ⏰ **Retry Schedule:** Default: 1h, 4h, 12h (configurable in `config.yaml`)
+- 🔄 **Max Retries:** 3 attempts (configurable)
+- 🧠 **Smart Error Detection:** Only retries temporary errors (500, 503, timeouts), skips permanent errors (401, 403)
+- 📋 **GitHub Issues:** Creates an issue if all retries are exhausted
+
+Configure retry behavior in `config.yaml`:
+```yaml
+social:
+  retry_queue:
+    retry_delays_hours: [1, 4, 12]  # Or [0.5, 2, 6] for faster retries
+    max_retries: 3                   # Or 0 to disable retries
+```
+
 → [Full Documentation](docs/SOCIAL_BOT.md)
 
 ---
