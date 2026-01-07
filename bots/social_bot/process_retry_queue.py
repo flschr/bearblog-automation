@@ -10,11 +10,12 @@ import sys
 import logging
 from pathlib import Path
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Add directories to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))  # For shared module
+sys.path.insert(0, str(Path(__file__).parent))  # For local modules
 
-from social_bot.retry_queue import RetryQueue
-from social_bot.social_bot import (
+from retry_queue import RetryQueue
+from social_bot import (
     post_to_bluesky,
     post_to_mastodon,
     get_first_image_data,
