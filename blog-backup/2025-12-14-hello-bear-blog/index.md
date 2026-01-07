@@ -34,4 +34,4 @@ I am now simply trading the Airbus for a bicycle. Simple, reliable, and powered 
 
 And the [long-term commitment of Herman](https://herman.bearblog.dev/manifesto/), ensuring this platform lives for a very long time, is truly the icing on the cake.
 
-==That said, I am really happy to join the Bear Blog community!==
+That said, I am really ==happy to join the Bear Blog community!==
