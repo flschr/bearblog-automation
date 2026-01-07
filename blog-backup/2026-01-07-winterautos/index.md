@@ -4,7 +4,7 @@ title: Winterautos
 slug: winterautos
 alias: ""
 published_date: "2026-01-07T19:23:00+00:00"
-all_tags: "[\"blog\", \"faktensammlung\", \"betterworld\", \"nachhaltig\", \"economics\"]"
+all_tags: "[\"betterworld\", \"blog\", \"economics\", \"faktensammlung\", \"nachhaltig\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -16,9 +16,9 @@ class_name: ""
 first_published_at: "2026-01-07T19:23:00+00:00"
 ---
 
-Ich fahre ja einen Tesla, auch wenn ich eigentlich nie einen wollte, aber das ist eine andere Geschichte. Teslas gelten jedenfalls jetzt nicht unbedingt als Winterautos. Zumindest gibt es sehr viele Menschen, die behaupten, Tesla im Besonderen und Elektroautos im Allgemeinen sind im Winter nicht zu gebrauchen. Oftmals wird hier auf den im Winter erhöhten Energiebedarf verwiesen, was in der Realität bedeutet, dass die Batterie bei Minusgraden schneller leer ist als, wenn es warm ist.
+Ich fahre ja einen Tesla, auch wenn ich eigentlich nie einen wollte, aber das ist eine andere Geschichte. Teslas gelten jedenfalls jetzt nicht unbedingt als Winterautos. Zumindest gibt es sehr viele Menschen, die behaupten, Tesla im Besonderen und Elektroautos im Allgemeinen seien im Winter nicht zu gebrauchen. Oftmals wird hier auf den im Winter erhöhten Energiebedarf verwiesen, was in der Realität bedeutet, dass die Batterie bei Minusgraden schneller leer ist als, wenn es warm ist.
 
-Die Erklärung hierfür ist relativ simpel: Elektroautos haben keinen Verbrennermotor (Surprise!), der in einem sehr ungünstigen Verhältnis aus Kraftstoff ein bisschen kinetische und ganz viel thermische Menge erzeugt. Wie ungünstig das Verhältnis genau ist, lässt sich am besten über den [Wirkungsgrad vergleichen](https://www.bundesumweltministerium.de/themen/verkehr/elektromobilitaet/effizienz-und-kosten).
+Die Erklärung hierfür ist relativ simpel: Elektroautos haben keinen Verbrennermotor (Surprise!), der in einem sehr ungünstigen Verhältnis aus Kraftstoff ein bisschen kinetische und ganz viel thermische Energie erzeugt. Wie ungünstig das Verhältnis genau ist, lässt sich am besten über den [Wirkungsgrad vergleichen](https://www.bundesumweltministerium.de/themen/verkehr/elektromobilitaet/effizienz-und-kosten).
 
 Ein Benzinmotor hat einen Wirkungsgrad von 20%, das heißt, 80% des Sprits werden zum Heizen der Umwelt (und im Winter ein bisschen vom Auto) verwendet. Beim Elektromotor ist es genau umgedreht, also 80% der Energie werden für die Fortbewegung des Fahrzeugs verwendet. Wenn man die Verluste einbezieht, die beim Laden der Batterie und bei der Bereitstellung des Stroms anfallen, erhält man einen Wirkungsgrad von 64%. Ein ziemlich frappierender Unterschied.
 
