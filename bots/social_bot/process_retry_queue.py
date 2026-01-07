@@ -24,6 +24,7 @@ from social_bot.social_bot import (
     PLATFORM_MASTODON,
     BASE_DIR,
 )
+from shared import CONFIG
 import json
 
 # Setup logging
@@ -101,8 +102,8 @@ def main():
     logger.info("=== Retry Queue Processor Start ===")
 
     try:
-        # Initialize retry queue
-        retry_queue = RetryQueue(RETRY_QUEUE_FILE, RETRY_QUEUE_LOCK)
+        # Initialize retry queue with config
+        retry_queue = RetryQueue(RETRY_QUEUE_FILE, RETRY_QUEUE_LOCK, CONFIG)
 
         # Get queue statistics
         stats = retry_queue.get_stats()

@@ -69,31 +69,43 @@ class RetryQueue:
     Manages the retry queue for articles with partial posting failures.
 
     Features:
-    - Exponential backoff retry scheduling (1h, 4h, 12h)
+    - Configurable retry scheduling (default: 1h, 4h, 12h)
     - Error categorization (retriable vs non-retriable)
     - Automatic cleanup after max retries
     - Thread-safe operations with file locking
     """
 
-    def __init__(self, queue_file: Path, lock_file: Path):
+    def __init__(self, queue_file: Path, lock_file: Path, config: Optional[Dict[str, Any]] = None):
         """
         Initialize retry queue.
 
         Args:
             queue_file: Path to retry queue JSON file
             lock_file: Path to lock file for queue operations
+            config: Optional config dict with retry_queue settings
         """
         self.queue_file = queue_file
         self.lock_file = lock_file
 
-        # Retry schedule: attempt 0=now, 1=1h, 2=4h, 3=12h
-        self.retry_delays = [
-            timedelta(hours=0),   # Immediate (first attempt)
-            timedelta(hours=1),   # 1 hour
-            timedelta(hours=4),   # 4 hours
-            timedelta(hours=12),  # 12 hours
-        ]
-        self.max_retries = len(self.retry_delays) - 1
+        # Load retry configuration from config or use defaults
+        if config and 'social' in config and 'retry_queue' in config['social']:
+            retry_config = config['social']['retry_queue']
+            retry_hours = retry_config.get('retry_delays_hours', [1, 4, 12])
+            self.max_retries = retry_config.get('max_retries', 3)
+        else:
+            # Default retry schedule: 1h, 4h, 12h
+            retry_hours = [1, 4, 12]
+            self.max_retries = 3
+
+        # Convert hours to timedelta objects
+        # Add initial attempt (0 hours) at the beginning
+        self.retry_delays = [timedelta(hours=0)]  # Immediate (first attempt)
+        self.retry_delays.extend([timedelta(hours=h) for h in retry_hours])
+
+        logger.info(
+            f"Retry queue initialized: {len(self.retry_delays)-1} retry attempts, "
+            f"delays: {', '.join([str(d) for d in self.retry_delays[1:]])}"
+        )
 
     def _load_queue(self) -> Dict[str, Dict[str, Any]]:
         """Load retry queue from disk."""

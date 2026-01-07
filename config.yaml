@@ -45,6 +45,16 @@ social:
   # Set to 0 or remove to disable this check (post all articles regardless of age).
   max_article_age_days: 3
 
+  # Retry queue configuration for partial posting failures
+  retry_queue:
+    # Retry delays in hours for each attempt (supports decimals for minutes/seconds)
+    # Example: [0.5, 2, 6, 24] = retry after 30min, 2h, 6h, 24h
+    retry_delays_hours: [1, 4, 12]
+
+    # Maximum number of retry attempts before marking as exhausted
+    # Set to 0 to disable retries (will immediately create GitHub issue)
+    max_retries: 3
+
 web_archive:
   # Automatically submit new article URLs to the Internet Archive (web.archive.org)
   # This creates a permanent snapshot of your content for long-term preservation

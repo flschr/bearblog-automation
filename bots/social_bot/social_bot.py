@@ -1091,8 +1091,8 @@ def run() -> None:
 
         # Step 4b: Handle partial failures (posted to some platforms but not all)
         if partial_failures:
-            # Initialize retry queue
-            retry_queue = RetryQueue(RETRY_QUEUE_FILE, RETRY_QUEUE_LOCK)
+            # Initialize retry queue with config
+            retry_queue = RetryQueue(RETRY_QUEUE_FILE, RETRY_QUEUE_LOCK, CONFIG)
 
             # Add each partial failure to retry queue
             for failure in partial_failures:
