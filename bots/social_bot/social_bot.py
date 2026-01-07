@@ -52,9 +52,14 @@ CONFIG_FILE = BASE_DIR / 'config.json'
 FEED_CACHE_FILE = BASE_DIR / 'feed_cache.json'
 MAPPINGS_FILE = REPO_ROOT / 'mappings.json'
 MAPPINGS_LOCK = REPO_ROOT / 'mappings.json.lock'
+RETRY_QUEUE_FILE = BASE_DIR / 'retry_queue.json'
+RETRY_QUEUE_LOCK = BASE_DIR / 'retry_queue.json.lock'
 
 # Create session with connection pooling
 session = create_session('feed2social/2.0')
+
+# Import retry queue (after constants are defined)
+from retry_queue import RetryQueue
 
 
 def load_feed_cache() -> Dict[str, Dict[str, str]]:
@@ -766,77 +771,169 @@ def save_unmatched_report(reports: List[Dict[str, Any]]) -> None:
 
 def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
     """
-    Post a single feed entry using the given config.
-    Returns True if successfully posted, False otherwise.
+    Post a single feed entry using the given config with transaction-like semantics.
+
+    This function uses locking and fresh re-checks to prevent race conditions
+    and duplicate posts. If posting fails on some platforms, the article is
+    added to the retry queue for automatic retry.
+
+    Returns tuple: (any_success: bool, failure_info: Optional[Dict])
     """
     logger.info(f"Processing: {entry.title} (matched config: {cfg.get('name', 'unnamed')})")
 
-    img_data = None
+    # Transaction variables
+    transaction_id = f"{entry.link}:{os.getpid()}"
+    lock_acquired = False
     img_path = None
-    alt_text = ""
 
-    if cfg.get('include_images'):
-        img_data = get_first_image_data(entry)
-        if img_data:
-            img_path = download_image(img_data['url'])
-            alt_text = img_data.get('alt', '')
+    try:
+        # PHASE 1: Acquire lock for this article
+        # This prevents concurrent processes from posting the same article
+        article_lock_path = LOCK_FILE.parent / f"{entry.link.split('/')[-2]}.posting.lock"
+        article_lock = FileLock(article_lock_path, timeout=60.0)
 
-    clean_content = get_html_content(entry)
+        logger.debug(f"[{transaction_id}] Acquiring posting lock...")
+        article_lock.acquire()
+        lock_acquired = True
+        logger.debug(f"[{transaction_id}] Lock acquired")
 
-    msg = cfg['template'].format(
-        title=entry.title,
-        link=entry.link,
-        content=clean_content
-    )
+        # PHASE 2: Fresh re-check - reload posted_articles.txt from disk
+        # This catches articles posted by concurrent processes
+        fresh_posted_cache = load_posted_articles()
+        if entry.link in fresh_posted_cache:
+            logger.info(
+                f"[{transaction_id}] Article already posted by another process, skipping"
+            )
+            return False, None
 
-    bluesky_url = None
-    mastodon_url = None
-    any_success = False
-    failed_platforms = []
+        # PHASE 3: Prepare post content
+        img_data = None
+        alt_text = ""
 
-    if PLATFORM_BLUESKY in cfg.get('targets', []):
+        if cfg.get('include_images'):
+            img_data = get_first_image_data(entry)
+            if img_data:
+                img_path = download_image(img_data['url'])
+                alt_text = img_data.get('alt', '')
+
+        clean_content = get_html_content(entry)
+        msg = cfg['template'].format(
+            title=entry.title,
+            link=entry.link,
+            content=clean_content
+        )
+
+        # PHASE 4: Post to all platforms
+        bluesky_url = None
+        mastodon_url = None
+        any_success = False
+        failed_platforms = []
+
+        logger.info(f"[{transaction_id}] Posting to platforms: {cfg.get('targets', [])}")
+
+        if PLATFORM_BLUESKY in cfg.get('targets', []):
+            try:
+                bluesky_url = post_to_bluesky(msg, img_path, alt_text, link=entry.link)
+                if bluesky_url:
+                    any_success = True
+                    logger.info(f"[{transaction_id}] ✓ Bluesky success")
+                else:
+                    failed_platforms.append({"platform": "bluesky", "error": "Post returned None"})
+            except Exception as e:
+                error_msg = str(e)
+                logger.error(f"[{transaction_id}] ✗ Bluesky failed: {error_msg}")
+                failed_platforms.append({"platform": "bluesky", "error": error_msg})
+
+        if PLATFORM_MASTODON in cfg.get('targets', []):
+            try:
+                mastodon_url = post_to_mastodon(msg, img_path, alt_text)
+                if mastodon_url:
+                    any_success = True
+                    logger.info(f"[{transaction_id}] ✓ Mastodon success")
+                else:
+                    failed_platforms.append({"platform": "mastodon", "error": "Post returned None"})
+            except Exception as e:
+                error_msg = str(e)
+                logger.error(f"[{transaction_id}] ✗ Mastodon failed: {error_msg}")
+                failed_platforms.append({"platform": "mastodon", "error": error_msg})
+
+        # PHASE 5: Handle results
+        if not any_success:
+            # Complete failure - don't mark as posted, don't add to retry queue
+            logger.error(f"[{transaction_id}] All platforms failed, not marking as posted")
+            return False, None
+
+        # At least one platform succeeded
+        successful_platforms = []
+        if bluesky_url:
+            successful_platforms.append("bluesky")
+        if mastodon_url:
+            successful_platforms.append("mastodon")
+
+        # PHASE 6: Save results atomically
         try:
-            bluesky_url = post_to_bluesky(msg, img_path, alt_text, link=entry.link)
-            any_success = True
+            # Save social mapping
+            save_social_mapping(entry.link, mastodon_url=mastodon_url, bluesky_url=bluesky_url)
+
+            # Submit to external services (best effort, don't fail if these fail)
+            try:
+                submit_to_indexnow(entry.link)
+            except Exception as e:
+                logger.warning(f"[{transaction_id}] IndexNow submission failed: {e}")
+
+            try:
+                submit_to_web_archive(entry.link)
+            except Exception as e:
+                logger.warning(f"[{transaction_id}] Web Archive submission failed: {e}")
+
+            # Mark as posted (critical - must succeed)
+            mark_as_posted(entry.link)
+            posted_cache.add(entry.link)
+
+            logger.info(f"[{transaction_id}] Article marked as posted")
+
         except Exception as e:
-            logger.error(f"Error posting to Bluesky for '{entry.title}': {e}")
-            failed_platforms.append({"platform": "bluesky", "error": str(e)})
+            logger.error(f"[{transaction_id}] Failed to save results: {e}")
+            # This is serious - we posted but couldn't record it
+            # Return success to avoid retry, but log error
+            return True, None
 
-    if PLATFORM_MASTODON in cfg.get('targets', []):
-        try:
-            mastodon_url = post_to_mastodon(msg, img_path, alt_text)
-            any_success = True
-        except Exception as e:
-            logger.error(f"Error posting to Mastodon for '{entry.title}': {e}")
-            failed_platforms.append({"platform": "mastodon", "error": str(e)})
+        # PHASE 7: Handle partial failures
+        if failed_platforms:
+            logger.warning(
+                f"[{transaction_id}] Partial failure - succeeded: {successful_platforms}, "
+                f"failed: {[p['platform'] for p in failed_platforms]}"
+            )
 
-    # Clean up temporary image file
-    if img_path and os.path.exists(img_path):
-        try:
-            os.unlink(img_path)
-        except Exception as e:
-            logger.warning(f"Error removing temporary file {img_path}: {e}")
+            return True, {
+                "article": {"title": entry.title, "link": entry.link},
+                "failed_platforms": failed_platforms,
+                "successful_platforms": successful_platforms
+            }
 
-    if any_success:
-        # Save the mapping from article URL to social media post URLs
-        save_social_mapping(entry.link, mastodon_url=mastodon_url, bluesky_url=bluesky_url)
-        submit_to_indexnow(entry.link)
-        submit_to_web_archive(entry.link)
-        mark_as_posted(entry.link)
-        posted_cache.add(entry.link)
+        # Complete success
+        logger.info(f"[{transaction_id}] Complete success on all platforms")
+        return True, None
 
-    # Return tuple: (any_success, failed_platforms_info)
-    if failed_platforms:
-        return any_success, {
-            "article": {"title": entry.title, "link": entry.link},
-            "failed_platforms": failed_platforms,
-            "successful_platforms": [p for p in [
-                "bluesky" if bluesky_url else None,
-                "mastodon" if mastodon_url else None
-            ] if p]
-        }
+    except Exception as e:
+        logger.error(f"[{transaction_id}] Unexpected error in post_entry: {e}")
+        return False, None
 
-    return any_success, None
+    finally:
+        # CLEANUP: Always release lock and clean up resources
+        if lock_acquired:
+            try:
+                article_lock.release()
+                logger.debug(f"[{transaction_id}] Lock released")
+            except Exception as e:
+                logger.warning(f"[{transaction_id}] Error releasing lock: {e}")
+
+        # Clean up temporary image file
+        if img_path and os.path.exists(img_path):
+            try:
+                os.unlink(img_path)
+            except Exception as e:
+                logger.warning(f"[{transaction_id}] Error removing temporary file: {e}")
 
 
 def run() -> None:
@@ -994,7 +1091,36 @@ def run() -> None:
 
         # Step 4b: Handle partial failures (posted to some platforms but not all)
         if partial_failures:
-            # Save report for GitHub Issue
+            # Initialize retry queue with config
+            retry_queue = RetryQueue(RETRY_QUEUE_FILE, RETRY_QUEUE_LOCK, CONFIG)
+
+            # Add each partial failure to retry queue
+            for failure in partial_failures:
+                article = failure["article"]
+                failed_platforms = failure["failed_platforms"]
+                succeeded_platforms = failure["successful_platforms"]
+
+                try:
+                    retry_queue.add_to_queue(
+                        article_url=article["link"],
+                        article_title=article["title"],
+                        failed_platforms=failed_platforms,
+                        successful_platforms=succeeded_platforms
+                    )
+                    logger.info(
+                        f"Added to retry queue: {article['title']} - "
+                        f"will retry {[p['platform'] for p in failed_platforms]}"
+                    )
+                except Exception as e:
+                    logger.error(f"Failed to add {article['title']} to retry queue: {e}")
+
+                # Log warnings with GitHub Actions annotation format
+                failed = [p["platform"] for p in failed_platforms]
+                succeeded = succeeded_platforms
+                print(f"::warning::Partial failure for: {article['title']} - Failed: {failed}, Succeeded: {succeeded}")
+                logger.warning(f"Partial failure for: {article['title']} ({article['link']}) - Failed: {failed}")
+
+            # Also save report for immediate GitHub Issue (legacy behavior)
             partial_failures_file = BASE_DIR / 'partial_failures.json'
             try:
                 with open(partial_failures_file, 'w', encoding='utf-8') as f:
@@ -1002,14 +1128,6 @@ def run() -> None:
                 logger.info(f"Saved partial failures report to {partial_failures_file}")
             except Exception as e:
                 logger.error(f"Error saving partial failures report: {e}")
-
-            # Log warnings with GitHub Actions annotation format
-            for failure in partial_failures:
-                article = failure["article"]
-                failed = [p["platform"] for p in failure["failed_platforms"]]
-                succeeded = failure["successful_platforms"]
-                print(f"::warning::Partial failure for: {article['title']} - Failed: {failed}, Succeeded: {succeeded}")
-                logger.warning(f"Partial failure for: {article['title']} ({article['link']}) - Failed: {failed}")
 
         # Step 5: Update cache for feeds where all new entries were successfully processed
         # Only update cache if no unposted entries remain (prevents skipping failed posts)
