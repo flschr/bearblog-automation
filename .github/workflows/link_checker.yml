@@ -44,10 +44,13 @@ jobs:
         run: |
           REPORT_FILE="bots/link_checker/broken_links.json"
           if [ -f "$REPORT_FILE" ]; then
+            RUN_ID="${{ github.run_id }}"
+            EVENT_NAME="${{ github.event_name }}"
             python - <<'PY'
             import json
             from datetime import datetime, timezone
             from pathlib import Path
+            import os
 
             report_file = Path("bots/link_checker/broken_links.json")
             report = json.loads(report_file.read_text(encoding="utf-8"))
@@ -74,8 +77,8 @@ jobs:
             lines.extend(
                 [
                     "### Workflow Run",
-                    f"- **Run ID:** ${{{{ github.run_id }}}}",
-                    f"- **Triggered by:** ${{{{ github.event_name }}}}",
+                    f"- **Run ID:** {os.environ.get('RUN_ID', 'unknown')}",
+                    f"- **Triggered by:** {os.environ.get('EVENT_NAME', 'unknown')}",
                     f"- **Timestamp:** {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}",
                 ]
             )
