@@ -91,12 +91,17 @@ def extract_links(markdown: str) -> Set[str]:
 
 
 def build_article_url(frontmatter: Dict) -> str:
-    canonical = (frontmatter.get('canonical_url') or '').strip()
+    def clean_frontmatter_value(value: object) -> str:
+        if value is None:
+            return ''
+        return str(value).strip()
+
+    canonical = clean_frontmatter_value(frontmatter.get('canonical_url'))
     if canonical:
         return canonical
 
-    alias = (frontmatter.get('alias') or '').strip()
-    slug = (frontmatter.get('slug') or '').strip()
+    alias = clean_frontmatter_value(frontmatter.get('alias'))
+    slug = clean_frontmatter_value(frontmatter.get('slug'))
     path = alias or slug
 
     if not BLOG_SITE_URL:
