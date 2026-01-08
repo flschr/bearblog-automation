@@ -1,0 +1,19 @@
+{
+  "https://fischr.org/am-ende-wird-alles-gut/": {
+    "target": "https://fischr.org/am-ende-wird-alles-gut/",
+    "mentions": [
+      {
+        "source": "https://wirres.net/articles/links-vom-20-10-2025",
+        "type": "mention",
+        "published": "2025-10-20T12:30:00Z",
+        "author": {
+          "name": "Felix Schwenzel",
+          "url": "https://wirres.net/"
+        },
+        "title": "links vom 20.10.2025",
+        "content": "",
+        "fetched_at": "2025-10-20T18:30:00Z"
+      }
+    ]
+  }
+}
