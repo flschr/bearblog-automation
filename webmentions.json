@@ -1,4 +1,23 @@
 {
+  "https://fischr.org/viel-zu-viele-worte/": {
+    "target": "https://fischr.org/viel-zu-viele-worte/",
+    "mentions": [
+      {
+        "source": "https://danielberger.net/blog/warum-bloggen/",
+        "type": "mention",
+        "published": "2026-01-07T12:30:00Z",
+        "author": {
+          "name": "Daniel Berger",
+          "url": "https://danielberger.net/"
+        },
+        "title": "Warum eigentlich bloggen?",
+        "content": "",
+        "fetched_at": "2026-01-07T18:30:00Z"
+      }
+    ]
+  }
+}
+{
   "https://fischr.org/am-ende-wird-alles-gut/": {
     "target": "https://fischr.org/am-ende-wird-alles-gut/",
     "mentions": [
