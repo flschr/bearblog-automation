@@ -8,6 +8,8 @@
 blog:
   # Your Bear Blog username (used for backup export URL)
   bearblog_username: "fischr"
+  # Public base URL for your blog (used for link checker reports)
+  site_url: "https://fischr.org"
 
 backup:
   # Directory name for blog post backups (relative to repository root)
@@ -84,3 +86,13 @@ webmentions:
     - mas.to
     - mstdn.social
     - infosec.exchange
+
+link_checker:
+  # Enable the broken link checker
+  enabled: true
+  # HTTP timeout per link (seconds)
+  timeout_seconds: 10
+  # Concurrent link checks
+  max_workers: 8
+  # User-Agent used for link checks
+  user_agent: "bearblog-link-checker/1.0"
