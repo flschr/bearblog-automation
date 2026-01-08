@@ -17,6 +17,24 @@
     ]
   },
 {
+  "https://fischr.org/wir-werden-alle-storben/": {
+    "target": "https://fischr.org/wir-werden-alle-storben/",
+    "mentions": [
+      {
+        "source": "https://mthie.com/ist-ai-gekommen-um-zu-bleiben.html",
+        "type": "mention",
+        "published": "2025-12-21T16:30:00Z",
+        "author": {
+          "name": "Martin Thielecke",
+          "url": "https://mthie.com/"
+        },
+        "title": "Ist AI gekommen um zu bleiben?",
+        "content": "",
+        "fetched_at": "2025-12-21T18:30:00Z"
+      }
+    ]
+  },
+{
   "https://fischr.org/markdown-power-editor-for-bear-blog/": {
     "target": "https://fischr.org/markdown-power-editor-for-bear-blog/",
     "mentions": [
