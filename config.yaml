@@ -59,3 +59,28 @@ web_archive:
   # Automatically submit new article URLs to the Internet Archive (web.archive.org)
   # This creates a permanent snapshot of your content for long-term preservation
   enabled: true
+
+webmentions:
+  # Collect webmentions from blog posts linking to your articles
+  # Uses webmention.io service to track traditional blog mentions
+  # NOTE: Social media mentions (Mastodon, Bluesky) are excluded as they're
+  # already tracked in mappings.json by the social bot
+  enabled: true
+
+  # Excluded social media domains (automatically filtered out)
+  # These are already tracked in mappings.json
+  excluded_domains:
+    - mastodon.social
+    - bsky.app
+    - twitter.com
+    - x.com
+    - threads.net
+    - linkedin.com
+    - facebook.com
+    - instagram.com
+    # Add other Mastodon instances as needed
+    - fosstodon.org
+    - hachyderm.io
+    - mas.to
+    - mstdn.social
+    - infosec.exchange
