@@ -224,6 +224,19 @@ def update_processed_article(uid: str, content_hash: str) -> None:
         raise
 
 
+def save_processed_articles(processed_articles: Dict[str, str]) -> None:
+    """Persist processed articles to disk in one pass with file locking."""
+    try:
+        TRACKING_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with FileLock(LOCK_FILE):
+            with open(TRACKING_FILE, 'w', encoding='utf-8') as f:
+                for article_uid, hash_val in processed_articles.items():
+                    f.write(f"{article_uid}|{hash_val}\n")
+    except Exception as e:
+        logger.error(f"Error saving processed articles: {e}")
+        raise
+
+
 def safe_yaml_string(value: str) -> str:
     """
     Safely escape a string for YAML frontmatter.
@@ -614,11 +627,8 @@ def process_article(row: pd.Series, df: pd.DataFrame, processed_articles: Dict[s
             f.write("---\n\n")
             f.write(content)
 
-        # Update tracking
-        if status == 'updated':
-            update_processed_article(uid, content_hash)
-        else:
-            save_processed_article(uid, content_hash)
+        # Update tracking in memory for batch save
+        processed_articles[uid] = content_hash
 
         logger.info(f"Successfully processed: {folder_name}")
         return (status, change_type)
@@ -672,6 +682,9 @@ def main() -> None:
             # Progress indicator
             if (idx + 1) % 10 == 0:
                 logger.info(f"Progress: {idx + 1}/{total} articles processed")
+
+        # Save tracking file once to reduce I/O
+        save_processed_articles(processed_articles)
 
         # Summary
         logger.info("=" * 70)
