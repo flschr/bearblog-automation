@@ -7,6 +7,7 @@ Hey and welcome 👋🏼 This is the powerhouse behind my [Bear Blog](https://be
 - **pings search engines** for faster indexing
 - **archives URLs to the Internet Archive** for long-term preservation
 - and **collects webmentions** from other blogs linking to your articles.
+- plus **checks blog posts for broken links** and opens issues when found.
 
 ## Project Structure
 
@@ -18,6 +19,7 @@ Hey and welcome 👋🏼 This is the powerhouse behind my [Bear Blog](https://be
 │   ├── social_bot/          # Social media posting bot
 │   │   └── config.json      # Feed & template config
 │   ├── backup_bot/          # Bear Blog backup bot
+│   ├── link_checker/        # Broken link checker
 │   └── webmentions/         # Webmentions collection bot
 ├── blog-backup/             # Archived posts (auto-generated)
 └── docs/                    # Documentation
@@ -142,6 +144,32 @@ webmentions:
 ```
 
 → [Full Documentation](bots/webmentions/README.md)
+
+---
+
+### 🧭 Broken Link Checker
+
+Automatically scans your backed up posts for broken links and creates a GitHub Issue with the article URL and failing link.
+
+**How it works:**
+- Parses links from `blog-backup/*/index.md`
+- Checks each external URL (HEAD with GET fallback)
+- Creates a GitHub Issue when broken links are found
+
+**Configuration:**
+```yaml
+link_checker:
+  enabled: true
+  timeout_seconds: 10
+  max_workers: 8
+  user_agent: "bearblog-link-checker/1.0"
+```
+
+**Triggering:**
+- Runs automatically after the Backup Bot
+- Runs weekly via cron
+
+→ [Full Documentation](docs/LINK_CHECKER.md)
 
 ---
 
