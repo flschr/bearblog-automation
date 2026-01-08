@@ -25,6 +25,7 @@ from shared import (
 
 # Configuration
 WEBMENTIONS_FILE = Path(__file__).parent.parent.parent / "webmentions.json"
+WEBMENTIONS_LOCK = WEBMENTIONS_FILE.with_suffix(".json.lock")
 WEBMENTION_IO_API = "https://webmention.io/api/mentions.jf2"
 
 # Social media domains to exclude (already tracked in mappings.json)
@@ -165,7 +166,7 @@ def load_existing_webmentions() -> Dict:
         return {}
 
     try:
-        with FileLock(WEBMENTIONS_FILE):
+        with FileLock(WEBMENTIONS_LOCK):
             with open(WEBMENTIONS_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 logger.info(f"Loaded existing webmentions for {len(data)} target URLs")
@@ -189,7 +190,7 @@ def save_webmentions(webmentions: Dict) -> None:
         # Ensure parent directory exists
         WEBMENTIONS_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-        with FileLock(WEBMENTIONS_FILE):
+        with FileLock(WEBMENTIONS_LOCK):
             with open(WEBMENTIONS_FILE, 'w', encoding='utf-8') as f:
                 json.dump(webmentions, f, indent=2, ensure_ascii=False)
 

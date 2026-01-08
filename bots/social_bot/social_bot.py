@@ -3,6 +3,7 @@ Social media bot for automating posts from RSS feeds to Bluesky and Mastodon.
 """
 
 import feedparser
+import hashlib
 import json
 import os
 import re
@@ -789,7 +790,8 @@ def post_entry(entry: Any, cfg: Dict[str, Any], posted_cache: Set[str]) -> bool:
     try:
         # PHASE 1: Acquire lock for this article
         # This prevents concurrent processes from posting the same article
-        article_lock_path = LOCK_FILE.parent / f"{entry.link.split('/')[-2]}.posting.lock"
+        lock_key = hashlib.sha256(entry.link.encode("utf-8")).hexdigest()
+        article_lock_path = LOCK_FILE.parent / f"{lock_key}.posting.lock"
         article_lock = FileLock(article_lock_path, timeout=60.0)
 
         logger.debug(f"[{transaction_id}] Acquiring posting lock...")
