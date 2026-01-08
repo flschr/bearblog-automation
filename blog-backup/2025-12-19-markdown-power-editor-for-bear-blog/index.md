@@ -43,10 +43,11 @@ I wasn't trying to reinvent the wheel, just make it spin a lot smoother for peop
 
 ### Smart features to save you clicks
 
-- The image upload button opens the native Bear media uploader and also detects image URLs in your clipboard to offer instant Markdown image formatting.
-- The link button automatically detects URLs in your clipboard and links your selected text with a single click.
 - Inline preview shows the preview of your post without leaving the editor page. The preview automatically saves the article to ensure you always see the most recent version of the article.
 - Native buttons for quick undo & redo, especially helpful on mobile devices.
+
+> ##### Update Jan, 9 2026
+> I removed the smart features for the URL and image button, that should detect if URLs to websites or images are in the clipboard. This function caused to many problems in modern web browsers.
 
 ### Optional power user features
 
