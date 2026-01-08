@@ -1,0 +1,70 @@
+name: Fetch Webmentions
+
+run-name: Fetch blog webmentions from webmention.io
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  workflow_dispatch: # Allows manual trigger
+
+# Ensure only one instance runs at a time to prevent data conflicts
+concurrency:
+  group: webmentions-fetch
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-webmentions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Trigger Info
+        run: |
+          echo "🔗 Fetching webmentions from webmention.io"
+          echo "📅 Triggered by: ${{ github.event_name }}"
+          echo "⏰ Timestamp: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests PyYAML
+
+      - name: Fetch Webmentions
+        env:
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+          BEARBLOG_DOMAIN: ${{ secrets.BEARBLOG_DOMAIN }}
+        run: |
+          echo "Fetching webmentions for domain: $BEARBLOG_DOMAIN"
+          python bots/webmentions/fetch_webmentions.py
+
+      - name: Commit Webmentions Data
+        run: |
+          git config user.name "Webmentions Bot"
+          git config user.email "bot@github.com"
+
+          # Check if webmentions.json exists and has changes
+          if [ -f "webmentions.json" ]; then
+            git add webmentions.json
+
+            # Commit if there are changes
+            if git diff --staged --quiet; then
+              echo "No new webmentions to commit"
+            else
+              echo "New webmentions found, committing..."
+              git commit -m "Update webmentions data"
+
+              # Pull latest changes before pushing to avoid conflicts
+              git pull --rebase origin ${{ github.ref_name }}
+              git push
+            fi
+          else
+            echo "No webmentions.json file generated"
+          fi

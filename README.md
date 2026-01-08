@@ -5,17 +5,20 @@ Hey and welcome 👋🏼 This is the powerhouse behind my [Bear Blog](https://be
 - **posts the article to Mastodon and Bluesky**, with an individual template based on the content
 - **backs up everything** as Markdown files with images right here in this repo
 - **pings search engines** for faster indexing
-- and **archives URLs to the Internet Archive** for long-term preservation.
+- **archives URLs to the Internet Archive** for long-term preservation
+- and **collects webmentions** from other blogs linking to your articles.
 
 ## Project Structure
 
 ```
 ├── config.yaml              # Central configuration
 ├── mappings.json            # Article → Social post URL mappings (auto-generated)
+├── webmentions.json         # Blog webmentions collection (auto-generated)
 ├── bots/
 │   ├── social_bot/          # Social media posting bot
 │   │   └── config.json      # Feed & template config
-│   └── backup_bot/          # Bear Blog backup bot
+│   ├── backup_bot/          # Bear Blog backup bot
+│   └── webmentions/         # Webmentions collection bot
 ├── blog-backup/             # Archived posts (auto-generated)
 └── docs/                    # Documentation
 ```
@@ -106,6 +109,39 @@ web_archive:
 - Creates a permanent snapshot of your content
 - Runs asynchronously (doesn't block posting)
 - No authentication required
+
+---
+
+### 🔗 Webmentions Collection
+
+Automatically collects webmentions from traditional blog posts that link to your articles using [webmention.io](https://webmention.io).
+
+**What are webmentions:**
+Webmentions are the modern web's way of tracking who links to your content - think of them as backlinks or pingbacks that follow the W3C standard.
+
+**How it works:**
+- Fetches mentions from webmention.io API every 6 hours
+- **Filters out social media** (Mastodon, Bluesky, Twitter) - those are already in `mappings.json`
+- Stores only traditional blog mentions in `webmentions.json`
+- Incremental updates (only fetches new mentions)
+
+**Setup:**
+1. Sign up at [webmention.io](https://webmention.io) with your domain
+2. Add the webmention endpoint to your site's HTML `<head>`
+3. Add GitHub secrets: `WEBMENTION_IO_TOKEN` and `BEARBLOG_DOMAIN`
+4. The workflow runs automatically every 6 hours
+
+**Configuration:**
+```yaml
+webmentions:
+  enabled: true
+  excluded_domains:
+    - mastodon.social  # Already tracked in mappings.json
+    - bsky.app          # Already tracked in mappings.json
+    # Add more as needed
+```
+
+→ [Full Documentation](bots/webmentions/README.md)
 
 ---
 
