@@ -317,12 +317,30 @@ def check_link(session: requests.Session, url: str) -> Optional[str]:
             # 999: LinkedIn's custom "request denied" code
             if status_code in {403, 429, 999}:
                 add_domain_to_excluded(url, status_str)
+            # 404: Not Found - auto-exclude for certain domains known to block bots
+            # (komoot tours, Bluesky profiles, etc. return 404 for bot requests)
+            elif status_code == 404:
+                domain = get_domain_from_url(url)
+                if domain and domain in {'komoot.com', 'bsky.app'}:
+                    add_domain_to_excluded(url, status_str)
 
             return status_str
 
         return None
     except requests.RequestException as exc:
-        return f'error_{exc.__class__.__name__}'
+        error_class = exc.__class__.__name__
+        error_str = f'error_{error_class}'
+
+        # Auto-exclude domains that have connection issues or timeouts
+        # These are often temporary issues or bot-blocking mechanisms
+        # ConnectTimeout: Connection timeout
+        # ConnectionError: Generic connection error
+        # TooManyRedirects: Redirect loop (often bot protection)
+        # ReadTimeout: Read timeout
+        if error_class in {'ConnectTimeout', 'ConnectionError', 'TooManyRedirects', 'ReadTimeout'}:
+            add_domain_to_excluded(url, error_str)
+
+        return error_str
 
 
 def collect_links() -> Dict[str, Dict[str, Set[str]]]:

@@ -41,3 +41,32 @@ x.com
 
 # Sites with strict bot protection
 cloudflare.com
+
+# E-commerce and shopping sites (bot protection)
+diogenes.ch
+thalia.de
+shutterstock.com
+
+# Media and news sites (bot protection)
+falstaff.com
+infranken.de
+redbull.com
+ideawake.com
+
+# Educational and information platforms (bot protection)
+blinkist.com
+
+# Travel, outdoor and mapping sites (bot protection)
+schlossgut.de
+resch-foto.de
+dav-leitzachtal.de
+komoot.com
+
+# Automotive manufacturers (bot protection)
+tesla.com
+
+# Archive services (connection issues)
+web.archive.org
+
+# Social media and microblogging (bot protection)
+bsky.app
