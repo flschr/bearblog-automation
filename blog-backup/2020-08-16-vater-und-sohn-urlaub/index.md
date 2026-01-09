@@ -4,7 +4,7 @@ title: Vater und Sohn-Urlaub
 slug: vater-und-sohn-urlaub
 alias: 2020/08/16/vater-und-sohnurlaub
 published_date: "2020-08-16T16:12:00+00:00"
-all_tags: "[\"blog\", \"ganzvielurlaub\", \"wandern\", \"unterwegs\"]"
+all_tags: "[\"blog\", \"ganzvielurlaub\", \"unterwegs\", \"wandern\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -22,7 +22,7 @@ Ergänzend zum [Corona-Alternativprogramm Wien](/vienna-calling/) wollten wir di
 
 Von unserem Basislager aus haben wir die Umgebung mit dem Fahrrad erkundet und dabei auch [etliche Höhenmeter](https://www.bergfex.de/mybergfex/activities/2703594) erklommen und einen Abstecher in das [Hochmoor Sterntaler Filze](https://www.ichspringimdreieck.de/moorerlebnis-sterntaler-filze/) gemacht. Wir haben uns mit dem [alten Zementwerk in Litzldorf](https://www.komoot.de/highlight/575713) einen echten »Lost Place« [erradelt](https://www.bergfex.de/mybergfex/activities/2709454) und das [Urweltmuseum](http://urweltmuseum.com/) (muss man nicht machen - auch wenn es dem 8-Jährigen sehr gefallen hat) besucht. Und last but not least, hat der 8-Jährige im Schwimmbad auf dem Zeltplatz noch das Schwimmen gelernt.
 
-Manchmal haben wir auf dem Zeltplatz den Gaskocher angeworfen und irgendein Tüten-Essen gekocht, einfach, weil wir es konnten und es Spaß gemacht hat. Richtig gegessen haben wir am liebsten Schnitzel mit Pommes und das am allerliebsten in der [extrem empfehlenswerten Ludwig Stubn](https://www.ludwigstuben.de/).
+Manchmal haben wir auf dem Zeltplatz den Gaskocher angeworfen und irgendein Tüten-Essen gekocht, einfach, weil wir es konnten und es Spaß gemacht hat. Richtig gegessen haben wir am liebsten Schnitzel mit Pommes und das am allerliebsten in der [extrem empfehlenswerten Ludwig Stubn](https://maps.app.goo.gl/XyE5NThTZfokg6Ne6).
 
 Fazit: Wird 2021 auf jeden Fall wiederholt!
 

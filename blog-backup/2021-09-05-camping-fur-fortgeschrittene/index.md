@@ -58,6 +58,6 @@ Danach ging es weiter bis zur Wirtsalm und wenn ich allein gewesen wäre, hätte
 
 ![Die Wirtsalm an der Jenbachklamm](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/d6585ae7b3.webp)
 
-Ansonsten gab es noch Minigolf, jede Menge Eis, Kartenspiele und auch mal Tütensuppe vom Campingkocher. Unser Lieblingsrestaurant in Bad Feilnbach bleibt auch in diesem Jahr die [Ludwig Stubn](https://www.ludwigstuben.de/). Nach dem Pächterwechsel ist aber auch die [Kaiseralm auf dem Zeltplatz](https://kaiser-camping.com/gastronomie/) ein absolut empfehlenswertes Restaurant.
+Ansonsten gab es noch Minigolf, jede Menge Eis, Kartenspiele und auch mal Tütensuppe vom Campingkocher. Unser Lieblingsrestaurant in Bad Feilnbach bleibt auch in diesem Jahr die [Ludwig Stubn](https://maps.app.goo.gl/XyE5NThTZfokg6Ne6). Nach dem Pächterwechsel ist aber auch die [Kaiseralm auf dem Zeltplatz](https://kaiser-camping.com/gastronomie/) ein absolut empfehlenswertes Restaurant.
 
 ![Kaiserschmarrn in der Kaiseralm](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2e82fa21d6.webp)
