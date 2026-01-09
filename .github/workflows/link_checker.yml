@@ -37,6 +37,15 @@ jobs:
       - name: Run Link Checker
         run: python bots/link_checker/link_checker.py
 
+      - name: Upload Broken Links Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: broken-links-report
+          path: bots/link_checker/broken_links.json
+          if-no-files-found: ignore
+          retention-days: 30
+
       - name: Create Issue for Broken Links
         if: always()
         env:
