@@ -1,6 +1,25 @@
-# Cloudflare Worker Setup (optional)
+# Cloudflare Worker (optional)
 
-Use a Cloudflare Worker to trigger the Social Bot **only when RSS feeds actually change**.
+Use a Cloudflare Worker to trigger the Social Bot **only when RSS feeds actually change** instead of on a fixed schedule.
+
+---
+
+## How It Works
+
+The worker monitors your RSS feeds and triggers GitHub Actions only when content changes:
+
+```
+Cloudflare Worker (every 1 min)
+  ├─ HEAD request to RSS feed
+  ├─ Check ETag/Last-Modified headers
+  ├─ Compare with KV cache
+  │
+  ├─ If unchanged: exit
+  │
+  └─ If changed:
+      ├─ Update KV cache
+      └─ Trigger GitHub Actions via repository_dispatch
+```
 
 **Benefits:**
 - More reliable than GitHub Actions cron (no delays or skipped runs)
@@ -59,11 +78,13 @@ In **Settings** → **KV Namespace Bindings**:
 ### 7. Add Cron Trigger
 
 In **Triggers** → **Cron Triggers**:
-- Schedule: `*/11 * * * *` (every 1 minutes)
+- Schedule: `*/1 * * * *` (every 1 minute)
 
 ---
 
-## Disable GitHub Actions Cron (Optional)
+## Configuration
+
+### Disable GitHub Actions Cron (Optional)
 
 Once the worker is running, you can disable the Actions schedule:
 
@@ -77,22 +98,7 @@ on:
     types: [rss_feed_update]
 ```
 
----
-
-## How It Works
-
-```
-Cloudflare Worker (every 1 min)
-  ├─ HEAD request to RSS feed
-  ├─ Check ETag/Last-Modified headers
-  ├─ Compare with KV cache
-  │
-  ├─ If unchanged: exit
-  │
-  └─ If changed:
-      ├─ Update KV cache
-      └─ Trigger GitHub Actions via repository_dispatch
-```
+This prevents duplicate runs and relies solely on the worker's trigger.
 
 ---
 
@@ -116,9 +122,11 @@ Cloudflare Worker (every 1 min)
 - [Social Bot](SOCIAL_BOT.md) - Automatic social media posting & feed configuration
 - [Backup Bot](BACKUP_BOT.md) - Automatic blog backups
 
-
 ---
-## Paste everything below as Cloudflare Worker code
+
+## Worker Code
+
+Paste everything below as Cloudflare Worker code:
 
 ```
 /**
