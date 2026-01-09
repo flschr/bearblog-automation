@@ -250,16 +250,18 @@ def run_link_checks(link_map: Dict[str, Dict[str, Set[str]]]) -> List[LinkIssue]
             url = future_map[future]
             status = future.result()
             if status:
+                # Pick a representative file path (first one from the set)
+                file_path = next(iter(link_map[url]["files"])) if link_map[url]["files"] else "unknown"
+                # Create one issue per article, not per (article, file) combination
                 for article_url in link_map[url]["articles"]:
-                    for file_path in link_map[url]["files"]:
-                        issues.append(
-                            LinkIssue(
-                                article_url=article_url,
-                                link_url=url,
-                                status=status,
-                                file_path=file_path,
-                            )
+                    issues.append(
+                        LinkIssue(
+                            article_url=article_url,
+                            link_url=url,
+                            status=status,
+                            file_path=file_path,
                         )
+                    )
 
     return issues
 
