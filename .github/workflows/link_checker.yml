@@ -50,50 +50,12 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.run_id }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           REPORT_FILE="bots/link_checker/broken_links.json"
           if [ -f "$REPORT_FILE" ]; then
-            RUN_ID="${{ github.run_id }}"
-            EVENT_NAME="${{ github.event_name }}"
-            python - <<'PY'
-            import json
-            from datetime import datetime, timezone
-            from pathlib import Path
-            import os
-
-            report_file = Path("bots/link_checker/broken_links.json")
-            report = json.loads(report_file.read_text(encoding="utf-8"))
-
-            if not report:
-                raise SystemExit(0)
-
-            lines = [
-                "## Broken Links Detected",
-                "",
-                "The following broken links were found in blog posts:",
-                "",
-            ]
-
-            for item in report:
-                article = item.get("article_url", "unknown")
-                link = item.get("link_url", "unknown")
-                status = item.get("status", "unknown")
-                lines.append(f"- **Article:** {article}")
-                lines.append(f"  - Link: {link}")
-                lines.append(f"  - Status: `{status}`")
-                lines.append("")
-
-            lines.extend(
-                [
-                    "### Workflow Run",
-                    f"- **Run ID:** {os.environ.get('RUN_ID', 'unknown')}",
-                    f"- **Triggered by:** {os.environ.get('EVENT_NAME', 'unknown')}",
-                    f"- **Timestamp:** {datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}",
-                ]
-            )
-
-            Path("issue_body.md").write_text("\n".join(lines), encoding="utf-8")
-PY
+            python bots/link_checker/create_issue_body.py
 
             if [ -f "issue_body.md" ]; then
               gh issue create \
