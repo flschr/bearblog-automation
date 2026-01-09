@@ -35,8 +35,8 @@ MAX_LINK_WORKERS = LINK_CHECKER_CONFIG.get('max_workers', MAX_WORKERS)
 RATE_LIMIT_DELAY = LINK_CHECKER_CONFIG.get('rate_limit_delay', 0.0)
 USER_AGENT = LINK_CHECKER_CONFIG.get('user_agent', 'bearblog-link-checker/1.0')
 
-# Load excluded domains from both config.yaml and excluded_domains.txt
-EXCLUDED_DOMAINS = set(LINK_CHECKER_CONFIG.get('excluded_domains', []))
+# Load excluded domains from excluded_domains.txt
+EXCLUDED_DOMAINS: Set[str] = set()
 EXCLUDED_DOMAINS_FILE = Path(__file__).parent / 'excluded_domains.txt'
 if EXCLUDED_DOMAINS_FILE.exists():
     with open(EXCLUDED_DOMAINS_FILE, 'r', encoding='utf-8') as f:
@@ -49,6 +49,11 @@ if EXCLUDED_DOMAINS_FILE.exists():
 # Rate limiting tracking
 _rate_limit_lock = threading.Lock()
 _last_request_time = 0.0
+
+# Auto-exclusion tracking
+_auto_excluded_lock = threading.Lock()
+_auto_excluded_domains: Set[str] = set()
+AUTO_EXCLUDED_LOG = Path(__file__).parent / 'auto_excluded_domains.json'
 
 BLOG_CONFIG = CONFIG.get('blog', {})
 BLOG_SITE_URL = BLOG_CONFIG.get('site_url', '').strip()
@@ -86,6 +91,23 @@ def strip_frontmatter(text: str) -> Tuple[Dict, str]:
     return {}, text
 
 
+def get_domain_from_url(url: str) -> Optional[str]:
+    """Extract the base domain from a URL."""
+    try:
+        parsed = urlparse(url)
+        hostname = parsed.hostname
+        if not hostname:
+            return None
+
+        # Return the domain without 'www.' prefix for consistency
+        hostname_lower = hostname.lower()
+        if hostname_lower.startswith('www.'):
+            return hostname_lower[4:]
+        return hostname_lower
+    except Exception:
+        return None
+
+
 def is_excluded_domain(url: str) -> bool:
     """Check if URL is from an excluded domain."""
     if not EXCLUDED_DOMAINS:
@@ -110,6 +132,69 @@ def is_excluded_domain(url: str) -> bool:
         return False
     except Exception:
         return False
+
+
+def add_domain_to_excluded(url: str, reason: str) -> None:
+    """
+    Add a domain to the excluded_domains.txt file and track it in auto_excluded_domains.json.
+    Thread-safe implementation.
+
+    Args:
+        url: The URL that triggered the exclusion
+        reason: The reason for exclusion (e.g., 'http_403', 'http_429')
+    """
+    domain = get_domain_from_url(url)
+    if not domain:
+        return
+
+    with _auto_excluded_lock:
+        # Check if we've already auto-excluded this domain in this run
+        if domain in _auto_excluded_domains:
+            return
+
+        # Check if domain is already in excluded_domains.txt
+        if is_excluded_domain(url):
+            return
+
+        # Add to in-memory tracking
+        _auto_excluded_domains.add(domain)
+
+        # Append to excluded_domains.txt
+        try:
+            with open(EXCLUDED_DOMAINS_FILE, 'a', encoding='utf-8') as f:
+                f.write(f'\n# Auto-excluded due to {reason}\n{domain}\n')
+            logger.info(f"Auto-excluded domain: {domain} (reason: {reason})")
+        except Exception as e:
+            logger.error(f"Failed to add {domain} to excluded_domains.txt: {e}")
+            return
+
+        # Add to excluded domains set for current run
+        EXCLUDED_DOMAINS.add(domain)
+
+        # Track in JSON log for issue reporting
+        log_data = []
+        if AUTO_EXCLUDED_LOG.exists():
+            try:
+                with open(AUTO_EXCLUDED_LOG, 'r', encoding='utf-8') as f:
+                    log_data = json.load(f)
+            except Exception:
+                log_data = []
+
+        # Add new entry
+        from datetime import datetime
+        log_data.append({
+            'domain': domain,
+            'url': url,
+            'reason': reason,
+            'timestamp': datetime.utcnow().isoformat() + 'Z'
+        })
+
+        # Save updated log
+        try:
+            with open(AUTO_EXCLUDED_LOG, 'w', encoding='utf-8') as f:
+                json.dump(log_data, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            logger.error(f"Failed to update auto-exclusion log: {e}")
 
 
 def normalize_url(url: str) -> str:
@@ -224,7 +309,16 @@ def check_link(session: requests.Session, url: str) -> Optional[str]:
             get_response.close()
 
         if status_code >= 400:
-            return f'http_{status_code}'
+            status_str = f'http_{status_code}'
+
+            # Auto-exclude domains with bot detection or aggressive rate limiting
+            # 403: Forbidden (often bot blocking)
+            # 429: Too Many Requests (rate limiting)
+            # 999: LinkedIn's custom "request denied" code
+            if status_code in {403, 429, 999}:
+                add_domain_to_excluded(url, status_str)
+
+            return status_str
 
         return None
     except requests.RequestException as exc:

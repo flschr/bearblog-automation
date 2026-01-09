@@ -99,7 +99,5 @@ link_checker:
   # User-Agent used for link checks
   # Using a standard browser User-Agent to avoid being blocked by overly aggressive bot detection
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-  # Domains to exclude from link checking (e.g., sites with aggressive rate limiting)
-  # DEPRECATED: Please add domains to bots/linkcheck_bot/excluded_domains.txt instead
-  # This config option is kept for backwards compatibility but excluded_domains.txt is preferred
-  excluded_domains: []
+  # Note: Excluded domains are managed in bots/linkcheck_bot/excluded_domains.txt
+  # Domains with bot detection (403, 429 errors) are automatically added to the exclusion list

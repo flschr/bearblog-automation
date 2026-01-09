@@ -11,8 +11,33 @@
 # 2. Run the link checker again
 # 3. Remove the domain when ready to check again
 
-# Sites with aggressive rate limiting
+# Sites with aggressive rate limiting or bot detection
 bergfex.de
 bergfex.com
 bergfex.at
 tollwood.de
+
+# Wikipedia and Wikimedia projects (often block bots, but content is reliable)
+wikipedia.org
+wikimedia.org
+wiktionary.org
+wikiquote.org
+wikibooks.org
+wikisource.org
+wikinews.org
+wikiversity.org
+wikivoyage.org
+
+# Other encyclopedic/reference sites with aggressive bot protection
+britannica.com
+merriam-webster.com
+
+# Social media platforms (already tracked elsewhere)
+linkedin.com
+facebook.com
+instagram.com
+twitter.com
+x.com
+
+# Sites with strict bot protection
+cloudflare.com
