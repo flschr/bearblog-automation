@@ -18,6 +18,6 @@ first_published_at: "2016-05-02T17:24:00+00:00"
 
 ![Bücher gelesen im Q1/2016](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9144cfdf31.webp)
 
-Der Mai hat begonnen und ich bin wieder im Plan. Ganz ausdrücklich empfehlen will ich an dieser Stelle den Roman [Ein ganzes Leben](https://www.hanser-literaturverlage.de/buch/ein-ganzes-leben/978-3-446-24645-4/) (★★★★★) von Robert Seethaler. Ein sehr schön zu lesendes Buch, in dem man sich herrlich seufzend verlieren kann.
+Der Mai hat begonnen und ich bin wieder im Plan. Ganz ausdrücklich empfehlen will ich an dieser Stelle den Roman [Ein ganzes Leben](https://de.wikipedia.org/wiki/Ein_ganzes_Leben_(Roman)) (★★★★★) von Robert Seethaler. Ein sehr schön zu lesendes Buch, in dem man sich herrlich seufzend verlieren kann.
 
 [Das Netz der großen Fische](https://www.luebbe.de/luebbe-belletristik/buecher/krimis/das-netz-der-grossen-fische/id_3088171) (★★☆☆☆) von Andrea Camilleri war ehrlich gesagt eine ziemliche Qual für mich, die ich aber durchgehalten habe. Vielleicht versteht man dieses Buch aber auch nur als Italiener.
