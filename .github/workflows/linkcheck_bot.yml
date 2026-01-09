@@ -32,17 +32,17 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: pip install -r bots/link_checker/requirements.txt
+        run: pip install -r bots/linkcheck_bot/requirements.txt
 
       - name: Run Link Checker
-        run: python bots/link_checker/link_checker.py
+        run: python bots/linkcheck_bot/link_checker.py
 
       - name: Upload Broken Links Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: broken-links-report
-          path: bots/link_checker/broken_links.json
+          path: bots/linkcheck_bot/broken_links.json
           if-no-files-found: ignore
           retention-days: 30
 
@@ -53,9 +53,9 @@ jobs:
           RUN_ID: ${{ github.run_id }}
           EVENT_NAME: ${{ github.event_name }}
         run: |
-          REPORT_FILE="bots/link_checker/broken_links.json"
+          REPORT_FILE="bots/linkcheck_bot/broken_links.json"
           if [ -f "$REPORT_FILE" ]; then
-            python bots/link_checker/create_issue_body.py
+            python bots/linkcheck_bot/create_issue_body.py
 
             if [ -f "issue_body.md" ]; then
               gh issue create \

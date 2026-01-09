@@ -43,7 +43,7 @@ jobs:
           BEARBLOG_DOMAIN: ${{ secrets.BEARBLOG_DOMAIN }}
         run: |
           echo "Fetching webmentions for domain: $BEARBLOG_DOMAIN"
-          python bots/webmentions/fetch_webmentions.py
+          python bots/webmentions_bot/fetch_webmentions.py
 
       - name: Commit Webmentions Data
         run: |

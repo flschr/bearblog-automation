@@ -19,8 +19,8 @@ Hey and welcome 👋🏼 This is the powerhouse behind my [Bear Blog](https://be
 │   ├── social_bot/          # Social media posting bot
 │   │   └── config.json      # Feed & template config
 │   ├── backup_bot/          # Bear Blog backup bot
-│   ├── link_checker/        # Broken link checker
-│   └── webmentions/         # Webmentions collection bot
+│   ├── linkcheck_bot/       # Broken link checker
+│   └── webmentions_bot/     # Webmentions collection bot
 ├── blog-backup/             # Archived posts (auto-generated)
 └── docs/                    # Documentation
 ```
@@ -143,7 +143,7 @@ webmentions:
     # Add more as needed
 ```
 
-→ [Full Documentation](bots/webmentions/README.md)
+→ [Full Documentation](bots/webmentions_bot/README.md)
 
 ---
 

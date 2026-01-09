@@ -135,12 +135,12 @@ You can manually trigger the webmentions fetch:
 
 If you see social media mentions that shouldn't be there:
 1. Edit `config.yaml` and add the domain to `excluded_domains`
-2. Or edit `bots/webmentions/fetch_webmentions.py` to add it to `EXCLUDED_SOCIAL_DOMAINS`
+2. Or edit `bots/webmentions_bot/fetch_webmentions.py` to add it to `EXCLUDED_SOCIAL_DOMAINS`
 
 ## File Structure
 
 ```
-bots/webmentions/
+bots/webmentions_bot/
 ├── README.md                    # This file
 └── fetch_webmentions.py         # Main webmentions fetcher script
 
@@ -163,7 +163,7 @@ To test locally:
 ```bash
 export WEBMENTION_IO_TOKEN="your-token"
 export BEARBLOG_DOMAIN="your-domain.com"
-python bots/webmentions/fetch_webmentions.py
+python bots/webmentions_bot/fetch_webmentions.py
 ```
 
 ## Related Features

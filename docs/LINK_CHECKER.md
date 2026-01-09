@@ -9,7 +9,7 @@ The Broken Link Checker scans your backed-up posts for broken links and opens a 
 1. Loads all `blog-backup/*/index.md` files
 2. Extracts external HTTP/HTTPS links
 3. Checks each unique link (HEAD with GET fallback)
-4. Writes a report to `bots/link_checker/broken_links.json`
+4. Writes a report to `bots/linkcheck_bot/broken_links.json`
 5. The workflow creates a GitHub Issue and deletes the report file
 
 ---
