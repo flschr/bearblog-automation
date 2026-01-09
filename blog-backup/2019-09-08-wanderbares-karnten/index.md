@@ -4,7 +4,7 @@ title: Wanderbares Kärnten
 slug: wanderbares-karnten
 alias: 2019/09/08/wanderbares-krnten
 published_date: "2019-09-08T14:08:00+00:00"
-all_tags: "[\"blog\", \"ganzvielurlaub\", \"wandern\"]"
+all_tags: "[\"blog\", \"ganzvielurlaub\", \"unterwegs\", \"wandern\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -40,7 +40,7 @@ Neben unzähligen Badestunden im wahnsinnig tollen Klopeiner See und im Freibad 
 
 ![Ljubljana, Blick auf die Burg](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/2744258d6b.webp)
 
-Ein atemberaubendes Highlight war der Besuch in den [Obir-Tropfsteinhöhlen](https://www.hoehlen.at/hoehleninfo.html). Wer in der Nähe ist, sollte sich die unbedingt ansehen. Auch der [Wildensteiner Wasserfall](https://www.kaernten.at/sehenswertes/naturerlebnisse/wildensteiner-wasserfall/) ist ein sehenswertes Kleinod.
+Ein atemberaubendes Highlight war der Besuch in den [Obir-Tropfsteinhöhlen](https://www.hoehlen.at/de/). Wer in der Nähe ist, sollte sich die unbedingt ansehen. Auch der [Wildensteiner Wasserfall](https://www.kaernten.at/sehenswertes/naturerlebnisse/wildensteiner-wasserfall/) ist ein sehenswertes Kleinod.
 
 Das Highlight schlechthin war dann aber unsere »richtige« Bergwanderung. Ich habe eingebildet, den [Oberen Petzen-Rundmarsch](https://www.bergfex.de/mybergfex/activities/1404766) über die [Feistritzer Spitze](https://www.bergfex.at/sommer/kaernten/touren/wanderung/5774,voelkermarkt-feistritzer-spitze/) (2.113 m) zu machen. Die Tochter war davon nicht zu begeistern und ist direkt in der Ferienwohnung geblieben. Also sind wir nach dem Frühstück zu Dritt mit der [Seilbahn auf die Bergstation des Petzen](https://www.petzen.net/) gefahren.
 
