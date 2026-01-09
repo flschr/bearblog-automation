@@ -4,7 +4,7 @@ title: Genießt Brot und Bier!
 slug: geniet-brot-und-bier
 alias: 2017/03/13/geniet-brot-und-bier
 published_date: "2017-03-13T20:35:00+00:00"
-all_tags: "[\"blog\", \"faktensammlung\", \"podcasts\", \"ern\\u00e4hrung\"]"
+all_tags: "[\"blog\", \"ern\\u00e4hrung\", \"faktensammlung\", \"podcasts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -26,6 +26,6 @@ Im [Interview-Podcast CRE](https://cre.fm/) spricht [Tim Pritlove](https://tim.p
 
 Ich kaufe mein Brot schon seit Jahren ausschließlich bei einem lokalen Bäcker der seinen Natursauerteig hegt und pflegt, auf den Einsatz von Backmischungen sowie den Zusatz von Enzymen, Emulgatoren oder Ascorbinsäure verzichtet. Solange es diesen Bäcker noch gibt, brauche ich ~~zum Glück~~ nicht anfangen selbst Brot zu backen.
 
-Nicht weniger interessant und lehrreich ist [Episode 194](https://cre.fm/cre194-bier) zum Thema Bier. [Andreas Bogk](https://twitter.com/bogkbier) erläutert, wo Bier eigentlich herkommt, wie man selbst Bier brauen kann und natürlich auch, was ein gutes Bier ausmacht. Ähnlich wie bei Wein gibt es nämlich auch bei Bier gravierende Unterschiede. Andreas empfiehlt unter anderem die Biere des [Neumarkter Lammsbräu](http://www.lammsbraeu.de/), zu deren Stammkunden ich mich schon eine ganze Weile zähle. Die Biere der Großbrauereien [Anheuser-Busch](https://de.wikipedia.org/wiki/Anheuser-Busch_InBev) und [Oetker](https://de.wikipedia.org/wiki/Radeberger_Gruppe) meide ich schon seit Jahren konsequent.
+Nicht weniger interessant und lehrreich ist [Episode 194](https://cre.fm/cre194-bier) zum Thema Bier. Andreas Bogk erläutert, wo Bier eigentlich herkommt, wie man selbst Bier brauen kann und natürlich auch, was ein gutes Bier ausmacht. Ähnlich wie bei Wein gibt es nämlich auch bei Bier gravierende Unterschiede. Andreas empfiehlt unter anderem die Biere des [Neumarkter Lammsbräu](http://www.lammsbraeu.de/), zu deren Stammkunden ich mich schon eine ganze Weile zähle. Die Biere der Großbrauereien [Anheuser-Busch](https://de.wikipedia.org/wiki/Anheuser-Busch_InBev) und [Oetker](https://de.wikipedia.org/wiki/Radeberger_Gruppe) meide ich schon seit Jahren konsequent.
 
 Am besten beide Episoden bei einem Kanten frischen Brot und ~~zwei~~ drei Bier genießen.
