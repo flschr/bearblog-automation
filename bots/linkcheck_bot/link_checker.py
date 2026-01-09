@@ -31,6 +31,7 @@ LINK_CHECKER_ENABLED = LINK_CHECKER_CONFIG.get('enabled', True)
 LINK_TIMEOUT = LINK_CHECKER_CONFIG.get('timeout_seconds', 10)
 MAX_LINK_WORKERS = LINK_CHECKER_CONFIG.get('max_workers', MAX_WORKERS)
 USER_AGENT = LINK_CHECKER_CONFIG.get('user_agent', 'bearblog-link-checker/1.0')
+EXCLUDED_DOMAINS = set(LINK_CHECKER_CONFIG.get('excluded_domains', []))
 
 BLOG_CONFIG = CONFIG.get('blog', {})
 BLOG_SITE_URL = BLOG_CONFIG.get('site_url', '').strip()
@@ -38,12 +39,17 @@ BACKUP_FOLDER = CONFIG.get('backup', {}).get('folder', 'blog-backup')
 
 REPORT_FILE = Path(__file__).parent / 'broken_links.json'
 
-MARKDOWN_LINK_RE = re.compile(r'!?\[[^\]]*]\(([^)]+)\)')
+# Match markdown links with angle brackets: [text](<url>) - these can contain any characters
+MARKDOWN_LINK_ANGLE_RE = re.compile(r'!?\[[^\]]*]\(<([^>]+)>\)')
+# Match regular markdown links with URLs (handles balanced parentheses in URL)
+# Matches: [text](https://example.com/page_(info)) or [text](https://foo.com/a_(b)_(c))
+MARKDOWN_LINK_RE = re.compile(r'!?\[[^\]]*]\((https?://(?:[^\s()]|\([^)]*\))+)\)')
 AUTOLINK_RE = re.compile(r'<(https?://[^>]+)>')
 BARE_URL_RE = re.compile(r'(https?://[^\s<>\[\]{}"\'`]+)')
 FENCED_CODE_RE = re.compile(r'```.*?```', re.DOTALL)
+IFRAME_RE = re.compile(r'<iframe[^>]*>.*?</iframe>', re.DOTALL | re.IGNORECASE)
 
-TRAILING_PUNCTUATION = '.,:;!?)]}\'"'
+TRAILING_PUNCTUATION = '.,:;!?*'
 
 
 @dataclass(frozen=True)
@@ -63,25 +69,83 @@ def strip_frontmatter(text: str) -> Tuple[Dict, str]:
     return {}, text
 
 
+def is_excluded_domain(url: str) -> bool:
+    """Check if URL is from an excluded domain."""
+    if not EXCLUDED_DOMAINS:
+        return False
+
+    try:
+        parsed = urlparse(url)
+        hostname = parsed.hostname
+        if not hostname:
+            return False
+
+        # Check exact match and also check if it's a subdomain
+        hostname_lower = hostname.lower()
+        for excluded in EXCLUDED_DOMAINS:
+            excluded_lower = excluded.lower()
+            if hostname_lower == excluded_lower:
+                return True
+            # Also check if hostname ends with .excluded (subdomain)
+            if hostname_lower.endswith('.' + excluded_lower):
+                return True
+
+        return False
+    except Exception:
+        return False
+
+
 def normalize_url(url: str) -> str:
     url = url.strip().strip('<>').strip()
-    return url.rstrip(TRAILING_PUNCTUATION)
+
+    # Strip standard trailing punctuation
+    url = url.rstrip(TRAILING_PUNCTUATION)
+
+    # Handle closing parentheses smartly:
+    # Only strip ) if there's no opening ( in the URL (unbalanced)
+    while url.endswith(')'):
+        if '(' in url:
+            # Check if parentheses are balanced
+            open_count = url.count('(')
+            close_count = url.count(')')
+            if open_count >= close_count:
+                break
+        url = url[:-1].rstrip(TRAILING_PUNCTUATION)
+
+    return url
 
 
 def extract_links(markdown: str) -> Set[str]:
-    cleaned = FENCED_CODE_RE.sub('', markdown)
+    # Remove iframes first to ignore their URLs
+    cleaned = IFRAME_RE.sub('', markdown)
+    # Remove fenced code blocks
+    cleaned = FENCED_CODE_RE.sub('', cleaned)
     urls: Set[str] = set()
 
+    # First, extract markdown links with angle brackets: [text](<url>)
+    # and remove them from the text to avoid double-matching
+    for match in MARKDOWN_LINK_ANGLE_RE.findall(cleaned):
+        url = normalize_url(match.split()[0])
+        if url:
+            urls.add(url)
+    cleaned = MARKDOWN_LINK_ANGLE_RE.sub('', cleaned)
+
+    # Then extract regular markdown links: [text](url)
+    # Remove them from text after extraction
     for match in MARKDOWN_LINK_RE.findall(cleaned):
         url = normalize_url(match.split()[0])
         if url:
             urls.add(url)
+    cleaned = MARKDOWN_LINK_RE.sub('', cleaned)
 
+    # Extract autolinks: <url>
     for match in AUTOLINK_RE.findall(cleaned):
         url = normalize_url(match)
         if url:
             urls.add(url)
+    cleaned = AUTOLINK_RE.sub('', cleaned)
 
+    # Extract bare URLs from remaining text
     for match in BARE_URL_RE.findall(cleaned):
         url = normalize_url(match)
         if url:
@@ -141,6 +205,8 @@ def check_link(session: requests.Session, url: str) -> Optional[str]:
 
 def collect_links() -> Dict[str, Dict[str, Set[str]]]:
     link_map: Dict[str, Dict[str, Set[str]]] = {}
+    excluded_count = 0
+
     for markdown_file in find_markdown_files():
         content = markdown_file.read_text(encoding='utf-8')
         frontmatter, body = strip_frontmatter(content)
@@ -150,10 +216,19 @@ def collect_links() -> Dict[str, Dict[str, Set[str]]]:
         for link in links:
             if not link.startswith(('http://', 'https://')):
                 continue
+
+            # Skip excluded domains
+            if is_excluded_domain(link):
+                excluded_count += 1
+                continue
+
             if link not in link_map:
                 link_map[link] = {"articles": set(), "files": set()}
             link_map[link]["articles"].add(article_url)
             link_map[link]["files"].add(str(markdown_file))
+
+    if excluded_count > 0:
+        logger.info("Excluded %s links from excluded domains", excluded_count)
 
     return link_map
 
@@ -175,16 +250,18 @@ def run_link_checks(link_map: Dict[str, Dict[str, Set[str]]]) -> List[LinkIssue]
             url = future_map[future]
             status = future.result()
             if status:
+                # Pick a representative file path (first one from the set)
+                file_path = next(iter(link_map[url]["files"])) if link_map[url]["files"] else "unknown"
+                # Create one issue per article, not per (article, file) combination
                 for article_url in link_map[url]["articles"]:
-                    for file_path in link_map[url]["files"]:
-                        issues.append(
-                            LinkIssue(
-                                article_url=article_url,
-                                link_url=url,
-                                status=status,
-                                file_path=file_path,
-                            )
+                    issues.append(
+                        LinkIssue(
+                            article_url=article_url,
+                            link_url=url,
+                            status=status,
+                            file_path=file_path,
                         )
+                    )
 
     return issues
 
