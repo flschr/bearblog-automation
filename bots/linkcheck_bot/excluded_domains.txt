@@ -1,0 +1,18 @@
+# Excluded domains for link checking
+# Add one domain per line (without http://)
+# Both domain and all subdomains will be excluded
+# Example: wikipedia.org excludes de.wikipedia.org, en.wikipedia.org, etc.
+#
+# Note: You don't need to add both "example.com" and "www.example.com"
+# Just add "example.com" and www.example.com will also be excluded
+#
+# To exclude specific sites temporarily (e.g., during maintenance):
+# 1. Add the domain here
+# 2. Run the link checker again
+# 3. Remove the domain when ready to check again
+
+# Sites with aggressive rate limiting
+bergfex.de
+bergfex.com
+bergfex.at
+tollwood.de

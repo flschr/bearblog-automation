@@ -34,7 +34,17 @@ LINK_TIMEOUT = LINK_CHECKER_CONFIG.get('timeout_seconds', 10)
 MAX_LINK_WORKERS = LINK_CHECKER_CONFIG.get('max_workers', MAX_WORKERS)
 RATE_LIMIT_DELAY = LINK_CHECKER_CONFIG.get('rate_limit_delay', 0.0)
 USER_AGENT = LINK_CHECKER_CONFIG.get('user_agent', 'bearblog-link-checker/1.0')
+
+# Load excluded domains from both config.yaml and excluded_domains.txt
 EXCLUDED_DOMAINS = set(LINK_CHECKER_CONFIG.get('excluded_domains', []))
+EXCLUDED_DOMAINS_FILE = Path(__file__).parent / 'excluded_domains.txt'
+if EXCLUDED_DOMAINS_FILE.exists():
+    with open(EXCLUDED_DOMAINS_FILE, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            # Skip comments and empty lines
+            if line and not line.startswith('#'):
+                EXCLUDED_DOMAINS.add(line)
 
 # Rate limiting tracking
 _rate_limit_lock = threading.Lock()
