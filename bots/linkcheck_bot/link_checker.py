@@ -38,12 +38,17 @@ BACKUP_FOLDER = CONFIG.get('backup', {}).get('folder', 'blog-backup')
 
 REPORT_FILE = Path(__file__).parent / 'broken_links.json'
 
-MARKDOWN_LINK_RE = re.compile(r'!?\[[^\]]*]\(([^)]+)\)')
+# Match markdown links with angle brackets: [text](<url>) - these can contain any characters
+MARKDOWN_LINK_ANGLE_RE = re.compile(r'!?\[[^\]]*]\(<([^>]+)>\)')
+# Match regular markdown links with URLs (handles balanced parentheses in URL)
+# Matches: [text](https://example.com/page_(info)) or [text](https://foo.com/a_(b)_(c))
+MARKDOWN_LINK_RE = re.compile(r'!?\[[^\]]*]\((https?://(?:[^\s()]|\([^)]*\))+)\)')
 AUTOLINK_RE = re.compile(r'<(https?://[^>]+)>')
 BARE_URL_RE = re.compile(r'(https?://[^\s<>\[\]{}"\'`]+)')
 FENCED_CODE_RE = re.compile(r'```.*?```', re.DOTALL)
+IFRAME_RE = re.compile(r'<iframe[^>]*>.*?</iframe>', re.DOTALL | re.IGNORECASE)
 
-TRAILING_PUNCTUATION = '.,:;!?)]}\'"'
+TRAILING_PUNCTUATION = '.,:;!?'
 
 
 @dataclass(frozen=True)
@@ -65,23 +70,55 @@ def strip_frontmatter(text: str) -> Tuple[Dict, str]:
 
 def normalize_url(url: str) -> str:
     url = url.strip().strip('<>').strip()
-    return url.rstrip(TRAILING_PUNCTUATION)
+
+    # Strip standard trailing punctuation
+    url = url.rstrip(TRAILING_PUNCTUATION)
+
+    # Handle closing parentheses smartly:
+    # Only strip ) if there's no opening ( in the URL (unbalanced)
+    while url.endswith(')'):
+        if '(' in url:
+            # Check if parentheses are balanced
+            open_count = url.count('(')
+            close_count = url.count(')')
+            if open_count >= close_count:
+                break
+        url = url[:-1].rstrip(TRAILING_PUNCTUATION)
+
+    return url
 
 
 def extract_links(markdown: str) -> Set[str]:
-    cleaned = FENCED_CODE_RE.sub('', markdown)
+    # Remove iframes first to ignore their URLs
+    cleaned = IFRAME_RE.sub('', markdown)
+    # Remove fenced code blocks
+    cleaned = FENCED_CODE_RE.sub('', cleaned)
     urls: Set[str] = set()
 
+    # First, extract markdown links with angle brackets: [text](<url>)
+    # and remove them from the text to avoid double-matching
+    for match in MARKDOWN_LINK_ANGLE_RE.findall(cleaned):
+        url = normalize_url(match.split()[0])
+        if url:
+            urls.add(url)
+    cleaned = MARKDOWN_LINK_ANGLE_RE.sub('', cleaned)
+
+    # Then extract regular markdown links: [text](url)
+    # Remove them from text after extraction
     for match in MARKDOWN_LINK_RE.findall(cleaned):
         url = normalize_url(match.split()[0])
         if url:
             urls.add(url)
+    cleaned = MARKDOWN_LINK_RE.sub('', cleaned)
 
+    # Extract autolinks: <url>
     for match in AUTOLINK_RE.findall(cleaned):
         url = normalize_url(match)
         if url:
             urls.add(url)
+    cleaned = AUTOLINK_RE.sub('', cleaned)
 
+    # Extract bare URLs from remaining text
     for match in BARE_URL_RE.findall(cleaned):
         url = normalize_url(match)
         if url:
