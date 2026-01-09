@@ -96,3 +96,11 @@ link_checker:
   max_workers: 8
   # User-Agent used for link checks
   user_agent: "bearblog-link-checker/1.0"
+  # Domains to exclude from link checking (e.g., sites with aggressive rate limiting)
+  excluded_domains:
+    - bergfex.de
+    - www.bergfex.de
+    - bergfex.com
+    - www.bergfex.com
+    - bergfex.at
+    - www.bergfex.at

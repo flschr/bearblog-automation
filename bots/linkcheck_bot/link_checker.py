@@ -31,6 +31,7 @@ LINK_CHECKER_ENABLED = LINK_CHECKER_CONFIG.get('enabled', True)
 LINK_TIMEOUT = LINK_CHECKER_CONFIG.get('timeout_seconds', 10)
 MAX_LINK_WORKERS = LINK_CHECKER_CONFIG.get('max_workers', MAX_WORKERS)
 USER_AGENT = LINK_CHECKER_CONFIG.get('user_agent', 'bearblog-link-checker/1.0')
+EXCLUDED_DOMAINS = set(LINK_CHECKER_CONFIG.get('excluded_domains', []))
 
 BLOG_CONFIG = CONFIG.get('blog', {})
 BLOG_SITE_URL = BLOG_CONFIG.get('site_url', '').strip()
@@ -48,7 +49,7 @@ BARE_URL_RE = re.compile(r'(https?://[^\s<>\[\]{}"\'`]+)')
 FENCED_CODE_RE = re.compile(r'```.*?```', re.DOTALL)
 IFRAME_RE = re.compile(r'<iframe[^>]*>.*?</iframe>', re.DOTALL | re.IGNORECASE)
 
-TRAILING_PUNCTUATION = '.,:;!?'
+TRAILING_PUNCTUATION = '.,:;!?*'
 
 
 @dataclass(frozen=True)
@@ -66,6 +67,32 @@ def strip_frontmatter(text: str) -> Tuple[Dict, str]:
             frontmatter = yaml.safe_load(parts[1]) or {}
             return frontmatter, parts[2]
     return {}, text
+
+
+def is_excluded_domain(url: str) -> bool:
+    """Check if URL is from an excluded domain."""
+    if not EXCLUDED_DOMAINS:
+        return False
+
+    try:
+        parsed = urlparse(url)
+        hostname = parsed.hostname
+        if not hostname:
+            return False
+
+        # Check exact match and also check if it's a subdomain
+        hostname_lower = hostname.lower()
+        for excluded in EXCLUDED_DOMAINS:
+            excluded_lower = excluded.lower()
+            if hostname_lower == excluded_lower:
+                return True
+            # Also check if hostname ends with .excluded (subdomain)
+            if hostname_lower.endswith('.' + excluded_lower):
+                return True
+
+        return False
+    except Exception:
+        return False
 
 
 def normalize_url(url: str) -> str:
@@ -178,6 +205,8 @@ def check_link(session: requests.Session, url: str) -> Optional[str]:
 
 def collect_links() -> Dict[str, Dict[str, Set[str]]]:
     link_map: Dict[str, Dict[str, Set[str]]] = {}
+    excluded_count = 0
+
     for markdown_file in find_markdown_files():
         content = markdown_file.read_text(encoding='utf-8')
         frontmatter, body = strip_frontmatter(content)
@@ -187,10 +216,19 @@ def collect_links() -> Dict[str, Dict[str, Set[str]]]:
         for link in links:
             if not link.startswith(('http://', 'https://')):
                 continue
+
+            # Skip excluded domains
+            if is_excluded_domain(link):
+                excluded_count += 1
+                continue
+
             if link not in link_map:
                 link_map[link] = {"articles": set(), "files": set()}
             link_map[link]["articles"].add(article_url)
             link_map[link]["files"].add(str(markdown_file))
+
+    if excluded_count > 0:
+        logger.info("Excluded %s links from excluded domains", excluded_count)
 
     return link_map
 
