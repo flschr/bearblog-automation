@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 def main():
-    report_file = Path("bots/link_checker/broken_links.json")
+    report_file = Path("bots/linkcheck_bot/broken_links.json")
 
     if not report_file.exists():
         sys.exit(1)
