@@ -4,7 +4,7 @@ title: Kurzurlaub am Starnberger See
 slug: kurzurlaub-am-starnberger-see
 alias: 2023/08/15/kurzurlaub-am-starnberger-see
 published_date: "2023-08-14T22:00:00+00:00"
-all_tags: "[\"blog\", \"ganzvielurlaub\"]"
+all_tags: "[\"blog\", \"ganzvielurlaub\", \"unterwegs\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2023-08-14T22:00:00+00:00"
 ---
 
-Leider ist der geplante Sardinien-Urlaub aus familiären Gründen ins Wasser gefallen. Wir haben aber stattdessen ein paar entspannte Tage in einem wirklich sensationell [guten Hotel](https://www.schlossgut.de/) (mit einem erstklassigen Restaurant) am Starnberger See verbracht und die Seele etwas baumeln lassen.
+Leider ist der geplante Sardinien-Urlaub aus familiären Gründen ins Wasser gefallen. Wir haben aber stattdessen ein paar entspannte Tage in einem wirklich sensationell [guten Hotel](https://maps.app.goo.gl/cfsUFUcaVbPTEM5p6) (mit einem erstklassigen Restaurant) am Starnberger See verbracht und die Seele etwas baumeln lassen.
 
 ![Blick auf das abendlich erleuchte Schlossgut Oberambach.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/40c555ed95.webp)
 

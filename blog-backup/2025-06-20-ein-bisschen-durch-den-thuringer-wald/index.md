@@ -53,7 +53,7 @@ Trockenen Fußes auf der anderen Seite angekommen, gab es nur dummerweise kein W
 
 ![Eine Gruppe vertrockneter Bäume steht neben einem großen, abgestorbenen Baumstumpf in einer Graslandschaft unter klarem Himmel.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9n6b6268k6rr4g5q1nrg2s3qfbatk5w2.webp)
 
-Auf diesem Plateau habe ich jedenfalls vor Augen geführt bekommen, wie es um den Thüringer Wald bestellt ist: Kurz, nicht so gut. Der Borkenkäfer hat [87% der Fichten](https://www.mdr.de/nachrichten/thueringen/sued-thueringen/fichte-waldsterben-thueringen-100~amp.html) zerstört. Die Wiederaufforstung mit anderen Baumarten ist in vollem Gange, aber die kahlen Stellen stimmen schon nachdenklich. Dafür gedeiht der [rote Fingerhut](https://de.m.wikipedia.org/wiki/Roter_Fingerhut) in dieser kargen Mondlandschaft scheinbar besonders gut.
+Auf diesem Plateau habe ich jedenfalls vor Augen geführt bekommen, wie es um den Thüringer Wald bestellt ist: Kurz, nicht so gut. Der Borkenkäfer hat [87% der Fichten](https://www.mdr.de/nachrichten/thueringen/waldumbau-borkenkaefer-schaeden-100.html) zerstört. Die Wiederaufforstung mit anderen Baumarten ist in vollem Gange, aber die kahlen Stellen stimmen schon nachdenklich. Dafür gedeiht der [rote Fingerhut](https://de.m.wikipedia.org/wiki/Roter_Fingerhut) in dieser kargen Mondlandschaft scheinbar besonders gut.
 
 ![Eine Gruppe von violetten Fingerhüten wächst in einem Waldgebiet mit Bäumen im Hintergrund.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/zx62eydj00eqggv6693fn0mg41dc67zc.webp)
 
