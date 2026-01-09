@@ -5,6 +5,8 @@ Broken link checker for Bear Blog backups.
 import json
 import logging
 import re
+import threading
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
@@ -30,8 +32,13 @@ LINK_CHECKER_CONFIG = CONFIG.get('link_checker', {})
 LINK_CHECKER_ENABLED = LINK_CHECKER_CONFIG.get('enabled', True)
 LINK_TIMEOUT = LINK_CHECKER_CONFIG.get('timeout_seconds', 10)
 MAX_LINK_WORKERS = LINK_CHECKER_CONFIG.get('max_workers', MAX_WORKERS)
+RATE_LIMIT_DELAY = LINK_CHECKER_CONFIG.get('rate_limit_delay', 0.0)
 USER_AGENT = LINK_CHECKER_CONFIG.get('user_agent', 'bearblog-link-checker/1.0')
 EXCLUDED_DOMAINS = set(LINK_CHECKER_CONFIG.get('excluded_domains', []))
+
+# Rate limiting tracking
+_rate_limit_lock = threading.Lock()
+_last_request_time = 0.0
 
 BLOG_CONFIG = CONFIG.get('blog', {})
 BLOG_SITE_URL = BLOG_CONFIG.get('site_url', '').strip()
@@ -183,9 +190,20 @@ def find_markdown_files() -> Iterable[Path]:
 
 
 def check_link(session: requests.Session, url: str) -> Optional[str]:
+    global _last_request_time
+
     try:
         if not is_safe_url(url):
             return 'invalid_url'
+
+        # Apply rate limiting
+        if RATE_LIMIT_DELAY > 0:
+            with _rate_limit_lock:
+                current_time = time.time()
+                time_since_last = current_time - _last_request_time
+                if time_since_last < RATE_LIMIT_DELAY:
+                    time.sleep(RATE_LIMIT_DELAY - time_since_last)
+                _last_request_time = time.time()
 
         head_response = session.head(url, allow_redirects=True, timeout=LINK_TIMEOUT)
         status_code = head_response.status_code

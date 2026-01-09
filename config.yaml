@@ -92,8 +92,10 @@ link_checker:
   enabled: true
   # HTTP timeout per link (seconds)
   timeout_seconds: 10
-  # Concurrent link checks
-  max_workers: 8
+  # Concurrent link checks (reduced to avoid rate limiting)
+  max_workers: 3
+  # Rate limiting: delay between requests in seconds (helps avoid 429 errors)
+  rate_limit_delay: 0.5
   # User-Agent used for link checks
   # Using a standard browser User-Agent to avoid being blocked by overly aggressive bot detection
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
