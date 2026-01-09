@@ -4,7 +4,7 @@ title: Vakantie in Holland
 slug: vakantie-in-holland
 alias: 2015/09/15/vakantie-in-holland
 published_date: "2015-09-15T18:33:00+00:00"
-all_tags: "[\"blog\", \"ganzvielurlaub\"]"
+all_tags: "[\"blog\", \"ganzvielurlaub\", \"unterwegs\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -36,6 +36,6 @@ Auch für Aktivitäten abseits der Badestrände ist die Region bestens geeignet.
 
 **Amsterdam** ist nur knapp eine Stunde entfernt und lohnt sich nicht nur zum Shopping. Wie fast alle niederländischen Städte hat auch Amsterdam eine sehr sehenswerte Innenstadt. Mit einer Grachtenfahrt lernt man die Stadt noch einmal aus einer anderen Perspektive kennen. Davor oder danach sollte man auch mal durch den [Koninklijk Paleis](https://www.paleisamsterdam.nl/en/) schlendern.
 
-Andere sehenswerte Orte sind [Delft](https://de.wikipedia.org/wiki/Delft), [Renesse](https://de.wikipedia.org/wiki/Renesse_(Ort)), [Middelburg](https://de.wikipedia.org/wiki/Middelburg) und vor allem [Vlissingen](https://de.wikipedia.org/wiki/Vlissingen). Wer mit Kindern unterwegs ist, sollte in Vlissingen einen Abstecher ins [Piratenland](http://www.arsenaal.com/) machen.
+Andere sehenswerte Orte sind [Delft](https://de.wikipedia.org/wiki/Delft), [Renesse](https://de.wikipedia.org/wiki/Renesse_(Ort)), [Middelburg](https://de.wikipedia.org/wiki/Middelburg) und vor allem [Vlissingen](https://de.wikipedia.org/wiki/Vlissingen). ~~Wer mit Kindern unterwegs ist, sollte in Vlissingen einen Abstecher ins [Piratenland](https://maps.adac.de/poi/het-arsenaal-vlissingen) machen.~~
 
 Die wichtigste Erkenntnis dieses Urlaubs: Unsere Kinder lieben das holländische Brot.
