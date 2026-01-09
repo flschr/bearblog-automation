@@ -84,7 +84,7 @@ jobs:
             )
 
             Path("issue_body.md").write_text("\n".join(lines), encoding="utf-8")
-            PY
+PY
 
             if [ -f "issue_body.md" ]; then
               gh issue create \
