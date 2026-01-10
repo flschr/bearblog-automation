@@ -27,6 +27,7 @@ from shared import (
 WEBMENTIONS_FILE = Path(__file__).parent.parent.parent / "webmentions.json"
 WEBMENTIONS_LOCK = WEBMENTIONS_FILE.with_suffix(".json.lock")
 WEBMENTION_IO_API = "https://webmention.io/api/mentions.jf2"
+NEW_MENTIONS_REPORT = Path(__file__).parent / "new_mentions.json"
 
 # Social media domains to exclude (already tracked in mappings.json)
 EXCLUDED_SOCIAL_DOMAINS = {
@@ -200,7 +201,7 @@ def save_webmentions(webmentions: Dict) -> None:
         raise BotException(f"Failed to save webmentions: {e}")
 
 
-def process_mentions(mentions: List[Dict], existing_webmentions: Dict) -> Dict:
+def process_mentions(mentions: List[Dict], existing_webmentions: Dict) -> tuple[Dict, List[Dict]]:
     """
     Process new mentions and merge with existing data.
 
@@ -209,10 +210,11 @@ def process_mentions(mentions: List[Dict], existing_webmentions: Dict) -> Dict:
         existing_webmentions: Existing webmentions data
 
     Returns:
-        Updated webmentions dictionary
+        Tuple of (updated webmentions dictionary, list of new mentions)
     """
     new_count = 0
     updated_count = 0
+    new_mentions = []
 
     for mention in mentions:
         # Extract relevant fields
@@ -252,7 +254,7 @@ def process_mentions(mentions: List[Dict], existing_webmentions: Dict) -> Dict:
 
         if source_url not in existing_sources:
             # New mention
-            existing_webmentions[target_url]['mentions'].append({
+            mention_data = {
                 'source': source_url,
                 'type': mention_type,
                 'published': published,
@@ -263,7 +265,15 @@ def process_mentions(mentions: List[Dict], existing_webmentions: Dict) -> Dict:
                 'title': summary,
                 'content': content[:500] if content else '',  # Truncate long content
                 'fetched_at': datetime.now().isoformat()
+            }
+            existing_webmentions[target_url]['mentions'].append(mention_data)
+
+            # Track new mention for reporting
+            new_mentions.append({
+                'target': target_url,
+                **mention_data
             })
+
             new_count += 1
             logger.info(f"New webmention: {source_url} -> {target_url}")
         else:
@@ -272,7 +282,7 @@ def process_mentions(mentions: List[Dict], existing_webmentions: Dict) -> Dict:
             logger.debug(f"Mention already exists: {source_url}")
 
     logger.info(f"Processed {new_count} new mentions, {updated_count} already existed")
-    return existing_webmentions
+    return existing_webmentions, new_mentions
 
 
 def get_last_fetch_time(existing_webmentions: Dict) -> str:
@@ -300,6 +310,21 @@ def get_last_fetch_time(existing_webmentions: Dict) -> str:
         return latest
 
     return None
+
+
+def save_new_mentions_report(new_mentions: List[Dict]) -> None:
+    """
+    Save report of new mentions for GitHub issue creation.
+
+    Args:
+        new_mentions: List of new mention objects
+    """
+    try:
+        with open(NEW_MENTIONS_REPORT, 'w', encoding='utf-8') as f:
+            json.dump(new_mentions, f, indent=2, ensure_ascii=False)
+        logger.info(f"Saved new mentions report to {NEW_MENTIONS_REPORT}")
+    except Exception as e:
+        logger.error(f"Failed to save new mentions report: {e}")
 
 
 def main():
@@ -347,10 +372,18 @@ def main():
             return
 
         # Process and merge with existing data
-        updated_webmentions = process_mentions(blog_mentions, existing_webmentions)
+        updated_webmentions, new_mentions = process_mentions(blog_mentions, existing_webmentions)
 
         # Save to file
         save_webmentions(updated_webmentions)
+
+        # Save report if new mentions were found and notifications are enabled
+        webmentions_config = config.get('webmentions', {})
+        notify_enabled = webmentions_config.get('notify_on_new_mentions', False)
+
+        if new_mentions and notify_enabled:
+            save_new_mentions_report(new_mentions)
+            logger.info(f"Created notification report for {len(new_mentions)} new mentions")
 
         logger.info("=" * 60)
         logger.info("Webmentions fetch completed successfully")

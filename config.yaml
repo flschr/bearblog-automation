@@ -69,6 +69,10 @@ webmentions:
   # already tracked in mappings.json by the social bot
   enabled: true
 
+  # Create GitHub issue when new webmentions are received
+  # This sends a notification for each batch of new mentions
+  notify_on_new_mentions: true
+
   # Excluded social media domains (automatically filtered out)
   # These are already tracked in mappings.json
   excluded_domains:
