@@ -14,6 +14,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   fetch-webmentions:
@@ -67,4 +68,27 @@ jobs:
             fi
           else
             echo "No webmentions.json file generated"
+          fi
+
+      - name: Create GitHub Issue for New Webmentions
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          REPORT_FILE="bots/webmentions_bot/new_mentions.json"
+
+          if [ -f "$REPORT_FILE" ]; then
+            python bots/webmentions_bot/create_issue_body.py
+
+            if [ -f "bots/webmentions_bot/issue_body.md" ]; then
+              MENTION_COUNT=$(jq 'length' "$REPORT_FILE")
+
+              gh issue create \
+                --title "New Webmentions: $MENTION_COUNT new mention(s) received" \
+                --body-file bots/webmentions_bot/issue_body.md
+
+              rm -f bots/webmentions_bot/issue_body.md "$REPORT_FILE"
+            fi
+          else
+            echo "No new mentions to report"
           fi
