@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2026-01-11T14:21:00+00:00"
 ---
 
-Gestern Nacht hat es angefangen zu schneien, also viel zu schneien. Ich bin dann gegen 23 Uhr im dicken Schneegestöber nochmal raus, um Einfahrt und Gehweg vom Schnee zu befreien, vor allem damit ich am Sonntag länger im Bett verbringen kann. Im Winter verfluche ich immer, dass wir in ein Haus auf einem Eckgrundstück gezogen sind.
+Gestern Nacht hat es angefangen zu schneien, also viel zu schneien. Ich bin dann gegen 23 Uhr im dicken Schneegestöber nochmal raus, um Einfahrt und Gehweg vom Schnee zu befreien, vor allem damit ich den Sonntag länger im Bett verbringen kann. Im Winter verfluche ich immer, dass wir in ein Haus auf einem Eckgrundstück gezogen sind.
 
 Zum Glück hat es dann heute Nacht irgendwann aufgehört zu schneien und dank der Vorarbeit, war das Schneeräumen am Sonntagmorgen dann ein Klacks.
 
