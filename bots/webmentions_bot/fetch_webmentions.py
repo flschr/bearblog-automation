@@ -97,7 +97,7 @@ def fetch_webmentions(domain: str, token: str, since: str = None) -> List[Dict]:
         List of webmention objects
     """
     params = {
-        'target': f'https://{domain}/',
+        'domain': domain,
         'token': token,
         'per-page': 100  # Max allowed by webmention.io
     }
