@@ -66,5 +66,22 @@
         "fetched_at": "2025-10-20T18:30:00Z"
       }
     ]
+  },
+  "https://fischr.org/taking-a-bite-out-of-the-apple-icloud/": {
+    "target": "https://fischr.org/taking-a-bite-out-of-the-apple-icloud/",
+    "mentions": [
+      {
+        "source": "https://kopfzeiler.org/blog/2026/01/15/preview-links-aus-dem-internet-observatorium/",
+        "type": "mention-of",
+        "published": "2026-01-15T08:27:32+01:00",
+        "author": {
+          "name": "",
+          "url": ""
+        },
+        "title": "Preview: Links aus dem Internet-Observatorium",
+        "content": "Am Wochenende erscheint eine neue Ausgabe aus dem Internet-Observatorium. Am Ende poste ich ja immer Links mit Leseempfehlungen. Hier schon einmal die Liste, Stand heute morgen und noch ungeordnet.\nTahoe Icons (tonsky.me)\nThe Battle for Cognitive Liberty in the Age of Corporate AI (Tech Policy Press)\nThe Case for Blogging in the Ruins (Joan Westenberg)\nTaking a Bite Out of the Apple iCloud (fischr.org)\nHow About a Markdown Web? (Brett Terpstra)\nGoogle + Boston Dynamics: Gemini-powered Robot Atla",
+        "fetched_at": "2026-01-18T08:53:16.099256"
+      }
+    ]
   }
 }
