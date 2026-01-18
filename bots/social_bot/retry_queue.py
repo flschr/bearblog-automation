@@ -178,7 +178,7 @@ class RetryQueue:
             failed_platforms: List of dicts with 'platform' and 'error' keys
             successful_platforms: List of platforms that succeeded
         """
-        from bots.shared import FileLock
+        from shared import FileLock
 
         with FileLock(self.lock_file):
             queue = self._load_queue()
@@ -244,7 +244,7 @@ class RetryQueue:
         Returns:
             List of RetryQueueEntry objects ready for retry
         """
-        from bots.shared import FileLock
+        from shared import FileLock
 
         with FileLock(self.lock_file):
             queue = self._load_queue()
