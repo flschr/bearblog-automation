@@ -953,7 +953,16 @@ def run() -> None:
         validate_credentials(config)
 
         posted_cache = load_posted_articles()
-        logger.info(f"Loaded {len(posted_cache)} previously posted articles")
+        posted_file_count = len(posted_cache)
+        social_mappings = load_social_mappings()
+        if social_mappings:
+            posted_cache.update(social_mappings.keys())
+        logger.info(
+            "Loaded %s previously posted articles (%s from posted file, %s from mappings)",
+            len(posted_cache),
+            posted_file_count,
+            len(social_mappings)
+        )
 
         # Load max article age setting (0 = no limit)
         max_article_age_days = CONFIG.get('social', {}).get('max_article_age_days', 0)
