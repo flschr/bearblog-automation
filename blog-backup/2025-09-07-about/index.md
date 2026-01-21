@@ -32,11 +32,7 @@ Meine kulinarischen Entdeckungen habe ich angefangen in Listen für [gutes Essen
 >
 >Antoine de Saint-Exupéry
 
-Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener auf [Bluesky](https://bsky.app/profile/fischr.org). Ansonsten bin ich auch noch auf [GitHub](https://github.com/flschr), [OpenStreetMap](https://www.openstreetmap.org/user/fischr) und [Komoot](https://www.komoot.com/de-de/user/848543125284) unterwegs. Am unkompliziertesten kann man mich per Mail unter [hallo@fischr.org](mailto:hallo@fischr.org) erreichen.
-
-Schreib mir an <span data-email-encoded="aGFsbG9AZmlzY2hyLm9yZw==" data-label="hallo@fischr.org"></span>
-.
-
+Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener auf [Bluesky](https://bsky.app/profile/fischr.org). Ansonsten bin ich auch noch auf [GitHub](https://github.com/flschr), [OpenStreetMap](https://www.openstreetmap.org/user/fischr) und [Komoot](https://www.komoot.com/de-de/user/848543125284) unterwegs. Am unkompliziertesten kann man mich per <span data-email-encoded="aGFsbG9AZmlzY2hyLm9yZw==" data-label="Mail"></span> erreichen.
 
 ---
 

@@ -27,4 +27,4 @@ Dieses Blog wird über [Bear Blog](https://bearblog.dev) bereitgestellt. Beim Au
 
 Auf einigen Seiten können Inhalte Dritter (z.B. Videos, interaktive Karten, o.ä.) eingebunden sein. Beim Laden dieser Inhalte wird deine IP-Adresse an den jeweiligen Anbieter übertragen. Darüber hinaus findet keine Analyse oder Profilbildung durch mich statt.
 
-Ich habe zwar keine Daten, die ich dir zuordnen könnte, aber du hast natürlich trotzdem das Recht auf Auskunft und Löschung. Schreib mir einfach an [hallo@fischr.org](mailto:hallo@fischr.org).
+Ich habe zwar keine Daten, die ich dir zuordnen könnte, aber du hast natürlich trotzdem das Recht auf Auskunft und Löschung. Schreib mir gern eine <span data-email-encoded="aGFsbG9AZmlzY2hyLm9yZw==" data-label="Mail"></span>.
