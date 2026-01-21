@@ -34,6 +34,10 @@ Meine kulinarischen Entdeckungen habe ich angefangen in Listen für [gutes Essen
 
 Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener auf [Bluesky](https://bsky.app/profile/fischr.org). Ansonsten bin ich auch noch auf [GitHub](https://github.com/flschr), [OpenStreetMap](https://www.openstreetmap.org/user/fischr) und [Komoot](https://www.komoot.com/de-de/user/848543125284) unterwegs. Am unkompliziertesten kann man mich per Mail unter [hallo@fischr.org](mailto:hallo@fischr.org) erreichen.
 
+Schreib mir an <span data-email-encoded="aGFsbG9AZmlzY2hyLm9yZw==" data-label="hallo@fischr.org"></span>
+.
+
+
 ---
 
 Recycled Words läuft auf [Bear Blog](https://bearblog.dev/). Alle Inhalte werden unter der [CC BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/) zur Verfügung gestellt. Etwaige Rechte von Dritten sind als solche gekennzeichnet.
