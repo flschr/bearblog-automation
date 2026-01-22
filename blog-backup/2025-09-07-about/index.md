@@ -20,7 +20,7 @@ first_published_at: "2025-09-07T22:54:00+00:00"
 <span class="page-marker" data-page="about" hidden></span>
 Hallo, ich bin René Fischer und lebe im Münchner Umland. Aufgewachsen bin ich in der [obszön schönen](/schon-schoner-gotha/) Stadt [Gotha](https://de.wikipedia.org/wiki/Gotha), und habe dort die letzten 10 Jahre der DDR miterlebt.
 
-Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus bin ich verheiratet und Vater von zwei sehr unterschiedlichen Teenagern. Beruflich mache ich schon immer irgendwas mit Software.
+Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus bin ich verheiratet und Vater von zwei sehr unterschiedlichen Teenagern. Beruflich mache ich schon immer irgendwas mit Software aber auch in meiner Freizeit veröffentliche ich mittlerweile [Apps für iOS](https://justasimple.app).
 
 ![Foto-Collage von René Fischer](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/rene-fischer.webp)
 
