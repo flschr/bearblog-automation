@@ -28,7 +28,7 @@ Zum Beispiel weiß ich jetzt definitiv, wann ich meinen Facebook-Account gelösc
 
 ![Ein Screenshot eines Computerbildschirms zeigt eine Facebook-Nachricht, in der steht, dass das Konto deaktiviert wurde. Der Benutzer sieht besorgt aus, und die Nachricht ist an eine Person namens René gerichtet.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/scr-20260128-syjz.webp)
 
-Außerdem ich weiß jetzt, das ich am 02. Januar 2012 von Android auf Windows Phone umgestiegen bin. Ehrlich gesagt finde ich die Kachel-Oberfläche von Windows Phone auch heute noch ein erfrischend spannendes UX-Konzept, das aus meiner Sicht viel zu früh wieder gehen musste.
+Außerdem ich weiß jetzt, das ich am 2. Januar 2012 von Android auf Windows Phone umgestiegen bin. Ehrlich gesagt finde ich die Kachel-Oberfläche von Windows Phone auch heute noch ein erfrischend spannendes UX-Konzept, das aus meiner Sicht viel zu früh wieder gehen musste.
 
 ![Ein schwarzes Smartphone mit einem blauen Startbildschirm, der Apps wie Telefon, Nachrichten, Google Mail und Internet Explorer anzeigt. Die Uhrzeit ist 11:25 und es gibt ein Wetterwidget mit einer Sonnensymbolik.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/tumblr_lx62semxdb1qfy3rqo1_500.webp)
 
