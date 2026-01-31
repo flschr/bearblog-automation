@@ -42,6 +42,7 @@ logger = logging.getLogger(__name__)
 BEARBLOG_USERNAME = CONFIG['blog']['bearblog_username']
 BACKUP_FOLDER = CONFIG.get('backup', {}).get('folder', 'blog-backup')
 SAVE_DEBUG_CSV = CONFIG.get('backup', {}).get('save_debug_csv', False)
+SITE_URL = CONFIG.get('blog', {}).get('site_url', '').rstrip('/')
 
 # Linked files configuration
 LINKED_FILES_CONFIG = CONFIG.get('backup', {}).get('linked_files', {})
@@ -61,6 +62,40 @@ DEBUG_CSV = Path("bots/backup_bot/last_export.csv")
 
 # Create session with connection pooling
 session = create_session('bearblog-backup/2.0')
+
+
+def build_article_url(row: pd.Series) -> Optional[str]:
+    """Build a public article URL from the CSV row."""
+    canonical_url = str(row.get('canonical url', '')).strip()
+    if canonical_url:
+        return canonical_url
+
+    slug = str(row.get('slug', '')).strip().lstrip('/')
+    if not slug or not SITE_URL:
+        return None
+
+    return f"{SITE_URL}/{slug}/"
+
+
+def submit_to_web_archive(url: str) -> None:
+    """
+    Submit the URL to the Internet Archive (web.archive.org) for archival.
+    Creates a permanent snapshot of the content using the Save Page Now API.
+    """
+    if not CONFIG.get('web_archive', {}).get('enabled', False):
+        return
+
+    try:
+        response = session.post(
+            "https://web.archive.org/save",
+            data={"url": url},
+            timeout=REQUEST_TIMEOUT,
+            allow_redirects=True
+        )
+        response.raise_for_status()
+        logger.info(f"Web Archive submission success for {url}")
+    except Exception as e:
+        logger.warning(f"Web Archive submission failed for {url}: {e}")
 
 
 def normalize_cookie(cookie: Optional[str]) -> Optional[str]:
@@ -629,6 +664,13 @@ def process_article(row: pd.Series, df: pd.DataFrame, processed_articles: Dict[s
 
         # Update tracking in memory for batch save
         processed_articles[uid] = content_hash
+
+        if status in {'new', 'updated'}:
+            article_url = build_article_url(row)
+            if article_url:
+                submit_to_web_archive(article_url)
+            else:
+                logger.warning("Web Archive submission skipped: unable to build article URL")
 
         logger.info(f"Successfully processed: {folder_name}")
         return (status, change_type)
