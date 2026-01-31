@@ -422,11 +422,10 @@ def submit_to_web_archive(url: str) -> None:
 
     try:
         # Internet Archive Save Page Now API endpoint
-        # Using the simple GET method which doesn't require authentication
-        archive_url = f"https://web.archive.org/save/{url}"
-
-        response = session.get(
-            archive_url,
+        # Using POST with url param for improved compatibility
+        response = session.post(
+            "https://web.archive.org/save",
+            data={"url": url},
             timeout=REQUEST_TIMEOUT,
             allow_redirects=True
         )
