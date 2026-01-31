@@ -10,11 +10,11 @@ on:
     types: [rss_feed_update]
 
 # Ensure only one instance runs at a time to prevent duplicate posts
-# cancel-in-progress: true queues concurrent runs instead of running in parallel
-# This prevents race conditions that could cause duplicate posts
+# cancel-in-progress: false queues concurrent runs instead of canceling in-flight runs
+# This prevents race conditions that could cause duplicate posts without sending cancel emails
 concurrency:
   group: social-bot
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write

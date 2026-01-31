@@ -280,7 +280,7 @@ class RetryQueue:
             still_failed_platforms: Platforms that still failed
             newly_succeeded_platforms: Platforms that succeeded this time
         """
-        from bots.shared import FileLock
+        from shared import FileLock
 
         with FileLock(self.lock_file):
             queue = self._load_queue()
@@ -350,7 +350,7 @@ class RetryQueue:
 
     def remove_from_queue(self, article_url: str) -> None:
         """Remove an entry from the queue."""
-        from bots.shared import FileLock
+        from shared import FileLock
 
         with FileLock(self.lock_file):
             queue = self._load_queue()
@@ -367,7 +367,7 @@ class RetryQueue:
         Returns:
             List of RetryQueueEntry objects that have exhausted retries
         """
-        from bots.shared import FileLock
+        from shared import FileLock
 
         with FileLock(self.lock_file):
             queue = self._load_queue()
@@ -392,7 +392,7 @@ class RetryQueue:
         Returns:
             Number of entries removed
         """
-        from bots.shared import FileLock
+        from shared import FileLock
 
         with FileLock(self.lock_file):
             queue = self._load_queue()
@@ -412,7 +412,7 @@ class RetryQueue:
 
     def get_stats(self) -> Dict[str, Any]:
         """Get statistics about the retry queue."""
-        from bots.shared import FileLock
+        from shared import FileLock
 
         with FileLock(self.lock_file):
             queue = self._load_queue()
