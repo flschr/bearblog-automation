@@ -32,6 +32,7 @@ NEW_MENTIONS_REPORT = Path(__file__).parent / "new_mentions.json"
 # Social media domains to exclude (already tracked in mappings.json)
 EXCLUDED_SOCIAL_DOMAINS = {
     'mastodon.social',
+    'chaos.social',
     'bsky.app',
     'twitter.com',
     'x.com',
