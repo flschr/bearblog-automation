@@ -64,7 +64,7 @@ The best thing is, you decide which buttons you see. The new settings panel allo
 
 ## Get this toolbar for your Bear Blog
 
-To use this toolbar, simply add the code below to *Dashboard > Settings > Footer content* in your Bear Blog.
+To use this toolbar, simply add the code below to *Customize Dashboard > [Dashboard Footer content](https://bearblog.dev/dashboard/customise/)* in your Bear Blog.
 
 ```
 <script src="https://flschr.github.io/bearblog-plugins/markdown-toolbar.js"></script>
