@@ -104,6 +104,7 @@ webmentions:
   enabled: true
   excluded_domains:
     - mastodon.social
+    - chaos.social
     - bsky.app
     # Add more domains as needed
 ```
