@@ -83,5 +83,22 @@
         "fetched_at": "2026-01-18T08:53:16.099256"
       }
     ]
+  },
+  "https://fischr.org/stuffthatworks-mac-aufraumen-mit-pearcleaner/": {
+    "target": "https://fischr.org/stuffthatworks-mac-aufraumen-mit-pearcleaner/",
+    "mentions": [
+      {
+        "source": "https://chaos.social/@danielzenzes/116041670165306692",
+        "type": "in-reply-to",
+        "published": "2026-02-09T16:42:47+00:00",
+        "author": {
+          "name": "Daniel Zenzes",
+          "url": "https://chaos.social/@danielzenzes"
+        },
+        "title": "",
+        "content": "@fischr @larsolino spannend. Sehe ich mir auch mal an",
+        "fetched_at": "2026-02-09T18:13:06.198159"
+      }
+    ]
   }
 }
