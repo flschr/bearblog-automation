@@ -16,43 +16,36 @@ class_name: ""
 first_published_at: "2025-12-01T19:32:00+00:00"
 ---
 
-<span hidden>Eine kleine Auswahl von sehenswerten Fotos von René Fischer.</span>
-
 <style>
 /* =========================
-   SHORTS (robust, no :has)
-   - media flush to card edges
-   - hide original title + date
-   - inject date permalink directly under media
+   SHORTS + Load more (20er batches)
+   - robust scoping via body.page-shorts
    ========================= */
 
 body.page-shorts ul.embedded.blog-posts{
   list-style: none;
   padding: 0;
-  margin: 2rem 0 3rem;
+  margin: 2rem 0 2rem;
   display: grid;
   gap: 1.25rem;
 }
 
-/* Card */
 body.page-shorts ul.embedded.blog-posts > li{
   position: relative;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: rgba(0,0,0,0.015);
   overflow: hidden;
-  padding: 0 !important;      /* kill any inherited padding */
-  padding-left: 0 !important; /* neutralize theme list indent */
+  padding: 0 !important;
+  padding-left: 0 !important;
 }
 
-/* Dark mode card bg */
 @media (prefers-color-scheme: dark){
   body.page-shorts ul.embedded.blog-posts > li{
     background: rgba(255,255,255,0.03);
   }
 }
 
-/* Kill theme list marker "–" */
 body.page-shorts ul.embedded.blog-posts > li::before{
   content: none !important;
 }
@@ -63,87 +56,122 @@ body.page-shorts ul.embedded.blog-posts > li > a{
   display: none !important;
 }
 
-/* Content wrapper must be flush */
 body.page-shorts ul.embedded.blog-posts > li > div{
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* First paragraph (usually the media wrapper) must be flush */
+/* first p flush */
 body.page-shorts ul.embedded.blog-posts > li > div > p:first-child{
   margin: 0 !important;
   padding: 0 !important;
   max-width: none !important;
 }
 
-/* Media: FULL WIDTH, no crop, no margins (override global theme rules) */
+/* media full-bleed, override global theme margins */
 body.page-shorts ul.embedded.blog-posts > li > div img,
 body.page-shorts ul.embedded.blog-posts > li > div video,
 body.page-shorts ul.embedded.blog-posts > li > div iframe{
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;
-  margin: 0 !important;     /* this is the usual culprit */
+  margin: 0 !important;
   border: 0 !important;
   height: auto !important;
-  object-fit: contain !important; /* never crop */
+  object-fit: contain !important;
   border-radius: var(--radius) var(--radius) 0 0 !important;
 }
 
-/* iframe ratio */
 body.page-shorts ul.embedded.blog-posts > li > div iframe{
   aspect-ratio: 16 / 9;
 }
 
-/* Text paragraphs: inner padding */
+/* text padding */
 body.page-shorts ul.embedded.blog-posts > li > div p{
   margin: 0.85rem 0 !important;
   padding: 0 1.1rem !important;
   max-width: var(--text-measure);
 }
-
-/* Keep the media paragraph flush even though the rule above hits all p */
 body.page-shorts ul.embedded.blog-posts > li > div > p:first-child{
   padding: 0 !important;
 }
 
-/* Date permalink injected by JS (sits under media) */
+/* injected date permalink (under media) */
 body.page-shorts ul.embedded.blog-posts a.shorts-permalink{
   display: block;
-  padding: 0.55rem 1.1rem 0; /* under media, before text */
-  margin: 0;
+  padding: 0.55rem 1.1rem 0;
   font-size: 0.82em;
   line-height: 1.2;
   color: var(--muted);
   text-decoration: none;
 }
-
 body.page-shorts ul.embedded.blog-posts a.shorts-permalink:hover{
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
   opacity: 0.9;
 }
+
+/* "Load more" UI */
+body.page-shorts .shorts-loadmore-wrap{
+  display: flex;
+  justify-content: center;
+  margin: 1.75rem 0 3rem;
+}
+
+body.page-shorts .shorts-loadmore{
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.65rem 1.05rem;
+  background: rgba(0,0,0,0.015);
+  color: var(--text-color);
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark){
+  body.page-shorts .shorts-loadmore{
+    background: rgba(255,255,255,0.03);
+  }
+}
+
+body.page-shorts .shorts-loadmore:hover{
+  opacity: 0.9;
+}
+
+body.page-shorts .shorts-loadmore:disabled{
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* hidden items */
+body.page-shorts li.shorts-hidden{
+  display: none !important;
+}
 </style>
 
 <script>
 (() => {
+  const BATCH = 20;
+
   function initShorts() {
     const marker = document.querySelector(".page-marker[data-page='shorts']");
     if (!marker) return;
 
-    // Robust scoping: set body class once
+    // scope for CSS
     document.body.classList.add("page-shorts");
 
-    // Find the list (don’t assume sibling structure)
+    // pick the first embedded list on the page (Shorts page = usually only one)
     const list = document.querySelector("ul.embedded.blog-posts");
     if (!list) return;
 
-    list.querySelectorAll(":scope > li").forEach(li => {
+    const items = Array.from(list.querySelectorAll(":scope > li"));
+
+    // 1) Inject date permalink under media (idempotent)
+    items.forEach(li => {
       const content = li.querySelector(":scope > div");
       if (!content) return;
-
-      // idempotent: don't add twice
       if (content.querySelector(":scope > a.shorts-permalink")) return;
 
       const time = li.querySelector(":scope > span time");
@@ -155,14 +183,66 @@ body.page-shorts ul.embedded.blog-posts a.shorts-permalink:hover{
       a.className = "shorts-permalink";
       a.textContent = time.textContent.trim();
 
-      // Place date permalink directly under the first media paragraph (if present)
       const firstP = content.querySelector(":scope > p:first-child");
-      if (firstP) {
-        firstP.insertAdjacentElement("afterend", a);
-      } else {
-        content.insertAdjacentElement("afterbegin", a);
-      }
+      if (firstP) firstP.insertAdjacentElement("afterend", a);
+      else content.insertAdjacentElement("afterbegin", a);
     });
+
+    // 2) Hide everything after first batch
+    items.forEach((li, idx) => {
+      if (idx >= BATCH) li.classList.add("shorts-hidden");
+      else li.classList.remove("shorts-hidden");
+    });
+
+    // If everything fits, no button
+    if (items.length <= BATCH) return;
+
+    // 3) Add Load more button (idempotent)
+    if (document.querySelector(".shorts-loadmore-wrap")) return;
+
+    const wrap = document.createElement("div");
+    wrap.className = "shorts-loadmore-wrap";
+
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "shorts-loadmore";
+    wrap.appendChild(btn);
+
+    // Insert after list
+    list.insertAdjacentElement("afterend", wrap);
+
+    function visibleCount() {
+      return items.filter(li => !li.classList.contains("shorts-hidden")).length;
+    }
+
+    function updateButton() {
+      const shown = visibleCount();
+      const remaining = items.length - shown;
+      if (remaining <= 0) {
+        wrap.remove();
+        return;
+      }
+      const next = Math.min(BATCH, remaining);
+      btn.textContent = `Mehr laden (${next})`;
+      btn.setAttribute("aria-label", `Mehr Shorts laden: ${next} weitere Einträge anzeigen`);
+    }
+
+    function revealNextBatch() {
+      btn.disabled = true;
+
+      const shown = visibleCount();
+      const end = Math.min(shown + BATCH, items.length);
+
+      for (let i = shown; i < end; i++) {
+        items[i].classList.remove("shorts-hidden");
+      }
+
+      btn.disabled = false;
+      updateButton();
+    }
+
+    btn.addEventListener("click", revealNextBatch);
+    updateButton();
   }
 
   if (document.readyState === "loading") {
