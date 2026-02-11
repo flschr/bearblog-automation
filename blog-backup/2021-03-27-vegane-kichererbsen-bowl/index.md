@@ -1,6 +1,6 @@
 ---
 uid: ZTBBeAEhKzLyYWIVSTyI
-title: 🍲 Vegane Kichererbsen-Bowl
+title: Vegane Kichererbsen-Bowl
 slug: vegane-kichererbsen-bowl
 alias: 2021/03/27/vegane-kichererbsenbowl
 published_date: "2021-03-27T18:26:00+00:00"

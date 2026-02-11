@@ -1,6 +1,6 @@
 ---
 uid: cXFgTDegHbMhhIFZkLpa
-title: 📚 Gelesen 2021, Teil I
+title: Gelesen 2021, Teil I
 slug: gelesen-2021-teil-i
 alias: 2021/05/13/gelesen-teil-i
 published_date: "2021-05-13T18:08:00+00:00"

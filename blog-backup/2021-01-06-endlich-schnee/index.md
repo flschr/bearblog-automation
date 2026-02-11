@@ -4,7 +4,7 @@ title: Endlich Schnee
 slug: endlich-schnee
 alias: 2021/01/06/endlich-schnee
 published_date: "2021-01-06T13:50:00+00:00"
-all_tags: "[\"fotos\"]"
+all_tags: "[\"fotos\", \"shorts\"]"
 publish: "True"
 make_discoverable: "False"
 is_page: "False"
@@ -17,3 +17,5 @@ first_published_at: "2021-01-06T13:50:00+00:00"
 ---
 
 ![Ein schneebedecktes Feld mit einer Baumgruppe](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/cfb7234297.webp)
+
+Es hat geschneit und dann dreht man eine Runde. So will es das Gesetz.
