@@ -1,10 +1,10 @@
 ---
 uid: mWkQTTafrLosSCbXaJNG
-title: 🍿 Absolute Giganten (5/5)
+title: Absolute Giganten (5/5)
 slug: absolute-giganten
 alias: 2025/11/02/absolute-giganten
 published_date: "2025-11-01T23:00:00+00:00"
-all_tags: "[\"popcornfieber\"]"
+all_tags: "[\"popcornfieber\", \"movies\", \"blog\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
