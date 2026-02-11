@@ -123,8 +123,8 @@ body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p:f
 /* Date permalink injected by JS */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts .shorts-permalink{
   display: inline-block;
-  padding: 0.65rem 1.1rem 0.1rem;
-  font-size: 0.82em;
+  padding: 1.4rem 1.1rem 0.1rem;
+  font-size: 0.9em;
   line-height: 1.2;
   color: var(--muted);
   text-decoration: none;
