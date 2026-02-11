@@ -1,10 +1,10 @@
 ---
 uid: TPNxHnSGzrfGgLXzhwsJ
-title: 🍿 Der wilde Roboter (★★★★☆)
+title: 🍿 Der wilde Roboter (4/5)
 slug: der-wilde-roboter
 alias: ""
 published_date: "2026-01-01T00:45:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
