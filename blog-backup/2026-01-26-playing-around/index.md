@@ -4,7 +4,7 @@ title: Just looping around
 slug: playing-around
 alias: ""
 published_date: "2026-01-26T21:48:00+00:00"
-all_tags: "[\"bearblog\", \"feelingbored\"]"
+all_tags: "[\"bearblog\", \"feelingbored\", \"shorts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -24,10 +24,9 @@ This looped video looks fun, but the workflow is not ideal. It started with a Li
 
 Looping luckily can be achieved with the embed code.
 
-```HTML
-<video loop muted playsinline autoplay preload="none" width="100%">
+
+`<video loop muted playsinline autoplay preload="none" width="100%">
  <source src="video.webm" type="video/webm">
-</video>
-```
+</video>`
 
 I need to figure out a smoother way to achieve this. 
