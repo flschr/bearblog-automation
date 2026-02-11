@@ -1,6 +1,6 @@
 ---
 uid: fXeLCtqyCCgzDfjsgiNp
-title: 🎶 Alben des Jahres (MMXVII)
+title: Alben des Jahres (MMXVII)
 slug: alben-des-jahres-mmxvii
 alias: 2017/12/30/alben-des-jahres-mmxvii
 published_date: "2017-12-30T19:09:00+00:00"

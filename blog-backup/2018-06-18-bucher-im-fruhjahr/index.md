@@ -1,6 +1,6 @@
 ---
 uid: vhAzgRvdEJsYFqzbwjvt
-title: 📚 Bücher im Frühjahr
+title: Bücher im Frühjahr
 slug: bucher-im-fruhjahr
 alias: 2018/06/18/bcher-im-frhjahr
 published_date: "2018-06-18T18:35:00+00:00"

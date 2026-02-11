@@ -1,6 +1,6 @@
 ---
 uid: CghPamCppyikXuZsmYSK
-title: 📚 Bücher, Teil II/2018
+title: Bücher, Teil II/2018
 slug: bucher-teil-ii2018
 alias: 2018/12/28/bcher-teil-ii
 published_date: "2018-12-28T20:19:00+00:00"

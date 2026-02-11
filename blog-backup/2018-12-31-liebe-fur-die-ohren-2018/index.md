@@ -1,6 +1,6 @@
 ---
 uid: QfSkHmQUuGDWBbWKQTrS
-title: 🎶 Liebe für die Ohren (2018)
+title: Liebe für die Ohren (2018)
 slug: liebe-fur-die-ohren-2018
 alias: 2018/12/31/liebe-fr-die-ohren
 published_date: "2018-12-31T20:16:00+00:00"

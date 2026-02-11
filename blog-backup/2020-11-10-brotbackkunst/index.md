@@ -1,6 +1,6 @@
 ---
 uid: kpiRwsubypBqAIwIsyax
-title: 👨🏻‍🍳 Brotbackkunst
+title: Brotbackkunst
 slug: brotbackkunst
 alias: 2020/11/10/brotbackkunst
 published_date: "2020-11-10T13:08:00+00:00"

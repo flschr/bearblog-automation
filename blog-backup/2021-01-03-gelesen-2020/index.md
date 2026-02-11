@@ -1,6 +1,6 @@
 ---
 uid: TGDwinYhfvyeHcNUnitf
-title: 📚 Gelesen 2020
+title: Gelesen 2020
 slug: gelesen-2020
 alias: 2021/01/03/gelesen
 published_date: "2021-01-03T20:54:00+00:00"
