@@ -4,7 +4,7 @@ title: Titanic-Ausstellung, Lokschuppen (5/5)
 slug: titanic-ausstellung-lokschuppen
 alias: 2025/11/04/ein-tag-mit-der-grten
 published_date: "2025-11-03T23:00:00+00:00"
-all_tags: "[\"ausstellung\", \"blog\"]"
+all_tags: "[\"ausstellung\", \"review\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

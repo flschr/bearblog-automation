@@ -1,10 +1,10 @@
 ---
 uid: ybsTvNjZchIUhaHGpwad
-title: 🍿 The Holdovers (★★★★☆)
+title: 🍿 The Holdovers (4/5)
 slug: the-holdovers
 alias: 2025/11/01/the-holdovers-braucht-einen-moment
 published_date: "2025-10-31T23:00:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
