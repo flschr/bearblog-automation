@@ -1,6 +1,6 @@
 ---
 uid: MNMjVjaokbInLgCrJjZQ
-title: 🍿 Straw (1/5)
+title: Straw (1/5)
 slug: straw
 alias: 2025/07/19/straw-ist-noch-so-ein
 published_date: "2025-07-18T22:00:00+00:00"
