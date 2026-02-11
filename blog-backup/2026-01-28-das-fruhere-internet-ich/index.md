@@ -26,11 +26,10 @@ Aber es gab eine Domain, die ich damals als persönliche Visitenkarte registrier
 
 Zum Beispiel weiß ich jetzt definitiv, wann ich meinen Facebook-Account gelöscht habe, den ich irgendwann in 2007 registriert habe. Ich habe ja immer gescherzt, dass ich Facebook verlassen habe als mein Vater sich dort registriert hat. Das war vielleicht provokativ und hat Leute zum Lachen gebracht, hat aber nicht der Realität entsprochen. Meines Wissens hat mein Vater nie einen Facebook-Account besessen. Jedenfalls habe ich am 2. Oktober 2011 meinen Facebook Account zuerst stillgelegt und dann am 13. Januar 2012 final gelöscht und seitdem auch nie wieder zurückgeschaut.
 
-![Ein Screenshot eines Computerbildschirms zeigt eine Facebook-Nachricht, in der steht, dass das Konto deaktiviert wurde. Der Benutzer sieht besorgt aus, und die Nachricht ist an eine Person namens René gerichtet.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/scr-20260128-syjz.webp)
-
 Außerdem ich weiß jetzt, das ich am 2. Januar 2012 von Android auf Windows Phone umgestiegen bin. Ehrlich gesagt finde ich die Kachel-Oberfläche von Windows Phone auch heute noch ein erfrischend spannendes UX-Konzept, das aus meiner Sicht viel zu früh wieder gehen musste. Hier ist mein damaliger wunderbar blauer Home-Screen.
 
 ![Ein schwarzes Smartphone mit einem blauen Startbildschirm, der Apps wie Telefon, Nachrichten, Google Mail und Internet Explorer anzeigt. Die Uhrzeit ist 11:25 und es gibt ein Wetterwidget mit einer Sonnensymbolik.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/tumblr_lx62semxdb1qfy3rqo1_500.webp)
+*Mein früherer Home-Screen meines geliebten Windows Phones*
 
 Und ich habe im Dezember 2009 schon mal etwas über meinen Nerd-Vater geschrieben. Damals komplett aus der Erinnerung und nicht ansatzweise so gut recherchiert wie [mein aktueller Versuch](https://fischr.org/mein-vater-der-super-nerd/), in dem ich nicht nur meinen Vater, sondern auch andere DDR-Bastler befragt habe, um das Thema inhaltlich korrekt zu beleuchten.
 
