@@ -1,10 +1,10 @@
 ---
 uid: YsBKCadTbHeTIyPAQFbh
-title: "🍿 Still: A Michael J. Fox Movie (5/5)"
+title: "Still: A Michael J. Fox Movie (5/5)"
 slug: still-a-michael-j-fox-movie
 alias: 2025/11/03/in-still-a-michael-j
 published_date: "2025-11-02T23:00:00+00:00"
-all_tags: "[\"popcornfieber\"]"
+all_tags: "[\"popcornfieber\", \"blog\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

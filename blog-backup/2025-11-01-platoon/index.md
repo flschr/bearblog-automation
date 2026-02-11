@@ -1,10 +1,10 @@
 ---
 uid: BhecUhtUhqrLdyHJPCQv
-title: 🍿 Platoon (4/5)
+title: Platoon (4/5)
 slug: platoon
 alias: 2025/11/02/ich-habe-tatschlich-heute-zum
 published_date: "2025-11-01T23:00:00+00:00"
-all_tags: "[\"popcornfieber\"]"
+all_tags: "[\"popcornfieber\", \"blog\", \"shorts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
