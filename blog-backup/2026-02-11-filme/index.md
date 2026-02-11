@@ -18,4 +18,4 @@ first_published_at: "2026-02-11T21:35:00+00:00"
 
 <span hidden>Eine kleine Auswahl von sehenswerten Fotos von René Fischer.</span>
 <span class="page-marker" data-page="movies" hidden></span>
-{{ posts | tag:movies | content:True }}
+{{ posts | tag:popcornfieber | content:True }}
