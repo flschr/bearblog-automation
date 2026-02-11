@@ -1,6 +1,6 @@
 ---
 uid: TPNxHnSGzrfGgLXzhwsJ
-title: 🍿 Der wilde Roboter (4/5)
+title: Der wilde Roboter (4/5)
 slug: der-wilde-roboter
 alias: ""
 published_date: "2026-01-01T00:45:00+00:00"

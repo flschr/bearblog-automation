@@ -1,10 +1,10 @@
 ---
 uid: eQewVsCgikTmsnrgpUhx
-title: 🐻 Better Admonitions for Bear Blog
+title: Better Admonitions for Bear Blog
 slug: better-admonitions-for-bear-blog
 alias: ""
 published_date: "2025-12-23T07:23:00+00:00"
-all_tags: "[\"bearblog\", \"blog\", \"blogging\", \"coding\", \"plugin\"]"
+all_tags: "[\"bearblog\", \"blogging\", \"coding\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

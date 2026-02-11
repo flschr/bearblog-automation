@@ -1,6 +1,6 @@
 ---
 uid: SwjyWBZKSezXNbtcvEzR
-title: 🍿 Man Vs. Baby (0/5)
+title: Man Vs. Baby (0/5)
 slug: man-vs-baby
 alias: ""
 published_date: "2025-12-24T22:24:00+00:00"
