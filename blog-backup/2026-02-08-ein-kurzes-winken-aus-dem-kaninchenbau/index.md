@@ -3,8 +3,8 @@ uid: usGPfmBQdIpJENAcWQkY
 title: Ein kurzes Winken aus dem Kaninchenbau
 slug: ein-kurzes-winken-aus-dem-kaninchenbau
 alias: ""
-published_date: "2026-02-08T23:33:19.741558+00:00"
-all_tags: "[\"blog\", \"coding\", \"ios\", \"apps\"]"
+published_date: "2026-02-08T23:33:00+00:00"
+all_tags: "[\"coding\", \"momentaufnahme\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -13,7 +13,7 @@ meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/photo-1592634549335-f6be8df97b47.webp"
 lang: de
 class_name: ""
-first_published_at: "2026-02-08T23:33:19.741558+00:00"
+first_published_at: "2026-02-08T23:33:00+00:00"
 ---
 
 Der eine oder andere wird sich vielleicht fragen, warum hier aktuell relativ wenig neue Artikel erscheinen. Ich finde das gar nicht so ungewöhnlich, immerhin habe ich keinen Urlaub mehr, und die wenige freie Zeit muss für Freunde, Familie und meine viel zu vielen Projekte und Hobbys reichen. Und da ich mir keinen Druck mache, hier etwas aufschreiben zu müssen, gibt es hier aktuell halt weniger zu lesen.
