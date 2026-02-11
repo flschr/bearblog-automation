@@ -1,6 +1,6 @@
 ---
 uid: mCkzsyDGmtIxdphDtdhj
-title: 🥾 Auf dem Dach von Gran Canaria
+title: Auf dem Dach von Gran Canaria
 slug: auf-dem-dach-von-gran-canaria
 alias: 2025/09/06/auf-dem-dach-von-gran
 published_date: "2025-09-05T22:00:00+00:00"
