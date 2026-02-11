@@ -1,6 +1,6 @@
 ---
 uid: PvXCLYtRKzASHzJcvJRe
-title: Superhelden, im Lokschuppen Rosenheim (★★★★☆)
+title: Superhelden, im Lokschuppen Rosenheim (4/5)
 slug: superhelden-im-lokschuppen-rosenheim
 alias: 2024/05/28/superhelden
 published_date: "2024-05-27T22:00:00+00:00"

@@ -1,6 +1,6 @@
 ---
 uid: LsMvPfJFcncxNEVFLSpj
-title: 🥾 1237, Farrenpoint
+title: 1237, Farrenpoint
 slug: 1237-farrenpoint
 alias: 2024/05/27/farrenpoint
 published_date: "2024-05-26T22:00:00+00:00"

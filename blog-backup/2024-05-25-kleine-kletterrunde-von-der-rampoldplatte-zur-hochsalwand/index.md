@@ -1,6 +1,6 @@
 ---
 uid: hvFohwcaYTGbsrUiPdXu
-title: 🥾 Kleine Kletterrunde von der Rampoldplatte zur Hochsalwand
+title: Kleine Kletterrunde von der Rampoldplatte zur Hochsalwand
 slug: kleine-kletterrunde-von-der-rampoldplatte-zur-hochsalwand
 alias: 2024/05/26/kleine-kletterrunde-von-der-rampoldplatte
 published_date: "2024-05-25T22:00:00+00:00"
