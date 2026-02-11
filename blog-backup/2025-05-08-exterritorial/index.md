@@ -1,10 +1,10 @@
 ---
 uid: MhgLgPywiHaGScVxzMct
-title: 🍿 Exterritorial (★​★★​☆☆)
+title: Exterritorial (3/5)
 slug: exterritorial
 alias: 2025/05/09/exterritorial
 published_date: "2025-05-08T22:00:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"shorts\", \"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
