@@ -1,10 +1,10 @@
 ---
 uid: zNhAocCBNQgRtjQRKzvX
-title: 🥾 Raus aus dem Münchner Nebel, rauf auf den Jägerkamp
+title: Raus aus dem Münchner Nebel, rauf auf den Jägerkamp
 slug: raus-aus-dem-munchner-nebel-rauf-auf-den-jagerkamp
 alias: 2025/11/07/raus-aus-dem-mnchner-nebel
 published_date: "2025-11-06T23:00:00+00:00"
-all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
+all_tags: "[\"unterwegs\", \"wandern\", \"blog\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
