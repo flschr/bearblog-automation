@@ -1,6 +1,6 @@
 ---
 uid: odtXomagqAmrokXioQzL
-title: 🥾 Ein bisschen durch den Thüringer Wald
+title: Ein bisschen durch den Thüringer Wald
 slug: ein-bisschen-durch-den-thuringer-wald
 alias: 2025/06/21/ein-bisschen-durch-den-thringer
 published_date: "2025-06-20T22:00:00+00:00"
