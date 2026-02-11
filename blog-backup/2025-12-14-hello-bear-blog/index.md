@@ -1,10 +1,10 @@
 ---
 uid: GBpCbJfWBVKDrZoANVuK
-title: 🐻 Hello Bear Blog 👋🏼
+title: Hello Bear Blog 👋🏼
 slug: hello-bear-blog
 alias: ""
 published_date: "2025-12-14T21:47:00+00:00"
-all_tags: "[\"blog\"]"
+all_tags: "[\"bearblog\", \"blogging\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

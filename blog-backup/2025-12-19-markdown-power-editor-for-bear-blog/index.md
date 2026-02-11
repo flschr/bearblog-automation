@@ -1,10 +1,10 @@
 ---
 uid: chMPbgCyCRufCPKYwbko
-title: 🐻 Markdown Power-Editor for Bear Blog
+title: Markdown Power-Editor for Bear Blog
 slug: markdown-power-editor-for-bear-blog
 alias: a-markdown-toolbar-for-lazy-bear-blog-users
 published_date: "2025-12-19T22:01:00+00:00"
-all_tags: "[\"bearblog\", \"blog\", \"coding\", \"plugins\"]"
+all_tags: "[\"bearblog\", \"coding\", \"plugins\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

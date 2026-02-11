@@ -1,10 +1,10 @@
 ---
 uid: eyvQbuMuShFNRQvesWFo
-title: 🍿 The Last of Us (3/5)
+title: The Last of Us (3/5)
 slug: the-last-of-us
 alias: ""
 published_date: "2025-12-15T21:24:00+00:00"
-all_tags: "[\"popcornfiebe\", \"faktensammlung\"]"
+all_tags: "[\"faktensammlung\", \"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
