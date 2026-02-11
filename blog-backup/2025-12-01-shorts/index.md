@@ -20,13 +20,13 @@ first_published_at: "2025-12-01T19:32:00+00:00"
 
 <style>
 /* =========================
-   SHORTS stream (page-marker)
-   - media bleeds to card edge
-   - date under media, before text
-   - title hidden
+   SHORTS (page-marker)
+   - media flush to card edges
+   - top corners rounded (only)
+   - date is permalink under media
+   - kill global ul.blog-posts "–" styling for this list
    ========================= */
 
-/* activate on your marker */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts{
   list-style: none;
   padding: 0;
@@ -35,14 +35,14 @@ body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts{
   gap: 1.25rem;
 }
 
-/* card */
+/* Card */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li{
   position: relative;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 0; /* we’ll manage padding per section */
   background: rgba(0,0,0,0.015);
-  overflow: hidden; /* ensures bleed stays inside rounded corners */
+  overflow: hidden; /* clip media to rounded card */
+  padding: 0;       /* IMPORTANT: no padding on card itself */
 }
 
 @media (prefers-color-scheme: dark){
@@ -51,81 +51,86 @@ body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li{
   }
 }
 
-/* reorder so content block comes first (media + text),
-   then our date permalink (injected via JS) */
+/* ---- Neutralize global ul.blog-posts list styling (the "–" etc.) ---- */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li{
-  display: flex;
-  flex-direction: column;
+  padding-left: 0 !important;
+}
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li::before{
+  content: none !important;
 }
 
-/* content wrapper */
-body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div{
-  order: 1;
-  padding: 0 1.1rem 1.05rem; /* side padding for text */
+/* Hide original date + title (we’ll generate date permalink via JS) */
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > span{
+  display: none !important;
 }
-
-/* hide original title link (we’ll reuse it as date permalink via JS) */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > a{
   display: none !important;
 }
 
-/* original date block: hide (JS will create a permalink) */
-body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > span{
-  display: none !important;
+/* Content wrapper: no padding (so media can be edge-to-edge) */
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div{
+  padding: 0;
+  margin: 0;
 }
 
-/* === media: bleed to card edge, never crop === */
+/* Media wrapper: first paragraph containing media should be flush */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p:first-child:has(> img),
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p:first-child:has(> video),
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p:first-child:has(> iframe){
-  /* remove text padding so media can touch edges */
   margin: 0;
   padding: 0;
 }
 
-/* actual media elements */
-body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts img,
-body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts video,
-body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts iframe{
+/* Media itself: FULL WIDTH, no crop */
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div img,
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div video,
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div iframe{
   display: block;
   width: 100%;
   max-width: 100%;
-  margin: 0;                 /* no outside margins */
-  border-radius: 0;          /* card already has rounding; overflow hidden handles it */
+  margin: 0;
   border: 0;
   height: auto;
-  object-fit: contain;       /* NEVER crop */
-  aspect-ratio: auto;
+  object-fit: contain; /* never crop */
 }
 
-/* iframes (videos) keep ratio */
-body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts iframe{
+/* Only top corners rounded for the media */
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div img,
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div video,
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div iframe{
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* iframe ratio */
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div iframe{
   aspect-ratio: 16 / 9;
   height: auto !important;
 }
 
-/* text spacing inside card */
+/* Text paragraphs: add padding inside card */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p{
-  margin: 0.75rem 0;
+  margin: 0.85rem 0;
+  padding: 0 1.1rem;
+  max-width: var(--text-measure);
 }
 
-/* make the first *text* paragraph leave space for date line */
-body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p:nth-child(2){
-  margin-top: 0.65rem;
+/* But the media paragraph stays flush (already handled) */
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p:first-child{
+  padding: 0;
+  max-width: none;
 }
 
-/* === date permalink injected via JS === */
-body:has(.page-marker[data-page="shorts"]) .shorts-permalink{
-  order: 2;
-  display: block;
-  padding: 0.6rem 1.1rem 0.0rem;
+/* Date permalink injected by JS */
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts .shorts-permalink{
+  display: inline-block;
+  padding: 0.65rem 1.1rem 0.1rem;
   font-size: 0.82em;
   line-height: 1.2;
   color: var(--muted);
   text-decoration: none;
 }
 
-body:has(.page-marker[data-page="shorts"]) .shorts-permalink:hover{
+body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts .shorts-permalink:hover{
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
@@ -134,27 +139,39 @@ body:has(.page-marker[data-page="shorts"]) .shorts-permalink:hover{
 </style>
 
 <script>
-/* Turns the existing title link into a date permalink (CSS alone can’t do this). */
+/* Make the date clickable (link to the article) and place it under the media.
+   CSS can’t turn <time> into a link; we reuse the existing title link href. */
 window.addEventListener("load", () => {
-  const root = document.querySelector(".page-marker[data-page='shorts']");
-  if (!root) return;
+  const marker = document.querySelector(".page-marker[data-page='shorts']");
+  if (!marker) return;
 
   document.querySelectorAll("ul.embedded.blog-posts > li").forEach(li => {
-    const time = li.querySelector("span time");
+    const time = li.querySelector(":scope > span time");
     const titleLink = li.querySelector(":scope > a[href]");
-    if (!time || !titleLink) return;
+    const content = li.querySelector(":scope > div");
+    if (!time || !titleLink || !content) return;
 
-    // Create date permalink
+    // Create permalink from date
     const a = document.createElement("a");
     a.href = titleLink.getAttribute("href");
     a.className = "shorts-permalink";
-    a.textContent = time.textContent.trim(); // already formatted by Bear’s script
+    a.textContent = time.textContent.trim();
 
-    // Insert right after media (we use flex order anyway)
-    li.appendChild(a);
+    // Insert AFTER the first media paragraph (if present), otherwise at top of content
+    const firstP = content.querySelector("p");
+    const hasMediaFirst =
+      firstP &&
+      (firstP.querySelector("img,video,iframe"));
+
+    if (hasMediaFirst) {
+      firstP.insertAdjacentElement("afterend", a);
+    } else {
+      content.insertAdjacentElement("afterbegin", a);
+    }
   });
 });
 </script>
+
 
 <span class="page-marker" data-page="shorts" hidden></span>
 {{ posts | tag:shorts | content:True }}
