@@ -1,6 +1,6 @@
 ---
 uid: VGbILBpkBHHoWeBJLfbr
-title: Titanic-Ausstellung, Lokschuppen (★★★★★)
+title: Titanic-Ausstellung, Lokschuppen (5/5)
 slug: titanic-ausstellung-lokschuppen
 alias: 2025/11/04/ein-tag-mit-der-grten
 published_date: "2025-11-03T23:00:00+00:00"
