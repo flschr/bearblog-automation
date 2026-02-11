@@ -1,10 +1,10 @@
 ---
 uid: XCMZtGIJGHZEtYjCnUDc
-title: 🎶 Unterschiedlich entspannt gestanden
+title: Unterschiedlich entspannt gestanden
 slug: unterschiedlich-entspannt-gestanden
 alias: 2025/11/23/unterschiedlich-entspannt-gestanden
 published_date: "2025-11-22T23:00:00+00:00"
-all_tags: "[\"blog\"]"
+all_tags: "[\"liebefuerdieohren\", \"momentaufnahme\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

@@ -1,10 +1,10 @@
 ---
 uid: ywGwoogZVokLLfPJwzQk
-title: 🎶 Hörenswerte Nebengeräusche
+title: Hörenswerte Nebengeräusche
 slug: horenswerte-nebengerausche
 alias: 2025/11/17/wichtige-nebengerusche
 published_date: "2025-11-16T23:00:00+00:00"
-all_tags: "[\"blog\", \"liebefuerdieohren\"]"
+all_tags: "[\"coding\", \"liebefuerdieohren\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
