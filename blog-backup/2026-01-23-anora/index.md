@@ -1,6 +1,6 @@
 ---
 uid: YmwPFfPEDpzxYfbKQuTy
-title: 🍿 Anora (5/5)
+title: Anora (5/5)
 slug: anora
 alias: ""
 published_date: "2026-01-23T23:41:00+00:00"

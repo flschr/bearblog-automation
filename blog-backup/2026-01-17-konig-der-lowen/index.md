@@ -1,6 +1,6 @@
 ---
 uid: fPpIYbPbsGkzGgRjNDee
-title: 🍿 König der Löwen (2/5)
+title: König der Löwen (2/5)
 slug: konig-der-lowen
 alias: ""
 published_date: "2026-01-17T20:50:00+00:00"

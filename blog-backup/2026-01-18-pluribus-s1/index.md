@@ -1,6 +1,6 @@
 ---
 uid: mVZXJmrLYbeWzNDiPtFZ
-title: 🍿 Pluribus, S1 (5/5)
+title: Pluribus, S1 (5/5)
 slug: pluribus-s1
 alias: ""
 published_date: "2026-01-18T23:23:00+00:00"

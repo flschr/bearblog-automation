@@ -1,10 +1,10 @@
 ---
 uid: NMzUsBsKYUQrqTZXbthy
-title: 🎶 Alben 2025
+title: Alben 2025
 slug: alben-2025
 alias: ""
 published_date: "2026-01-05T23:49:00+00:00"
-all_tags: "[\"blog\", \"liebefuerdieohren\"]"
+all_tags: "[\"liebefuerdieohren\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

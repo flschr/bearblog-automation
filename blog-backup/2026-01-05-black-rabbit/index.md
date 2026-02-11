@@ -1,6 +1,6 @@
 ---
 uid: sDeHrdMVSjtwqtgWxvDU
-title: 🍿 Black Rabbit (3/5)
+title: Black Rabbit (3/5)
 slug: black-rabbit
 alias: ""
 published_date: "2026-01-05T00:02:00+00:00"

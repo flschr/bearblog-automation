@@ -1,6 +1,6 @@
 ---
 uid: BEbRmDVIUkKgxEwfPKcr
-title: 🍿 Chernobyl (5/5)
+title: Chernobyl (5/5)
 slug: chernobyl
 alias: ""
 published_date: "2026-01-25T21:41:00+00:00"
