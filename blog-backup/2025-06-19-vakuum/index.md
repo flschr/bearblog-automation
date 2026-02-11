@@ -1,10 +1,10 @@
 ---
 uid: yptvGKZkmkSnfwmkeVYu
-title: 📚 Vakuum (★★☆☆☆)
+title: 📚 Vakuum (2/5)
 slug: vakuum
 alias: 2025/06/20/ausgelesen-vakuum-von-phillip-p
 published_date: "2025-06-19T22:00:00+00:00"
-all_tags: "[\"blog\", \"ausgelesen\"]"
+all_tags: "[\"ausgelesen\", \"shorts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -18,5 +18,4 @@ first_published_at: "2025-06-19T22:00:00+00:00"
 
 ![Das Cover zeigt das Buch Universum von Phillip P. Peterson mit leuchtenden blauen Linien, die auf einen zentralen Punkt zusammenlaufen, in einem futuristischen Design.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/c44a1cd66e.webp)
 
-
-Am Anfang gutes Sci‑Fi-Potenzial einer packenden Space-Odysee, aber dann mittendrin sehr langatmig, durch flache Charaktere und eine aufgeblähte, in weiten Teilen wenig spannende Geschichte.
+Vakuum (2/5) hat am Anfang gutes Sci‑Fi-Potenzial einer packenden Space-Odysee, aber dann mittendrin sehr langatmig, durch flache Charaktere und eine aufgeblähte, in weiten Teilen wenig spannende Geschichte.
