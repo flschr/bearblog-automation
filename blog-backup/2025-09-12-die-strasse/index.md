@@ -1,6 +1,6 @@
 ---
 uid: qEILschnfRYHFJukZxMc
-title: 📚 Die Straße (★★★★☆)
+title: Die Straße (4/5)
 slug: die-strasse
 alias: 2025/09/13/ausgelesen-die-strae-von-cormac
 published_date: "2025-09-12T22:00:00+00:00"
