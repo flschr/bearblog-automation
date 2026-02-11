@@ -1,10 +1,10 @@
 ---
 uid: BEbRmDVIUkKgxEwfPKcr
-title: 🍿 Chernobyl (★★★★★)
+title: 🍿 Chernobyl
 slug: chernobyl
 alias: ""
 published_date: "2026-01-25T21:41:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
