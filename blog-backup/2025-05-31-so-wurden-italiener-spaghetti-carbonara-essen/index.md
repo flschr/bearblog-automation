@@ -1,6 +1,6 @@
 ---
 uid: AdDIDNdFGWXFvrgUQLiv
-title: 👨🏻‍🍳 So würden Italiener Spaghetti Carbonara essen
+title: So würden Italiener Spaghetti Carbonara essen
 slug: so-wurden-italiener-spaghetti-carbonara-essen
 alias: 2025/06/01/so-wrden-italiener-spaghetti-carbonara
 published_date: "2025-05-31T22:00:00+00:00"
