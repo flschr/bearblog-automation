@@ -1,6 +1,6 @@
 ---
 uid: RnHfdSusWLYtzzfsKyGi
-title: 👨🏻‍🍳 Tagliatelle d’emergenza
+title: Tagliatelle d’emergenza
 slug: tagliatelle-demergenza
 alias: 2025/06/09/tagliatelle-demergenza
 published_date: "2025-06-08T22:00:00+00:00"

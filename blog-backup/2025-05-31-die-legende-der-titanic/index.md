@@ -1,6 +1,6 @@
 ---
 uid: urYxhipRaABJcNNvyIuo
-title: Die Legende der Titanic (★★☆☆☆)
+title: Die Legende der Titanic (2/5)
 slug: die-legende-der-titanic
 alias: 2025/06/01/die-legende-der-titanic
 published_date: "2025-05-31T22:00:00+00:00"
