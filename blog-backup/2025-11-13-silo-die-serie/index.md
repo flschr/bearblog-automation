@@ -1,10 +1,10 @@
 ---
 uid: CGQaXcBNuFKeGPEDKHgK
-title: 🍿 Silo, die Serie (★★★★☆)
+title: 🍿 Silo, die Serie (4/5)
 slug: silo-die-serie
 alias: 2025/11/14/silo
 published_date: "2025-11-13T23:00:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
