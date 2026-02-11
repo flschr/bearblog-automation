@@ -1,10 +1,10 @@
 ---
 uid: KzfLjRzgrDFoHduUwoVK
-title: 🍿 The Imitation Game (★​★★​★​☆)
+title: The Imitation Game (4/5)
 slug: the-imitation-game
 alias: 2025/05/19/the-imitation-game
 published_date: "2025-05-18T22:00:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"shorts\", \"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
