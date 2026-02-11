@@ -16,10 +16,13 @@ class_name: ""
 first_published_at: "2025-12-01T19:32:00+00:00"
 ---
 
+<span hidden>Eine kleine Auswahl von sehenswerten Fotos von René Fischer.</span>
+
 <style>
 /* =========================
-   SHORTS + Load more (20er batches)
-   - robust scoping via body.page-shorts
+   SHORTS + Load more + Windowing (DOM removal)
+   - Shows 20 at a time, keeps only MAX_VISIBLE in DOM
+   - Hides original title/date, injects date permalink under media
    ========================= */
 
 body.page-shorts ul.embedded.blog-posts{
@@ -116,6 +119,8 @@ body.page-shorts ul.embedded.blog-posts a.shorts-permalink:hover{
 body.page-shorts .shorts-loadmore-wrap{
   display: flex;
   justify-content: center;
+  gap: 0.75rem;
+  align-items: center;
   margin: 1.75rem 0 3rem;
 }
 
@@ -145,33 +150,35 @@ body.page-shorts .shorts-loadmore:disabled{
   cursor: default;
 }
 
-/* hidden items */
-body.page-shorts li.shorts-hidden{
-  display: none !important;
+body.page-shorts .shorts-note{
+  font-size: 0.85em;
+  color: var(--muted);
 }
 </style>
 
 <script>
 (() => {
-  const BATCH = 20;
+  const BATCH = 20;        // how many to reveal per click
+  const MAX_VISIBLE = 60;  // keep only this many cards in DOM
+  const HARD_LIMIT = 800;  // safety: stop if someone has absurd amounts
 
   function initShorts() {
     const marker = document.querySelector(".page-marker[data-page='shorts']");
     if (!marker) return;
 
-    // scope for CSS
     document.body.classList.add("page-shorts");
 
-    // pick the first embedded list on the page (Shorts page = usually only one)
     const list = document.querySelector("ul.embedded.blog-posts");
     if (!list) return;
 
-    const items = Array.from(list.querySelectorAll(":scope > li"));
+    // Work on a live array of <li> currently in DOM
+    let items = Array.from(list.querySelectorAll(":scope > li")).slice(0, HARD_LIMIT);
 
     // 1) Inject date permalink under media (idempotent)
-    items.forEach(li => {
+    function ensurePermalink(li) {
       const content = li.querySelector(":scope > div");
       if (!content) return;
+
       if (content.querySelector(":scope > a.shorts-permalink")) return;
 
       const time = li.querySelector(":scope > span time");
@@ -186,63 +193,91 @@ body.page-shorts li.shorts-hidden{
       const firstP = content.querySelector(":scope > p:first-child");
       if (firstP) firstP.insertAdjacentElement("afterend", a);
       else content.insertAdjacentElement("afterbegin", a);
-    });
+    }
 
-    // 2) Hide everything after first batch
-    items.forEach((li, idx) => {
-      if (idx >= BATCH) li.classList.add("shorts-hidden");
-      else li.classList.remove("shorts-hidden");
-    });
+    items.forEach(ensurePermalink);
 
-    // If everything fits, no button
-    if (items.length <= BATCH) return;
+    // 2) Show only first batch initially; remove the rest from DOM immediately
+    //    (This is the key: we don't keep 500 cards hidden; we remove them.)
+    let cursor = Math.min(BATCH, items.length);
+    const stash = items.slice(cursor);       // not in DOM yet
+    const visible = items.slice(0, cursor);  // in DOM
+    stash.forEach(li => li.remove());        // detach from DOM
 
-    // 3) Add Load more button (idempotent)
-    if (document.querySelector(".shorts-loadmore-wrap")) return;
+    // We will append from stash on demand
+    function visibleCount() {
+      return list.querySelectorAll(":scope > li").length;
+    }
 
+    function remainingCount() {
+      return stash.length;
+    }
+
+    // Remove oldest visible cards until <= MAX_VISIBLE
+    function trimOldestIfNeeded() {
+      let over = visibleCount() - MAX_VISIBLE;
+      if (over <= 0) return;
+
+      // remove oldest (top) cards
+      while (over > 0) {
+        const first = list.querySelector(":scope > li");
+        if (!first) break;
+        first.remove();
+        over--;
+      }
+    }
+
+    // UI
     const wrap = document.createElement("div");
     wrap.className = "shorts-loadmore-wrap";
 
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "shorts-loadmore";
-    wrap.appendChild(btn);
 
-    // Insert after list
+    const note = document.createElement("span");
+    note.className = "shorts-note";
+
+    wrap.appendChild(btn);
+    wrap.appendChild(note);
+
     list.insertAdjacentElement("afterend", wrap);
 
-    function visibleCount() {
-      return items.filter(li => !li.classList.contains("shorts-hidden")).length;
-    }
-
-    function updateButton() {
-      const shown = visibleCount();
-      const remaining = items.length - shown;
+    function updateUI() {
+      const remaining = remainingCount();
       if (remaining <= 0) {
         wrap.remove();
         return;
       }
       const next = Math.min(BATCH, remaining);
       btn.textContent = `Mehr laden (${next})`;
-      btn.setAttribute("aria-label", `Mehr Shorts laden: ${next} weitere Einträge anzeigen`);
+
+      // Tell the truth: we unload old stuff
+      note.textContent = `Es bleiben max. ${MAX_VISIBLE} sichtbar (ältere werden entladen).`;
     }
 
     function revealNextBatch() {
       btn.disabled = true;
 
-      const shown = visibleCount();
-      const end = Math.min(shown + BATCH, items.length);
+      const count = Math.min(BATCH, stash.length);
+      for (let i = 0; i < count; i++) {
+        const li = stash.shift(); // oldest remaining
+        if (!li) break;
 
-      for (let i = shown; i < end; i++) {
-        items[i].classList.remove("shorts-hidden");
+        // safety: permalink injection might be missing if template changed
+        ensurePermalink(li);
+
+        list.appendChild(li);
       }
 
+      trimOldestIfNeeded();
+
       btn.disabled = false;
-      updateButton();
+      updateUI();
     }
 
     btn.addEventListener("click", revealNextBatch);
-    updateButton();
+    updateUI();
   }
 
   if (document.readyState === "loading") {

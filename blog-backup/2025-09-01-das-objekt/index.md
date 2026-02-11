@@ -1,6 +1,6 @@
 ---
 uid: wcXhUbvDHRHcsqFRfALI
-title: 📚 Das Objekt (2/5)
+title: Das Objekt (2/5)
 slug: das-objekt
 alias: 2025/09/02/ausgelesen-das-objekt-von-joshua
 published_date: "2025-09-01T22:00:00+00:00"
