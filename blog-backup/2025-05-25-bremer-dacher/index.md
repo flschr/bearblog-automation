@@ -18,4 +18,4 @@ first_published_at: "2025-05-25T22:00:00+00:00"
 
 ![Marktplatz von Bremen im Morgengrauen. Blick über die Bremer Stadtmusikanten hin zum Deutschen Haus.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/image-20250526-142115-155d7cdb.webp)
 
-Dächer: Während meiner beruflichen Zeit in Bremen bin ich unzählige Male über den Marktplatz gegangen und habe die Dächer bestaunt. Dieses Foto ist im September 2021 auf meinem morgendlichen Weg ins Büro entstanden. [📍](https://www.openstreetmap.org/?mlat=53.076267&mlon=8.807603)
+Dächer: Während meiner beruflichen Zeit in Bremen bin ich unzählige Male über den Marktplatz gegangen und habe die Dächer bestaunt. Dieses Foto ist im September 2021 auf meinem morgendlichen Weg ins Büro entstanden.
