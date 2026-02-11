@@ -1,6 +1,6 @@
 ---
 uid: BiVXPAKgHnxDoyCpujCk
-title: 📚 12 in 2016
+title: 12 in 2016
 slug: 12-in-2016
 alias: 2016/04/14/in
 published_date: "2016-04-14T19:31:00+00:00"

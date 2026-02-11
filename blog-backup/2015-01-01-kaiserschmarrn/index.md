@@ -1,6 +1,6 @@
 ---
 uid: VdQaedevyeHBCzZiMJoY
-title: 👨🏻‍🍳 Kaiserschmarrn
+title: Kaiserschmarrn
 slug: kaiserschmarrn
 alias: 2015/01/01/kaiserschmarrn
 published_date: "2015-01-01T12:43:00+00:00"

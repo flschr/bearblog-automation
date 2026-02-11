@@ -1,6 +1,6 @@
 ---
 uid: CRcdqfTjUjnxAFqIyKZf
-title: 👨🏻‍🍳 Familienpizza
+title: Familienpizza
 slug: familienpizza
 alias: 2015/06/07/familienpizza
 published_date: "2015-06-07T14:37:00+00:00"

@@ -1,6 +1,6 @@
 ---
 uid: imYRKmuPqBksFaFRHdpi
-title: 📚 Gelesen im April
+title: Gelesen im April
 slug: gelesen-im-april
 alias: 2016/05/02/gelesen-im-april
 published_date: "2016-05-02T17:24:00+00:00"
