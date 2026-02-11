@@ -4,7 +4,7 @@ title: Obacht
 slug: obacht
 alias: 2016/08/05/obacht
 published_date: "2016-08-05T13:43:00+00:00"
-all_tags: "[\"fotos\"]"
+all_tags: "[\"fotos\", \"shorts\"]"
 publish: "True"
 make_discoverable: "False"
 is_page: "False"
@@ -17,3 +17,5 @@ first_published_at: "2016-08-05T13:43:00+00:00"
 ---
 
 ![Abschleppschild an einer Ausfahrt in Wien](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/48e35d3614.webp)
+
+Uffpasse!

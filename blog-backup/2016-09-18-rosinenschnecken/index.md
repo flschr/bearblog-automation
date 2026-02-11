@@ -1,6 +1,6 @@
 ---
 uid: BVgUizMuvmqWhgSwHoKk
-title: 👨🏻‍🍳 Rosinenschnecken
+title: Rosinenschnecken
 slug: rosinenschnecken
 alias: 2016/09/18/rosinenschnecken
 published_date: "2016-09-18T14:00:00+00:00"

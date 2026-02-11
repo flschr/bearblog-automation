@@ -1,6 +1,6 @@
 ---
 uid: qIIrNKbPTrcSRjUxoYrI
-title: 📚 Neuneinhalb
+title: Neuneinhalb
 slug: neuneinhalb
 alias: 2016/09/02/neuneinhalb
 published_date: "2016-09-02T18:07:00+00:00"
