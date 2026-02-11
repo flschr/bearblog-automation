@@ -4,7 +4,7 @@ title: Aderlass
 slug: aderlass
 alias: 2025/03/07/aderlass
 published_date: "2025-03-06T23:00:00+00:00"
-all_tags: "[\"fotos\"]"
+all_tags: "[\"fotos\", \"shorts\"]"
 publish: "True"
 make_discoverable: "False"
 is_page: "False"
@@ -17,3 +17,5 @@ first_published_at: "2025-03-06T23:00:00+00:00"
 ---
 
 ![Mein Arm liegt auf der Stütze beim Blutspenden](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/ac99e4b9c5c4e911.webp)
+
+Es war mal wieder an der Zeit.
