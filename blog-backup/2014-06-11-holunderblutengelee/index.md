@@ -1,6 +1,6 @@
 ---
 uid: IJyQpVaIFEtCiDyDNNQN
-title: 👨🏻‍🍳 Holunderblütengelee
+title: Holunderblütengelee
 slug: holunderblutengelee
 alias: 2014/06/11/holunderbltengelee
 published_date: "2014-06-11T11:53:00+00:00"

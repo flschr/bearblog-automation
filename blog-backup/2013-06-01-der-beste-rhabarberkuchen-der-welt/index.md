@@ -1,6 +1,6 @@
 ---
 uid: UFWphFLaJPUrSIfwzjHf
-title: 👨🏻‍🍳 Der beste Rhabarberkuchen der Welt
+title: Der beste Rhabarberkuchen der Welt
 slug: der-beste-rhabarberkuchen-der-welt
 alias: 2013/06/01/der-beste-rhabarberkuchen-der-welt
 published_date: "2013-06-01T13:03:00+00:00"

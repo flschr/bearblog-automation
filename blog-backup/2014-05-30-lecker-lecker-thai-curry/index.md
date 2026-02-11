@@ -1,6 +1,6 @@
 ---
 uid: IcrztYtEPcNbZbNsoVmF
-title: 👨🏻‍🍳 Lecker lecker Thai-Curry
+title: Lecker lecker Thai-Curry
 slug: lecker-lecker-thai-curry
 alias: 2014/05/30/lecker-lecker-thaicurry
 published_date: "2014-05-30T12:57:00+00:00"

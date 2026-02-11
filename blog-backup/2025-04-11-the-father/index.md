@@ -1,6 +1,6 @@
 ---
 uid: PUwmXrrnaiMmEXucVoJZ
-title: 🍿 The Father (4/5)
+title: The Father (4/5)
 slug: the-father
 alias: 2025/04/12/the-father
 published_date: "2025-04-11T22:00:00+00:00"
