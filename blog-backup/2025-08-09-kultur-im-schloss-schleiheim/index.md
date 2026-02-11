@@ -1,6 +1,6 @@
 ---
 uid: usXizUDsMcdLxHujcbNp
-title: 🎶 Kultur im Schloss Schleißheim
+title: Kultur im Schloss Schleißheim
 slug: kultur-im-schloss-schleiheim
 alias: 2025/08/10/vier-jahreszeiten-im-schloss-schleiheim
 published_date: "2025-08-09T22:00:00+00:00"

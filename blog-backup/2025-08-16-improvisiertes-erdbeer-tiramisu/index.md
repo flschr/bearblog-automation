@@ -1,6 +1,6 @@
 ---
 uid: wjhkdaEUmrCtEXqifbZa
-title: 👨🏻‍🍳 Improvisiertes Erdbeer-Tiramisu
+title: Improvisiertes Erdbeer-Tiramisu
 slug: improvisiertes-erdbeer-tiramisu
 alias: 2025/08/17/improvisiertes-erdbeertiramisu
 published_date: "2025-08-16T22:00:00+00:00"
