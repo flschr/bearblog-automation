@@ -1,10 +1,10 @@
 ---
 uid: sDeHrdMVSjtwqtgWxvDU
-title: 🍿 Black Rabbit (★★★☆☆)
+title: 🍿 Black Rabbit (3/5)
 slug: black-rabbit
 alias: ""
 published_date: "2026-01-05T00:02:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

@@ -1,10 +1,10 @@
 ---
 uid: mVZXJmrLYbeWzNDiPtFZ
-title: 🍿 Pluribus, S1 (★★★★★)
+title: 🍿 Pluribus, S1 (5/5)
 slug: pluribus-s1
 alias: ""
 published_date: "2026-01-18T23:23:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
