@@ -1,6 +1,6 @@
 ---
 uid: voUrrcLpiinknrhgpgnK
-title: 🎶 X Ambassadors live, mit Gehörschutz
+title: X Ambassadors live, mit Gehörschutz
 slug: x-ambassadors-live-mit-gehorschutz
 alias: 2024/02/23/x-ambassadors-live-mit-airpods
 published_date: "2024-02-22T23:00:00+00:00"
