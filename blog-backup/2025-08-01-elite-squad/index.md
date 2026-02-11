@@ -1,10 +1,10 @@
 ---
 uid: JKzHfbxwapaUCmhmgfsK
-title: 🍿 Elite Squad (4/5)
+title: Elite Squad (4/5)
 slug: elite-squad
 alias: 2025/08/02/elite-squad-im-sumpf-der
 published_date: "2025-08-01T22:00:00+00:00"
-all_tags: "[\"shorts\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\", \"shorts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

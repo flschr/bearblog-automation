@@ -1,6 +1,6 @@
 ---
 uid: qdFZgrgJLIsTFBVwaUsz
-title: 🍿 Death Proof (★★★★☆)
+title: Death Proof (4/5)
 slug: death-proof
 alias: 2025/07/25/death-proof-das-inoffizielle-und
 published_date: "2025-07-24T22:00:00+00:00"
@@ -18,7 +18,7 @@ first_published_at: "2025-07-24T22:00:00+00:00"
 
 ![Ein Auto mit einem Totenkopfsymbol fährt auf eine Reihe von Schattenbildern von Frauen zu, auf einem Poster mit den Namen Quentin Tarantino und Robert Rodriguez sowie dem Titel Death Proof.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/v1.webp)
 
-Mit [Death Proof](https://de.wikipedia.org/wiki/Death_Proof_%E2%80%93_Todsicher) habe ich dank der Arte-Mediathek nun auch [den letzten](/reservoir-dogs/) bisher ungesehenen [Tarantino](https://de.wikipedia.org/wiki/Quentin_Tarantino) abgehakt. Der Film ist alles andere als Mainstream, ich kannte den ihn bis heute nicht einmal. Eine echte Liebeserklärung ans 70er-Grindhouse-Kino mit viel Geplapper, wenig Plot, aber echten Stunts, coolen Frauen und einem Kurt Russell als charmanten Psychopathen. Vielleicht Quentins am meisten unterschätzter Film. So sieht dann jetzt meine persönliche Rangliste der Tarantino-Filme:
+Mit [Death Proof](https://de.wikipedia.org/wiki/Death_Proof_%E2%80%93_Todsicher) (4/5) habe ich dank der Arte-Mediathek nun auch [den letzten](/reservoir-dogs/) bisher ungesehenen [Tarantino](https://de.wikipedia.org/wiki/Quentin_Tarantino) abgehakt. Der Film ist alles andere als Mainstream, ich kannte den ihn bis heute nicht einmal. Eine echte Liebeserklärung ans 70er-Grindhouse-Kino mit viel Geplapper, wenig Plot, aber echten Stunts, coolen Frauen und einem Kurt Russell als charmanten Psychopathen. Vielleicht Quentins am meisten unterschätzter Film. So sieht dann jetzt meine persönliche Rangliste der Tarantino-Filme:
 
 * Pulp Fiction
 * Django Unchained
