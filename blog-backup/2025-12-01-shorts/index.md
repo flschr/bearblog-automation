@@ -156,6 +156,35 @@ body.page-shorts .shorts-loadmore:disabled{
 body.page-shorts li.shorts-hidden{
   display: none !important;
 }
+
+/* =========================
+   Shorts: Text-only spacing refinement
+   ========================= */
+
+body.page-shorts
+ul.embedded.blog-posts > li
+> div:not(:has(img, video, iframe)){
+  padding: 2.2rem 2.4rem 1.9rem; /* ↑ mehr Luft */
+}
+
+/* Text selbst etwas vom oberen Rand lösen */
+body.page-shorts
+ul.embedded.blog-posts > li
+> div:not(:has(img, video, iframe))
+> p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Date mit bewusstem Abstand */
+body.page-shorts
+ul.embedded.blog-posts
+> li
+> div:not(:has(img, video, iframe))
+> a.shorts-permalink{
+  margin-top: 1.1rem;
+}
+
 </style>
 
 <script>
