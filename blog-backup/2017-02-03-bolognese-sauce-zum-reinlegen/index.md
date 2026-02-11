@@ -1,6 +1,6 @@
 ---
 uid: tKmanJEDXexRzmqKNFdM
-title: 👨🏻‍🍳 Bolognese-Sauce zum Reinlegen
+title: Bolognese-Sauce zum Reinlegen
 slug: bolognese-sauce-zum-reinlegen
 alias: 2017/02/03/bolognesesauce-zum-reinlegen
 published_date: "2017-02-03T16:43:00+00:00"
