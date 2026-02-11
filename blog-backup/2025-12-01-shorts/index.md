@@ -139,8 +139,6 @@ body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts .shorts-permal
 </style>
 
 <script>
-/* Make the date clickable (link to the article) and place it under the media.
-   CSS can’t turn <time> into a link; we reuse the existing title link href. */
 window.addEventListener("load", () => {
   const marker = document.querySelector(".page-marker[data-page='shorts']");
   if (!marker) return;
@@ -151,19 +149,24 @@ window.addEventListener("load", () => {
     const content = li.querySelector(":scope > div");
     if (!time || !titleLink || !content) return;
 
-    // Create permalink from date
+    // Build permalink from date
     const a = document.createElement("a");
     a.href = titleLink.getAttribute("href");
     a.className = "shorts-permalink";
     a.textContent = time.textContent.trim();
 
-    // Insert AFTER the first media paragraph (if present), otherwise at top of content
-    const firstP = content.querySelector("p");
-    const hasMediaFirst =
-      firstP &&
-      (firstP.querySelector("img,video,iframe"));
+    // Find first media either as direct child OR inside first paragraph
+    const firstChild = content.firstElementChild;
+    const directMedia =
+      firstChild && (firstChild.matches("img,video,iframe") ? firstChild : null);
 
-    if (hasMediaFirst) {
+    const firstP = content.querySelector("p");
+    const mediaInFirstP =
+      firstP ? firstP.querySelector("img,video,iframe") : null;
+
+    if (directMedia) {
+      directMedia.insertAdjacentElement("afterend", a);
+    } else if (mediaInFirstP) {
       firstP.insertAdjacentElement("afterend", a);
     } else {
       content.insertAdjacentElement("afterbegin", a);
