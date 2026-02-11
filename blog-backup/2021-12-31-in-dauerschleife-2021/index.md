@@ -1,6 +1,6 @@
 ---
 uid: UYEAVpPYixzTUnMjseho
-title: 🎶 In Dauerschleife 2021
+title: In Dauerschleife 2021
 slug: in-dauerschleife-2021
 alias: 2021/12/31/in-dauerschleife
 published_date: "2021-12-31T20:54:00+00:00"

@@ -1,6 +1,6 @@
 ---
 uid: HBbYgUpsRAEDLRNAfxNr
-title: 📚 Ausgelesen 2022
+title: Ausgelesen 2022
 slug: ausgelesen-2022
 alias: 2022/12/09/ausgelesen
 published_date: "2022-12-08T23:00:00+00:00"

@@ -1,6 +1,6 @@
 ---
 uid: WNhakfdMywvpjVzBKpZZ
-title: 🎶 Nothing but Thieves, live in München
+title: Nothing but Thieves, live in München
 slug: nothing-but-thieves-live-in-munchen
 alias: 2022/04/02/nothing-but-thieves-live-in
 published_date: "2022-04-01T22:00:00+00:00"

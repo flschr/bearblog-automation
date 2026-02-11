@@ -1,6 +1,6 @@
 ---
 uid: QhtmUYniEgNwHEBGsJgG
-title: 📚 Gelesen 2021, Teil II
+title: Gelesen 2021, Teil II
 slug: gelesen-2021-teil-ii
 alias: 2022/01/02/gelesen-teil-ii
 published_date: "2022-01-01T23:00:00+00:00"
