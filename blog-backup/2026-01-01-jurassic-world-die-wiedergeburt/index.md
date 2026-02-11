@@ -1,10 +1,10 @@
 ---
 uid: CSfqKfxPmqsWsYBBgpMI
-title: "🍿 Jurassic World: Die Wiedergeburt (★★☆☆☆)"
+title: "🍿 Jurassic World: Die Wiedergeburt (2/5)"
 slug: jurassic-world-die-wiedergeburt
 alias: ""
 published_date: "2026-01-01T21:28:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
