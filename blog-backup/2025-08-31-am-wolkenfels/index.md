@@ -1,6 +1,6 @@
 ---
 uid: epfpsqFnKsUXZknpzDIM
-title: 🥾 Am Wolkenfels
+title: Am Wolkenfels
 slug: am-wolkenfels
 alias: 2025/09/01/der-wolkenfels
 published_date: "2025-08-31T22:00:00+00:00"
