@@ -1,12 +1,12 @@
 ---
 uid: JWtSrGrInIJZmHayfVty
-title: 🥾 Mit dem Zug in die Berge
+title: Mit dem Zug in die Berge
 slug: mit-dem-zug-in-die-berge
 alias: 2025/08/09/mit-dem-zug-in-die
 published_date: "2025-08-08T22:00:00+00:00"
 all_tags: "[\"blog\", \"unterwegs\", \"wandern\"]"
 publish: "True"
-make_discoverable: "False"
+make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
