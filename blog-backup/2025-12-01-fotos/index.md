@@ -16,6 +16,7 @@ class_name: ""
 first_published_at: "2025-12-01T19:32:00+00:00"
 ---
 
+<body class="page notes">
 <span hidden>Eine kleine Auswahl von sehenswerten Fotos von René Fischer.</span>
 <span class="page-marker" data-page="fotos" hidden></span>
 {{ posts | tag:fotos | content:True }}
