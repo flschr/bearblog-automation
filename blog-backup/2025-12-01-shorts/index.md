@@ -156,6 +156,52 @@ body.page-shorts .shorts-loadmore:disabled{
 body.page-shorts li.shorts-hidden{
   display: none !important;
 }
+/* =========================
+   Shorts: Text-only entries
+   - no media → headline-style
+   ========================= */
+
+/* Card content WITHOUT media */
+body.page-shorts
+ul.embedded.blog-posts > li
+> div:not(:has(img, video, iframe)){
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 1.6rem 1.6rem 0;
+}
+
+/* Text-only paragraph → headline look */
+body.page-shorts
+ul.embedded.blog-posts > li
+> div:not(:has(img, video, iframe))
+> p{
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font-main);
+  font-size: 1.55em;       /* ≈ h2 */
+  line-height: 1.35;
+  font-weight: 700;
+  color: var(--heading-color);
+
+  max-width: 32em;
+}
+
+/* Date under text, centered */
+body.page-shorts
+ul.embedded.blog-posts > li
+> div:not(:has(img, video, iframe))
+> a.shorts-permalink{
+  margin-top: 0.75rem;
+  padding: 0 0 1.25rem;
+
+  font-size: 0.8em;
+  text-align: center;
+}
 
 /* =========================
    Shorts: Text-only spacing refinement
