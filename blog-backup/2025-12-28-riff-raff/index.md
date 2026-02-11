@@ -4,7 +4,7 @@ title: 🍿 Riff Raff (3/5)
 slug: riff-raff
 alias: ""
 published_date: "2025-12-28T00:03:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"

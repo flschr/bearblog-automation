@@ -1,10 +1,10 @@
 ---
 uid: SwjyWBZKSezXNbtcvEzR
-title: 🍿 Man Vs. Baby (★☆☆☆☆)
+title: 🍿 Man Vs. Baby (0/5)
 slug: man-vs-baby
 alias: ""
 published_date: "2025-12-24T22:24:00+00:00"
-all_tags: "[\"blog\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
