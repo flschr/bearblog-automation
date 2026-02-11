@@ -122,9 +122,10 @@ body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts > li > div p:f
 
 /* Date permalink injected by JS */
 body:has(.page-marker[data-page="shorts"]) ul.embedded.blog-posts .shorts-permalink{
-  display: inline-block;
-  padding: 1.4rem 1.1rem 0.1rem;
-  font-size: 0.9em;
+  display: block;
+  padding: 0.15rem 1.1rem 0.95rem;
+  margin-top: 0.25rem;
+  font-size: 0.82em;
   line-height: 1.2;
   color: var(--muted);
   text-decoration: none;
@@ -149,28 +150,12 @@ window.addEventListener("load", () => {
     const content = li.querySelector(":scope > div");
     if (!time || !titleLink || !content) return;
 
-    // Build permalink from date
     const a = document.createElement("a");
     a.href = titleLink.getAttribute("href");
     a.className = "shorts-permalink";
     a.textContent = time.textContent.trim();
 
-    // Find first media either as direct child OR inside first paragraph
-    const firstChild = content.firstElementChild;
-    const directMedia =
-      firstChild && (firstChild.matches("img,video,iframe") ? firstChild : null);
-
-    const firstP = content.querySelector("p");
-    const mediaInFirstP =
-      firstP ? firstP.querySelector("img,video,iframe") : null;
-
-    if (directMedia) {
-      directMedia.insertAdjacentElement("afterend", a);
-    } else if (mediaInFirstP) {
-      firstP.insertAdjacentElement("afterend", a);
-    } else {
-      content.insertAdjacentElement("afterbegin", a);
-    }
+    content.appendChild(a);
   });
 });
 </script>
