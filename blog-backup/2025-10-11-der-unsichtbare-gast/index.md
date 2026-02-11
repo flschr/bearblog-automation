@@ -1,10 +1,10 @@
 ---
 uid: raJLmkxmFtJtoSftptyX
-title: 🍿 Der unsichtbare Gast (5/5)
+title: Der unsichtbare Gast (5/5)
 slug: der-unsichtbare-gast
 alias: 2025/10/12/der-unsichtbare-gast-ist-ein
 published_date: "2025-10-11T22:00:00+00:00"
-all_tags: "[\"popcornfieber\"]"
+all_tags: "[\"popcornfieber\", \"shorts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
