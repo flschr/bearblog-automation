@@ -1,6 +1,6 @@
 ---
 uid: RfHxsFVHcZmcSYDRsLxo
-title: 🥾 Die 6 ¾ Gipfeltour
+title: Die 6 ¾ Gipfeltour
 slug: die-6-34-gipfeltour
 alias: 2024/08/09/gipfeltour
 published_date: "2024-08-08T22:00:00+00:00"

@@ -1,6 +1,6 @@
 ---
 uid: swmUZiBCwMzqTdLDnbXT
-title: 🥾 Wendelsteinbesteigung
+title: Wendelsteinbesteigung
 slug: wendelsteinbesteigung
 alias: 2024/07/13/wendelsteinbesteigung
 published_date: "2024-07-12T22:00:00+00:00"

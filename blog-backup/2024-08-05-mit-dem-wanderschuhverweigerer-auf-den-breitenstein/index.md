@@ -1,6 +1,6 @@
 ---
 uid: VRYMyNyWdzgLIDASMhML
-title: 🥾 Mit dem Wanderschuhverweigerer auf den Breitenstein
+title: Mit dem Wanderschuhverweigerer auf den Breitenstein
 slug: mit-dem-wanderschuhverweigerer-auf-den-breitenstein
 alias: 2024/08/06/mit-dem-wanderschuhverweigerer-auf-den
 published_date: "2024-08-05T22:00:00+00:00"

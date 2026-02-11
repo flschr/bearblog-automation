@@ -1,6 +1,6 @@
 ---
 uid: kfuSAoxRdoSqFQMZcUYA
-title: 🥾 Brecherspitz
+title: Brecherspitz
 slug: brecherspitz
 alias: 2024/09/07/brecherspitz
 published_date: "2024-09-06T22:00:00+00:00"

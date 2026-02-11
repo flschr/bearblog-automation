@@ -1,10 +1,10 @@
 ---
 uid: KUKzHNNUQydwBeQvTAmj
-title: 🎶 Balsam für die Seele
+title: Balsam für die Seele
 slug: balsam-fur-die-seele
 alias: 2024/12/04/balsam-fr-die-seele
 published_date: "2024-12-03T23:00:00+00:00"
-all_tags: "[\"blog\", \"liebefuerdieohren\"]"
+all_tags: "[\"shorts\", \"liebefuerdieohren\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
