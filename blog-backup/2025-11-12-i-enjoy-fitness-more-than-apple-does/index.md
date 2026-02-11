@@ -18,6 +18,4 @@ first_published_at: "2025-11-12T23:00:00+00:00"
 
 ![Ein Fitness-Tracking-Bildschirm zeigt Daten einer Kickbox-Einheit, einschließlich Trainingszeit, verbrauchter Kalorien und Herzfrequenz.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/ca9e2b710a.webp)
 
-Even though the service [doesn’t seem to deliver the results](https://www.mobiflip.de/apple-prueft-die-zukunft-seines-fitness-abos/) Apple is expecting, I enjoy using [Apple Fitness+](https://www.apple.com/apple-fitness-plus/) nearly every day and really don’t want to miss it.
-
-Today, I had some fun (and sweat) with my kickboxing workout 🫠
+Even though the service [doesn’t seem to deliver the results](https://www.mobiflip.de/apple-prueft-die-zukunft-seines-fitness-abos/) Apple is expecting, I enjoy using [Apple Fitness+](https://www.apple.com/apple-fitness-plus/) nearly every day and really don’t want to miss it. Today, I had some fun (and sweat) with my kickboxing workout 🫠
