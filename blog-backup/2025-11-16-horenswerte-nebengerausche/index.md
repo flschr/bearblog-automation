@@ -20,10 +20,10 @@ Ich habe am Wochenende wieder ein paar Stunden gevibecoded. Der Vorteil daran, A
 
 Auf der Suche nach einem etwas weniger ablenkenden Alternativprogramm, bin ich in der ARTE-Mediathek auf den Konzertmitschnitt des [französischen Musikers Thylacine](https://www.thylacinemusic.com/) gestoßen, für dessen Konzert am [Samstag in München](https://www.muffatwerk.de/de/events/view/7598/thylacine) wir zufällig Karten haben. Das war sehr gut als Nebenbei-Programm und ich freue mich sehr darauf, es am Samstag mit ungeteilter Aufmerksamkeit genießen zu können.
 
-<iframe title="Thylacine" allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="720" height="406" src="https://www.arte.tv/embeds/de/110984-005-A?autoplay=false&mute=1"></iframe>
+<iframe title="Thylacine" allowfullscreen="true" frameborder="0" scrolling="no" width="720" height="406" src="https://www.arte.tv/embeds/de/110984-005-A?autoplay=false&mute=1"></iframe>
 
 Direkt im Anschluss hat mir ARTE das Konzert von [Moby](https://de.wikipedia.org/wiki/Moby) zum Weiterhören angeboten. Moby gehört seit Ewigkeiten zu meinen absoluten Lieblingskünstlern, und dieses Konzert ist so verdammt großartig. Hab ich sehr gefeiert. Leider ist Moby am Wochenende nicht in München, jedenfalls nicht das ich wüsste.
 
-<iframe title="Moby - Play 25" allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="720" height="406" src="https://www.arte.tv/embeds/de/122207-000-A?autoplay=false&mute=1"></iframe>
+<iframe title="Moby - Play 25" allowfullscreen="true" frameborder="0" scrolling="no" width="720" height="406" src="https://www.arte.tv/embeds/de/122207-000-A?autoplay=false&mute=1"></iframe>
 
 Der Abend verging wie im Flug und dank Unterstützung der KI sind am Ende sogar sinnvolle Sachen dabei entstanden.
