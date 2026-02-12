@@ -4,7 +4,7 @@ title: Taking a bite out of the Apple iCloud
 slug: taking-a-bite-out-of-the-apple-icloud
 alias: ""
 published_date: "2026-01-03T23:45:00+00:00"
-all_tags: "[\"blog\", \"digitallife\"]"
+all_tags: "[\"blog\", \"digitallife\", \"stuffthatworks\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -25,8 +25,6 @@ Over the years, I had integrated almost every part of my life into their ecosyst
 Even though I do have local and additional cloud backups of my documents, mails, and the entire photo library, there are obviously some critical blind spots I uncovered while conducting a risk assessment for the Apple services I use.
 
 ![Four-panel comic featuring a person discussing the phrase "Don't put all your chickens in one basket." The first panel shows chickens in a basket, the second expresses concern about losing the basket, the third questions where to get eggs, and the fourth depicts the person looking thoughtful, emphasizing they still have one fewer basket and several chickens.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/igsnkneqp4yy.webp)
-
----
 
 ## What I have changed this week
 
