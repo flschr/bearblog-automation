@@ -4,7 +4,7 @@ title: Aufgeräumtes Zuhause
 slug: aufgeraumtes-zuhause
 alias: ""
 published_date: "2026-02-12T14:44:00+00:00"
-all_tags: "[\"blog\", \"coding\", \"blogging\", \"bearblog\"]"
+all_tags: "[\"bearblog\", \"blog\", \"blogging\", \"coding\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -44,6 +44,6 @@ Damit steht ab jetzt der eigentliche Inhalt im Vordergrund und das ganze technis
 ![Sieben Fischköpfe liegen auf einem weißen Untergrund, einige in verschiedenen Größen und leicht unterschiedlichen Winkeln angeordnet. Die Köpfe haben eine glänzende, silbrige Oberfläche mit charakteristischen Augen und Kiemen.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/photo-1592634549335-f6be8df97b47.webp)
 *Symbolbild alles ordentlich aufgeräumt (Foto: Gunnar Ridderström, [Unsplash](https://unsplash.com/de/fotos/silberfisch-auf-weissem-tisch-faGhR9LEAE0))*
 
-Ich habe jetzt noch einen neuen Short-Post Typ konfiguriert, damit alle hier im Blog veröffentlichte Kurzgedanken nicht nur in den Shorts landen, sondern auch als nativer Toot bei Mastodon (und Bluesky) auftauchen. Das sieht dann so aus, als hätte ich den Post direkt dort verfasst, ganz ohne Backlink zum Artikel.
+Im Automatisierungs-Repository habe ich jetzt noch einen neuen Short-Post Typ konfiguriert, damit alle hier im Blog veröffentlichte Kurzgedanken nicht nur in den Shorts landen, sondern auch als nativer Toot bei Mastodon (und Bluesky) auftauchen. Das sieht dann so aus, als hätte ich den Post direkt dort verfasst, ganz ohne Backlink zum Artikel.
 
 In diesem Sinne: Happy Reading!
