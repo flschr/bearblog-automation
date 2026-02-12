@@ -16,6 +16,6 @@ class_name: ""
 first_published_at: "2025-12-01T19:32:00+00:00"
 ---
 
-Eine Sammlung von kurzen Posts
+Eine Sammlung von Posts in einem snackable Format.
 
 {{ posts | tag:shorts | content:True }}
