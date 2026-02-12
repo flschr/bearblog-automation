@@ -10,7 +10,7 @@ make_discoverable: "False"
 is_page: "True"
 canonical_url: ""
 meta_description: ""
-meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/photo-1592634549335-f6be8df97b47.webp"
+meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/rene-fischer.webp"
 lang: ""
 class_name: ""
 first_published_at: "2025-09-07T22:54:00+00:00"
@@ -20,22 +20,7 @@ Hallo, ich bin René Fischer und lebe im Münchner Umland. Aufgewachsen bin ich 
 
 Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus bin ich verheiratet und Vater von zwei sehr unterschiedlichen Teenagern. Beruflich mache ich schon immer irgendwas mit Software aber auch in meiner Freizeit veröffentliche ich mittlerweile [Apps für iOS](https://justasimple.app).
 
-<div class="about-polaroids">
-  <figure>
-    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-2637.webp" alt="…">
-    <figcaption>Hoch hinaus, happy!</figcaption>
-  </figure>
-
-  <figure>
-    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/29daf3a2-1c67-46dc-b996-54c3d0ba1e3b_1_105_c.webp" alt="…">
-    <figcaption>Clown gefrühstückt</figcaption>
-  </figure>
-  <figure>
-    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9aec8eeb-bbf3-43ee-b7fc-21fd7f12893a_1_105_c.webp" alt="…">
-    <figcaption>Mein freundliches Gesicht :)</figcaption>
-  </figure>
-</div>
-
+![René Fischer steht an einem Berggipfel neben einem Holzkreuz, mit einer Berglandschaft im Hintergrund. In den kleineren Bildern sieht man ihn in verschiedenen Posen und Umgebungen, darunter ein Selbstporträt und Aufnahmen in einem Büro.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/rene-fischer.webp)
 
 Wenn Zeit und Wetter es erlauben, zieht es mich raus in die Natur. Ich fotografiere gerne, aber eigentlich nur noch mit dem Smartphone. Meine Haustiere kommen aus dem Tanganjikasee. Früher habe ich viel gelesen, und ganz früher wirklich krass viel, mittlerweile schaue ich aber öfter in die Glotze.
 
