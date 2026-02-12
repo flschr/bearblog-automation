@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2026-02-12T14:44:00+00:00"
 ---
 
-Felix hat vor kurzem dazu [aufgerufen](https://wirres.net/articles/geht-hin-und-baut-eigenheime), das man sich ein Zuhause im Netz baut. Mein Blog ist im Grunde schon seit 2002 mein Zuhause, auch wenn es viele Jahre gab in denen es brach lag und ich auch mit dem Gedanken gespielt habe, es endgültig zu löschen. Zum Glück habe ich diese Entscheidung immer ausgesessen, auch wenn ich in der Vergangenheit [nicht immer so egal](/das-fruhere-internet-ich/) unterwegs war.
+Felix hat vor kurzem dazu [aufgerufen](https://wirres.net/articles/geht-hin-und-baut-eigenheime), das man sich ein Zuhause im Netz baut. Mein Blog ist im Grunde schon seit 2002 mein Zuhause, auch wenn es viele Jahre gab in denen es brach lag und ich mehr als einmal mit dem Gedanken gespielt habe, es endgültig zu löschen. Zum Glück habe ich diese Entscheidung immer ausgesessen, auch wenn ich in der Vergangenheit [nicht immer so egal](/das-fruhere-internet-ich/) unterwegs war.
 
 So wie bei Felix und vielen anderen auch, ist meine Webseite mein kleiner Hobbykeller im Internet, oder anders gesagt, eine einzige Dauerbaustelle. Man schraubt hier, man optimiert da und so gedeiht alles vor sich hin.
 
