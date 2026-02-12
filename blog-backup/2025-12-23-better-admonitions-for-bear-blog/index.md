@@ -4,7 +4,7 @@ title: Better Admonitions for Bear Blog
 slug: better-admonitions-for-bear-blog
 alias: ""
 published_date: "2025-12-23T07:23:00+00:00"
-all_tags: "[\"bearblog\", \"blogging\", \"coding\"]"
+all_tags: "[\"bearblog\", \"blog\", \"blogging\", \"coding\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -15,6 +15,9 @@ lang: en
 class_name: ""
 first_published_at: "2025-12-23T07:11:00+00:00"
 ---
+
+> #### Changed website theme
+> I changed my theme, so the admonition boxes look different on this page, but the CSS shown below still gives you the Github style admonition boxes you can [see in this example](https://github.com/orgs/community/discussions/16925).
 
 I wanted to add nice admonition boxes to my Bear Blog, but pasting [HTML div structures](https://thecommabandit.bearblog.dev/cohost-infoboxes/) felt clunky. Even worse, I couldn't use Markdown to add formatting or links to these boxes without resorting to raw HTML, which even more felt like having tag-soup.
 
