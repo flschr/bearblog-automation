@@ -1,6 +1,6 @@
 ---
 uid: tQJMHUeAZJFHqUgLajUT
-title: 🍿 Das Mädchen mit der Nadel (5/5)
+title: Das Mädchen mit der Nadel (5/5)
 slug: das-madchen-mit-der-nadel
 alias: 2025/02/07/das-mdchen-mit-der-nadel
 published_date: "2025-02-06T23:00:00+00:00"

@@ -1,6 +1,6 @@
 ---
 uid: VcVKxBUcerWPZkaikNMo
-title: 🍿 Capernaum - Stadt der Hoffnung (5/5)
+title: Capernaum - Stadt der Hoffnung (5/5)
 slug: capernaum-stadt-der-hoffnung
 alias: 2025/03/04/capernaum-stadt-der-hoffnung
 published_date: "2025-03-03T23:00:00+00:00"

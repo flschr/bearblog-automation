@@ -1,6 +1,6 @@
 ---
 uid: wRFqjpkNCrtxFdqgvyIH
-title: 🍿 Die Taschendiebin (5/5)
+title: Die Taschendiebin (5/5)
 slug: die-taschendiebin
 alias: 2025/02/02/die-taschendiebin
 published_date: "2025-02-01T23:00:00+00:00"

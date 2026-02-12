@@ -1,10 +1,10 @@
 ---
 uid: suduwLSKrgXZPqLiokne
-title: 🍿 Thunderbolts (4/5)
+title: Thunderbolts (4/5)
 slug: thunderbolts
 alias: 2025/05/10/thunderbolts
 published_date: "2025-05-09T22:00:00+00:00"
-all_tags: "[\"shorts\", \"popcornfieber\"]"
+all_tags: "[\"popcornfieber\", \"shorts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
