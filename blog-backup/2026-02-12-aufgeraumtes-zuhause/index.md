@@ -39,7 +39,7 @@ Im Hintergrund läuft meine inzwischen sehr stabile [Blog-Automatisierung](https
 
 Spannender Nebeneffekt von diesem ganzen Zirkus ist, dass das Repository auch die Mappings von Blog-URL zu den Social Media-Posts wegschreibt. Damit konnte ich hier im Blog sehr einfach anzeigen, wie viele Likes, Boosts und Mentions ein bestimmter Artikel bekommen hat. Wie gesagt, konnte, denn dieses Skript ist natürlich auch dem Aufräumwahn zum Opfer gefallen. Das Repository werkelt aber weiterhin im Hintergrund, nur für den Fall der Fälle, das ich mir hier doch irgendwann wieder mehr Rauschen einbilde.
 
-Damit steht ab jetzt der eigentliche Inhalt im Vordergrund und das ganze technische Gedöns und Gerümpel steht, versteckt vom Blick des Besuchers in der Abstellkammer. Das fühlt sich herrlich aufgeräumt und luftig an.
+Damit steht ab jetzt der eigentliche Inhalt im Vordergrund und das ganze technische Gedöns und Gerümpel steht, versteckt vor dem Blick des geneigten Besuchers in der Abstellkammer. Das fühlt sich herrlich aufgeräumt und befreiend an.
 
 ![Sieben Fischköpfe liegen auf einem weißen Untergrund, einige in verschiedenen Größen und leicht unterschiedlichen Winkeln angeordnet. Die Köpfe haben eine glänzende, silbrige Oberfläche mit charakteristischen Augen und Kiemen.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/photo-1592634549335-f6be8df97b47.webp)
 *Symbolbild alles ordentlich aufgeräumt (Foto: Gunnar Ridderström, [Unsplash](https://unsplash.com/de/fotos/silberfisch-auf-weissem-tisch-faGhR9LEAE0))*
