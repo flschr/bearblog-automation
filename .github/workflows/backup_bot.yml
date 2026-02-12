@@ -8,7 +8,6 @@ on:
   workflow_dispatch:  # Allows manual start
   workflow_call:  # Allows being called from other workflows
 
-# Ensure only one backup runs at a time
 concurrency:
   group: backup-bot
   cancel-in-progress: false
@@ -38,8 +37,10 @@ jobs:
       - name: Pull latest changes
         if: always()  # Always run to avoid diverged branches
         run: |
-          git config user.name "Bot"
-          git config user.email "bot@github.com"
+          # Set commit identity (your name, GitHub noreply address)
+          git config user.name "René Fischer"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
           git stash --include-untracked
           git pull --rebase origin main
           git stash pop || true  # Ignore error if stash is empty
@@ -50,6 +51,8 @@ jobs:
         with:
           commit_message: ${{ github.event_name == 'workflow_dispatch' && 'Manual blog backup' || github.event_name == 'schedule' && 'Scheduled blog backup' || 'Automatic blog backup' }}
           file_pattern: 'blog-backup/** bots/backup_bot/processed_articles.txt'
+          commit_user_name: "René Fischer"
+          commit_user_email: "${{ github.actor }}@users.noreply.github.com"
 
       - name: Report backup status
         if: always()
