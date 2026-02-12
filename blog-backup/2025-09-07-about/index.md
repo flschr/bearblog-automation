@@ -23,7 +23,7 @@ Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus 
 <div class="about-polaroids">
   <figure>
     <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-2637.webp" alt="…">
-    <figcaption>Auf'm Berg, generell happy</figcaption>
+    <figcaption>Hoch hinaus, happy!</figcaption>
   </figure>
 
   <figure>
