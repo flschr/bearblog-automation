@@ -49,8 +49,6 @@ Noch mehr Wissen rund um die Computertechnik der DDR und was Jugendliche im Oste
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0w46pl4iZaM?si=dFJ27Tk2sgBApyAC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
----
-
 Doch der Computer war nur die Spitze des Eisbergs. Als Elektroingenieur hatte mein Vater schon zu DDR-Zeiten eine Leidenschaft für alle möglichen und unmöglichen Projekte. In der Mangelwirtschaft war Kreativität die härteste Währung, und mein Vater war darin ein Großmeister.
 
 Ich erinnere mich zum Beispiel, dass er mal einen Sarg als Spardose gebastelt hat. Wenn man eine Münze auf die beiden Kontakte legte, wurde der Stromkreis geschlossen, eine Skeletthand kam aus dem Sarg und zerrte das Geldstück ins Innere. Für mich als Kind war das reine Magie.

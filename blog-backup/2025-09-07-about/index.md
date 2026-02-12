@@ -24,7 +24,7 @@ Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus 
 
 ![Foto-Collage von René Fischer](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/rene-fischer.webp)
 
-Wenn Zeit und Wetter es erlauben, zieht es mich raus in die Natur. Ich [fotografiere](https://fischr.org/fotos) gerne, aber eigentlich nur noch mit dem Smartphone. Meine Haustiere kommen aus dem Tanganjikasee. Früher habe ich viel gelesen, und ganz früher wirklich krass viel, mittlerweile schaue ich aber öfter in die Glotze.
+Wenn Zeit und Wetter es erlauben, zieht es mich raus in die Natur. Ich fotografiere gerne, aber eigentlich nur noch mit dem Smartphone. Meine Haustiere kommen aus dem Tanganjikasee. Früher habe ich viel gelesen, und ganz früher wirklich krass viel, mittlerweile schaue ich aber öfter in die Glotze.
 
 Meine kulinarischen Entdeckungen habe ich angefangen in Listen für [gutes Essen](https://maps.app.goo.gl/LuC8gFzC2tx2z4h5A) und [leckeres Eis](https://maps.app.goo.gl/2XHANH7dPYTrpcQS9) festzuhalten.
 
