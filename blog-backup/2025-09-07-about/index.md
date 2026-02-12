@@ -30,12 +30,6 @@ Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus 
     <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/29daf3a2-1c67-46dc-b996-54c3d0ba1e3b_1_105_c.webp" alt="…">
     <figcaption>Kurztext 2</figcaption>
   </figure>
-
-  <figure>
-    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/d046b37b-d019-4a08-9690-2ce50bda5d69_1_105_c.webp" alt="…">
-    <figcaption>Kurztext 3</figcaption>
-  </figure>
-
   <figure>
     <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9aec8eeb-bbf3-43ee-b7fc-21fd7f12893a_1_105_c.webp" alt="…">
     <figcaption>Kurztext 4</figcaption>
