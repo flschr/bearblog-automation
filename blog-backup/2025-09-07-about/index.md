@@ -37,5 +37,3 @@ Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener
 Recycled Words läuft auf [Bear Blog](https://bearblog.dev/). Alle Inhalte werden unter der [CC BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/) zur Verfügung gestellt. Etwaige Rechte von Dritten sind als solche gekennzeichnet.
 
 Nachdem das hier mein persönliches Blog ist, bin ich natürlich auch für den Inhalt nach §18 Abs. 2 MStV verantwortlich. Natürlich gibt es auch eine [Datenschutzerklärung](/datenschutz).
-
-<span class="page-marker" data-page="about" hidden></span>
