@@ -17,5 +17,6 @@ first_published_at: "2025-12-01T19:32:00+00:00"
 ---
 
 Ein Strom von Momenten aus dem Alltag von René Fischer: Fotos, Gedanken, kleine Beobachtungen und Kurzrezensionen. Festgehalten ohne Anspruch auf Vollständigkeit.
+<span class="page-marker" data-page="shorts" hidden></span>
 
 {{ posts | tag:shorts | content:True }}
