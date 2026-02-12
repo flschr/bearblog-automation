@@ -9,9 +9,6 @@ on:
   repository_dispatch: # Allows external trigger (e.g., from Cloudflare Worker)
     types: [rss_feed_update]
 
-# Ensure only one instance runs at a time to prevent duplicate posts
-# cancel-in-progress: false queues concurrent runs instead of canceling in-flight runs
-# This prevents race conditions that could cause duplicate posts without sending cancel emails
 concurrency:
   group: social-bot
   cancel-in-progress: false
@@ -77,7 +74,6 @@ jobs:
           if [ -f "$REPORT_FILE" ]; then
             echo "Found unmatched articles report, creating issue..."
 
-            # Build issue body with the report
             ISSUE_BODY="## Unmatched Articles Report
 
           The following articles were found in the RSS feed but did not match any posting configuration.
@@ -99,12 +95,10 @@ jobs:
           3. Check if the article has the expected tags in the RSS feed
           "
 
-            # Create the issue (without labels to avoid errors if they don't exist)
             echo "$ISSUE_BODY" | gh issue create \
               --title "Social Bot: Unmatched articles found" \
               --body-file -
 
-            # Clean up the report file (don't commit it)
             rm "$REPORT_FILE"
           else
             echo "No unmatched articles report found"
@@ -119,7 +113,6 @@ jobs:
           if [ -f "$REPORT_FILE" ]; then
             echo "Found partial failures report, creating issue..."
 
-            # Build issue body with the report
             ISSUE_BODY="## Partial Posting Failures
 
           Some articles were posted to some platforms but failed on others.
@@ -141,12 +134,10 @@ jobs:
           3. Fix the issue and re-run the bot (note: this may create duplicates on successful platforms)
           "
 
-            # Create the issue
             echo "$ISSUE_BODY" | gh issue create \
               --title "Social Bot: Partial posting failures" \
               --body-file -
 
-            # Clean up the report file (don't commit it)
             rm "$REPORT_FILE"
           else
             echo "No partial failures report found"
@@ -157,7 +148,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Check for articles that have exhausted all retry attempts
           EXHAUSTED_COUNT=$(python3 -c "
           import json
           import sys
@@ -182,7 +172,6 @@ jobs:
           if [ ! -z "$EXHAUSTED_COUNT" ] && [ "$EXHAUSTED_COUNT" -gt 0 ]; then
             echo "Found $EXHAUSTED_COUNT article(s) that exhausted all retry attempts"
 
-            # Create issue for exhausted retries
             ISSUE_BODY="## Retry Queue Exhausted
 
           The following articles have exhausted all retry attempts and could not be posted to all platforms.
@@ -212,8 +201,12 @@ jobs:
       - name: Save State
         id: save_state
         run: |
-          git config user.name "Bot"
-          git config user.email "bot@github.com"
+          # Pull latest changes before making a new commit (robust against rapid triggers)
+          git pull --rebase --autostash origin main || true
+
+          # Set commit identity (your name, GitHub noreply address)
+          git config user.name "René Fischer"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
 
           # Add files that exist (some may not exist if there's nothing to track)
           for file in bots/social_bot/posted_articles.txt bots/social_bot/feed_cache.json bots/social_bot/retry_queue.json mappings.json; do
@@ -222,18 +215,15 @@ jobs:
             fi
           done
 
-          # "|| exit 0" prevents error if there are no changes to commit
-          if git commit -m "Update posted articles and feed cache"; then
-            echo "changes=true" >> $GITHUB_OUTPUT
-            # Pull latest changes before pushing to avoid conflicts with parallel workflows
-            if ! git pull --rebase --autostash origin main; then
-              git rebase --abort || true
-              git pull --rebase --autostash -X ours origin main
-            fi
-            git push
-          else
+          # Skip commit if nothing changed
+          if git diff --cached --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
+            exit 0
           fi
+
+          git commit -m "Update posted articles and feed cache"
+          echo "changes=true" >> $GITHUB_OUTPUT
+          git push
 
   trigger-backup:
     needs: build
