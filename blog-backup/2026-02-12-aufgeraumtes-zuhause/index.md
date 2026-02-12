@@ -31,7 +31,7 @@ Klassischer [Feature Creep](https://en.wikipedia.org/wiki/Feature_creep). Vermut
 
 ---
 
-Flucht nach vorne, damit muss jetzt Schluss sein. Zuerst musste ein neues Theme her. Das [Standard Writer-Theme](https://bear-images.sfo2.cdn.digitaloceanspaces.com/themes/writer.png) von Bearblog hat bereits 95% der Arbeit erledigt. Im nächsten Schritt sind dann radikal alle selbstgeschraubten Skripte und auch die Fotogalerie rausgeflogen.
+Flucht nach vorne, damit muss jetzt Schluss sein. Zuerst musste ein neues Theme her. Das [Standard Writer-Theme](https://bear-images.sfo2.cdn.digitaloceanspaces.com/themes/writer.png) von Bearblog hat bereits 95% der Arbeit erledigt. Ich habe eigentlich nur noch den [Bleed-Effekt](https://kilianvalkhof.com/2020/css-html/full-bleed-layout-using-simple-css/) für die Bilder eingefügt, und etwas an den Headlines gedreht. Im nächsten Schritt sind dann radikal alle selbstgeschraubten Skripte und auch die Fotogalerie rausgeflogen.
 
 Dafür gibt es jetzt [eine Shorts-Section](/shorts/), die nicht nur meinen Foto-Posts eine neue Heimat bietet, sondern auch alle anderen Kurzformate in einer Art Timeline darstellt. Technisch sind das alles ganz normale Blogartikel, die basierend auf vergebenen Tags in der Shorts-Section auftauchen. Glücklicherweise hatten die allermeisten Posts schon die richtigen Tags, womit sich die Anpassung auf ein paar Zeilen zusätzliches CSS beschränkt hat.
 
