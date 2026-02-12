@@ -27,20 +27,21 @@ Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus 
   </figure>
 
   <figure>
-    <img src="URL_BILD_2.webp" alt="…">
+    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/29daf3a2-1c67-46dc-b996-54c3d0ba1e3b_1_105_c.webp" alt="…">
     <figcaption>Kurztext 2</figcaption>
   </figure>
 
   <figure>
-    <img src="URL_BILD_3.webp" alt="…">
+    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/d046b37b-d019-4a08-9690-2ce50bda5d69_1_105_c.webp" alt="…">
     <figcaption>Kurztext 3</figcaption>
   </figure>
 
   <figure>
-    <img src="URL_BILD_4.webp" alt="…">
+    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/9aec8eeb-bbf3-43ee-b7fc-21fd7f12893a_1_105_c.webp" alt="…">
     <figcaption>Kurztext 4</figcaption>
   </figure>
 </div>
+
 
 Wenn Zeit und Wetter es erlauben, zieht es mich raus in die Natur. Ich fotografiere gerne, aber eigentlich nur noch mit dem Smartphone. Meine Haustiere kommen aus dem Tanganjikasee. Früher habe ich viel gelesen, und ganz früher wirklich krass viel, mittlerweile schaue ich aber öfter in die Glotze.
 
