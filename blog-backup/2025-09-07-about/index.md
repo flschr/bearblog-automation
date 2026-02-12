@@ -22,7 +22,7 @@ Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus 
 
 <div class="about-polaroids">
   <figure>
-    <img src="URL_BILD_1.webp" alt="…">
+    <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img-2637.webp" alt="…">
     <figcaption>Kurztext 1</figcaption>
   </figure>
 
