@@ -34,13 +34,10 @@ Online findet man mich auf [Mastodon](https://mastodon.social/@fischr), seltener
 
 ---
 
-Recycled Words läuft auf [Bear Blog](https://bearblog.dev/). Alle Inhalte werden unter der [CC BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/) zur Verfügung gestellt. Etwaige Rechte von Dritten sind als solche gekennzeichnet.
+Recycled Words läuft auf [Bear Blog](https://bearblog.dev/). Alle Inhalte werden unter der [CC BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/) zur Verfügung gestellt. Etwaige Rechte von Dritten sind als solche gekennzeichnet. Natürlich gibt es auch eine [Datenschutzerklärung](/datenschutz).
 
 Gemäß §18 Abs. 2 MStV für den Inhalt verantwortlich:  
 
 René Fischer  
 Neufarner Str. 7  
 85652 Pliening
-
-
-Natürlich gibt es auch eine [Datenschutzerklärung](/datenschutz).
