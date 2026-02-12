@@ -16,6 +16,6 @@ class_name: ""
 first_published_at: "2025-12-01T19:32:00+00:00"
 ---
 
-Kurze Dinge aus dem Alltag von René Fischer: Fotos, Gedanken, kleine Beobachtungen und Kurzrezensionen. Ein persönlicher Strom aus Momenten, festgehalten ohne Anspruch auf Vollständigkeit.
+Ein Strom von Momenten aus dem Alltag von René Fischer: Fotos, Gedanken, kleine Beobachtungen und Kurzrezensionen. Festgehalten ohne Anspruch auf Vollständigkeit.
 
 {{ posts | tag:shorts | content:True }}
