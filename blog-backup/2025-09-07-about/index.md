@@ -20,7 +20,27 @@ Hallo, ich bin René Fischer und lebe im Münchner Umland. Aufgewachsen bin ich 
 
 Ich bin analytischer Kreativarbeiter, Geek und Food Aficionado. Darüber hinaus bin ich verheiratet und Vater von zwei sehr unterschiedlichen Teenagern. Beruflich mache ich schon immer irgendwas mit Software aber auch in meiner Freizeit veröffentliche ich mittlerweile [Apps für iOS](https://justasimple.app).
 
-![Foto-Collage von René Fischer](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/rene-fischer.webp)
+<div class="about-polaroids">
+  <figure>
+    <img src="URL_BILD_1.webp" alt="…">
+    <figcaption>Kurztext 1</figcaption>
+  </figure>
+
+  <figure>
+    <img src="URL_BILD_2.webp" alt="…">
+    <figcaption>Kurztext 2</figcaption>
+  </figure>
+
+  <figure>
+    <img src="URL_BILD_3.webp" alt="…">
+    <figcaption>Kurztext 3</figcaption>
+  </figure>
+
+  <figure>
+    <img src="URL_BILD_4.webp" alt="…">
+    <figcaption>Kurztext 4</figcaption>
+  </figure>
+</div>
 
 Wenn Zeit und Wetter es erlauben, zieht es mich raus in die Natur. Ich fotografiere gerne, aber eigentlich nur noch mit dem Smartphone. Meine Haustiere kommen aus dem Tanganjikasee. Früher habe ich viel gelesen, und ganz früher wirklich krass viel, mittlerweile schaue ich aber öfter in die Glotze.
 
@@ -41,3 +61,4 @@ Gemäß §18 Abs. 2 MStV für den Inhalt verantwortlich:
 René Fischer  
 Neufarner Str. 7  
 85652 Pliening
+<span class="page-marker" data-page="about" hidden></span>
