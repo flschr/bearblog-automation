@@ -46,4 +46,4 @@ Damit steht ab jetzt der eigentliche Inhalt im Vordergrund und das ganze technis
 
 Im Automatisierungs-Repository habe ich jetzt noch einen neuen Short-Post Typ konfiguriert, damit alle hier im Blog veröffentlichte Kurzgedanken nicht nur in den Shorts landen, sondern auch als nativer Toot bei Mastodon (und Bluesky) auftauchen. Das sieht dann so aus, als hätte ich den Post direkt dort verfasst, ganz ohne Backlink zum Artikel.
 
-In diesem Sinne: Happy Reading!
+In diesem Sinne: Baut euer Eigenheim im Netz, aber räumt von Zeit zu Zeit auch mal auf.
