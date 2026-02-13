@@ -20,4 +20,4 @@ first_published_at: "2026-02-13T00:23:00+00:00"
 
 Von allen Filmen, in denen vermeintliche Helden an der Front irgendwen suchen und retten müssen, ist [Der Tiger](https://de.wikipedia.org/wiki/Der_Tiger_(2025)) (1/5) mit Abstand der dümmste. Auch, aber nicht nur, weil Panzer bekanntlich nicht gerade leise sind und viel Diesel für eine mickrige Reichweite brauchen.
 
-Am Anfang ist noch etwas Spannung, aber dann driftet der Film komplett in eine merkwürdige Geschichte ab. Spätestens beim Ende war dann klar, das sich hier irgendwer versucht hat, ein deutsches [Apocalypse Now](https://de.wikipedia.org/wiki/Apocalypse_Now) abzuliefern. Das ist wirklich krachend gescheitert.
+Am Anfang ist zumindest noch etwas Spannung da, aber dann driftet der Film komplett in eine merkwürdige Richtung ab. Spätestens beim Ende wird dann klar, das hier irgendwer gewillt war, ein deutsches [Apocalypse Now](https://de.wikipedia.org/wiki/Apocalypse_Now) abzuliefern. Das ist wirklich krachend gescheitert.
