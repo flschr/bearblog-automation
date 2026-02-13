@@ -17,14 +17,6 @@
     "targets": ["bluesky", "mastodon"]
   },
   {
-    "name": "Shorts",
-    "url": "https://fischr.org/feed?q=shorts",
-    "include": ["shorts"],
-    "include_images": true,
-    "template": "{content}",
-    "targets": ["bluesky", "mastodon"]
-  },
-  {
     "name": "Popcornfieber",
     "url": "https://fischr.org/feed?q=popcornfieber",
     "template": "Ich hab gerade {title} gesehen. {link}",
@@ -49,6 +41,14 @@
     "url": "https://fischr.org/feed?q=fotos",
     "include": ["wandern"],
     "template": "Ich war endlich mal wieder wandern! {link}",
+    "targets": ["bluesky", "mastodon"]
+  },
+  {
+    "name": "Shorts",
+    "url": "https://fischr.org/feed?q=shorts",
+    "include": ["shorts"],
+    "include_images": true,
+    "template": "{content}",
     "targets": ["bluesky", "mastodon"]
   },
   {
