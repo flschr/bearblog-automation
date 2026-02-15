@@ -16,7 +16,7 @@ class_name: ""
 first_published_at: "2026-02-14T20:48:00+00:00"
 ---
 
-Ich gebe zu, der Titel ist vielleicht etwas reißerisch, denn wir haben heute nicht geheiratet. Also nicht wirklich zumindest, aber vielleicht doch so ein bisschen. Denn heute waren unsere neuen Eheringe endlich abholbereit, und jetzt tragen wir unsere Dritten an den Händen. Ich weiß, das klingt ein bisschen verrückt und das ist es auch ein kleines bisschen.
+Ich gebe zu, der Titel ist vielleicht etwas reißerisch, denn wir haben heute nicht geheiratet. Also nicht wirklich zumindest, aber vielleicht doch so ein bisschen. Denn heute waren unsere neuen Eheringe endlich abholbereit, und jetzt tragen wir unsere Dritten an den Händen. Ich weiß, das klingt ein bisschen verrückt und das ist es auch irgendwie.
 
 ![Zwei Hände liegen auf einem Holztisch, wobei die linke Hand einer Person einen schmalen Ring trägt. Die rechte Hand gehört einer anderen Person und zeigt einen Ring sowie einen leichten Unterschied in der Hautfarbe.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/72912628-fcc2-4f6f-86f6-f1e895618a46_1_201_a.webp)
 
@@ -36,6 +36,6 @@ Und dieser Tag war heute vor 4 Wochen. Ich habe mich wirklich mit der Absicht in
 
 Als wir aus dem Auto ausgestiegen sind, habe ich noch halb im Scherz "Aber maximal tausend Euro!" gesagt. Nach dem 4 Geschäft keimte leise Hoffnung, das wir keine Ringe mehr finden werden, aber im letzten Geschäft waren sie plötzlich da, unsere neuen Eheringe.
 
-Meine Frau hatte sich von der Verkäuferin alle möglichen Ringe im vermeintlichen Budget geben lassen, aber ich bin immer wieder zur Vitrine nebenan gepilgert und habe meine Frau Ringe gezeigt, die wir auch unbedingt probieren sollten. Sie hat mich total entgeistert angeschaut und gefragt, ob ich das ernst meine, schließlich wären die Ringe mehrfach über dem Budget. Meine Antwort war, dass das unsere dritten Ringe und bitte auch letzten Ringe sind. Und wenn wir in 20 Jahren draufschauen, sollen sie uns noch immer gefallen.
+Meine Frau hatte sich von der Verkäuferin alle möglichen Ringe im vermeintlichen Budget geben lassen, aber ich bin immer wieder zur Vitrine nebenan gepilgert und habe meine Frau Ringe gezeigt, die wir auch unbedingt probieren sollten. Sie hat mich total entgeistert angeschaut und gefragt, ob ich das ernst meine, schließlich wären die Ringe mehrfach über dem Budget. Meine Antwort war, dass das unsere dritten und bitte auch letzten Ringe sind. Und wenn wir in 20 Jahren draufschauen, sollen sie uns noch immer gefallen.
 
 Long story short: Wir haben unsere dritten Eheringe und sie sind wirklich schön. Meine Frau ist sehr glücklich und vielleicht habe ich zumindest ein bisschen was von meinem Verhalten der letzten Jahre bereut.
