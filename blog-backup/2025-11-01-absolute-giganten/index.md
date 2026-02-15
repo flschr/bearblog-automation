@@ -4,19 +4,19 @@ title: Absolute Giganten (5/5)
 slug: absolute-giganten
 alias: 2025/11/02/absolute-giganten
 published_date: "2025-11-01T23:00:00+00:00"
-all_tags: "[\"popcornfieber\", \"movies\", \"blog\"]"
+all_tags: "[\"blog\", \"movies\", \"popcornfieber\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
 canonical_url: ""
 meta_description: ""
-meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/absolute-giganten.webp"
+meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/absolute-giganten-1.webp"
 lang: de
 class_name: ""
 first_published_at: "2025-11-01T23:00:00+00:00"
 ---
 
-![Das Filmplakat des deutschen Kultfilms Absolute Giganten, das in einem künstlerischen Gelb-Orange-Farbschema gehalten ist und drei Personen sowie mehrere Namen zeigt.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/absolute-giganten.webp)
+![Das Filmplakat des deutschen Kultfilms Absolute Giganten, das in einem künstlerischen Gelb-Orange-Farbschema gehalten ist und drei Personen sowie mehrere Namen zeigt.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/absolute-giganten-1.webp)
 
 Das, meine Damen und Herren, ist [Absolute Giganten](https://de.wikipedia.org/wiki/Absolute_Giganten), der beste deutsche Film. Ich weiß gar nicht, wie oft ich diesen Film schon gesehen habe. Und dann swipe ich gerade so durch die ZDF-Mediathek, und da ist er. Alles wieder da. Jede Szene, jedes Zitat, allen voran [dieses](https://www.youtube.com/watch?v=LbT4jGHUlPA).
 
