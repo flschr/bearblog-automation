@@ -3,8 +3,8 @@ uid: mJKAtPMYyhPWWxIkanYI
 title: Ich habe einen neuen Beifahrer
 slug: ich-habe-einen-neuen-beifahrer-new
 alias: ""
-published_date: "2026-02-18T22:05:05.170010+00:00"
-all_tags: "[\"shorts\", \"promptopien\"]"
+published_date: "2026-02-18T22:05:00+00:00"
+all_tags: "[\"promptopien\", \"shorts\"]"
 publish: "True"
 make_discoverable: "True"
 is_page: "False"
@@ -13,7 +13,7 @@ meta_description: ""
 meta_image: "https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/eb2c5dea-a2fb-4aa3-95be-4ad02f61a633_1_102_o.webp"
 lang: de
 class_name: ""
-first_published_at: "2026-02-18T22:05:05.170010+00:00"
+first_published_at: "2026-02-18T22:05:00+00:00"
 ---
 
 ![Der Screenshot zeigt ein Software-Update für eine App namens "Grok", einschließlich Navigationsbefehlen im Beta-Test. Es sind Optionen für Sprachsteuerung und deren Einstellungen sichtbar.](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/eb2c5dea-a2fb-4aa3-95be-4ad02f61a633_1_102_o.webp)
