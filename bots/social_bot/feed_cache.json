@@ -1,18 +1,18 @@
 {
   "https://fischr.org/feed/": {
     "etag": "",
-    "last-modified": "Wed, 18 Feb 2026 22:10:55 GMT"
+    "last-modified": "Thu, 19 Feb 2026 10:11:37 GMT"
   },
   "https://fischr.org/feed?q=popcornfieber": {
     "etag": "",
-    "last-modified": "Wed, 18 Feb 2026 22:11:49 GMT"
+    "last-modified": "Thu, 19 Feb 2026 10:12:10 GMT"
   },
   "https://fischr.org/feed?q=shorts": {
     "etag": "",
-    "last-modified": "Wed, 18 Feb 2026 22:11:49 GMT"
+    "last-modified": "Thu, 19 Feb 2026 10:12:10 GMT"
   },
   "https://fischr.org/feed?q=fotos": {
     "etag": "",
-    "last-modified": "Wed, 18 Feb 2026 22:11:50 GMT"
+    "last-modified": ""
   }
 }
