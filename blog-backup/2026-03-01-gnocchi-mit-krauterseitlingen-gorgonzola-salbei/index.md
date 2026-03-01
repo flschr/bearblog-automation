@@ -18,7 +18,7 @@ first_published_at: "2026-03-01T15:30:00+00:00"
 
 ![792F0236-9866-4133-982A-67733C6BE0DD_1_201_a](https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/792f0236-9866-4133-982a-67733c6be0dd_1_201_a.webp)
 
-Ich versuche gerade meinen Fleischkonsum noch weiter zu reduzieren. Nicht das ich besonders viel Fleisch und gar Wurst essen würde (letzteres fast gar nicht), aber es fühlt sich trotzdem noch zu viel an. Damit das klappt, braucht es mehr schnelle und leckere Rezepte. 
+Ich versuche gerade meinen Fleischkonsum noch weiter zu reduzieren. Nicht das ich besonders viel Fleisch oder gar Wurst essen würde (letzteres fast gar nicht), aber es fühlt sich trotzdem noch zu viel an. Damit das klappt, braucht es mehr schnelle und leckere Rezepte. 
 
 Eines ist mir gestern beim Einkaufen spontan in den Kopf gekommen. Heute gekocht, serviert und alle waren extrem begeistert. Damit ich es nicht vergesse, hier also das Rezept.
 
