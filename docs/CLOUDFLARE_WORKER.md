@@ -120,7 +120,7 @@ This prevents duplicate runs and relies solely on the worker's trigger.
 ## Related Documentation
 
 - [Social Bot](SOCIAL_BOT.md) - Automatic social media posting & feed configuration
-- [Backup Bot](BACKUP_BOT.md) - Automatic blog backups
+- [Backup Bot (archived)](../archive/docs/BACKUP_BOT.md) - Automatic blog backups
 
 ---
 
