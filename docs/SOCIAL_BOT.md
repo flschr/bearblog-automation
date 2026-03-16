@@ -322,5 +322,5 @@ The bot can be triggered:
 
 ## Related Documentation
 
-- [Backup Bot (archived)](../archive/docs/BACKUP_BOT.md) - Automatic blog backups
+- [Backup Bot](BACKUP_BOT.md) - Automatic blog backups
 - [Cloudflare Worker](CLOUDFLARE_WORKER.md) - Instant trigger setup

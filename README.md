@@ -1,22 +1,27 @@
 # 🐻 (Bear) Blog Automation for fischr.org
 
-Hey and welcome 👋🏼 This is the automation behind my [Bear Blog](https://bearblog.dev)-powered website [fischr.org](https://fischr.org). Whenever I publish a new article, this repository automatically posts it to social media, pings search engines, and collects webmentions.
+Hey and welcome 👋🏼 This is the automation behind my [Bear Blog](https://bearblog.dev)-powered website [fischr.org](https://fischr.org). Whenever I publish or update an article, this repository automatically posts it to social media, creates/updates a full backup from RSS, pings search engines, and collects webmentions.
 
 ## Project Structure
 
 ```
-├── config.yaml              # Central configuration
-├── mappings.json            # Article → Social post URL mappings (auto-generated)
-├── webmentions.json         # Blog webmentions collection (auto-generated)
+├── config.yaml                      # Central configuration
+├── mappings.json                    # Article → Social post URL mappings (auto-generated)
+├── webmentions.json                 # Blog webmentions collection (auto-generated)
 ├── bots/
-│   ├── social_bot/          # Social media posting bot
-│   │   └── config.json      # Feed & template config
-│   └── webmentions_bot/     # Webmentions collection bot
+│   ├── social_bot/                  # Social media posting bot
+│   │   └── config.json              # Feed & template config
+│   └── webmentions_bot/             # Webmentions collection bot
 ├── archive/
-│   ├── bots/                # Archived, currently inactive bots (backup/linkcheck)
-│   ├── docs/                # Archived docs for inactive bots
-│   └── workflows/           # Archived GitHub workflows for inactive bots
-└── docs/                    # Active documentation
+│   ├── bots/
+│   │   ├── backup_bot/              # Backup bot script + tracking file
+│   │   └── linkcheck_bot/           # Link checker (currently inactive)
+│   └── docs/                        # Archived docs for inactive/legacy components
+├── .github/workflows/
+│   ├── social_bot.yml               # Main social posting workflow
+│   ├── backup_bot.yml               # Active backup workflow
+│   └── fetch-webmentions.yml        # Webmentions workflow
+└── docs/                            # Active documentation
 ```
 
 ## Features
@@ -36,6 +41,21 @@ Automatically posts new blog articles to **Mastodon** and **Bluesky** with custo
 
 ---
 
+### 💾 RSS Backup Bot
+
+Creates a Git-tracked backup of your Bear Blog posts from RSS, including frontmatter, embedded images, and (optionally) linked files like PDFs.
+
+**Key features:**
+- Stores each post as `blog-backup/YYYY-MM-DD-slug/index.md`
+- Re-processes entries when RSS content changes (hash-based tracking)
+- Concurrent image downloads for faster runs
+- Optional whitelist-based linked-file backup
+- Triggered weekly, manually, and automatically after social updates
+
+→ [Full Documentation](docs/BACKUP_BOT.md)
+
+---
+
 ### 🔗 Webmentions Collection
 
 Collects webmentions from traditional blog posts that link to your articles using [webmention.io](https://webmention.io).
@@ -49,14 +69,13 @@ Collects webmentions from traditional blog posts that link to your articles usin
 
 ---
 
-## Archived (currently inactive)
+## Archived / Legacy
 
-The following components were moved to `archive/` because they are currently not runnable/reliable in the active setup:
+The following components remain in `archive/` as legacy or currently inactive parts:
 
-- Backup bot (`archive/bots/backup_bot/`)
 - Link checker bot (`archive/bots/linkcheck_bot/`)
-- Their workflow files (`archive/workflows/*.yml`)
-- Their docs (`archive/docs/`)
+- Archived workflows (`archive/workflows/*.yml`)
+- Legacy docs (`archive/docs/`)
 
 ---
 
@@ -66,8 +85,9 @@ Want to use this for your blog? Here's the path:
 
 1. **Fork this repo**
 2. **Configure Social Bot** → Set up feeds, templates & secrets ([docs](docs/SOCIAL_BOT.md))
-3. **Set up Webmentions** → Collect backlinks from other blogs ([docs](docs/WEBMENTIONS_BOT.md)) *(optional)*
-4. **Set up Cloudflare Worker** → Enable instant triggering ([docs](docs/CLOUDFLARE_WORKER.md)) *(optional)*
+3. **Set up Backup Bot** → Keep a versioned RSS backup of your content ([docs](docs/BACKUP_BOT.md)) *(optional but recommended)*
+4. **Set up Webmentions** → Collect backlinks from other blogs ([docs](docs/WEBMENTIONS_BOT.md)) *(optional)*
+5. **Set up Cloudflare Worker** → Enable instant triggering ([docs](docs/CLOUDFLARE_WORKER.md)) *(optional)*
 
 ## Author & License
 

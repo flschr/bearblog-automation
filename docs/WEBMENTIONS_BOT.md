@@ -170,7 +170,7 @@ python bots/webmentions_bot/fetch_webmentions.py
 ## Related Features
 
 - **Social Bot**: Tracks Mastodon and Bluesky mentions in `mappings.json`
-- **Backup Bot (archived)**: Archived at `archive/bots/backup_bot/`
+- **Backup Bot**: Script located at `archive/bots/backup_bot/`, documented as an active workflow in `docs/BACKUP_BOT.md`
 
 ## Resources
 
