@@ -14,7 +14,10 @@ import feedparser
 
 # Import shared utilities
 import sys
-sys.path.insert(0, str(Path(__file__).parent.parent))
+
+# Ensure the repository-level `bots/shared.py` module is importable when this
+# script is executed directly from the workflow runner.
+sys.path.insert(0, str(Path(__file__).resolve().parents[3] / 'bots'))
 from shared import (  # noqa: E402
     CONFIG,
     DownloadError,
