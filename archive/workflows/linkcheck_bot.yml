@@ -1,6 +1,4 @@
-name: Broken Link Checker (Archived)
-
-# Archived workflow reference: not active under .github/workflows
+name: Broken Link Checker
 
 run-name: ${{ github.event_name == 'workflow_run' && 'Broken link check after backup' || github.event_name == 'schedule' && 'Scheduled broken link check' || 'Manual broken link check' }}
 

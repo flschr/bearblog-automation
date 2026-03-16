@@ -1,6 +1,4 @@
-name: Backup Bot (Archived)
-
-# Archived workflow reference: not active under .github/workflows
+name: Backup Bot
 
 run-name: ${{ github.event_name == 'workflow_dispatch' && 'Manual backup_bot run' || github.event_name == 'schedule' && 'Scheduled backup_bot run' || 'Automatic backup after new post' }}
 
