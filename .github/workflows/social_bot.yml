@@ -224,3 +224,9 @@ jobs:
           git commit -m "Update posted articles and feed cache"
           echo "changes=true" >> $GITHUB_OUTPUT
           git push
+
+  backup:
+    needs: build
+    if: needs.build.outputs.changes == 'true'
+    uses: ./.github/workflows/backup_bot.yml
+    secrets: inherit
