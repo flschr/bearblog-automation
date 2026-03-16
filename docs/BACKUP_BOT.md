@@ -97,5 +97,6 @@ Each `index.md` contains frontmatter fields from RSS metadata (title, link, publ
 ## Related Documentation
 
 - [Social Bot](SOCIAL_BOT.md) - Automatic social media posting & feed configuration
+- [Link Checker](LINK_CHECKER.md) - Broken external link checks after backups
 - [Webmentions Bot](WEBMENTIONS_BOT.md) - Collection of traditional blog mentions
 - [Cloudflare Worker](CLOUDFLARE_WORKER.md) - Fast RSS-trigger setup for social workflow
