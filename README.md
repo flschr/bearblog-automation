@@ -15,13 +15,14 @@ Hey and welcome 👋🏼 This is the automation behind my [Bear Blog](https://be
 ├── archive/
 │   ├── bots/
 │   │   ├── backup_bot/              # Backup bot script + tracking file
-│   │   └── linkcheck_bot/           # Link checker (currently inactive)
-│   └── docs/                        # Archived docs for inactive/legacy components
+│   │   └── linkcheck_bot/           # Link checker bot script + config
+│   └── docs/                        # Archived/legacy docs
 ├── .github/workflows/
 │   ├── social_bot.yml               # Main social posting workflow
-│   ├── backup_bot.yml               # Active backup workflow
+│   ├── backup_bot.yml               # Backup workflow
+│   ├── linkcheck_bot.yml            # Broken link checker workflow
 │   └── fetch-webmentions.yml        # Webmentions workflow
-└── docs/                            # Active documentation
+└── docs/                            # Active documentation (including link checker)
 ```
 
 ## Features
@@ -56,6 +57,20 @@ Creates a Git-tracked backup of your Bear Blog posts from RSS, including frontma
 
 ---
 
+### 🔗 Broken Link Checker
+
+Checks all external links in your backed-up posts and creates a GitHub issue when broken links are found.
+
+**Key features:**
+- Runs automatically after successful backup runs
+- Weekly scheduled checks + manual trigger
+- Excludes problematic domains and can auto-exclude repeated bot-protection domains
+- Uploads a JSON artifact and opens an issue with grouped results
+
+→ [Full Documentation](docs/LINK_CHECKER.md)
+
+---
+
 ### 🔗 Webmentions Collection
 
 Collects webmentions from traditional blog posts that link to your articles using [webmention.io](https://webmention.io).
@@ -71,9 +86,8 @@ Collects webmentions from traditional blog posts that link to your articles usin
 
 ## Archived / Legacy
 
-The following components remain in `archive/` as legacy or currently inactive parts:
+The following components remain in `archive/` as legacy parts:
 
-- Link checker bot (`archive/bots/linkcheck_bot/`)
 - Archived workflows (`archive/workflows/*.yml`)
 - Legacy docs (`archive/docs/`)
 

@@ -1,0 +1,68 @@
+name: Broken Link Checker
+
+run-name: ${{ github.event_name == 'workflow_run' && 'Broken link check after backup' || github.event_name == 'schedule' && 'Scheduled broken link check' || 'Manual broken link check' }}
+
+on:
+  workflow_run:
+    workflows: ["Backup Bot"]
+    types: [completed]
+  schedule:
+    - cron: '0 3 * * 1'  # Every Monday at 03:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: link-checker
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install -r archive/bots/linkcheck_bot/requirements.txt
+
+      - name: Run Link Checker
+        run: python archive/bots/linkcheck_bot/link_checker.py
+
+      - name: Upload Broken Links Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: broken-links-report
+          path: archive/bots/linkcheck_bot/broken_links.json
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Create Issue for Broken Links
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.run_id }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          REPORT_FILE="archive/bots/linkcheck_bot/broken_links.json"
+          if [ -f "$REPORT_FILE" ]; then
+            python archive/bots/linkcheck_bot/create_issue_body.py
+
+            if [ -f "issue_body.md" ]; then
+              gh issue create \
+                --title "Broken links detected" \
+                --body-file issue_body.md
+              rm -f issue_body.md "$REPORT_FILE"
+            fi
+          else
+            echo "No broken link report found"
+          fi
