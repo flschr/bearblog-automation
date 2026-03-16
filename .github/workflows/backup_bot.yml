@@ -29,10 +29,8 @@ jobs:
 
       - name: Run Backup Bot
         id: backup
-        env:
-          BEAR_COOKIE: ${{ secrets.BEAR_COOKIE }}
         run: python archive/bots/backup_bot/backup_bot.py
-        continue-on-error: true  # Continue to commit debug CSV even on failure
+        continue-on-error: true  # Continue to commit debug artifacts even on failure
 
       - name: Pull latest changes
         if: always()  # Always run to avoid diverged branches
@@ -60,7 +58,7 @@ jobs:
           if [ "${{ steps.backup.outcome }}" = "failure" ]; then
             echo "::error::Backup failed! Check the logs above for details."
             echo "Common issues:"
-            echo "  - BEAR_COOKIE may have expired (check for AuthenticationError)"
+            echo "  - RSS feed unavailable or invalid"
             echo "  - Network issues (check for DownloadError)"
             exit 1
           else

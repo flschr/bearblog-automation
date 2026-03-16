@@ -6,7 +6,7 @@
 # =============================================================================
 
 blog:
-  # Your Bear Blog username (used for backup export URL)
+  # Your Bear Blog username (used by legacy/archive tooling)
   bearblog_username: "fischr"
   # Public base URL for your blog (used for link checker reports)
   site_url: "https://fischr.org"
@@ -14,11 +14,8 @@ blog:
 backup:
   # Directory name for blog post backups (relative to repository root)
   folder: "blog-backup"
-  # Save debug CSV file (last_export.csv) for troubleshooting
-  # WARNING: The CSV contains ALL articles including unpublished drafts!
-  # Only enable this if your repository is private or you're okay with
-  # draft content being visible in version history.
-  save_debug_csv: false
+  # RSS feed URL used by backup bot (defaults to <site_url>/feed/ if omitted)
+  # feed_url: "https://fischr.org/feed/"
 
   # Linked files backup (PDFs, documents, etc.)
   # Note: Images are ALWAYS downloaded in all common formats (jpg, png, webp, gif, etc.)
