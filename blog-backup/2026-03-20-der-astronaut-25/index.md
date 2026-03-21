@@ -10,4 +10,4 @@ tags:
 ---
 
 <p><img alt="Ein Mann mit einem sportlichen Oberteil liegt entspannt auf einer matten Oberfläche, umgeben von Weltraum-Elementen. Im Hintergrund sind Sterne und Galaxien sichtbar, während der Titel des Films und die Besetzung in auffälliger Schrift platziert sind." src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/img_9452.webp" /></p>
-<p>Ich hab ja <a href="/der-astronaut/">nicht viel erwartet</a>, und das Wenige wurde noch unterboten. Es ist mir schleierhaft wie man aus einer solchen Vorlage einen Film machen kann, in dem der halbe Kinosaal ständig am kichern ist. Ryan Gosling hätte mir Warnung genug sein sollen.</p>
+<p>Ich hab ja <a href="/der-astronaut/">nicht viel erwartet</a>, und das Wenige wurde noch unterboten. Es ist mir schleierhaft wie man aus einer solchen Vorlage einen Film machen kann, bei dem der halbe Kinosaal ständig am kichern ist. Ryan Gosling hätte mir Warnung genug sein sollen.</p>
