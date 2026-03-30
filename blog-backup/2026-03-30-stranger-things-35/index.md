@@ -1,7 +1,7 @@
 ---
 title: Stranger Things (3/5)
 link: "https://fischr.org/stranger-things-35/"
-published: "2026-03-30T21:06:37.376194+00:00"
+published: "2026-03-30T21:06:00+00:00"
 rss_id: "https://fischr.org/stranger-things-35/"
 source: rss
 tags:
@@ -9,7 +9,7 @@ tags:
   - popcornfieber
 ---
 
-<p>Ende letzten Jahres ist meine Timeline durchgedreht. Alle haben von der fünften Staffel von Stranger Things gesprochen. Ein Hype der bis zu diesem Zeitpunkt komplett an mir vorbeigegangen ist. Dann kam der Februar, der mich mit einer Erkältung auf die heimische Couch gezwungen hat und ich habe meiner besseren Hälfte vorgeschlagen, gemeinsam Stranger Things anzufangen, immerhin, so das Versprechen, sei die Serie jetzt mit eben jener fünftel Staffel garantiert auserzählt.</p>
+<p>Ende letzten Jahres ist meine Timeline durchgedreht. Alle haben von der fünften Staffel von Stranger Things gesprochen. Ein Hype der bis zu diesem Zeitpunkt komplett an mir vorbeigegangen ist. Dann kam der Februar, der mich mit einer Erkältung auf die heimische Couch gezwungen hat. Und so habe meiner besseren Hälfte vorgeschlagen, gemeinsam Stranger Things anzufangen, immerhin, so das Versprechen, sei die Serie jetzt mit eben jener fünften Staffel garantiert auserzählt.</p>
 <p><img alt="Ein Fernseher zeigt eine Nahaufnahme eines Bücherregals mit bunten Buchrücken, auf denen die Namen Lucas, Dustin, Max und Mike stehen. Eine Hand greift nach einem Buch im Regal." src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/fischr/ce10137b-4c6d-48fa-9f37-fc2bd8e0d678_1_201_a.webp" /></p>
 <p>Also haben wir, während ich auf der Couch gar fröhlich geschnieft habe, relativ zügig die ersten 3 Staffeln zusammen geschaut. Nach der ersten Staffel war ich hin und weg und auch Staffel 2 hat mir ganz gut gefallen. Staffel 3 war ein absoluter Reinfall und nachdem wir die hinter uns gebracht haben, hat sich meine Frau ausgeklinkt und gemeint, dass sie mir überhaupt nicht böse ist, wenn ich die Serie alleine weiterschauen würde.</p>
 <p>Für Staffel 4 und 5 habe ich dann fast zwei Monate gebraucht. Nach der Arbeit war Abends auf der Couch entweder keine Langeweile oder schlicht keine Energie mehr vorhanden. Und ehrlicherweise war die Luft aus Stranger Things nach der echt miesen dritten Staffel auch etwas raus.</p>
