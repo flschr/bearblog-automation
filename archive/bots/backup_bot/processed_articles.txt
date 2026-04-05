@@ -393,3 +393,4 @@ https://fischr.org/morgendlicher-tanz-auf-der-leiter/|985b4f9e47f5d26ceb372c81c9
 https://fischr.org/stranger-things-35/|0cd4e604c873dc0f1b42f5a467aba9e562cf3a4fd5fd58d6cab427fc7e9285d4
 https://fischr.org/snowrider/|e3b6477f5f9bcd9756f1de1cd1b9971a3c6d056d6ba60f9f6ba6e1f11fc0e4ef
 https://fischr.org/mehrweg-als-dark-pattern/|0c7b1b9580a8a975d116516c6416cb4727fa3a2a8a9c24a8758d8e5422b3560a
+https://fischr.org/coda-55/|4b63d388913d7bd2f6fb82b195778627db5ef45e296016583d5b7a392d020887
