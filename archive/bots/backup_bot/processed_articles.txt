@@ -395,4 +395,4 @@ https://fischr.org/snowrider/|e3b6477f5f9bcd9756f1de1cd1b9971a3c6d056d6ba60f9f6b
 https://fischr.org/mehrweg-als-dark-pattern/|0c7b1b9580a8a975d116516c6416cb4727fa3a2a8a9c24a8758d8e5422b3560a
 https://fischr.org/coda-55/|3f30a44ca5c6f148c79bcb96f3f7a6c0f219c870e6e3fd4b245ae02a4b1d8cd4
 https://fischr.org/erster-ausritt/|6fb9830a0a60d7fa5a66b04fb38dd210ac06451e24d42b9f03fbbd45aeb71bf0
-https://fischr.org/hart-vs-weich/|d2cdc1780f28714fbf12b557942f40284ea76807fca47cb6dab409dba6d186c4
+https://fischr.org/hart-vs-weich/|61837631050061bcd5fa52a01641ef71cc8a4fb579bc641f2fb2c5c1fc42950e
