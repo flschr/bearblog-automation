@@ -15,7 +15,7 @@ tags:
 <p>Naja, wie auch immer: Kennt ihr den Song <a href="https://www.youtube.com/watch?v=EXxgmE6tP2k">Sie liebt Techno</a>?</p>
 
 <p>Wenn nicht auch nicht schlimm, um den gehts nämlich gar nicht, auch wenn mein eigentliches Thema noch viel dramatischer ist, wie ein inkompatibler Musikgeschmack.</p>
-<p>Es geht um Nudeln: Meine Frau mag keine harten Nudeln. Und in ihren Maßstäben ist alles, was nicht ohne Kauen auf der Zunge zerläuft hart. Das ist für mich eine ziemlich harte Probe, weil ich vermutlich mit allem klarkomme, aber nicht mit zu weichen Nudeln.</p>
+<p>Es geht um Nudeln: Meine Frau mag keine harten Nudeln. Und in ihren Maßstäben ist alles, was nicht ohne Kauen auf der Zunge zerläuft hart. Das wiederum, ist für mich eine ziemlich harte Probe, weil ich vermutlich mit allem klarkomme, aber nicht mit Nudelmatsch.</p>
 <p>Das ist ein ganz wunderbares Konfliktfeld, das uns mehrfach pro Woche am Esstisch ereilt. Bei weitem kein Streitthema und war es auch nie, aber jeder ist genervt und murmelt irgendwas Unzufriedenes über den Zustand der Nudeln, bevor man dann eben doch weiter isst.</p>
 <p>Bevor jetzt einer mit schlauen Ratschlägen wie, dann teilt doch die Portion ... einfach die andere Hälfte kürzer oder länger kochen lassen: Wir sind wohl beide froh, dass die Zeiten von separaten Mahlzeiten für andere Mitbewohner (vulgo Kids) so gut wie vorbei sind, als das wir uns das wirklich antun wollen.</p>
 <p>Und am Ende ist das gute alte Sprichwort, "Es wird gegessen was auf den Tisch kommt." vielleicht gerade nach 17 Jahren Ehe besonders wichtig.</p>
