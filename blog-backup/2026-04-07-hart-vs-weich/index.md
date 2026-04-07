@@ -8,8 +8,8 @@ tags:
   - blog
 ---
 
-<p>Meine Frau und ich sind sehr verschieden. Also wirklich sehr verschieden. Man könnte sogar sagen, wir sind Gegenpole. Das war nicht immer einfach, aber in 17 Jahren Ehe gewöhnt man sich am Ende an ziemlich viele schräge Sachen. Und man lernt auch eine Menge von Menschen, die grundverschieden sind. Also zumindest bilde ich mir ein und behaupte es auch, das ich in den 17 Jahren eine ziemlich starke Veränderung durchgemacht habe, und nicht mehr der Kerl bin, der ich damals war.</p>
-<p>Ich bin mir sicher, dass meine Frau das sogar bestätigen würde, wir aber in der Ausprägung dann doch wieder diametral auseinanderliegen. Ich behaupte natürlich, dass ich mich nur zum Besten verändert habe.</p>
+<p>Meine Frau und ich sind sehr verschieden. Also wirklich sehr verschieden. Man könnte sogar sagen, wir sind Gegenpole. Das war nicht immer einfach, aber in 17 Jahren Ehe gewöhnt man sich am Ende an ziemlich viele schräge Sachen. Und man lernt auch eine Menge von Menschen, die grundverschieden zu einem selbst sind. Also zumindest bilde ich mir ein und behaupte es auch, das ich in den 17 Jahren eine ziemlich starke Veränderung durchgemacht habe, und nicht mehr der Kerl bin, der ich damals war.</p>
+<p>Ich bin mir sicher, dass meine Frau das sogar bestätigen würde, wir aber in der Ausprägung dann vermutlich wieder einmal diametral auseinanderliegen. Denn ich behaupte natürlich, dass ich mich nur zum Besten verändert habe.</p>
 <p>Umgedreht würde ich meiner Frau attestieren, dass sie ebenfalls in den wesentlichen, von mir als störend wahrgenommenen Wesenszügen, eine positive Entwicklung gemacht hat.</p>
 <p>Vielleicht ist das aber auch alles einfach nur der Zahn der Zeit und man entwickelt sich gar nicht im positiven Sinne wirklich weiter. Man wird einfach ruhiger, vielleicht etwas besonnener, mitunter vielleicht ein bisschen egaler und dann sind Marotten und Macken die einen sonst auf die Palme gebracht haben, plötzlich gar nicht mehr so schlimm.</p>
 <p>Naja, wie auch immer: Kennt ihr den Song <a href="https://www.youtube.com/watch?v=EXxgmE6tP2k">Sie liebt Techno</a>?</p>
